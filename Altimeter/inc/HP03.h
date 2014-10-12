@@ -31,11 +31,11 @@ typedef struct HP03_meas_s {
 	HP03_calc_t constsForCalculating;
 } HP03_meas_t;
 
-void resetHP03(void);
-void readCoeffs(void);
+void HP03_reset(void);
+void HP03_readCoeffs(void);
 int HP03_getPressure(HP03_meas_t * constsIn_pressureOut, bool withKalman);
 int HP03_getTemperature(HP03_meas_t * result);
-int pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp);
-float pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp);
+int HP03_pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp);
+float HP03_pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp);
 
 #endif

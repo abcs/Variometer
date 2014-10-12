@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc4D5JRK.s 			page 1
+ARM GAS  /tmp/ccNhWKHH.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
   55              	chThdRelease:
   56              	.LFB8:
   57              		.loc 1 74 0
-ARM GAS  /tmp/cc4D5JRK.s 			page 2
+ARM GAS  /tmp/ccNhWKHH.s 			page 2
 
 
   58              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  112              	.L5:
  113              		.loc 1 98 0
  114 003c 4369     		ldr	r3, [r0, #20]
-ARM GAS  /tmp/cc4D5JRK.s 			page 3
+ARM GAS  /tmp/ccNhWKHH.s 			page 3
 
 
  115 003e 0269     		ldr	r2, [r0, #16]
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  169 001a 321C     		mov	r2, r6
  170 001c 2B1C     		mov	r3, r5
  171 001e FFF7FEFF 		bl	chThdCreateI
-ARM GAS  /tmp/cc4D5JRK.s 			page 4
+ARM GAS  /tmp/ccNhWKHH.s 			page 4
 
 
  172              	.LVL10:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  226 0006 0E1C     		mov	r6, r1
  227 0008 141C     		mov	r4, r2
  228 000a 1F1C     		mov	r7, r3
-ARM GAS  /tmp/cc4D5JRK.s 			page 5
+ARM GAS  /tmp/ccNhWKHH.s 			page 5
 
 
  229              		.loc 1 186 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  283              	.Letext0:
  284              		.file 2 "/usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include/stdd
  285              		.file 3 "/usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/machine/_default_t
-ARM GAS  /tmp/cc4D5JRK.s 			page 6
+ARM GAS  /tmp/ccNhWKHH.s 			page 6
 
 
  286              		.file 4 "/usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/stdint.h"
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  340 005e 04       		.uleb128 0x4
  341 005f 02       		.byte	0x2
  342 0060 07       		.byte	0x7
-ARM GAS  /tmp/cc4D5JRK.s 			page 7
+ARM GAS  /tmp/ccNhWKHH.s 			page 7
 
 
  343 0061 8F010000 		.4byte	.LASF6
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  397 00d0 02       		.byte	0x2
  398 00d1 0E030000 		.4byte	.LASF18
  399 00d5 03       		.uleb128 0x3
-ARM GAS  /tmp/cc4D5JRK.s 			page 8
+ARM GAS  /tmp/ccNhWKHH.s 			page 8
 
 
  400 00d6 75030000 		.4byte	.LASF19
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  454 014b 56020000 		.4byte	0x256
  455 014f 00       		.byte	0
  456 0150 06       		.uleb128 0x6
-ARM GAS  /tmp/cc4D5JRK.s 			page 9
+ARM GAS  /tmp/ccNhWKHH.s 			page 9
 
 
  457 0151 FF020000 		.4byte	.LASF29
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  511 01bd 51030000 		.4byte	.LASF38
  512 01c1 07       		.byte	0x7
  513 01c2 88       		.byte	0x88
-ARM GAS  /tmp/cc4D5JRK.s 			page 10
+ARM GAS  /tmp/ccNhWKHH.s 			page 10
 
 
  514 01c3 F6000000 		.4byte	0xf6
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  568 022f 92020000 		.4byte	0x292
  569 0233 44       		.byte	0x44
  570 0234 00       		.byte	0
-ARM GAS  /tmp/cc4D5JRK.s 			page 11
+ARM GAS  /tmp/ccNhWKHH.s 			page 11
 
 
  571 0235 08       		.uleb128 0x8
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  625 029b C3000000 		.4byte	0xc3
  626 029f 05       		.uleb128 0x5
  627 02a0 1C040000 		.4byte	.LASF51
-ARM GAS  /tmp/cc4D5JRK.s 			page 12
+ARM GAS  /tmp/ccNhWKHH.s 			page 12
 
 
  628 02a4 24       		.byte	0x24
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  682 0309 08       		.byte	0x8
  683 030a C3       		.byte	0xc3
  684 030b 87020000 		.4byte	0x287
-ARM GAS  /tmp/cc4D5JRK.s 			page 13
+ARM GAS  /tmp/ccNhWKHH.s 			page 13
 
 
  685 030f 20       		.byte	0x20
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  739 0378 09       		.byte	0x9
  740 0379 33       		.byte	0x33
  741 037a 3C030000 		.4byte	0x33c
-ARM GAS  /tmp/cc4D5JRK.s 			page 14
+ARM GAS  /tmp/ccNhWKHH.s 			page 14
 
 
  742 037e 03       		.uleb128 0x3
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  796 03ed 0F       		.uleb128 0xf
  797 03ee B9030000 		.4byte	.LASF65
  798 03f2 0B       		.byte	0xb
-ARM GAS  /tmp/cc4D5JRK.s 			page 15
+ARM GAS  /tmp/ccNhWKHH.s 			page 15
 
 
  799 03f3 3E       		.byte	0x3e
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  853 0458 5E040000 		.4byte	0x45e
  854 045c 00       		.byte	0
  855 045d 00       		.byte	0
-ARM GAS  /tmp/cc4D5JRK.s 			page 16
+ARM GAS  /tmp/ccNhWKHH.s 			page 16
 
 
  856 045e 09       		.uleb128 0x9
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  910 04ca 07       		.byte	0x7
  911 04cb B2       		.byte	0xb2
  912 04cc 17010000 		.4byte	0x117
-ARM GAS  /tmp/cc4D5JRK.s 			page 17
+ARM GAS  /tmp/ccNhWKHH.s 			page 17
 
 
  913 04d0 00       		.byte	0
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  967 0544 16       		.uleb128 0x16
  968 0545 747000   		.ascii	"tp\000"
  969 0548 01       		.byte	0x1
-ARM GAS  /tmp/cc4D5JRK.s 			page 18
+ARM GAS  /tmp/ccNhWKHH.s 			page 18
 
 
  970 0549 4A       		.byte	0x4a
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1024 05c7 706600   		.ascii	"pf\000"
  1025 05ca 01       		.byte	0x1
  1026 05cb 83       		.byte	0x83
-ARM GAS  /tmp/cc4D5JRK.s 			page 19
+ARM GAS  /tmp/ccNhWKHH.s 			page 19
 
 
  1027 05cc E9040000 		.4byte	0x4e9
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1081 0631 76       		.byte	0x76
  1082 0632 00       		.sleb128 0
  1083 0633 19       		.uleb128 0x19
-ARM GAS  /tmp/cc4D5JRK.s 			page 20
+ARM GAS  /tmp/ccNhWKHH.s 			page 20
 
 
  1084 0634 01       		.uleb128 0x1
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1138 0692 01       		.byte	0x1
  1139 0693 B4       		.byte	0xb4
  1140 0694 E9040000 		.4byte	0x4e9
-ARM GAS  /tmp/cc4D5JRK.s 			page 21
+ARM GAS  /tmp/ccNhWKHH.s 			page 21
 
 
  1141 0698 AA010000 		.4byte	.LLST10
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1195 06fd 1D       		.uleb128 0x1d
  1196 06fe 30000000 		.4byte	.LVL21
  1197 0702 84070000 		.4byte	0x784
-ARM GAS  /tmp/cc4D5JRK.s 			page 22
+ARM GAS  /tmp/ccNhWKHH.s 			page 22
 
 
  1198 0706 19       		.uleb128 0x19
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1252 0770 2C000000 		.4byte	0x2c
  1253 0774 0D       		.uleb128 0xd
  1254 0775 01010000 		.4byte	0x101
-ARM GAS  /tmp/cc4D5JRK.s 			page 23
+ARM GAS  /tmp/ccNhWKHH.s 			page 23
 
 
  1255 0779 0D       		.uleb128 0xd
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1309 001c 00       		.byte	0
  1310 001d 00       		.byte	0
  1311 001e 03       		.uleb128 0x3
-ARM GAS  /tmp/cc4D5JRK.s 			page 24
+ARM GAS  /tmp/ccNhWKHH.s 			page 24
 
 
  1312 001f 16       		.uleb128 0x16
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1366 0055 0D       		.uleb128 0xd
  1367 0056 00       		.byte	0
  1368 0057 03       		.uleb128 0x3
-ARM GAS  /tmp/cc4D5JRK.s 			page 25
+ARM GAS  /tmp/ccNhWKHH.s 			page 25
 
 
  1369 0058 08       		.uleb128 0x8
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1423 008e 01       		.uleb128 0x1
  1424 008f 13       		.uleb128 0x13
  1425 0090 00       		.byte	0
-ARM GAS  /tmp/cc4D5JRK.s 			page 26
+ARM GAS  /tmp/ccNhWKHH.s 			page 26
 
 
  1426 0091 00       		.byte	0
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1480 00c7 3A       		.uleb128 0x3a
  1481 00c8 0B       		.uleb128 0xb
  1482 00c9 3B       		.uleb128 0x3b
-ARM GAS  /tmp/cc4D5JRK.s 			page 27
+ARM GAS  /tmp/ccNhWKHH.s 			page 27
 
 
  1483 00ca 0B       		.uleb128 0xb
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1537 0101 15       		.uleb128 0x15
  1538 0102 2E       		.uleb128 0x2e
  1539 0103 01       		.byte	0x1
-ARM GAS  /tmp/cc4D5JRK.s 			page 28
+ARM GAS  /tmp/ccNhWKHH.s 			page 28
 
 
  1540 0104 3F       		.uleb128 0x3f
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1594 013d 01       		.byte	0x1
  1595 013e 11       		.uleb128 0x11
  1596 013f 01       		.uleb128 0x1
-ARM GAS  /tmp/cc4D5JRK.s 			page 29
+ARM GAS  /tmp/ccNhWKHH.s 			page 29
 
 
  1597 0140 31       		.uleb128 0x31
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1651 017b 1D       		.uleb128 0x1d
  1652 017c 898201   		.uleb128 0x4109
  1653 017f 01       		.byte	0x1
-ARM GAS  /tmp/cc4D5JRK.s 			page 30
+ARM GAS  /tmp/ccNhWKHH.s 			page 30
 
 
  1654 0180 11       		.uleb128 0x11
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1708 01b6 0B       		.uleb128 0xb
  1709 01b7 3B       		.uleb128 0x3b
  1710 01b8 05       		.uleb128 0x5
-ARM GAS  /tmp/cc4D5JRK.s 			page 31
+ARM GAS  /tmp/ccNhWKHH.s 			page 31
 
 
  1711 01b9 27       		.uleb128 0x27
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1765 0037 0400     		.2byte	0x4
  1766 0039 F3       		.byte	0xf3
  1767 003a 01       		.uleb128 0x1
-ARM GAS  /tmp/cc4D5JRK.s 			page 32
+ARM GAS  /tmp/ccNhWKHH.s 			page 32
 
 
  1768 003b 50       		.byte	0x50
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1822              	.LLST4:
  1823 00be 00000000 		.4byte	.LVL8
  1824 00c2 0D000000 		.4byte	.LVL9-1
-ARM GAS  /tmp/cc4D5JRK.s 			page 33
+ARM GAS  /tmp/ccNhWKHH.s 			page 33
 
 
  1825 00c6 0100     		.2byte	0x1
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1879 014e 00000000 		.4byte	0
  1880              	.LLST8:
  1881 0152 00000000 		.4byte	.LVL17
-ARM GAS  /tmp/cc4D5JRK.s 			page 34
+ARM GAS  /tmp/ccNhWKHH.s 			page 34
 
 
  1882 0156 0F000000 		.4byte	.LVL18-1
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1936 01d9 38000000 		.4byte	.LVL23
  1937 01dd 3C000000 		.4byte	.LFE10
  1938 01e1 0400     		.2byte	0x4
-ARM GAS  /tmp/cc4D5JRK.s 			page 35
+ARM GAS  /tmp/ccNhWKHH.s 			page 35
 
 
  1939 01e3 F3       		.byte	0xf3
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  1993 0010 00000000 		.4byte	.LFB7
  1994 0014 0C000000 		.4byte	.LFE7-.LFB7
  1995 0018 00000000 		.4byte	.LFB8
-ARM GAS  /tmp/cc4D5JRK.s 			page 36
+ARM GAS  /tmp/ccNhWKHH.s 			page 36
 
 
  1996 001c 50000000 		.4byte	.LFE8-.LFB8
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2033      00
  2034              	.LASF13:
  2035 0047 6C6F6E67 		.ascii	"long long unsigned int\000"
-ARM GAS  /tmp/cc4D5JRK.s 			page 37
+ARM GAS  /tmp/ccNhWKHH.s 			page 37
 
 
  2035      206C6F6E 
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2063      00
  2064              	.LASF81:
  2065 00db 63685468 		.ascii	"chThdCreateFromHeap\000"
-ARM GAS  /tmp/cc4D5JRK.s 			page 38
+ARM GAS  /tmp/ccNhWKHH.s 			page 38
 
 
  2065      64437265 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2091 018f 73686F72 		.ascii	"short unsigned int\000"
  2091      7420756E 
  2091      7369676E 
-ARM GAS  /tmp/cc4D5JRK.s 			page 39
+ARM GAS  /tmp/ccNhWKHH.s 			page 39
 
 
  2091      65642069 
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2114      61647351 
  2114      75657565 
  2114      00
-ARM GAS  /tmp/cc4D5JRK.s 			page 40
+ARM GAS  /tmp/ccNhWKHH.s 			page 40
 
 
  2115              	.LASF71:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2145              	.LASF35:
  2146 0349 705F7374 		.ascii	"p_state\000"
  2146      61746500 
-ARM GAS  /tmp/cc4D5JRK.s 			page 41
+ARM GAS  /tmp/ccNhWKHH.s 			page 41
 
 
  2147              	.LASF38:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2177              	.LASF26:
  2178 03d7 73797374 		.ascii	"systime_t\000"
  2178      696D655F 
-ARM GAS  /tmp/cc4D5JRK.s 			page 42
+ARM GAS  /tmp/ccNhWKHH.s 			page 42
 
 
  2178      7400
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2207              	.LASF56:
  2208 047b 6D5F6F77 		.ascii	"m_owner\000"
  2208      6E657200 
-ARM GAS  /tmp/cc4D5JRK.s 			page 43
+ARM GAS  /tmp/ccNhWKHH.s 			page 43
 
 
  2209              	.LASF31:
@@ -2533,19 +2533,19 @@ ARM GAS  /tmp/cc4D5JRK.s 			page 1
  2214      72795F68 
  2214      65617000 
  2215              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc4D5JRK.s 			page 44
+ARM GAS  /tmp/ccNhWKHH.s 			page 44
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chdynamic.c
-     /tmp/cc4D5JRK.s:18     .text.chThdAddRef:00000000 $t
-     /tmp/cc4D5JRK.s:23     .text.chThdAddRef:00000000 chThdAddRef
-     /tmp/cc4D5JRK.s:50     .text.chThdRelease:00000000 $t
-     /tmp/cc4D5JRK.s:55     .text.chThdRelease:00000000 chThdRelease
-     /tmp/cc4D5JRK.s:133    .text.chThdCreateFromHeap:00000000 $t
-     /tmp/cc4D5JRK.s:138    .text.chThdCreateFromHeap:00000000 chThdCreateFromHeap
-     /tmp/cc4D5JRK.s:206    .text.chThdCreateFromMemoryPool:00000000 $t
-     /tmp/cc4D5JRK.s:211    .text.chThdCreateFromMemoryPool:00000000 chThdCreateFromMemoryPool
+     /tmp/ccNhWKHH.s:18     .text.chThdAddRef:00000000 $t
+     /tmp/ccNhWKHH.s:23     .text.chThdAddRef:00000000 chThdAddRef
+     /tmp/ccNhWKHH.s:50     .text.chThdRelease:00000000 $t
+     /tmp/ccNhWKHH.s:55     .text.chThdRelease:00000000 chThdRelease
+     /tmp/ccNhWKHH.s:133    .text.chThdCreateFromHeap:00000000 $t
+     /tmp/ccNhWKHH.s:138    .text.chThdCreateFromHeap:00000000 chThdCreateFromHeap
+     /tmp/ccNhWKHH.s:206    .text.chThdCreateFromMemoryPool:00000000 $t
+     /tmp/ccNhWKHH.s:211    .text.chThdCreateFromMemoryPool:00000000 chThdCreateFromMemoryPool
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

@@ -9,6 +9,9 @@
 #define LOGGER_H_
 
 #include <stdint.h>
+#include "ch.h"
+
+#define LOG_BUFFER_SIZE 10
 
 typedef struct log_rec_s {
 	uint8_t year;
@@ -19,5 +22,17 @@ typedef struct log_rec_s {
 	uint8_t second;
 	int altitude;
 } log_rec_t;
+
+typedef struct log_buffer_s {
+	log_rec_t * record[LOG_BUFFER_SIZE];
+	int8_t can_write;
+	int8_t start_to_read;
+	int8_t active;
+	Mutex mtx;
+} log_buffer_t;
+
+void logger_init(void);
+int logger_logThis(log_rec_t * rec_to_log);
+int logger_writeToEE(void);
 
 #endif /* LOGGER_H_ */

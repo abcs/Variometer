@@ -32,7 +32,7 @@ USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface = {
 
 
 /** Configures the board hardware and chip peripherals for the functionality. */
-void SetupVSHardware(void)
+void VS_setupHardware(void)
 {
 	USB_Init(VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device); //VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device
 
@@ -43,7 +43,7 @@ void SetupVSHardware(void)
 
 #if (CDC_TASK_SELECT == ECHO_CHARACTER_TASK)
 /** Checks for data input, reply back to the host. */
-void EchoCharacter(void)
+void VS_echoCharacter(void)
 {
 	uint8_t recv_byte[CDC_TXRX_EPSIZE];
 	if (CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface)) {

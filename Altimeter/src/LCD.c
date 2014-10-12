@@ -6,7 +6,7 @@
 
 volatile static bool isUSBWritten = false;
 
-static inline void Lcd_Reset(bool_t active)
+static inline void LCD_reset(bool_t active)
 {
 	if( active )
 	{
@@ -19,7 +19,7 @@ static inline void Lcd_Reset(bool_t active)
 }
 
 
-static inline void Lcd_CD(unsigned char CD)
+static inline void LCD_CD(unsigned char CD)
 {
 	if( CD )
 	{
@@ -43,7 +43,7 @@ static inline void reorderBytes(const unsigned char * from, unsigned char * to, 
 }
 
 
-static void Lcd_WriteLine(unsigned char row,
+static void LCD_writeLine(unsigned char row,
 		           unsigned char col,
 		           char * text,
 		           unsigned char fontSize)
@@ -76,11 +76,11 @@ static void Lcd_WriteLine(unsigned char row,
     row |= 0x40;
     col |= 0x80;
 
-    Lcd_CD(CMD);
+    LCD_CD(CMD);
     spiSend(&SPID1, 1, &row);
     spiSend(&SPID1, 1, &col);
 
-    Lcd_CD(DATA);
+    LCD_CD(DATA);
     while ( (fontSize == 1) && (textLen > 0) )
     {
     	reorderBytes( &fonts1line[ (unsigned char)text[textLen - 1] ][0], fonts, 6);
@@ -95,10 +95,10 @@ static void Lcd_WriteLine(unsigned char row,
 
         row ++;
 
-        Lcd_CD(CMD);
+        LCD_CD(CMD);
         spiSend(&SPID1, 1, &row);
         spiSend(&SPID1, 1, &col);
-        Lcd_CD(DATA);
+        LCD_CD(DATA);
 
         reorderBytes( &fonts2line[ (unsigned char)(text[textLen - 1] - 32) ][1][0], fonts2, 10);
 
@@ -112,38 +112,38 @@ static void Lcd_WriteLine(unsigned char row,
 
         row --;
         col += 10;
-        Lcd_CD(CMD);
+        LCD_CD(CMD);
         spiSend(&SPID1, 1, &row);
         spiSend(&SPID1, 1, &col);
-        Lcd_CD(DATA);
+        LCD_CD(DATA);
 
         textLen--;
     }
-    Lcd_CD(CMD);
+    LCD_CD(CMD);
 }
 
 
 // clear LCD
-void Lcd_Clear()
+void LCD_clear()
 {
 	unsigned int i;
 	unsigned char clrData[] = { 0x40U, 0x80U };
 
-	Lcd_CD(CMD);
+	LCD_CD(CMD);
 	spiSend(&SPID1, 2, clrData);
 
-	Lcd_CD(DATA);
+	LCD_CD(DATA);
 	clrData[0] = 0x00U;
 	//clrData[1] = 0x00U;
 	for( i = 0; i < 918; i++ )
 		spiSend(&SPID1, 1, clrData);
 
-	Lcd_CD(CMD);
+	LCD_CD(CMD);
 }
 
 
 // init LCD
-void Lcd_Init() //PCF8813
+void LCD_init() //PCF8813
 {
 	unsigned char toSend = 0U;
 	unsigned char initCommand[] = {0x39,	// PowerON, ExtCommandSet - 0x21
@@ -154,11 +154,11 @@ void Lcd_Init() //PCF8813
 			                       0x38,	// StandartCommandSet - 0x20
 			                       0x0C};	// normal mode, display non-inverted
 
-	Lcd_Reset(TRUE);
+	LCD_reset(TRUE);
 	chThdSleepMilliseconds(10);
-	Lcd_Reset(FALSE);
+	LCD_reset(FALSE);
 
-	Lcd_CD(CMD);
+	LCD_CD(CMD);
 	spiSend(&SPID1, 7, initCommand);
 
 	toSend = 0x16;
@@ -166,7 +166,7 @@ void Lcd_Init() //PCF8813
 	toSend = 0x01;
 	spiSend(&SPID1, 1, &toSend);
 
-	Lcd_Clear();
+	LCD_clear();
 
 	toSend = 0x0D;
 	spiSend(&SPID1, 1, &toSend);
@@ -178,25 +178,25 @@ void Lcd_Init() //PCF8813
 }
 
 
-void writeTemp(HP03_meas_t measuredByHP03)
+void LCD_writeTemp(HP03_meas_t measuredByHP03)
 {
 	char * prefix = ")";
 	char * suffix = "$";
 	char toLCD[10] = {0};
 
     itoa(measuredByHP03.temper, toLCD, 10, 1, 9, ' ', prefix, suffix);
-    Lcd_WriteLine(1U, 0U, toLCD, 2U);
+    LCD_writeLine(1U, 0U, toLCD, 2U);
 }
 
 
-void writePress(HP03_meas_t measuredByHP03)
+void LCD_writePress(HP03_meas_t measuredByHP03)
 {
 	char * prefix = "\'";
 	char * suffix = "%";
 	char toLCD[10] = {0};
 
 	itoa(measuredByHP03.press, toLCD, 10, 1, 9, ' ', prefix, suffix);
-    Lcd_WriteLine(3U, 0U, toLCD, 2U);
+    LCD_writeLine(3U, 0U, toLCD, 2U);
 /*
 	*toLCD = ')';
 	*(toLCD+1) = '\0';
@@ -211,32 +211,32 @@ void writePress(HP03_meas_t measuredByHP03)
 }
 
 
-void writeAlt(int altToWrite)
+void LCD_writeAlt(int altToWrite)
 {
 	char * prefix = "#";
 	char * suffix = "!";
 	char toLCD[10] = {0};
 
 	itoa(altToWrite, toLCD, 10, 1, 9, ' ', prefix, suffix);
-    Lcd_WriteLine(5U, 0U, toLCD, 2U);
+    LCD_writeLine(5U, 0U, toLCD, 2U);
 
     return;
 }
 
 
-void writeSpeed(int speedToWrite)
+void LCD_writeSpeed(int speedToWrite)
 {
 	return;
 }
 
 
-void writeDate(RTC_date_t dateToWrite)
+void LCD_writeDate(RTC_date_t dateToWrite)
 {
 	return;
 }
 
 
-void writeTime(RTC_time_t timeToWrite)
+void LCD_writeTime(RTC_time_t timeToWrite)
 {
     char toLCD[4] = {0};
 
@@ -248,32 +248,32 @@ void writeTime(RTC_time_t timeToWrite)
     Lcd_WriteLine(0U, 13U, toLCD, 1U);
 */
     itoa(timeToWrite.minute, toLCD, 10, 0, 2, '0', 0, 0);
-    Lcd_WriteLine(0U, 14U, toLCD, 1U);
+    LCD_writeLine(0U, 14U, toLCD, 1U);
 /*
     *toLCD = ':';
     *(toLCD+1) = '\0';
     Lcd_WriteLine(0U, 10U, toLCD, 1U);
 */
     itoa(timeToWrite.hour, toLCD, 10, 0, 3, ' ', 0, ":");
-    Lcd_WriteLine(0U, 11U, toLCD, 1U);
+    LCD_writeLine(0U, 11U, toLCD, 1U);
 }
 
-void writeUSB()
+void LCD_writeUSB()
 {
 	if(isUSBWritten)
 		return;
 
 	char toLCD[4] = "USB";
-	Lcd_WriteLine(0U, 0U, toLCD, 1U);
+	LCD_writeLine(0U, 0U, toLCD, 1U);
 	isUSBWritten = true;
 }
 
-void writeUSB_delete()
+void LCD_writeUSB_delete()
 {
 	if(!isUSBWritten)
 		return;
 
 	char toLCD[4] = "   ";
-	Lcd_WriteLine(0U, 0U, toLCD, 1U);
+	LCD_writeLine(0U, 0U, toLCD, 1U);
 	isUSBWritten = false;
 }

@@ -40,7 +40,7 @@ static int power(int base, int exp)
     @param  temp          Temperature in degrees Celsius
 */
 /**************************************************************************/
-int pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp)
+int HP03_pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp)
 {
   /* Hyposometric formula:                      */
   /*                                            */
@@ -75,7 +75,7 @@ int pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp)
 */
 /**************************************************************************/
 //float pressureSeaLevelFromAltitude(float altitude, float atmospheric, float temp)
-float pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp)
+float HP03_pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp)
 {
   /* Sea-level pressure:                        */
   /*                                            */
@@ -101,7 +101,7 @@ float pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp
 }
 
 
-void resetHP03()
+void HP03_reset()
 {
 	palClearPad(GPIO1, GPIO1_XCLR);
 //	chThdSleepMilliseconds(50);
@@ -111,7 +111,7 @@ void resetHP03()
 }
 
 
-void readCoeffs()
+void HP03_readCoeffs()
 {
 	uint8_t HP03_ee_addr = 16;
 	uint8_t hibyte;

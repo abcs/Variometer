@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccVN9PJG.s 			page 1
+ARM GAS  /tmp/ccEniUiD.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
   55              		.cfi_offset 14, -4
   56              		.loc 1 84 0
   57 0002 0123     		mov	r3, #1
-ARM GAS  /tmp/ccVN9PJG.s 			page 2
+ARM GAS  /tmp/ccEniUiD.s 			page 2
 
 
   58 0004 0370     		strb	r3, [r0]
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  112              	.LFE41:
  113              		.size	i2cStart, .-i2cStart
  114              		.section	.text.i2cStop,"ax",%progbits
-ARM GAS  /tmp/ccVN9PJG.s 			page 3
+ARM GAS  /tmp/ccEniUiD.s 			page 3
 
 
  115              		.align	2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  169 0002 7047     		bx	lr
  170              		.cfi_endproc
  171              	.LFE43:
-ARM GAS  /tmp/ccVN9PJG.s 			page 4
+ARM GAS  /tmp/ccEniUiD.s 			page 4
 
 
  172              		.size	i2cGetErrors, .-i2cGetErrors
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  226              	@ 212 "ChibiOS_2.6.5/os/hal/src/i2c.c" 1
  227 0030 62B6     		cpsie   i
  228              	@ 0 "" 2
-ARM GAS  /tmp/ccVN9PJG.s 			page 5
+ARM GAS  /tmp/ccEniUiD.s 			page 5
 
 
  229              		.loc 1 214 0
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  283 0024 0223     		mov	r3, #2
  284 0026 2370     		strb	r3, [r4]
  285              	.L11:
-ARM GAS  /tmp/ccVN9PJG.s 			page 6
+ARM GAS  /tmp/ccEniUiD.s 			page 6
 
 
  286              		.loc 1 260 0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  340              		.loc 1 301 0
  341 0002 FFF7FEFF 		bl	chMtxUnlock
  342              	.LVL24:
-ARM GAS  /tmp/ccVN9PJG.s 			page 7
+ARM GAS  /tmp/ccEniUiD.s 			page 7
 
 
  343              		.loc 1 305 0
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  397 004c 50000000 		.4byte	0x50
  398 0050 04       		.uleb128 0x4
  399 0051 01       		.byte	0x1
-ARM GAS  /tmp/ccVN9PJG.s 			page 8
+ARM GAS  /tmp/ccEniUiD.s 			page 8
 
 
  400 0052 08       		.byte	0x8
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  454 00be 41       		.byte	0x41
  455 00bf 70000000 		.4byte	0x70
  456 00c3 03       		.uleb128 0x3
-ARM GAS  /tmp/ccVN9PJG.s 			page 9
+ARM GAS  /tmp/ccEniUiD.s 			page 9
 
 
  457 00c4 D6000000 		.4byte	.LASF17
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  511 0139 EE010000 		.4byte	.LASF27
  512 013d 48       		.byte	0x48
  513 013e 07       		.byte	0x7
-ARM GAS  /tmp/ccVN9PJG.s 			page 10
+ARM GAS  /tmp/ccEniUiD.s 			page 10
 
 
  514 013f 5E       		.byte	0x5e
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  568 01ab D5000000 		.4byte	0xd5
  569 01af 1D       		.byte	0x1d
  570 01b0 06       		.uleb128 0x6
-ARM GAS  /tmp/ccVN9PJG.s 			page 11
+ARM GAS  /tmp/ccEniUiD.s 			page 11
 
 
  571 01b1 2B050000 		.4byte	.LASF37
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  625 021d 1A040000 		.4byte	.LASF45
  626 0221 07       		.byte	0x7
  627 0222 D4       		.byte	0xd4
-ARM GAS  /tmp/ccVN9PJG.s 			page 12
+ARM GAS  /tmp/ccEniUiD.s 			page 12
 
 
  628 0223 01010000 		.4byte	0x101
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  682 028c 08       		.byte	0x8
  683 028d A7       		.byte	0xa7
  684 028e 92020000 		.4byte	0x292
-ARM GAS  /tmp/ccVN9PJG.s 			page 13
+ARM GAS  /tmp/ccEniUiD.s 			page 13
 
 
  685 0292 0A       		.uleb128 0xa
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  739 02f5 87020000 		.4byte	0x287
  740 02f9 1C       		.byte	0x1c
  741 02fa 07       		.uleb128 0x7
-ARM GAS  /tmp/ccVN9PJG.s 			page 14
+ARM GAS  /tmp/ccEniUiD.s 			page 14
 
 
  742 02fb 6C7200   		.ascii	"lr\000"
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  796 0366 00       		.byte	0
  797 0367 09       		.uleb128 0x9
  798 0368 04       		.byte	0x4
-ARM GAS  /tmp/ccVN9PJG.s 			page 15
+ARM GAS  /tmp/ccEniUiD.s 			page 15
 
 
  799 0369 36030000 		.4byte	0x336
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  853 03db 08       		.uleb128 0x8
  854 03dc 10       		.byte	0x10
  855 03dd 0A       		.byte	0xa
-ARM GAS  /tmp/ccVN9PJG.s 			page 16
+ARM GAS  /tmp/ccEniUiD.s 			page 16
 
 
  856 03de 85       		.byte	0x85
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  910 044a 06       		.uleb128 0x6
  911 044b 37000000 		.4byte	.LASF67
  912 044f 0A       		.byte	0xa
-ARM GAS  /tmp/ccVN9PJG.s 			page 17
+ARM GAS  /tmp/ccEniUiD.s 			page 17
 
 
  913 0450 77       		.byte	0x77
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  967 04bc 80       		.byte	0x80
  968 04bd 25030000 		.4byte	0x325
  969 04c1 24       		.byte	0x24
-ARM GAS  /tmp/ccVN9PJG.s 			page 18
+ARM GAS  /tmp/ccEniUiD.s 			page 18
 
 
  970 04c2 06       		.uleb128 0x6
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1024 052b AD000000 		.4byte	0xad
  1025 052f 03       		.uleb128 0x3
  1026 0530 7B010000 		.4byte	.LASF87
-ARM GAS  /tmp/ccVN9PJG.s 			page 19
+ARM GAS  /tmp/ccEniUiD.s 			page 19
 
 
  1027 0534 0C       		.byte	0xc
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1081 059d 0C       		.byte	0xc
  1082 059e 96       		.byte	0x96
  1083 059f 28060000 		.4byte	0x628
-ARM GAS  /tmp/ccVN9PJG.s 			page 20
+ARM GAS  /tmp/ccEniUiD.s 			page 20
 
 
  1084 05a3 06       		.uleb128 0x6
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1138 060f 06       		.uleb128 0x6
  1139 0610 51000000 		.4byte	.LASF105
  1140 0614 0C       		.byte	0xc
-ARM GAS  /tmp/ccVN9PJG.s 			page 21
+ARM GAS  /tmp/ccEniUiD.s 			page 21
 
 
  1141 0615 C8       		.byte	0xc8
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1195 068a 01       		.uleb128 0x1
  1196 068b 50       		.byte	0x50
  1197 068c 23       		.byte	0x23
-ARM GAS  /tmp/ccVN9PJG.s 			page 22
+ARM GAS  /tmp/ccEniUiD.s 			page 22
 
 
  1198 068d 0C       		.uleb128 0xc
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1252 06ff 0A000000 		.4byte	.LVL8
  1253 0703 25090000 		.4byte	0x925
  1254 0707 19       		.uleb128 0x19
-ARM GAS  /tmp/ccVN9PJG.s 			page 23
+ARM GAS  /tmp/ccEniUiD.s 			page 23
 
 
  1255 0708 01       		.uleb128 0x1
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1309 0783 01       		.byte	0x1
  1310 0784 BC       		.byte	0xbc
  1311 0785 2C000000 		.4byte	0x2c
-ARM GAS  /tmp/ccVN9PJG.s 			page 24
+ARM GAS  /tmp/ccEniUiD.s 			page 24
 
 
  1312 0789 36010000 		.4byte	.LLST8
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1366 07e0 00       		.sleb128 0
  1367 07e1 19       		.uleb128 0x19
  1368 07e2 02       		.uleb128 0x2
-ARM GAS  /tmp/ccVN9PJG.s 			page 25
+ARM GAS  /tmp/ccEniUiD.s 			page 25
 
 
  1369 07e3 7D       		.byte	0x7d
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1423 0846 01       		.byte	0x1
  1424 0847 EF       		.byte	0xef
  1425 0848 2C000000 		.4byte	0x2c
-ARM GAS  /tmp/ccVN9PJG.s 			page 26
+ARM GAS  /tmp/ccEniUiD.s 			page 26
 
 
  1426 084c C5010000 		.4byte	.LLST12
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1480 089e 0A000000 		.4byte	.LFE46-.LFB46
  1481 08a2 01       		.uleb128 0x1
  1482 08a3 9C       		.byte	0x9c
-ARM GAS  /tmp/ccVN9PJG.s 			page 27
+ARM GAS  /tmp/ccEniUiD.s 			page 27
 
 
  1483 08a4 CC080000 		.4byte	0x8cc
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1537 0919 0C       		.byte	0xc
  1538 091a EB       		.byte	0xeb
  1539 091b 25090000 		.4byte	0x925
-ARM GAS  /tmp/ccVN9PJG.s 			page 28
+ARM GAS  /tmp/ccEniUiD.s 			page 28
 
 
  1540 091f 21       		.uleb128 0x21
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1594 099d 21       		.uleb128 0x21
  1595 099e BF030000 		.4byte	0x3bf
  1596 09a2 00       		.byte	0
-ARM GAS  /tmp/ccVN9PJG.s 			page 29
+ARM GAS  /tmp/ccEniUiD.s 			page 29
 
 
  1597 09a3 23       		.uleb128 0x23
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1651 002e 0B       		.uleb128 0xb
  1652 002f 0B       		.uleb128 0xb
  1653 0030 3E       		.uleb128 0x3e
-ARM GAS  /tmp/ccVN9PJG.s 			page 30
+ARM GAS  /tmp/ccEniUiD.s 			page 30
 
 
  1654 0031 0B       		.uleb128 0xb
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1708 0067 0B       		.uleb128 0xb
  1709 0068 3A       		.uleb128 0x3a
  1710 0069 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccVN9PJG.s 			page 31
+ARM GAS  /tmp/ccEniUiD.s 			page 31
 
 
  1711 006a 3B       		.uleb128 0x3b
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1765 00a0 00       		.byte	0
  1766 00a1 0E       		.uleb128 0xe
  1767 00a2 26       		.uleb128 0x26
-ARM GAS  /tmp/ccVN9PJG.s 			page 32
+ARM GAS  /tmp/ccEniUiD.s 			page 32
 
 
  1768 00a3 00       		.byte	0
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1822 00d9 00       		.byte	0
  1823 00da 03       		.uleb128 0x3
  1824 00db 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccVN9PJG.s 			page 33
+ARM GAS  /tmp/ccEniUiD.s 			page 33
 
 
  1825 00dc 1C       		.uleb128 0x1c
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1879 0115 898201   		.uleb128 0x4109
  1880 0118 01       		.byte	0x1
  1881 0119 11       		.uleb128 0x11
-ARM GAS  /tmp/ccVN9PJG.s 			page 34
+ARM GAS  /tmp/ccEniUiD.s 			page 34
 
 
  1882 011a 01       		.uleb128 0x1
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1936 0154 00       		.byte	0
  1937 0155 00       		.byte	0
  1938 0156 1C       		.uleb128 0x1c
-ARM GAS  /tmp/ccVN9PJG.s 			page 35
+ARM GAS  /tmp/ccEniUiD.s 			page 35
 
 
  1939 0157 34       		.uleb128 0x34
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  1993 018e 1F       		.uleb128 0x1f
  1994 018f 2E       		.uleb128 0x2e
  1995 0190 00       		.byte	0
-ARM GAS  /tmp/ccVN9PJG.s 			page 36
+ARM GAS  /tmp/ccEniUiD.s 			page 36
 
 
  1996 0191 3F       		.uleb128 0x3f
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2050 01c7 13       		.uleb128 0x13
  2051 01c8 3C       		.uleb128 0x3c
  2052 01c9 19       		.uleb128 0x19
-ARM GAS  /tmp/ccVN9PJG.s 			page 37
+ARM GAS  /tmp/ccEniUiD.s 			page 37
 
 
  2053 01ca 01       		.uleb128 0x1
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2107 0043 54       		.byte	0x54
  2108 0044 12000000 		.4byte	.LVL6
  2109 0048 14000000 		.4byte	.LFE41
-ARM GAS  /tmp/ccVN9PJG.s 			page 38
+ARM GAS  /tmp/ccEniUiD.s 			page 38
 
 
  2110 004c 0400     		.2byte	0x4
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2164 00c8 00000000 		.4byte	.LVL12
  2165 00cc 0A000000 		.4byte	.LVL13
  2166 00d0 0100     		.2byte	0x1
-ARM GAS  /tmp/ccVN9PJG.s 			page 39
+ARM GAS  /tmp/ccEniUiD.s 			page 39
 
 
  2167 00d2 50       		.byte	0x50
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2221 014f 00000000 		.4byte	0
  2222 0153 00000000 		.4byte	0
  2223              	.LLST9:
-ARM GAS  /tmp/ccVN9PJG.s 			page 40
+ARM GAS  /tmp/ccEniUiD.s 			page 40
 
 
  2224 0157 00000000 		.4byte	.LVL16
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2278 01db 01       		.uleb128 0x1
  2279 01dc 53       		.byte	0x53
  2280 01dd 9F       		.byte	0x9f
-ARM GAS  /tmp/ccVN9PJG.s 			page 41
+ARM GAS  /tmp/ccEniUiD.s 			page 41
 
 
  2281 01de 00000000 		.4byte	0
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2335 0038 00000000 		.4byte	.LFB44
  2336 003c 36000000 		.4byte	.LFE44-.LFB44
  2337 0040 00000000 		.4byte	.LFB45
-ARM GAS  /tmp/ccVN9PJG.s 			page 42
+ARM GAS  /tmp/ccEniUiD.s 			page 42
 
 
  2338 0044 2E000000 		.4byte	.LFE45-.LFB45
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2380              	.LASF26:
  2381 002d 73797374 		.ascii	"systime_t\000"
  2381      696D655F 
-ARM GAS  /tmp/ccVN9PJG.s 			page 43
+ARM GAS  /tmp/ccEniUiD.s 			page 43
 
 
  2381      7400
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2412              	.LASF72:
  2413 00bd 434F4E43 		.ascii	"CONCLR\000"
  2413      4C5200
-ARM GAS  /tmp/ccVN9PJG.s 			page 44
+ARM GAS  /tmp/ccEniUiD.s 			page 44
 
 
  2414              	.LASF69:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2441 0153 5F5F7569 		.ascii	"__uint16_t\000"
  2441      6E743136 
  2441      5F7400
-ARM GAS  /tmp/ccVN9PJG.s 			page 45
+ARM GAS  /tmp/ccEniUiD.s 			page 45
 
 
  2442              	.LASF94:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2472              	.LASF27:
  2473 01ee 54687265 		.ascii	"Thread\000"
  2473      616400
-ARM GAS  /tmp/ccVN9PJG.s 			page 46
+ARM GAS  /tmp/ccEniUiD.s 			page 46
 
 
  2474              	.LASF20:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2505      3100
  2506              	.LASF64:
  2507 0277 4D41534B 		.ascii	"MASK2\000"
-ARM GAS  /tmp/ccVN9PJG.s 			page 47
+ARM GAS  /tmp/ccEniUiD.s 			page 47
 
 
  2507      3200
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2535 0315 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
  2535      4320342E 
  2535      382E3420 
-ARM GAS  /tmp/ccVN9PJG.s 			page 48
+ARM GAS  /tmp/ccEniUiD.s 			page 48
 
 
  2535      32303134 
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2558      20696E74 
  2558      00
  2559              	.LASF86:
-ARM GAS  /tmp/ccVN9PJG.s 			page 49
+ARM GAS  /tmp/ccEniUiD.s 			page 49
 
 
  2560 044b 69326361 		.ascii	"i2caddr_t\000"
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2586 04ec 696E7433 		.ascii	"int32_t\000"
  2586      325F7400 
  2587              	.LASF100:
-ARM GAS  /tmp/ccVN9PJG.s 			page 50
+ARM GAS  /tmp/ccEniUiD.s 			page 50
 
 
  2588 04f4 74687265 		.ascii	"thread\000"
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2616      7420756E 
  2616      7369676E 
  2616      65642069 
-ARM GAS  /tmp/ccVN9PJG.s 			page 51
+ARM GAS  /tmp/ccEniUiD.s 			page 51
 
 
  2616      6E7400
@@ -3030,29 +3030,29 @@ ARM GAS  /tmp/ccVN9PJG.s 			page 1
  2628      726F7273 
  2628      00
  2629              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccVN9PJG.s 			page 52
+ARM GAS  /tmp/ccEniUiD.s 			page 52
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 i2c.c
-     /tmp/ccVN9PJG.s:18     .text.i2cInit:00000000 $t
-     /tmp/ccVN9PJG.s:23     .text.i2cInit:00000000 i2cInit
-     /tmp/ccVN9PJG.s:42     .text.i2cObjectInit:00000000 $t
-     /tmp/ccVN9PJG.s:47     .text.i2cObjectInit:00000000 i2cObjectInit
-     /tmp/ccVN9PJG.s:74     .text.i2cStart:00000000 $t
-     /tmp/ccVN9PJG.s:79     .text.i2cStart:00000000 i2cStart
-     /tmp/ccVN9PJG.s:115    .text.i2cStop:00000000 $t
-     /tmp/ccVN9PJG.s:120    .text.i2cStop:00000000 i2cStop
-     /tmp/ccVN9PJG.s:154    .text.i2cGetErrors:00000000 $t
-     /tmp/ccVN9PJG.s:159    .text.i2cGetErrors:00000000 i2cGetErrors
-     /tmp/ccVN9PJG.s:174    .text.i2cMasterTransmitTimeout:00000000 $t
-     /tmp/ccVN9PJG.s:179    .text.i2cMasterTransmitTimeout:00000000 i2cMasterTransmitTimeout
-     /tmp/ccVN9PJG.s:239    .text.i2cMasterReceiveTimeout:00000000 $t
-     /tmp/ccVN9PJG.s:244    .text.i2cMasterReceiveTimeout:00000000 i2cMasterReceiveTimeout
-     /tmp/ccVN9PJG.s:300    .text.i2cAcquireBus:00000000 $t
-     /tmp/ccVN9PJG.s:305    .text.i2cAcquireBus:00000000 i2cAcquireBus
-     /tmp/ccVN9PJG.s:326    .text.i2cReleaseBus:00000000 $t
-     /tmp/ccVN9PJG.s:331    .text.i2cReleaseBus:00000000 i2cReleaseBus
+     /tmp/ccEniUiD.s:18     .text.i2cInit:00000000 $t
+     /tmp/ccEniUiD.s:23     .text.i2cInit:00000000 i2cInit
+     /tmp/ccEniUiD.s:42     .text.i2cObjectInit:00000000 $t
+     /tmp/ccEniUiD.s:47     .text.i2cObjectInit:00000000 i2cObjectInit
+     /tmp/ccEniUiD.s:74     .text.i2cStart:00000000 $t
+     /tmp/ccEniUiD.s:79     .text.i2cStart:00000000 i2cStart
+     /tmp/ccEniUiD.s:115    .text.i2cStop:00000000 $t
+     /tmp/ccEniUiD.s:120    .text.i2cStop:00000000 i2cStop
+     /tmp/ccEniUiD.s:154    .text.i2cGetErrors:00000000 $t
+     /tmp/ccEniUiD.s:159    .text.i2cGetErrors:00000000 i2cGetErrors
+     /tmp/ccEniUiD.s:174    .text.i2cMasterTransmitTimeout:00000000 $t
+     /tmp/ccEniUiD.s:179    .text.i2cMasterTransmitTimeout:00000000 i2cMasterTransmitTimeout
+     /tmp/ccEniUiD.s:239    .text.i2cMasterReceiveTimeout:00000000 $t
+     /tmp/ccEniUiD.s:244    .text.i2cMasterReceiveTimeout:00000000 i2cMasterReceiveTimeout
+     /tmp/ccEniUiD.s:300    .text.i2cAcquireBus:00000000 $t
+     /tmp/ccEniUiD.s:305    .text.i2cAcquireBus:00000000 i2cAcquireBus
+     /tmp/ccEniUiD.s:326    .text.i2cReleaseBus:00000000 $t
+     /tmp/ccEniUiD.s:331    .text.i2cReleaseBus:00000000 i2cReleaseBus
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

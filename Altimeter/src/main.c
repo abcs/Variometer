@@ -10,6 +10,11 @@
 #include "VirtualSerial.h"
 #include "globals.h"
 #include "Kalman.h"
+#include "logger.h"
+
+static RTC_time_t actualTime;
+static RTC_date_t actualDate;
+//static MemoryHeap *loggerHeap;
 
 
 /*
@@ -91,6 +96,8 @@ static msg_t Thread1(void *arg) {
 static WORKING_AREA(waThread2, 208);
 static msg_t Thread2(void *arg)
 {
+	log_rec_t * to_log;
+
     HP03_meas_t temp_press; // = { -3333, 0};
     int measuredAltitude = 0;
 
@@ -98,21 +105,41 @@ static msg_t Thread2(void *arg)
     chRegSetThreadName("temp_press");
     uint8_t readTemp = 0;
 
+//    chHeapInit(loggerHeap, to_log, sizeof(to_log) * LOG_BUFFER_SIZE);
+
     while (TRUE) {
     	if ( 0 == readTemp )
     	{
     		(void)HP03_getTemperature(&temp_press);
-    	    writeTemp(temp_press);
-    		readTemp = 21;
+    	    LCD_writeTemp(temp_press);
+    		readTemp = 23;
     	}
 
     	(void)HP03_getPressure(&temp_press, true);
     	readTemp--;
 
- 	    measuredAltitude = pressureToAltitude(calculatedSeaLevelPressure, temp_press);
+ 	    measuredAltitude = HP03_pressureToAltitude(calculatedSeaLevelPressure, temp_press);
 
-	    writePress(temp_press);
-	    writeAlt(measuredAltitude);
+ 	    if ( (readTemp % 4) == 0 )
+ 	    {
+			to_log = (log_rec_t *)chHeapAlloc(NULL, sizeof(log_rec_t)); //loggerHeap
+
+			if (to_log)
+			{
+				to_log->altitude = measuredAltitude;
+				to_log->year = actualDate.year;
+				to_log->month = actualDate.month;
+				to_log->day = actualDate.day;
+				to_log->hour = actualTime.hour;
+				to_log->minute = actualTime.minute;
+				to_log->second = actualTime.second;
+
+				(void)logger_logThis(to_log);
+			}
+ 	    }
+
+	    LCD_writePress(temp_press);
+	    LCD_writeAlt(measuredAltitude);
 
 	    chThdSleepMilliseconds(50);
     }
@@ -126,15 +153,18 @@ static msg_t Thread2(void *arg)
 static WORKING_AREA(waThread3, 152);
 static msg_t Thread3(void *arg)
 {
-    RTC_time_t passedTime;
-
 	(void)arg;
     chRegSetThreadName("date_time");
 
     while (TRUE) {
-    	passedTime = RTC_getTime();
+    	actualTime = RTC_getTime();
 
-    	writeTime(passedTime);
+    	if( 2 > actualTime.second && 0 == actualTime.minute && 0 == actualTime.hour )
+    	{
+    		actualDate = RTC_getDate();
+    	}
+
+    	LCD_writeTime(actualTime);
 
         chThdSleepMilliseconds(100);
     }
@@ -151,11 +181,11 @@ static msg_t Thread4(void *arg)
 //		vTaskSuspendAll();
 
 		if(USB_DeviceState[0] == DEVICE_STATE_Configured)
-			writeUSB();
+			LCD_writeUSB();
 		else
-			writeUSB_delete();
+			LCD_writeUSB_delete();
 
-		EchoCharacter();
+		VS_echoCharacter();
 		USB_USBTask(VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device); //VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device
 //	    xTaskResumeAll();
 
@@ -163,6 +193,20 @@ static msg_t Thread4(void *arg)
 	}
 	return 0;
 }
+
+static WORKING_AREA(waThread5, 64);
+static msg_t Thread5(void *arg)
+{
+	(void)arg;
+    chRegSetThreadName("LOGG_WR_EE");
+
+	for (;; ) {
+		(void)logger_writeToEE();
+	    chThdSleepMilliseconds(800);
+	}
+	return 0;
+}
+
 
 /*
  * Application entry point.
@@ -181,7 +225,6 @@ int main(void) {
   halInit();
   chSysInit();
 
-
   /*
    * Activates the SD1 and SPI1 drivers.
    */
@@ -189,14 +232,19 @@ int main(void) {
   spiStart(&SPID1, &spicfg);
   i2cStart(&I2CD1, &i2ccfg);
 
-  Lcd_Init();
+  logger_init();
+  LCD_init();
   RTC_init();
+
   palSetPad(GPIO1, GPIO1_BACKLIGHT);
 
-  resetHP03();
-  readCoeffs();
+  HP03_reset();
+  HP03_readCoeffs();
 
-  SetupVSHardware();
+  VS_setupHardware();
+
+  actualDate = RTC_getDate();
+
 
   pwmStart(&PWMD3, &pwmcfg);
 //  chThdSleepMilliseconds(2000);
@@ -204,7 +252,7 @@ int main(void) {
   pwmEnableChannel(&PWMD3, 0, 50);
 //  pwmEnableChannel(&PWMD3, 1, 500);
 
-  chThdSleepMilliseconds(250);
+  chThdSleepMilliseconds(50);
 
   pwmDisableChannel(&PWMD3, 0);
 //  pwmDisableChannel(&PWMD3, 1);
@@ -218,15 +266,16 @@ int main(void) {
   (void)HP03_getPressure(&temp_press, false);
 
   init_kalman(temp_press.press);
-  calculatedSeaLevelPressure = pressureSeaLevelFromAltitude(25.0F, temp_press);
+  calculatedSeaLevelPressure = HP03_pressureSeaLevelFromAltitude(25.0F, temp_press);
 
   /*
    * Creates the threads.
    */
-  chThdCreateStatic(waThread1, sizeof(waThread1), NORMALPRIO, Thread1, NULL);
-  chThdCreateStatic(waThread2, sizeof(waThread2), NORMALPRIO, Thread2, NULL);
-  chThdCreateStatic(waThread3, sizeof(waThread3), NORMALPRIO, Thread3, NULL);
+  chThdCreateStatic(waThread1, sizeof(waThread1), LOWPRIO, Thread1, NULL);
+  chThdCreateStatic(waThread2, sizeof(waThread2), HIGHPRIO, Thread2, NULL);
+  chThdCreateStatic(waThread3, sizeof(waThread3), LOWPRIO, Thread3, NULL);
   chThdCreateStatic(waThread4, sizeof(waThread4), NORMALPRIO, Thread4, NULL);
+  chThdCreateStatic(waThread5, sizeof(waThread5), LOWPRIO, Thread5, NULL);
 
   /*
    * Normal main() thread activity, in this demo it updates the 7-segments

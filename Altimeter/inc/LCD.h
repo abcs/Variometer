@@ -9,18 +9,18 @@
 #define	CMD		0
 #define DATA	1
 
-void writeTemp(HP03_meas_t measuredByHP03);
-void writePress(HP03_meas_t measuredByHP03);
-void writeAlt(int altToWrite);
-void writeSpeed(int speedToWrite);
-void writeDate(RTC_date_t dateToWrite);
-void writeTime(RTC_time_t timeToWrite);
-void writeUSB(void);
-void writeUSB_delete();
-void Lcd_Init(void);
-void Lcd_Clear(void);
+void LCD_writeTemp(HP03_meas_t measuredByHP03);
+void LCD_writePress(HP03_meas_t measuredByHP03);
+void LCD_writeAlt(int altToWrite);
+void LCD_writeSpeed(int speedToWrite);
+void LCD_writeDate(RTC_date_t dateToWrite);
+void LCD_writeTime(RTC_time_t timeToWrite);
+void LCD_writeUSB(void);
+void LCD_writeUSB_delete();
+void LCD_init(void);
+void LCD_clear(void);
 /*
-void Lcd_WriteLine(unsigned char row,
+void LCD_writeLine(unsigned char row,
 		           unsigned char col,
 		           char * text,
 		           unsigned char fontSize);

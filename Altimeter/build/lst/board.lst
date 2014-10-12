@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccwNj8rY.s 			page 1
+ARM GAS  /tmp/cc9HqiCU.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
   55              		.loc 1 53 0
   56 0006 8021     		mov	r1, #128
   57 0008 D961     		str	r1, [r3, #28]
-ARM GAS  /tmp/ccwNj8rY.s 			page 2
+ARM GAS  /tmp/cc9HqiCU.s 			page 2
 
 
   58              		.loc 1 54 0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  112              		.file 3 "/usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/stdint.h"
  113              		.file 4 "CMSIS_CORE_LPC11Uxx/inc/LPC11Uxx.h"
  114              		.file 5 "ChibiOS_2.6.5/os/hal/platforms/LPC11Uxx/pal_lld.h"
-ARM GAS  /tmp/ccwNj8rY.s 			page 3
+ARM GAS  /tmp/cc9HqiCU.s 			page 3
 
 
  115              		.file 6 "ChibiOS_2.6.5/os/hal/platforms/LPC11Uxx/hal_lld.h"
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  169 006a 05       		.byte	0x5
  170 006b A3010000 		.4byte	.LASF7
  171 006f 03       		.uleb128 0x3
-ARM GAS  /tmp/ccwNj8rY.s 			page 4
+ARM GAS  /tmp/cc9HqiCU.s 			page 4
 
 
  172 0070 08       		.byte	0x8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  226 00de 7301     		.2byte	0x173
  227 00e0 88000000 		.4byte	0x88
  228 00e4 10       		.byte	0x10
-ARM GAS  /tmp/ccwNj8rY.s 			page 5
+ARM GAS  /tmp/cc9HqiCU.s 			page 5
 
 
  229 00e5 07       		.uleb128 0x7
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  283 015a 07       		.uleb128 0x7
  284 015b 84020000 		.4byte	.LASF28
  285 015f 04       		.byte	0x4
-ARM GAS  /tmp/ccwNj8rY.s 			page 6
+ARM GAS  /tmp/cc9HqiCU.s 			page 6
 
 
  286 0160 7D01     		.2byte	0x17d
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  340 01d5 8601     		.2byte	0x186
  341 01d7 88000000 		.4byte	0x88
  342 01db 5C       		.byte	0x5c
-ARM GAS  /tmp/ccwNj8rY.s 			page 7
+ARM GAS  /tmp/cc9HqiCU.s 			page 7
 
 
  343 01dc 07       		.uleb128 0x7
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  397 0251 07       		.uleb128 0x7
  398 0252 18030000 		.4byte	.LASF47
  399 0256 04       		.byte	0x4
-ARM GAS  /tmp/ccwNj8rY.s 			page 8
+ARM GAS  /tmp/cc9HqiCU.s 			page 8
 
 
  400 0257 9001     		.2byte	0x190
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  454 02cc 9901     		.2byte	0x199
  455 02ce 88000000 		.4byte	0x88
  456 02d2 A8       		.byte	0xa8
-ARM GAS  /tmp/ccwNj8rY.s 			page 9
+ARM GAS  /tmp/cc9HqiCU.s 			page 9
 
 
  457 02d3 07       		.uleb128 0x7
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  511 0348 07       		.uleb128 0x7
  512 0349 FA010000 		.4byte	.LASF66
  513 034d 04       		.byte	0x4
-ARM GAS  /tmp/ccwNj8rY.s 			page 10
+ARM GAS  /tmp/cc9HqiCU.s 			page 10
 
 
  514 034e A301     		.2byte	0x1a3
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  568 03b9 D4030000 		.4byte	0x3d4
  569 03bd 0B       		.uleb128 0xb
  570 03be 503000   		.ascii	"P0\000"
-ARM GAS  /tmp/ccwNj8rY.s 			page 11
+ARM GAS  /tmp/cc9HqiCU.s 			page 11
 
 
  571 03c1 05       		.byte	0x5
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  625 0435 06       		.byte	0x6
  626 0436 D3       		.byte	0xd3
  627 0437 00       		.byte	0
-ARM GAS  /tmp/ccwNj8rY.s 			page 12
+ARM GAS  /tmp/cc9HqiCU.s 			page 12
 
 
  628              		.section	.debug_abbrev,"",%progbits
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  682 0034 00       		.byte	0
  683 0035 00       		.byte	0
  684 0036 05       		.uleb128 0x5
-ARM GAS  /tmp/ccwNj8rY.s 			page 13
+ARM GAS  /tmp/cc9HqiCU.s 			page 13
 
 
  685 0037 35       		.uleb128 0x35
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  739 006d 3B       		.uleb128 0x3b
  740 006e 0B       		.uleb128 0xb
  741 006f 01       		.uleb128 0x1
-ARM GAS  /tmp/ccwNj8rY.s 			page 14
+ARM GAS  /tmp/cc9HqiCU.s 			page 14
 
 
  742 0070 13       		.uleb128 0x13
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  796 00a7 01       		.uleb128 0x1
  797 00a8 13       		.uleb128 0x13
  798 00a9 00       		.byte	0
-ARM GAS  /tmp/ccwNj8rY.s 			page 15
+ARM GAS  /tmp/cc9HqiCU.s 			page 15
 
 
  799 00aa 00       		.byte	0
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  853 00e3 13       		.uleb128 0x13
  854 00e4 00       		.byte	0
  855 00e5 00       		.byte	0
-ARM GAS  /tmp/ccwNj8rY.s 			page 16
+ARM GAS  /tmp/cc9HqiCU.s 			page 16
 
 
  856 00e6 11       		.uleb128 0x11
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  904 000f 50494F31 		.ascii	"PIO1_15\000"
  904      5F313500 
  905              	.LASF80:
-ARM GAS  /tmp/ccwNj8rY.s 			page 17
+ARM GAS  /tmp/cc9HqiCU.s 			page 17
 
 
  906 0017 70616C5F 		.ascii	"pal_default_config\000"
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  933      31333538 
  934 00f6 74657277 		.ascii	"terwork -mthumb -ggdb -O1 -fomit-frame-pointer -ffu"
  934      6F726B20 
-ARM GAS  /tmp/ccwNj8rY.s 			page 18
+ARM GAS  /tmp/cc9HqiCU.s 			page 18
 
 
  934      2D6D7468 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  959      5F323400 
  960              	.LASF63:
  961 01e2 50494F31 		.ascii	"PIO1_25\000"
-ARM GAS  /tmp/ccwNj8rY.s 			page 19
+ARM GAS  /tmp/cc9HqiCU.s 			page 19
 
 
  961      5F323500 
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  987      4F305F30 
  987      00
  988              	.LASF28:
-ARM GAS  /tmp/ccwNj8rY.s 			page 20
+ARM GAS  /tmp/cc9HqiCU.s 			page 20
 
 
  989 0284 54525354 		.ascii	"TRST_PIO0_14\000"
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  1021 0306 6C6F6E67 		.ascii	"long unsigned int\000"
  1021      20756E73 
  1021      69676E65 
-ARM GAS  /tmp/ccwNj8rY.s 			page 21
+ARM GAS  /tmp/cc9HqiCU.s 			page 21
 
 
  1021      6420696E 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  1054 03b8 50494F30 		.ascii	"PIO0_17\000"
  1054      5F313700 
  1055              	.LASF70:
-ARM GAS  /tmp/ccwNj8rY.s 			page 22
+ARM GAS  /tmp/cc9HqiCU.s 			page 22
 
 
  1056 03c0 4C50435F 		.ascii	"LPC_IOCON_Type\000"
@@ -1285,18 +1285,18 @@ ARM GAS  /tmp/ccwNj8rY.s 			page 1
  1066 03fc 50494F31 		.ascii	"PIO1_10\000"
  1066      5F313000 
  1067              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccwNj8rY.s 			page 23
+ARM GAS  /tmp/cc9HqiCU.s 			page 23
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 board.c
-     /tmp/ccwNj8rY.s:18     .text.__early_init:00000000 $t
-     /tmp/ccwNj8rY.s:23     .text.__early_init:00000000 __early_init
-     /tmp/ccwNj8rY.s:42     .text.boardInit:00000000 $t
-     /tmp/ccwNj8rY.s:47     .text.boardInit:00000000 boardInit
-     /tmp/ccwNj8rY.s:95     .text.boardInit:00000030 $d
-     /tmp/ccwNj8rY.s:104    .rodata.pal_default_config:00000000 pal_default_config
-     /tmp/ccwNj8rY.s:101    .rodata.pal_default_config:00000000 $d
+     /tmp/cc9HqiCU.s:18     .text.__early_init:00000000 $t
+     /tmp/cc9HqiCU.s:23     .text.__early_init:00000000 __early_init
+     /tmp/cc9HqiCU.s:42     .text.boardInit:00000000 $t
+     /tmp/cc9HqiCU.s:47     .text.boardInit:00000000 boardInit
+     /tmp/cc9HqiCU.s:95     .text.boardInit:00000030 $d
+     /tmp/cc9HqiCU.s:104    .rodata.pal_default_config:00000000 pal_default_config
+     /tmp/cc9HqiCU.s:101    .rodata.pal_default_config:00000000 $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

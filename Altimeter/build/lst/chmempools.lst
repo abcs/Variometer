@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccPu7vtl.s 			page 1
+ARM GAS  /tmp/ccINKJdm.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
   55              		.cfi_offset 3, -8
   56              		.cfi_offset 14, -4
   57 0002 031C     		mov	r3, r0
-ARM GAS  /tmp/ccPu7vtl.s 			page 2
+ARM GAS  /tmp/ccINKJdm.s 			page 2
 
 
   58              		.loc 1 111 0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  112              		.code	16
  113              		@ sp needed
  114 000a 08BD     		pop	{r3, pc}
-ARM GAS  /tmp/ccPu7vtl.s 			page 3
+ARM GAS  /tmp/ccINKJdm.s 			page 3
 
 
  115              		.cfi_endproc
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  169              	@ 0 "" 2
  170              		.loc 1 176 0
  171              		.code	16
-ARM GAS  /tmp/ccPu7vtl.s 			page 4
+ARM GAS  /tmp/ccINKJdm.s 			page 4
 
 
  172              		@ sp needed
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  226 001e C046     		.text
  227              	.Letext0:
  228              		.file 2 "/usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/lib/gcc/arm-none-eabi/4.8.4/include/stdd
-ARM GAS  /tmp/ccPu7vtl.s 			page 5
+ARM GAS  /tmp/ccINKJdm.s 			page 5
 
 
  229              		.file 3 "/usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/machine/_default_t
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  283 0067 05       		.byte	0x5
  284 0068 3D020000 		.4byte	.LASF7
  285 006c 04       		.uleb128 0x4
-ARM GAS  /tmp/ccPu7vtl.s 			page 6
+ARM GAS  /tmp/ccINKJdm.s 			page 6
 
 
  286 006d 04       		.byte	0x4
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  340 00d6 04       		.byte	0x4
  341 00d7 BC000000 		.4byte	0xbc
  342 00db 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccPu7vtl.s 			page 7
+ARM GAS  /tmp/ccINKJdm.s 			page 7
 
 
  343 00dc 0C       		.byte	0xc
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  397 0147 51       		.byte	0x51
  398 0148 0E       		.uleb128 0xe
  399 0149 AE000000 		.4byte	.LASF22
-ARM GAS  /tmp/ccPu7vtl.s 			page 8
+ARM GAS  /tmp/ccINKJdm.s 			page 8
 
 
  400 014d 01       		.byte	0x1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  454 01c6 50       		.byte	0x50
  455 01c7 14       		.uleb128 0x14
  456 01c8 08000000 		.4byte	.LVL6
-ARM GAS  /tmp/ccPu7vtl.s 			page 9
+ARM GAS  /tmp/ccINKJdm.s 			page 9
 
 
  457 01cc 5C010000 		.4byte	0x15c
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  511 0234 01       		.byte	0x1
  512 0235 AB       		.byte	0xab
  513 0236 00000000 		.4byte	.LFB12
-ARM GAS  /tmp/ccPu7vtl.s 			page 10
+ARM GAS  /tmp/ccINKJdm.s 			page 10
 
 
  514 023a 0C000000 		.4byte	.LFE12-.LFB12
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  568 02a4 56010000 		.4byte	0x156
  569 02a8 77000000 		.4byte	.LLST3
  570 02ac 10       		.uleb128 0x10
-ARM GAS  /tmp/ccPu7vtl.s 			page 11
+ARM GAS  /tmp/ccINKJdm.s 			page 11
 
 
  571 02ad 7000     		.ascii	"p\000"
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  625 0017 0B       		.uleb128 0xb
  626 0018 3E       		.uleb128 0x3e
  627 0019 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccPu7vtl.s 			page 12
+ARM GAS  /tmp/ccINKJdm.s 			page 12
 
 
  628 001a 03       		.uleb128 0x3
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  682 0050 00       		.byte	0
  683 0051 08       		.uleb128 0x8
  684 0052 05       		.uleb128 0x5
-ARM GAS  /tmp/ccPu7vtl.s 			page 13
+ARM GAS  /tmp/ccINKJdm.s 			page 13
 
 
  685 0053 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  739 0089 0E       		.uleb128 0xe
  740 008a 3A       		.uleb128 0x3a
  741 008b 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccPu7vtl.s 			page 14
+ARM GAS  /tmp/ccINKJdm.s 			page 14
 
 
  742 008c 3B       		.uleb128 0x3b
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  796 00c3 0B       		.uleb128 0xb
  797 00c4 3B       		.uleb128 0x3b
  798 00c5 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccPu7vtl.s 			page 15
+ARM GAS  /tmp/ccINKJdm.s 			page 15
 
 
  799 00c6 27       		.uleb128 0x27
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  853 00fd 0B       		.uleb128 0xb
  854 00fe 3B       		.uleb128 0x3b
  855 00ff 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccPu7vtl.s 			page 16
+ARM GAS  /tmp/ccINKJdm.s 			page 16
 
 
  856 0100 27       		.uleb128 0x27
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  910 013c 03       		.uleb128 0x3
  911 013d 0E       		.uleb128 0xe
  912 013e 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccPu7vtl.s 			page 17
+ARM GAS  /tmp/ccINKJdm.s 			page 17
 
 
  913 013f 0B       		.uleb128 0xb
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  967 0175 13       		.uleb128 0x13
  968 0176 11       		.uleb128 0x11
  969 0177 01       		.uleb128 0x1
-ARM GAS  /tmp/ccPu7vtl.s 			page 18
+ARM GAS  /tmp/ccINKJdm.s 			page 18
 
 
  970 0178 12       		.uleb128 0x12
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  1024 01af 01       		.byte	0x1
  1025 01b0 3F       		.uleb128 0x3f
  1026 01b1 19       		.uleb128 0x19
-ARM GAS  /tmp/ccPu7vtl.s 			page 19
+ARM GAS  /tmp/ccINKJdm.s 			page 19
 
 
  1027 01b2 03       		.uleb128 0x3
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  1081 0052 00000000 		.4byte	0
  1082              	.LLST2:
  1083 0056 00000000 		.4byte	.LVL5
-ARM GAS  /tmp/ccPu7vtl.s 			page 20
+ARM GAS  /tmp/ccINKJdm.s 			page 20
 
 
  1084 005a 07000000 		.4byte	.LVL6-1
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  1138 0004 0200     		.2byte	0x2
  1139 0006 00000000 		.4byte	.Ldebug_info0
  1140 000a 04       		.byte	0x4
-ARM GAS  /tmp/ccPu7vtl.s 			page 21
+ARM GAS  /tmp/ccINKJdm.s 			page 21
 
 
  1141 000b 00       		.byte	0
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  1184      694F535F 
  1184      322E362E 
  1184      352F6F73 
-ARM GAS  /tmp/ccPu7vtl.s 			page 22
+ARM GAS  /tmp/ccINKJdm.s 			page 22
 
 
  1184      2F6B6572 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  1208      00
  1209              	.LASF23:
  1210 00ec 6368506F 		.ascii	"chPoolAllocI\000"
-ARM GAS  /tmp/ccPu7vtl.s 			page 23
+ARM GAS  /tmp/ccINKJdm.s 			page 23
 
 
  1210      6F6C416C 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  1231 020e 6D656D67 		.ascii	"memgetfunc_t\000"
  1231      65746675 
  1231      6E635F74 
-ARM GAS  /tmp/ccPu7vtl.s 			page 24
+ARM GAS  /tmp/ccINKJdm.s 			page 24
 
 
  1231      00
@@ -1413,23 +1413,23 @@ ARM GAS  /tmp/ccPu7vtl.s 			page 1
  1247      6F6C496E 
  1247      697400
  1248              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccPu7vtl.s 			page 25
+ARM GAS  /tmp/ccINKJdm.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chmempools.c
-     /tmp/ccPu7vtl.s:18     .text.chPoolInit:00000000 $t
-     /tmp/ccPu7vtl.s:23     .text.chPoolInit:00000000 chPoolInit
-     /tmp/ccPu7vtl.s:43     .text.chPoolAllocI:00000000 $t
-     /tmp/ccPu7vtl.s:48     .text.chPoolAllocI:00000000 chPoolAllocI
-     /tmp/ccPu7vtl.s:85     .text.chPoolAlloc:00000000 $t
-     /tmp/ccPu7vtl.s:90     .text.chPoolAlloc:00000000 chPoolAlloc
-     /tmp/ccPu7vtl.s:119    .text.chPoolFreeI:00000000 $t
-     /tmp/ccPu7vtl.s:124    .text.chPoolFreeI:00000000 chPoolFreeI
-     /tmp/ccPu7vtl.s:141    .text.chPoolFree:00000000 $t
-     /tmp/ccPu7vtl.s:146    .text.chPoolFree:00000000 chPoolFree
-     /tmp/ccPu7vtl.s:178    .text.chPoolLoadArray:00000000 $t
-     /tmp/ccPu7vtl.s:183    .text.chPoolLoadArray:00000000 chPoolLoadArray
+     /tmp/ccINKJdm.s:18     .text.chPoolInit:00000000 $t
+     /tmp/ccINKJdm.s:23     .text.chPoolInit:00000000 chPoolInit
+     /tmp/ccINKJdm.s:43     .text.chPoolAllocI:00000000 $t
+     /tmp/ccINKJdm.s:48     .text.chPoolAllocI:00000000 chPoolAllocI
+     /tmp/ccINKJdm.s:85     .text.chPoolAlloc:00000000 $t
+     /tmp/ccINKJdm.s:90     .text.chPoolAlloc:00000000 chPoolAlloc
+     /tmp/ccINKJdm.s:119    .text.chPoolFreeI:00000000 $t
+     /tmp/ccINKJdm.s:124    .text.chPoolFreeI:00000000 chPoolFreeI
+     /tmp/ccINKJdm.s:141    .text.chPoolFree:00000000 $t
+     /tmp/ccINKJdm.s:146    .text.chPoolFree:00000000 chPoolFree
+     /tmp/ccINKJdm.s:178    .text.chPoolLoadArray:00000000 $t
+     /tmp/ccINKJdm.s:183    .text.chPoolLoadArray:00000000 chPoolLoadArray
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

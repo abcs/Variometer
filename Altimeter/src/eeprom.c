@@ -9,18 +9,30 @@
 #include "hal.h"
 #include "eeprom.h"
 
-int ee_write_log_rec(log_rec_t record)
+static int ee_write_descriptors()
 {
 	return 0;
-};
+}
 
-log_rec_t ee_read_log_rec(uint32_t rec_pointer)
+int ee_write_log_rec(log_rec_t * record)
 {
-	log_rec_t a = {0};
-	return a;
+	int rc = 0;
+/*
+	i2cAcquireBus(&I2CD1);
+	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
+		                       RTC_control_regs, 2,
+		                       0, 0, TIME_INFINITE );
+	i2cReleaseBus(&I2CD1);
+*/
+	return rc;
 };
 
-uint32_t ee_get_first_free_pointer(void)
+int ee_read_log_rec(log_rec_t * record, uint32_t rec_pointer)
+{
+	return 0; //TODO: return with -1 if there is no record on the pointer address
+};
+
+uint32_t ee_get_first_free_pointer()
 {
 	return 0;
 };

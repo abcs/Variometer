@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccESMggw.s 			page 1
+ARM GAS  /tmp/ccRDvAJu.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
   55              	chVTSetI:
   56              	.LFB8:
   57              		.loc 1 76 0
-ARM GAS  /tmp/ccESMggw.s 			page 2
+ARM GAS  /tmp/ccRDvAJu.s 			page 2
 
 
   58              		.cfi_startproc
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  112              	.L8:
  113 0034 00000000 		.word	.LANCHOR0
  114              		.cfi_endproc
-ARM GAS  /tmp/ccESMggw.s 			page 3
+ARM GAS  /tmp/ccRDvAJu.s 			page 3
 
 
  115              	.LFE8:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  169              		.size	vtlist, 16
  170              	vtlist:
  171 0000 00000000 		.space	16
-ARM GAS  /tmp/ccESMggw.s 			page 4
+ARM GAS  /tmp/ccRDvAJu.s 			page 4
 
 
  171      00000000 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  223 005c 38       		.byte	0x38
  224 005d 61000000 		.4byte	0x61
  225 0061 03       		.uleb128 0x3
-ARM GAS  /tmp/ccESMggw.s 			page 5
+ARM GAS  /tmp/ccRDvAJu.s 			page 5
 
 
  226 0062 04       		.byte	0x4
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  280 00cb 0C010000 		.4byte	0x10c
  281 00cf 0A       		.uleb128 0xa
  282 00d0 23020000 		.4byte	.LASF16
-ARM GAS  /tmp/ccESMggw.s 			page 6
+ARM GAS  /tmp/ccRDvAJu.s 			page 6
 
 
  283 00d4 05       		.byte	0x5
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  337 013d 08       		.byte	0x8
  338 013e 0A       		.uleb128 0xa
  339 013f F3000000 		.4byte	.LASF21
-ARM GAS  /tmp/ccESMggw.s 			page 7
+ARM GAS  /tmp/ccRDvAJu.s 			page 7
 
 
  340 0143 05       		.byte	0x5
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  394 01b8 01       		.byte	0x1
  395 01b9 4C       		.byte	0x4c
  396 01ba 93000000 		.4byte	0x93
-ARM GAS  /tmp/ccESMggw.s 			page 8
+ARM GAS  /tmp/ccRDvAJu.s 			page 8
 
 
  397 01be 57000000 		.4byte	.LLST2
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  451 0011 00       		.byte	0
  452 0012 00       		.byte	0
  453 0013 02       		.uleb128 0x2
-ARM GAS  /tmp/ccESMggw.s 			page 9
+ARM GAS  /tmp/ccRDvAJu.s 			page 9
 
 
  454 0014 24       		.uleb128 0x24
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  508 004a 19       		.uleb128 0x19
  509 004b 01       		.uleb128 0x1
  510 004c 13       		.uleb128 0x13
-ARM GAS  /tmp/ccESMggw.s 			page 10
+ARM GAS  /tmp/ccRDvAJu.s 			page 10
 
 
  511 004d 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  565 0083 00       		.byte	0
  566 0084 49       		.uleb128 0x49
  567 0085 13       		.uleb128 0x13
-ARM GAS  /tmp/ccESMggw.s 			page 11
+ARM GAS  /tmp/ccRDvAJu.s 			page 11
 
 
  568 0086 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  622 00be 08       		.uleb128 0x8
  623 00bf 3A       		.uleb128 0x3a
  624 00c0 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccESMggw.s 			page 12
+ARM GAS  /tmp/ccRDvAJu.s 			page 12
 
 
  625 00c1 3B       		.uleb128 0x3b
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  679 00f7 34       		.uleb128 0x34
  680 00f8 00       		.byte	0
  681 00f9 03       		.uleb128 0x3
-ARM GAS  /tmp/ccESMggw.s 			page 13
+ARM GAS  /tmp/ccRDvAJu.s 			page 13
 
 
  682 00fa 0E       		.uleb128 0xe
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  736 005f 0100     		.2byte	0x1
  737 0061 53       		.byte	0x53
  738 0062 06000000 		.4byte	.LVL1
-ARM GAS  /tmp/ccESMggw.s 			page 14
+ARM GAS  /tmp/ccRDvAJu.s 			page 14
 
 
  739 0066 20000000 		.4byte	.LVL6
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  785              	.LASF29:
  786 0013 43686962 		.ascii	"ChibiOS_2.6.5/os/kernel/src/chvt.c\000"
  786      694F535F 
-ARM GAS  /tmp/ccESMggw.s 			page 15
+ARM GAS  /tmp/ccRDvAJu.s 			page 15
 
 
  786      322E362E 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  807              	.LASF32:
  808 00d6 76746C69 		.ascii	"vtlist\000"
  808      737400
-ARM GAS  /tmp/ccESMggw.s 			page 16
+ARM GAS  /tmp/ccRDvAJu.s 			page 16
 
 
  809              	.LASF24:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  833      7420696E 
  833      7400
  834              	.LASF17:
-ARM GAS  /tmp/ccESMggw.s 			page 17
+ARM GAS  /tmp/ccRDvAJu.s 			page 17
 
 
  835 01f6 76745F70 		.ascii	"vt_prev\000"
@@ -989,22 +989,22 @@ ARM GAS  /tmp/ccESMggw.s 			page 1
  849 0236 5F426F6F 		.ascii	"_Bool\000"
  849      6C00
  850              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccESMggw.s 			page 18
+ARM GAS  /tmp/ccRDvAJu.s 			page 18
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chvt.c
-     /tmp/ccESMggw.s:18     .text._vt_init:00000000 $t
-     /tmp/ccESMggw.s:23     .text._vt_init:00000000 _vt_init
-     /tmp/ccESMggw.s:45     .text._vt_init:00000014 $d
-     /tmp/ccESMggw.s:50     .text.chVTSetI:00000000 $t
-     /tmp/ccESMggw.s:55     .text.chVTSetI:00000000 chVTSetI
-     /tmp/ccESMggw.s:113    .text.chVTSetI:00000034 $d
-     /tmp/ccESMggw.s:118    .text.chVTResetI:00000000 $t
-     /tmp/ccESMggw.s:123    .text.chVTResetI:00000000 chVTResetI
-     /tmp/ccESMggw.s:160    .text.chVTResetI:00000024 $d
-     /tmp/ccESMggw.s:170    .bss.vtlist:00000000 vtlist
-     /tmp/ccESMggw.s:166    .bss.vtlist:00000000 $d
+     /tmp/ccRDvAJu.s:18     .text._vt_init:00000000 $t
+     /tmp/ccRDvAJu.s:23     .text._vt_init:00000000 _vt_init
+     /tmp/ccRDvAJu.s:45     .text._vt_init:00000014 $d
+     /tmp/ccRDvAJu.s:50     .text.chVTSetI:00000000 $t
+     /tmp/ccRDvAJu.s:55     .text.chVTSetI:00000000 chVTSetI
+     /tmp/ccRDvAJu.s:113    .text.chVTSetI:00000034 $d
+     /tmp/ccRDvAJu.s:118    .text.chVTResetI:00000000 $t
+     /tmp/ccRDvAJu.s:123    .text.chVTResetI:00000000 chVTResetI
+     /tmp/ccRDvAJu.s:160    .text.chVTResetI:00000024 $d
+     /tmp/ccRDvAJu.s:170    .bss.vtlist:00000000 vtlist
+     /tmp/ccRDvAJu.s:166    .bss.vtlist:00000000 $d
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

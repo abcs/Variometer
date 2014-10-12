@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccnF19mA.s 			page 1
+ARM GAS  /tmp/ccyxKCyu.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccnF19mA.s 			page 1
   55 0004 0400     		.2byte	0x4
   56 0006 00000000 		.4byte	.Ldebug_abbrev0
   57 000a 04       		.byte	0x4
-ARM GAS  /tmp/ccnF19mA.s 			page 2
+ARM GAS  /tmp/ccyxKCyu.s 			page 2
 
 
   58 000b 01       		.uleb128 0x1
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccnF19mA.s 			page 1
  112 0074 08       		.byte	0x8
  113 0075 17010000 		.4byte	.LASF10
  114 0079 04       		.uleb128 0x4
-ARM GAS  /tmp/ccnF19mA.s 			page 3
+ARM GAS  /tmp/ccyxKCyu.s 			page 3
 
 
  115 007a 1C010000 		.4byte	.LASF14
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccnF19mA.s 			page 1
  169 002c 3F       		.uleb128 0x3f
  170 002d 19       		.uleb128 0x19
  171 002e 03       		.uleb128 0x3
-ARM GAS  /tmp/ccnF19mA.s 			page 4
+ARM GAS  /tmp/ccyxKCyu.s 			page 4
 
 
  172 002f 0E       		.uleb128 0xe
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccnF19mA.s 			page 1
  216 001b 6C6F6E67 		.ascii	"long unsigned int\000"
  216      20756E73 
  216      69676E65 
-ARM GAS  /tmp/ccnF19mA.s 			page 5
+ARM GAS  /tmp/ccyxKCyu.s 			page 5
 
 
  216      6420696E 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccnF19mA.s 			page 1
  235      7420756E 
  235      7369676E 
  235      65642069 
-ARM GAS  /tmp/ccnF19mA.s 			page 6
+ARM GAS  /tmp/ccyxKCyu.s 			page 6
 
 
  235      6E7400
@@ -321,21 +321,21 @@ ARM GAS  /tmp/ccnF19mA.s 			page 1
  243      74797065 
  243      00
  244              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccnF19mA.s 			page 7
+ARM GAS  /tmp/ccyxKCyu.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Events.c
-     /tmp/ccnF19mA.s:18     .text.USB_Event_Stub:00000000 $t
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 USB_Event_Stub
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Connect
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Disconnect
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ControlRequest
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ConfigurationChanged
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Suspend
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_WakeUp
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Reset
-     /tmp/ccnF19mA.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_StartOfFrame
+     /tmp/ccyxKCyu.s:18     .text.USB_Event_Stub:00000000 $t
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 USB_Event_Stub
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Connect
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Disconnect
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ControlRequest
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_ConfigurationChanged
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Suspend
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_WakeUp
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_Reset
+     /tmp/ccyxKCyu.s:23     .text.USB_Event_Stub:00000000 EVENT_USB_Device_StartOfFrame
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

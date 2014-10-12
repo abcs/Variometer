@@ -126,7 +126,7 @@ build/obj/main.o: src/main.c ChibiOS_2.6.5/os/kernel/include/ch.h \
  /usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/machine/types.h \
  /usr/local/lpcxpresso_7.3.0_186/lpcxpresso/tools/arm-none-eabi/include/sys/stdio.h \
  USBlib_11U14/Drivers/USB/Class/StillImageClass.h inc/Descriptors.h \
- inc/globals.h inc/Kalman.h
+ inc/globals.h inc/Kalman.h inc/logger.h
 
 ChibiOS_2.6.5/os/kernel/include/ch.h:
 
@@ -423,3 +423,5 @@ inc/Descriptors.h:
 inc/globals.h:
 
 inc/Kalman.h:
+
+inc/logger.h:

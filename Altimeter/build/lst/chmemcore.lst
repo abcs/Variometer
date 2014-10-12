@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccNnETKe.s 			page 1
+ARM GAS  /tmp/cc8ALtRe.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
   55              		.global	chCoreAllocI
   56              		.code	16
   57              		.thumb_func
-ARM GAS  /tmp/ccNnETKe.s 			page 2
+ARM GAS  /tmp/cc8ALtRe.s 			page 2
 
 
   58              		.type	chCoreAllocI, %function
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  112              	.LVL6:
  113 0000 08B5     		push	{r3, lr}
  114              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccNnETKe.s 			page 3
+ARM GAS  /tmp/cc8ALtRe.s 			page 3
 
 
  115              		.cfi_offset 3, -8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  169 0000 00000000 		.space	4
  170              		.section	.bss.nextmem,"aw",%nobits
  171              		.align	2
-ARM GAS  /tmp/ccNnETKe.s 			page 4
+ARM GAS  /tmp/cc8ALtRe.s 			page 4
 
 
  172              		.set	.LANCHOR0,. + 0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  226 005e 04       		.uleb128 0x4
  227 005f 02       		.byte	0x2
  228 0060 07       		.byte	0x7
-ARM GAS  /tmp/ccNnETKe.s 			page 5
+ARM GAS  /tmp/cc8ALtRe.s 			page 5
 
 
  229 0061 0E000000 		.4byte	.LASF6
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  283 00ca 30000000 		.4byte	.LASF16
  284 00ce 01       		.byte	0x1
  285 00cf 45       		.byte	0x45
-ARM GAS  /tmp/ccNnETKe.s 			page 6
+ARM GAS  /tmp/cc8ALtRe.s 			page 6
 
 
  286 00d0 D5000000 		.4byte	0xd5
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  340 014a 08000000 		.4byte	.LVL7
  341 014e E0000000 		.4byte	0xe0
  342 0152 10       		.uleb128 0x10
-ARM GAS  /tmp/ccNnETKe.s 			page 7
+ARM GAS  /tmp/cc8ALtRe.s 			page 7
 
 
  343 0153 01       		.uleb128 0x1
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  397 0008 0E       		.uleb128 0xe
  398 0009 1B       		.uleb128 0x1b
  399 000a 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccNnETKe.s 			page 8
+ARM GAS  /tmp/cc8ALtRe.s 			page 8
 
 
  400 000b 55       		.uleb128 0x55
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  454 0041 0B       		.uleb128 0xb
  455 0042 49       		.uleb128 0x49
  456 0043 13       		.uleb128 0x13
-ARM GAS  /tmp/ccNnETKe.s 			page 9
+ARM GAS  /tmp/cc8ALtRe.s 			page 9
 
 
  457 0044 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  511 007b 21       		.uleb128 0x21
  512 007c 00       		.byte	0
  513 007d 00       		.byte	0
-ARM GAS  /tmp/ccNnETKe.s 			page 10
+ARM GAS  /tmp/cc8ALtRe.s 			page 10
 
 
  514 007e 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  568 00b5 02       		.uleb128 0x2
  569 00b6 17       		.uleb128 0x17
  570 00b7 00       		.byte	0
-ARM GAS  /tmp/ccNnETKe.s 			page 11
+ARM GAS  /tmp/cc8ALtRe.s 			page 11
 
 
  571 00b8 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  625 00f3 18       		.uleb128 0x18
  626 00f4 9742     		.uleb128 0x2117
  627 00f6 19       		.uleb128 0x19
-ARM GAS  /tmp/ccNnETKe.s 			page 12
+ARM GAS  /tmp/cc8ALtRe.s 			page 12
 
 
  628 00f7 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  682 0044 F8       		.byte	0xf8
  683 0045 1A       		.byte	0x1a
  684 0046 9F       		.byte	0x9f
-ARM GAS  /tmp/ccNnETKe.s 			page 13
+ARM GAS  /tmp/cc8ALtRe.s 			page 13
 
 
  685 0047 00000000 		.4byte	0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  739              	.Ldebug_line0:
  740 0000 AA010000 		.section	.debug_str,"MS",%progbits,1
  740      02005501 
-ARM GAS  /tmp/ccNnETKe.s 			page 14
+ARM GAS  /tmp/cc8ALtRe.s 			page 14
 
 
  740      00000201 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  759      65637469 
  759      6F6E7320 
  759      2D666461 
-ARM GAS  /tmp/ccNnETKe.s 			page 15
+ARM GAS  /tmp/cc8ALtRe.s 			page 15
 
 
  760              	.LASF10:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  787 01c6 2F484444 		.ascii	"/HDD/GIT/variometer/Altimeter/\000"
  787      2F474954 
  787      2F766172 
-ARM GAS  /tmp/ccNnETKe.s 			page 16
+ARM GAS  /tmp/cc8ALtRe.s 			page 16
 
 
  787      696F6D65 
@@ -926,26 +926,26 @@ ARM GAS  /tmp/ccNnETKe.s 			page 1
  797      61747573 
  797      00
  798              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccNnETKe.s 			page 17
+ARM GAS  /tmp/cc8ALtRe.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chmemcore.c
-     /tmp/ccNnETKe.s:18     .text._core_init:00000000 $t
-     /tmp/ccNnETKe.s:23     .text._core_init:00000000 _core_init
-     /tmp/ccNnETKe.s:46     .text._core_init:00000018 $d
-     /tmp/ccNnETKe.s:54     .text.chCoreAllocI:00000000 $t
-     /tmp/ccNnETKe.s:59     .text.chCoreAllocI:00000000 chCoreAllocI
-     /tmp/ccNnETKe.s:97     .text.chCoreAllocI:00000020 $d
-     /tmp/ccNnETKe.s:103    .text.chCoreAlloc:00000000 $t
-     /tmp/ccNnETKe.s:108    .text.chCoreAlloc:00000000 chCoreAlloc
-     /tmp/ccNnETKe.s:137    .text.chCoreStatus:00000000 $t
-     /tmp/ccNnETKe.s:142    .text.chCoreStatus:00000000 chCoreStatus
-     /tmp/ccNnETKe.s:158    .text.chCoreStatus:0000000c $d
-     /tmp/ccNnETKe.s:164    .bss.endmem:00000000 $d
-     /tmp/ccNnETKe.s:168    .bss.endmem:00000000 endmem
-     /tmp/ccNnETKe.s:171    .bss.nextmem:00000000 $d
-     /tmp/ccNnETKe.s:175    .bss.nextmem:00000000 nextmem
+     /tmp/cc8ALtRe.s:18     .text._core_init:00000000 $t
+     /tmp/cc8ALtRe.s:23     .text._core_init:00000000 _core_init
+     /tmp/cc8ALtRe.s:46     .text._core_init:00000018 $d
+     /tmp/cc8ALtRe.s:54     .text.chCoreAllocI:00000000 $t
+     /tmp/cc8ALtRe.s:59     .text.chCoreAllocI:00000000 chCoreAllocI
+     /tmp/cc8ALtRe.s:97     .text.chCoreAllocI:00000020 $d
+     /tmp/cc8ALtRe.s:103    .text.chCoreAlloc:00000000 $t
+     /tmp/cc8ALtRe.s:108    .text.chCoreAlloc:00000000 chCoreAlloc
+     /tmp/cc8ALtRe.s:137    .text.chCoreStatus:00000000 $t
+     /tmp/cc8ALtRe.s:142    .text.chCoreStatus:00000000 chCoreStatus
+     /tmp/cc8ALtRe.s:158    .text.chCoreStatus:0000000c $d
+     /tmp/cc8ALtRe.s:164    .bss.endmem:00000000 $d
+     /tmp/cc8ALtRe.s:168    .bss.endmem:00000000 endmem
+     /tmp/cc8ALtRe.s:171    .bss.nextmem:00000000 $d
+     /tmp/cc8ALtRe.s:175    .bss.nextmem:00000000 nextmem
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

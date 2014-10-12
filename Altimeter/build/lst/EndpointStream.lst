@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccxCew4o.s 			page 1
+ARM GAS  /tmp/ccCblSoh.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
   55              	.LBB35:
   56              		.file 2 "USBlib_11U14/Drivers/USB/Core/Endpoint.h"
   57              		.loc 2 223 0
-ARM GAS  /tmp/ccxCew4o.s 			page 2
+ARM GAS  /tmp/ccCblSoh.s 			page 2
 
 
   58 0012 021C     		mov	r2, r0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  112              	.L3:
  113              		.loc 2 229 0
  114 0050 9A59     		ldr	r2, [r3, r6]
-ARM GAS  /tmp/ccxCew4o.s 			page 3
+ARM GAS  /tmp/ccCblSoh.s 			page 3
 
 
  115 0052 4244     		add	r2, r2, r8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  169 00a0 00000000 		.word	usb_data_buffer_size
  170              		.cfi_endproc
  171              	.LFE97:
-ARM GAS  /tmp/ccxCew4o.s 			page 4
+ARM GAS  /tmp/ccCblSoh.s 			page 4
 
 
  172              		.size	Endpoint_Discard_Stream, .-Endpoint_Discard_Stream
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  226              	.LBE41:
  227              	.LBE40:
  228              	.LBB43:
-ARM GAS  /tmp/ccxCew4o.s 			page 5
+ARM GAS  /tmp/ccCblSoh.s 			page 5
 
 
  229              	.LBB44:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  283 0054 019A     		ldr	r2, [sp, #4]
  284 0056 0132     		add	r2, r2, #1
  285 0058 0192     		str	r2, [sp, #4]
-ARM GAS  /tmp/ccxCew4o.s 			page 6
+ARM GAS  /tmp/ccCblSoh.s 			page 6
 
 
  286 005a 019A     		ldr	r2, [sp, #4]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  340 00a2 8C44     		add	ip, ip, r1
  341 00a4 6146     		mov	r1, ip
  342 00a6 1150     		str	r1, [r2, r0]
-ARM GAS  /tmp/ccxCew4o.s 			page 7
+ARM GAS  /tmp/ccCblSoh.s 			page 7
 
 
  343 00a8 0BE0     		b	.L21
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  397              		.thumb_func
  398              		.type	Endpoint_Write_Stream_LE, %function
  399              	Endpoint_Write_Stream_LE:
-ARM GAS  /tmp/ccxCew4o.s 			page 8
+ARM GAS  /tmp/ccCblSoh.s 			page 8
 
 
  400              	.LFB99:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  454              	.LBE55:
  455              		.loc 1 71 0
  456 002a 05E0     		b	.L31
-ARM GAS  /tmp/ccxCew4o.s 			page 9
+ARM GAS  /tmp/ccCblSoh.s 			page 9
 
 
  457              	.LVL36:
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  511 0062 019C     		ldr	r4, [sp, #4]
  512 0064 9C42     		cmp	r4, r3
  513 0066 E1D9     		bls	.L45
-ARM GAS  /tmp/ccxCew4o.s 			page 10
+ARM GAS  /tmp/ccCblSoh.s 			page 10
 
 
  514 0068 E6E7     		b	.L31
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  568              	.LVL47:
  569              		.loc 2 286 0
  570 00a8 1158     		ldr	r1, [r2, r0]
-ARM GAS  /tmp/ccxCew4o.s 			page 11
+ARM GAS  /tmp/ccCblSoh.s 			page 11
 
 
  571              	.LVL48:
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  625              		.section	.text.Endpoint_Write_Stream_BE,"ax",%progbits
  626              		.align	2
  627              		.global	Endpoint_Write_Stream_BE
-ARM GAS  /tmp/ccxCew4o.s 			page 12
+ARM GAS  /tmp/ccCblSoh.s 			page 12
 
 
  628              		.code	16
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  682              		.loc 2 285 0
  683 002a 164D     		ldr	r5, .L53+12
  684 002c 164F     		ldr	r7, .L53+16
-ARM GAS  /tmp/ccxCew4o.s 			page 13
+ARM GAS  /tmp/ccCblSoh.s 			page 13
 
 
  685 002e B846     		mov	r8, r7
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  739              	.LVL69:
  740              	.L49:
  741              		.loc 1 90 0
-ARM GAS  /tmp/ccxCew4o.s 			page 14
+ARM GAS  /tmp/ccCblSoh.s 			page 14
 
 
  742 0068 0020     		mov	r0, #0
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  796              		.loc 1 99 0
  797 0016 8000     		lsl	r0, r0, #2
  798              	.LVL72:
-ARM GAS  /tmp/ccxCew4o.s 			page 15
+ARM GAS  /tmp/ccCblSoh.s 			page 15
 
 
  799 0018 2D4B     		ldr	r3, .L66+4
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  853              		.loc 2 223 0 discriminator 2
  854 0056 6146     		mov	r1, ip
  855 0058 0A5D     		ldrb	r2, [r1, r4]
-ARM GAS  /tmp/ccxCew4o.s 			page 16
+ARM GAS  /tmp/ccCblSoh.s 			page 16
 
 
  856 005a 002A     		cmp	r2, #0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  910 00b2 D951     		str	r1, [r3, r7]
  911              	.LVL83:
  912              	.L61:
-ARM GAS  /tmp/ccxCew4o.s 			page 17
+ARM GAS  /tmp/ccCblSoh.s 			page 17
 
 
  913              	.LBE73:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  967              		.section	.text.Endpoint_Write_Control_Stream_LE,"ax",%progbits
  968              		.align	2
  969              		.global	Endpoint_Write_Control_Stream_LE
-ARM GAS  /tmp/ccxCew4o.s 			page 18
+ARM GAS  /tmp/ccCblSoh.s 			page 18
 
 
  970              		.code	16
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1024              	.L71:
  1025              		.loc 3 329 0
  1026 003a 104D     		ldr	r5, .L76+16
-ARM GAS  /tmp/ccxCew4o.s 			page 19
+ARM GAS  /tmp/ccCblSoh.s 			page 19
 
 
  1027 003c A600     		lsl	r6, r4, #2
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1081              		.thumb_func
  1082              		.type	Endpoint_Write_Control_Stream_BE, %function
  1083              	Endpoint_Write_Control_Stream_BE:
-ARM GAS  /tmp/ccxCew4o.s 			page 20
+ARM GAS  /tmp/ccCblSoh.s 			page 20
 
 
  1084              	.LFB104:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1138              	.LVL107:
  1139              	.LBB79:
  1140              	.LBB78:
-ARM GAS  /tmp/ccxCew4o.s 			page 21
+ARM GAS  /tmp/ccCblSoh.s 			page 21
 
 
  1141              		.loc 3 302 0 discriminator 1
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1195              	.LBE80:
  1196              		.loc 1 151 0
  1197 0068 0020     		mov	r0, #0
-ARM GAS  /tmp/ccxCew4o.s 			page 22
+ARM GAS  /tmp/ccCblSoh.s 			page 22
 
 
  1198              		@ sp needed
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1252 0019 F0000000 		.4byte	.Ldebug_ranges0+0xf0
  1253 001d 00000000 		.4byte	0
  1254 0021 00000000 		.4byte	.Ldebug_line0
-ARM GAS  /tmp/ccxCew4o.s 			page 23
+ARM GAS  /tmp/ccCblSoh.s 			page 23
 
 
  1255 0025 02       		.uleb128 0x2
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1309 008b 05       		.byte	0x5
  1310 008c 696E7400 		.ascii	"int\000"
  1311 0090 02       		.uleb128 0x2
-ARM GAS  /tmp/ccxCew4o.s 			page 24
+ARM GAS  /tmp/ccCblSoh.s 			page 24
 
 
  1312 0091 04       		.byte	0x4
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1366 00fd 07       		.uleb128 0x7
  1367 00fe 5C030000 		.4byte	.LASF24
  1368 0102 05       		.sleb128 5
-ARM GAS  /tmp/ccxCew4o.s 			page 25
+ARM GAS  /tmp/ccCblSoh.s 			page 25
 
 
  1369 0103 00       		.byte	0
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1423 0166 40       		.byte	0x40
  1424 0167 A2000000 		.4byte	0xa2
  1425 016b 02       		.byte	0x2
-ARM GAS  /tmp/ccxCew4o.s 			page 26
+ARM GAS  /tmp/ccCblSoh.s 			page 26
 
 
  1426 016c 01       		.byte	0x1
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1480 01c9 09       		.byte	0x9
  1481 01ca A0       		.byte	0xa0
  1482 01cb 97000000 		.4byte	0x97
-ARM GAS  /tmp/ccxCew4o.s 			page 27
+ARM GAS  /tmp/ccCblSoh.s 			page 27
 
 
  1483 01cf 00       		.byte	0
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1537 023c 59020000 		.4byte	0x259
  1538 0240 10       		.uleb128 0x10
  1539 0241 05020000 		.4byte	.LASF46
-ARM GAS  /tmp/ccxCew4o.s 			page 28
+ARM GAS  /tmp/ccCblSoh.s 			page 28
 
 
  1540 0245 02       		.byte	0x2
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1594 02b7 02       		.byte	0x2
  1595 02b8 1A01     		.2byte	0x11a
  1596 02ba 03       		.byte	0x3
-ARM GAS  /tmp/ccxCew4o.s 			page 29
+ARM GAS  /tmp/ccCblSoh.s 			page 29
 
 
  1597 02bb D8020000 		.4byte	0x2d8
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1651 0336 97000000 		.4byte	0x97
  1652 033a 00       		.byte	0
  1653 033b 16       		.uleb128 0x16
-ARM GAS  /tmp/ccxCew4o.s 			page 30
+ARM GAS  /tmp/ccCblSoh.s 			page 30
 
 
  1654 033c B6040000 		.4byte	.LASF62
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1708 03bb 3301     		.2byte	0x133
  1709 03bd 1B       		.uleb128 0x1b
  1710 03be 1C020000 		.4byte	0x21c
-ARM GAS  /tmp/ccxCew4o.s 			page 31
+ARM GAS  /tmp/ccCblSoh.s 			page 31
 
 
  1711 03c2 1C       		.uleb128 0x1c
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1765 0441 38       		.byte	0x38
  1766 0442 5F040000 		.4byte	0x45f
  1767 0446 22       		.uleb128 0x22
-ARM GAS  /tmp/ccxCew4o.s 			page 32
+ARM GAS  /tmp/ccCblSoh.s 			page 32
 
 
  1768 0447 92020000 		.4byte	0x292
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1822 04c8 40       		.byte	0x40
  1823 04c9 97000000 		.4byte	0x97
  1824 04cd A9010000 		.4byte	.LLST12
-ARM GAS  /tmp/ccxCew4o.s 			page 33
+ARM GAS  /tmp/ccCblSoh.s 			page 33
 
 
  1825 04d1 17       		.uleb128 0x17
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1879 0559 76020000 		.4byte	0x276
  1880 055d 02       		.uleb128 0x2
  1881 055e 91       		.byte	0x91
-ARM GAS  /tmp/ccxCew4o.s 			page 34
+ARM GAS  /tmp/ccCblSoh.s 			page 34
 
 
  1882 055f 5C       		.sleb128 -36
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1936 05d7 53       		.byte	0x53
  1937 05d8 D5030000 		.4byte	0x3d5
  1938 05dc 79030000 		.4byte	.LLST23
-ARM GAS  /tmp/ccxCew4o.s 			page 35
+ARM GAS  /tmp/ccCblSoh.s 			page 35
 
 
  1939 05e0 19       		.uleb128 0x19
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  1993 0662 6900     		.ascii	"i\000"
  1994 0664 01       		.byte	0x1
  1995 0665 61       		.byte	0x61
-ARM GAS  /tmp/ccxCew4o.s 			page 36
+ARM GAS  /tmp/ccCblSoh.s 			page 36
 
 
  1996 0666 A2000000 		.4byte	0xa2
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2050 06e4 3B000000 		.4byte	.LASF69
  2051 06e8 01       		.byte	0x1
  2052 06e9 7F       		.byte	0x7f
-ARM GAS  /tmp/ccxCew4o.s 			page 37
+ARM GAS  /tmp/ccCblSoh.s 			page 37
 
 
  2053 06ea 97000000 		.4byte	0x97
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2107 076e 31       		.byte	0x31
  2108 076f 00       		.byte	0
  2109 0770 29       		.uleb128 0x29
-ARM GAS  /tmp/ccxCew4o.s 			page 38
+ARM GAS  /tmp/ccCblSoh.s 			page 38
 
 
  2110 0771 62000000 		.4byte	.LVL100
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2164 07d4 90       		.byte	0x90
  2165 07d5 97000000 		.4byte	0x97
  2166 07d9 00000000 		.4byte	.LFB105
-ARM GAS  /tmp/ccxCew4o.s 			page 39
+ARM GAS  /tmp/ccCblSoh.s 			page 39
 
 
  2167 07dd 84000000 		.4byte	.LFE105-.LFB105
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2221 085e 50       		.byte	0x50
  2222 085f 02       		.uleb128 0x2
  2223 0860 76       		.byte	0x76
-ARM GAS  /tmp/ccxCew4o.s 			page 40
+ARM GAS  /tmp/ccCblSoh.s 			page 40
 
 
  2224 0861 00       		.sleb128 0
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2278 08d7 00       		.byte	0
  2279 08d8 2D       		.uleb128 0x2d
  2280 08d9 6F060000 		.4byte	.LASF76
-ARM GAS  /tmp/ccxCew4o.s 			page 41
+ARM GAS  /tmp/ccCblSoh.s 			page 41
 
 
  2281 08dd 0A       		.byte	0xa
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2335 0955 4B050000 		.4byte	.LASF83
  2336 0959 0A       		.byte	0xa
  2337 095a 4E       		.byte	0x4e
-ARM GAS  /tmp/ccxCew4o.s 			page 42
+ARM GAS  /tmp/ccCblSoh.s 			page 42
 
 
  2338 095b 33090000 		.4byte	0x933
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2392 000f 10       		.uleb128 0x10
  2393 0010 17       		.uleb128 0x17
  2394 0011 00       		.byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 43
+ARM GAS  /tmp/ccCblSoh.s 			page 43
 
 
  2395 0012 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2449 0048 01       		.uleb128 0x1
  2450 0049 13       		.uleb128 0x13
  2451 004a 00       		.byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 44
+ARM GAS  /tmp/ccCblSoh.s 			page 44
 
 
  2452 004b 00       		.byte	0
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2506 0081 49       		.uleb128 0x49
  2507 0082 13       		.uleb128 0x13
  2508 0083 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccxCew4o.s 			page 45
+ARM GAS  /tmp/ccCblSoh.s 			page 45
 
 
  2509 0084 0B       		.uleb128 0xb
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2563 00ba 0F       		.uleb128 0xf
  2564 00bb 2E       		.uleb128 0x2e
  2565 00bc 01       		.byte	0x1
-ARM GAS  /tmp/ccxCew4o.s 			page 46
+ARM GAS  /tmp/ccCblSoh.s 			page 46
 
 
  2566 00bd 03       		.uleb128 0x3
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2620 00f3 13       		.uleb128 0x13
  2621 00f4 00       		.byte	0
  2622 00f5 00       		.byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 47
+ARM GAS  /tmp/ccCblSoh.s 			page 47
 
 
  2623 00f6 13       		.uleb128 0x13
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2677 012d 01       		.uleb128 0x1
  2678 012e 13       		.uleb128 0x13
  2679 012f 00       		.byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 48
+ARM GAS  /tmp/ccCblSoh.s 			page 48
 
 
  2680 0130 00       		.byte	0
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2734 0166 17       		.uleb128 0x17
  2735 0167 58       		.uleb128 0x58
  2736 0168 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccxCew4o.s 			page 49
+ARM GAS  /tmp/ccCblSoh.s 			page 49
 
 
  2737 0169 59       		.uleb128 0x59
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2791 019f 0B       		.uleb128 0xb
  2792 01a0 0B       		.uleb128 0xb
  2793 01a1 49       		.uleb128 0x49
-ARM GAS  /tmp/ccxCew4o.s 			page 50
+ARM GAS  /tmp/ccCblSoh.s 			page 50
 
 
  2794 01a2 13       		.uleb128 0x13
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2848 01d8 12       		.uleb128 0x12
  2849 01d9 06       		.uleb128 0x6
  2850 01da 00       		.byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 51
+ARM GAS  /tmp/ccCblSoh.s 			page 51
 
 
  2851 01db 00       		.byte	0
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2905 0218 00       		.byte	0
  2906 0219 00       		.byte	0
  2907 021a 2B       		.uleb128 0x2b
-ARM GAS  /tmp/ccxCew4o.s 			page 52
+ARM GAS  /tmp/ccCblSoh.s 			page 52
 
 
  2908 021b 21       		.uleb128 0x21
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  2962 0251 01       		.uleb128 0x1
  2963 0252 13       		.uleb128 0x13
  2964 0253 00       		.byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 53
+ARM GAS  /tmp/ccCblSoh.s 			page 53
 
 
  2965 0254 00       		.byte	0
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3019 0069 0500     		.2byte	0x5
  3020 006b 72       		.byte	0x72
  3021 006c 00       		.sleb128 0
-ARM GAS  /tmp/ccxCew4o.s 			page 54
+ARM GAS  /tmp/ccCblSoh.s 			page 54
 
 
  3022 006d 77       		.byte	0x77
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3076 00ec F3       		.byte	0xf3
  3077 00ed 01       		.uleb128 0x1
  3078 00ee 51       		.byte	0x51
-ARM GAS  /tmp/ccxCew4o.s 			page 55
+ARM GAS  /tmp/ccCblSoh.s 			page 55
 
 
  3079 00ef 9F       		.byte	0x9f
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3133 0179 60000000 		.4byte	.LVL24
  3134 017d 0200     		.2byte	0x2
  3135 017f 31       		.byte	0x31
-ARM GAS  /tmp/ccxCew4o.s 			page 56
+ARM GAS  /tmp/ccCblSoh.s 			page 56
 
 
  3136 0180 9F       		.byte	0x9f
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3190 020b F3       		.byte	0xf3
  3191 020c 01       		.uleb128 0x1
  3192 020d 51       		.byte	0x51
-ARM GAS  /tmp/ccxCew4o.s 			page 57
+ARM GAS  /tmp/ccCblSoh.s 			page 57
 
 
  3193 020e 9F       		.byte	0x9f
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3247 0284 51       		.byte	0x51
  3248 0285 1C       		.byte	0x1c
  3249 0286 23       		.byte	0x23
-ARM GAS  /tmp/ccxCew4o.s 			page 58
+ARM GAS  /tmp/ccCblSoh.s 			page 58
 
 
  3250 0287 01       		.uleb128 0x1
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3304 0305 A8000000 		.4byte	.LVL47
  3305 0309 0200     		.2byte	0x2
  3306 030b 73       		.byte	0x73
-ARM GAS  /tmp/ccxCew4o.s 			page 59
+ARM GAS  /tmp/ccCblSoh.s 			page 59
 
 
  3307 030c 00       		.sleb128 0
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3361 0390 53       		.byte	0x53
  3362 0391 9F       		.byte	0x9f
  3363 0392 00000000 		.4byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 60
+ARM GAS  /tmp/ccCblSoh.s 			page 60
 
 
  3364 0396 00000000 		.4byte	0
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3418 041e 50       		.byte	0x50
  3419 041f 9F       		.byte	0x9f
  3420 0420 2A000000 		.4byte	.LVL74
-ARM GAS  /tmp/ccxCew4o.s 			page 61
+ARM GAS  /tmp/ccCblSoh.s 			page 61
 
 
  3421 0424 2C000000 		.4byte	.LVL75
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3475 04a5 53       		.byte	0x53
  3476 04a6 9F       		.byte	0x9f
  3477 04a7 00000000 		.4byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 62
+ARM GAS  /tmp/ccCblSoh.s 			page 62
 
 
  3478 04ab 00000000 		.4byte	0
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3532 0515 00000000 		.4byte	0
  3533              	.LLST32:
  3534 0519 6A000000 		.4byte	.LVL80
-ARM GAS  /tmp/ccxCew4o.s 			page 63
+ARM GAS  /tmp/ccCblSoh.s 			page 63
 
 
  3535 051d 8A000000 		.4byte	.LVL81
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3589 05a2 0100     		.2byte	0x1
  3590 05a4 52       		.byte	0x52
  3591 05a5 1A000000 		.4byte	.LVL91
-ARM GAS  /tmp/ccxCew4o.s 			page 64
+ARM GAS  /tmp/ccCblSoh.s 			page 64
 
 
  3592 05a9 8C000000 		.4byte	.LFE103
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3646 0623 00000000 		.4byte	0
  3647 0627 00000000 		.4byte	0
  3648              	.LLST40:
-ARM GAS  /tmp/ccxCew4o.s 			page 65
+ARM GAS  /tmp/ccCblSoh.s 			page 65
 
 
  3649 062b 00000000 		.4byte	.LVL103
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3703 06ab 6A000000 		.4byte	.LVL109
  3704 06af 0100     		.2byte	0x1
  3705 06b1 56       		.byte	0x56
-ARM GAS  /tmp/ccxCew4o.s 			page 66
+ARM GAS  /tmp/ccCblSoh.s 			page 66
 
 
  3706 06b2 00000000 		.4byte	0
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3760              	.Ldebug_ranges0:
  3761 0000 12000000 		.4byte	.LBB32
  3762 0004 1A000000 		.4byte	.LBE32
-ARM GAS  /tmp/ccxCew4o.s 			page 67
+ARM GAS  /tmp/ccCblSoh.s 			page 67
 
 
  3763 0008 1C000000 		.4byte	.LBB39
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3817 00e0 1C000000 		.4byte	.LBB79
  3818 00e4 22000000 		.4byte	.LBE79
  3819 00e8 00000000 		.4byte	0
-ARM GAS  /tmp/ccxCew4o.s 			page 68
+ARM GAS  /tmp/ccCblSoh.s 			page 68
 
 
  3820 00ec 00000000 		.4byte	0
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3855      5F577269 
  3855      74655F53 
  3855      74726561 
-ARM GAS  /tmp/ccxCew4o.s 			page 69
+ARM GAS  /tmp/ccCblSoh.s 			page 69
 
 
  3856              	.LASF20:
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3876      6973696F 
  3876      6E203231 
  3876      31333538 
-ARM GAS  /tmp/ccxCew4o.s 			page 70
+ARM GAS  /tmp/ccCblSoh.s 			page 70
 
 
  3877 0196 74657277 		.ascii	"terwork -mthumb -ggdb -O1 -fomit-frame-pointer -ffu"
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3896      6720696E 
  3896      7400
  3897              	.LASF80:
-ARM GAS  /tmp/ccxCew4o.s 			page 71
+ARM GAS  /tmp/ccCblSoh.s 			page 71
 
 
  3898 028d 7573625F 		.ascii	"usb_data_buffer_OUT_index\000"
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3922 0337 5553425F 		.ascii	"USB_Request_Header_t\000"
  3922      52657175 
  3922      6573745F 
-ARM GAS  /tmp/ccxCew4o.s 			page 72
+ARM GAS  /tmp/ccCblSoh.s 			page 72
 
 
  3922      48656164 
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3942      33325F74 
  3942      00
  3943              	.LASF75:
-ARM GAS  /tmp/ccxCew4o.s 			page 73
+ARM GAS  /tmp/ccCblSoh.s 			page 73
 
 
  3944 0425 7573625F 		.ascii	"usb_data_buffer_OUT\000"
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3964      656400
  3965              	.LASF22:
  3966 04e5 454E4450 		.ascii	"ENDPOINT_RWSTREAM_BusSuspended\000"
-ARM GAS  /tmp/ccxCew4o.s 			page 74
+ARM GAS  /tmp/ccCblSoh.s 			page 74
 
 
  3966      4F494E54 
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  3989              	.LASF35:
  3990 05aa 5374616C 		.ascii	"Stall\000"
  3990      6C00
-ARM GAS  /tmp/ccxCew4o.s 			page 75
+ARM GAS  /tmp/ccCblSoh.s 			page 75
 
 
  3991              	.LASF79:
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  4010      7265616D 
  4011              	.LASF82:
  4012 069c 656E6470 		.ascii	"endpointhandle0\000"
-ARM GAS  /tmp/ccxCew4o.s 			page 76
+ARM GAS  /tmp/ccCblSoh.s 			page 76
 
 
  4012      6F696E74 
@@ -4540,38 +4540,38 @@ ARM GAS  /tmp/ccxCew4o.s 			page 1
  4028      626C6564 
  4028      00
  4029              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccxCew4o.s 			page 77
+ARM GAS  /tmp/ccCblSoh.s 			page 77
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 EndpointStream.c
-     /tmp/ccxCew4o.s:18     .text.Endpoint_Discard_Stream:00000000 $t
-     /tmp/ccxCew4o.s:23     .text.Endpoint_Discard_Stream:00000000 Endpoint_Discard_Stream
-     /tmp/ccxCew4o.s:163    .text.Endpoint_Discard_Stream:00000088 $d
-     /tmp/ccxCew4o.s:174    .text.Endpoint_Null_Stream:00000000 $t
-     /tmp/ccxCew4o.s:179    .text.Endpoint_Null_Stream:00000000 Endpoint_Null_Stream
-     /tmp/ccxCew4o.s:381    .text.Endpoint_Null_Stream:000000d8 $d
-     /tmp/ccxCew4o.s:394    .text.Endpoint_Write_Stream_LE:00000000 $t
-     /tmp/ccxCew4o.s:399    .text.Endpoint_Write_Stream_LE:00000000 Endpoint_Write_Stream_LE
-     /tmp/ccxCew4o.s:613    .text.Endpoint_Write_Stream_LE:000000d8 $d
-     /tmp/ccxCew4o.s:626    .text.Endpoint_Write_Stream_BE:00000000 $t
-     /tmp/ccxCew4o.s:631    .text.Endpoint_Write_Stream_BE:00000000 Endpoint_Write_Stream_BE
-     /tmp/ccxCew4o.s:753    .text.Endpoint_Write_Stream_BE:00000078 $d
-     /tmp/ccxCew4o.s:762    .text.Endpoint_Read_Stream_LE:00000000 $t
-     /tmp/ccxCew4o.s:767    .text.Endpoint_Read_Stream_LE:00000000 Endpoint_Read_Stream_LE
-     /tmp/ccxCew4o.s:938    .text.Endpoint_Read_Stream_LE:000000cc $d
-     /tmp/ccxCew4o.s:949    .text.Endpoint_Read_Stream_BE:00000000 $t
-     /tmp/ccxCew4o.s:954    .text.Endpoint_Read_Stream_BE:00000000 Endpoint_Read_Stream_BE
-     /tmp/ccxCew4o.s:968    .text.Endpoint_Write_Control_Stream_LE:00000000 $t
-     /tmp/ccxCew4o.s:973    .text.Endpoint_Write_Control_Stream_LE:00000000 Endpoint_Write_Control_Stream_LE
-     /tmp/ccxCew4o.s:1066   .text.Endpoint_Write_Control_Stream_LE:0000006c $d
-     /tmp/ccxCew4o.s:1078   .text.Endpoint_Write_Control_Stream_BE:00000000 $t
-     /tmp/ccxCew4o.s:1083   .text.Endpoint_Write_Control_Stream_BE:00000000 Endpoint_Write_Control_Stream_BE
-     /tmp/ccxCew4o.s:1097   .text.Endpoint_Read_Control_Stream_LE:00000000 $t
-     /tmp/ccxCew4o.s:1102   .text.Endpoint_Read_Control_Stream_LE:00000000 Endpoint_Read_Control_Stream_LE
-     /tmp/ccxCew4o.s:1204   .text.Endpoint_Read_Control_Stream_LE:0000006c $d
-     /tmp/ccxCew4o.s:1214   .text.Endpoint_Read_Control_Stream_BE:00000000 $t
-     /tmp/ccxCew4o.s:1219   .text.Endpoint_Read_Control_Stream_BE:00000000 Endpoint_Read_Control_Stream_BE
+     /tmp/ccCblSoh.s:18     .text.Endpoint_Discard_Stream:00000000 $t
+     /tmp/ccCblSoh.s:23     .text.Endpoint_Discard_Stream:00000000 Endpoint_Discard_Stream
+     /tmp/ccCblSoh.s:163    .text.Endpoint_Discard_Stream:00000088 $d
+     /tmp/ccCblSoh.s:174    .text.Endpoint_Null_Stream:00000000 $t
+     /tmp/ccCblSoh.s:179    .text.Endpoint_Null_Stream:00000000 Endpoint_Null_Stream
+     /tmp/ccCblSoh.s:381    .text.Endpoint_Null_Stream:000000d8 $d
+     /tmp/ccCblSoh.s:394    .text.Endpoint_Write_Stream_LE:00000000 $t
+     /tmp/ccCblSoh.s:399    .text.Endpoint_Write_Stream_LE:00000000 Endpoint_Write_Stream_LE
+     /tmp/ccCblSoh.s:613    .text.Endpoint_Write_Stream_LE:000000d8 $d
+     /tmp/ccCblSoh.s:626    .text.Endpoint_Write_Stream_BE:00000000 $t
+     /tmp/ccCblSoh.s:631    .text.Endpoint_Write_Stream_BE:00000000 Endpoint_Write_Stream_BE
+     /tmp/ccCblSoh.s:753    .text.Endpoint_Write_Stream_BE:00000078 $d
+     /tmp/ccCblSoh.s:762    .text.Endpoint_Read_Stream_LE:00000000 $t
+     /tmp/ccCblSoh.s:767    .text.Endpoint_Read_Stream_LE:00000000 Endpoint_Read_Stream_LE
+     /tmp/ccCblSoh.s:938    .text.Endpoint_Read_Stream_LE:000000cc $d
+     /tmp/ccCblSoh.s:949    .text.Endpoint_Read_Stream_BE:00000000 $t
+     /tmp/ccCblSoh.s:954    .text.Endpoint_Read_Stream_BE:00000000 Endpoint_Read_Stream_BE
+     /tmp/ccCblSoh.s:968    .text.Endpoint_Write_Control_Stream_LE:00000000 $t
+     /tmp/ccCblSoh.s:973    .text.Endpoint_Write_Control_Stream_LE:00000000 Endpoint_Write_Control_Stream_LE
+     /tmp/ccCblSoh.s:1066   .text.Endpoint_Write_Control_Stream_LE:0000006c $d
+     /tmp/ccCblSoh.s:1078   .text.Endpoint_Write_Control_Stream_BE:00000000 $t
+     /tmp/ccCblSoh.s:1083   .text.Endpoint_Write_Control_Stream_BE:00000000 Endpoint_Write_Control_Stream_BE
+     /tmp/ccCblSoh.s:1097   .text.Endpoint_Read_Control_Stream_LE:00000000 $t
+     /tmp/ccCblSoh.s:1102   .text.Endpoint_Read_Control_Stream_LE:00000000 Endpoint_Read_Control_Stream_LE
+     /tmp/ccCblSoh.s:1204   .text.Endpoint_Read_Control_Stream_LE:0000006c $d
+     /tmp/ccCblSoh.s:1214   .text.Endpoint_Read_Control_Stream_BE:00000000 $t
+     /tmp/ccCblSoh.s:1219   .text.Endpoint_Read_Control_Stream_BE:00000000 Endpoint_Read_Control_Stream_BE
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

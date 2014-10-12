@@ -235,10 +235,10 @@ extern "C" {
 extern USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface;
 
  /** Functions */
-void SetupVSHardware(void);
+void VS_setupHardware(void);
 
 #if (CDC_TASK_SELECT == ECHO_CHARACTER_TASK)
-	void EchoCharacter(void);
+	void VS_echoCharacter(void);
 #else
 	/** USB-UART Bridge Task */
 	void CDC_Bridge_Task(void);

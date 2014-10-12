@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccH3JUo8.s 			page 1
+ARM GAS  /tmp/ccSPXNk4.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
   55              		.type	_default_exit, %function
   56              	_default_exit:
   57              	.LFB2:
-ARM GAS  /tmp/ccH3JUo8.s 			page 2
+ARM GAS  /tmp/ccSPXNk4.s 			page 2
 
 
   58              		.loc 1 257 0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  112 0026 8900     		lsl	r1, r1, #2
  113 0028 5118     		add	r1, r2, r1
  114 002a 344A     		ldr	r2, .L18+12
-ARM GAS  /tmp/ccH3JUo8.s 			page 3
+ARM GAS  /tmp/ccSPXNk4.s 			page 3
 
 
  115              	.LVL3:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  169 006e 284A     		ldr	r2, .L18+32
  170              	.LVL10:
  171              	.L11:
-ARM GAS  /tmp/ccH3JUo8.s 			page 4
+ARM GAS  /tmp/ccSPXNk4.s 			page 4
 
 
  172 0070 D458     		ldr	r4, [r2, r3]
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  226              	.LVL17:
  227              	.L15:
  228 00b6 A300     		lsl	r3, r4, #2
-ARM GAS  /tmp/ccH3JUo8.s 			page 5
+ARM GAS  /tmp/ccSPXNk4.s 			page 5
 
 
  229 00b8 EB58     		ldr	r3, [r5, r3]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  283 0100 00000000 		.word	__process_stack_base__
  284 0104 00000000 		.word	_edata
  285 0108 00000000 		.word	_data
-ARM GAS  /tmp/ccH3JUo8.s 			page 6
+ARM GAS  /tmp/ccSPXNk4.s 			page 6
 
 
  286 010c 04000000 		.word	_data+4
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  340 004e 05       		.byte	0x5
  341 004f 71020000 		.4byte	.LASF4
  342 0053 03       		.uleb128 0x3
-ARM GAS  /tmp/ccH3JUo8.s 			page 7
+ARM GAS  /tmp/ccSPXNk4.s 			page 7
 
 
  343 0054 EC000000 		.4byte	.LASF6
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  397 00c0 EA       		.byte	0xea
  398 00c1 00000000 		.4byte	.LFB0
  399 00c5 02000000 		.4byte	.LFE0-.LFB0
-ARM GAS  /tmp/ccH3JUo8.s 			page 8
+ARM GAS  /tmp/ccSPXNk4.s 			page 8
 
 
  400 00c9 01       		.uleb128 0x1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  454 0148 00       		.byte	0
  455 0149 0C       		.uleb128 0xc
  456 014a 32000000 		.4byte	.LBB3
-ARM GAS  /tmp/ccH3JUo8.s 			page 9
+ARM GAS  /tmp/ccSPXNk4.s 			page 9
 
 
  457 014e 1E000000 		.4byte	.LBE3-.LBB3
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  511 01d8 4F01     		.2byte	0x14f
  512 01da A9000000 		.4byte	0xa9
  513 01de 95000000 		.4byte	.LLST6
-ARM GAS  /tmp/ccH3JUo8.s 			page 10
+ARM GAS  /tmp/ccSPXNk4.s 			page 10
 
 
  514 01e2 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  568 0264 7A020000 		.4byte	.LASF23
  569 0268 01       		.byte	0x1
  570 0269 AD       		.byte	0xad
-ARM GAS  /tmp/ccH3JUo8.s 			page 11
+ARM GAS  /tmp/ccSPXNk4.s 			page 11
 
 
  571 026a 8C000000 		.4byte	0x8c
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  625 000b 55       		.uleb128 0x55
  626 000c 17       		.uleb128 0x17
  627 000d 11       		.uleb128 0x11
-ARM GAS  /tmp/ccH3JUo8.s 			page 12
+ARM GAS  /tmp/ccSPXNk4.s 			page 12
 
 
  628 000e 01       		.uleb128 0x1
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  682 0044 00       		.byte	0
  683 0045 00       		.byte	0
  684 0046 07       		.uleb128 0x7
-ARM GAS  /tmp/ccH3JUo8.s 			page 13
+ARM GAS  /tmp/ccSPXNk4.s 			page 13
 
 
  685 0047 2E       		.uleb128 0x2e
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  739 007f 3B       		.uleb128 0x3b
  740 0080 05       		.uleb128 0x5
  741 0081 27       		.uleb128 0x27
-ARM GAS  /tmp/ccH3JUo8.s 			page 14
+ARM GAS  /tmp/ccSPXNk4.s 			page 14
 
 
  742 0082 19       		.uleb128 0x19
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  796 00b9 0D       		.uleb128 0xd
  797 00ba 34       		.uleb128 0x34
  798 00bb 00       		.byte	0
-ARM GAS  /tmp/ccH3JUo8.s 			page 15
+ARM GAS  /tmp/ccSPXNk4.s 			page 15
 
 
  799 00bc 03       		.uleb128 0x3
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  853              		.section	.debug_loc,"",%progbits
  854              	.Ldebug_loc0:
  855              	.LLST0:
-ARM GAS  /tmp/ccH3JUo8.s 			page 16
+ARM GAS  /tmp/ccSPXNk4.s 			page 16
 
 
  856 0000 04000000 		.4byte	.LVL0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  910 0082 96000000 		.4byte	.LVL14
  911 0086 9A000000 		.4byte	.LVL15
  912 008a 0100     		.2byte	0x1
-ARM GAS  /tmp/ccH3JUo8.s 			page 17
+ARM GAS  /tmp/ccSPXNk4.s 			page 17
 
 
  913 008c 53       		.byte	0x53
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  967 00f6 9F       		.byte	0x9f
  968 00f7 00000000 		.4byte	0
  969 00fb 00000000 		.4byte	0
-ARM GAS  /tmp/ccH3JUo8.s 			page 18
+ARM GAS  /tmp/ccSPXNk4.s 			page 18
 
 
  970              		.section	.debug_aranges,"",%progbits
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  1010      646C6572 
  1010      00
  1011              	.LASF20:
-ARM GAS  /tmp/ccH3JUo8.s 			page 19
+ARM GAS  /tmp/ccSPXNk4.s 			page 19
 
 
  1012 0033 5F5F7072 		.ascii	"__process_stack_base__\000"
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  1032      72726179 
  1032      5F656E64 
  1032      00
-ARM GAS  /tmp/ccH3JUo8.s 			page 20
+ARM GAS  /tmp/ccSPXNk4.s 			page 20
 
 
  1033              	.LASF6:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  1053      65637469 
  1053      6F6E7320 
  1053      2D666461 
-ARM GAS  /tmp/ccH3JUo8.s 			page 21
+ARM GAS  /tmp/ccSPXNk4.s 			page 21
 
 
  1054              	.LASF8:
@@ -1256,20 +1256,20 @@ ARM GAS  /tmp/ccH3JUo8.s 			page 1
  1077      5F656E64 
  1077      5F5F00
  1078              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccH3JUo8.s 			page 22
+ARM GAS  /tmp/ccSPXNk4.s 			page 22
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 crt0.c
-     /tmp/ccH3JUo8.s:18     .text.__early_init:00000000 $t
-     /tmp/ccH3JUo8.s:23     .text.__early_init:00000000 __early_init
-     /tmp/ccH3JUo8.s:35     .text.__late_init:00000000 $t
-     /tmp/ccH3JUo8.s:40     .text.__late_init:00000000 __late_init
-     /tmp/ccH3JUo8.s:51     .text._default_exit:00000000 $t
-     /tmp/ccH3JUo8.s:56     .text._default_exit:00000000 _default_exit
-     /tmp/ccH3JUo8.s:66     .text.ResetHandler:00000000 $t
-     /tmp/ccH3JUo8.s:71     .text.ResetHandler:00000000 ResetHandler
-     /tmp/ccH3JUo8.s:279    .text.ResetHandler:000000f0 $d
+     /tmp/ccSPXNk4.s:18     .text.__early_init:00000000 $t
+     /tmp/ccSPXNk4.s:23     .text.__early_init:00000000 __early_init
+     /tmp/ccSPXNk4.s:35     .text.__late_init:00000000 $t
+     /tmp/ccSPXNk4.s:40     .text.__late_init:00000000 __late_init
+     /tmp/ccSPXNk4.s:51     .text._default_exit:00000000 $t
+     /tmp/ccSPXNk4.s:56     .text._default_exit:00000000 _default_exit
+     /tmp/ccSPXNk4.s:66     .text.ResetHandler:00000000 $t
+     /tmp/ccSPXNk4.s:71     .text.ResetHandler:00000000 ResetHandler
+     /tmp/ccSPXNk4.s:279    .text.ResetHandler:000000f0 $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

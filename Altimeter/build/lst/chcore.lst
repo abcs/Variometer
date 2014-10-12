@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc6ge1Hc.s 			page 1
+ARM GAS  /tmp/cc0Vqfe9.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc6ge1Hc.s 			page 1
   55 0026 04       		.byte	0x4
   56 0027 05       		.byte	0x5
   57 0028 696E7400 		.ascii	"int\000"
-ARM GAS  /tmp/cc6ge1Hc.s 			page 2
+ARM GAS  /tmp/cc0Vqfe9.s 			page 2
 
 
   58 002c 03       		.uleb128 0x3
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc6ge1Hc.s 			page 1
  112 008f 01       		.uleb128 0x1
  113 0090 9C       		.byte	0x9c
  114 0091 00       		.byte	0
-ARM GAS  /tmp/cc6ge1Hc.s 			page 3
+ARM GAS  /tmp/cc0Vqfe9.s 			page 3
 
 
  115              		.section	.debug_abbrev,"",%progbits
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc6ge1Hc.s 			page 1
  169 0034 27       		.uleb128 0x27
  170 0035 19       		.uleb128 0x19
  171 0036 11       		.uleb128 0x11
-ARM GAS  /tmp/cc6ge1Hc.s 			page 4
+ARM GAS  /tmp/cc0Vqfe9.s 			page 4
 
 
  172 0037 01       		.uleb128 0x1
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc6ge1Hc.s 			page 1
  210      382E3420 
  210      32303134 
  210      30353236 
-ARM GAS  /tmp/cc6ge1Hc.s 			page 5
+ARM GAS  /tmp/cc0Vqfe9.s 			page 5
 
 
  211 0060 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mno-thumb-in"
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc6ge1Hc.s 			page 1
  231      2F474954 
  231      2F766172 
  231      696F6D65 
-ARM GAS  /tmp/cc6ge1Hc.s 			page 6
+ARM GAS  /tmp/cc0Vqfe9.s 			page 6
 
 
  231      7465722F 
@@ -315,13 +315,13 @@ ARM GAS  /tmp/cc6ge1Hc.s 			page 1
  237      74797065 
  237      00
  238              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc6ge1Hc.s 			page 7
+ARM GAS  /tmp/cc0Vqfe9.s 			page 7
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chcore.c
-     /tmp/cc6ge1Hc.s:18     .text.port_halt:00000000 $t
-     /tmp/cc6ge1Hc.s:23     .text.port_halt:00000000 port_halt
+     /tmp/cc0Vqfe9.s:18     .text.port_halt:00000000 $t
+     /tmp/cc0Vqfe9.s:23     .text.port_halt:00000000 port_halt
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

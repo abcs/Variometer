@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccmJgi4L.s 			page 1
+ARM GAS  /tmp/ccr8tOTN.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
   55              		.size	chRegFirstThread, .-chRegFirstThread
   56              		.section	.text.chRegNextThread,"ax",%progbits
   57              		.align	2
-ARM GAS  /tmp/ccmJgi4L.s 			page 2
+ARM GAS  /tmp/ccr8tOTN.s 			page 2
 
 
   58              		.global	chRegNextThread
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  112              		.size	chRegNextThread, .-chRegNextThread
  113              		.global	ch_debug
  114              		.section	.rodata.ch_debug,"a",%progbits
-ARM GAS  /tmp/ccmJgi4L.s 			page 3
+ARM GAS  /tmp/ccr8tOTN.s 			page 3
 
 
  115              		.align	2
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  169 002d 13000000 		.4byte	.LASF2
  170 0031 02       		.byte	0x2
  171 0032 D4       		.byte	0xd4
-ARM GAS  /tmp/ccmJgi4L.s 			page 4
+ARM GAS  /tmp/ccr8tOTN.s 			page 4
 
 
  172 0033 37000000 		.4byte	0x37
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  226 009c 08       		.byte	0x8
  227 009d 07       		.byte	0x7
  228 009e 2B000000 		.4byte	.LASF13
-ARM GAS  /tmp/ccmJgi4L.s 			page 5
+ARM GAS  /tmp/ccr8tOTN.s 			page 5
 
 
  229 00a2 03       		.uleb128 0x3
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  283 0117 03       		.uleb128 0x3
  284 0118 40020000 		.4byte	.LASF25
  285 011c 05       		.byte	0x5
-ARM GAS  /tmp/ccmJgi4L.s 			page 6
+ARM GAS  /tmp/ccr8tOTN.s 			page 6
 
 
  286 011d 33       		.byte	0x33
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  340 018c 06       		.uleb128 0x6
  341 018d 58040000 		.4byte	.LASF34
  342 0191 07       		.byte	0x7
-ARM GAS  /tmp/ccmJgi4L.s 			page 7
+ARM GAS  /tmp/ccr8tOTN.s 			page 7
 
 
  343 0192 6E       		.byte	0x6e
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  397 01fe C3       		.byte	0xc3
  398 01ff 0C010000 		.4byte	0x10c
  399 0203 34       		.byte	0x34
-ARM GAS  /tmp/ccmJgi4L.s 			page 8
+ARM GAS  /tmp/ccr8tOTN.s 			page 8
 
 
  400 0204 06       		.uleb128 0x6
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  454 026a 6B       		.byte	0x6b
  455 026b 7C020000 		.4byte	0x27c
  456 026f 06       		.uleb128 0x6
-ARM GAS  /tmp/ccmJgi4L.s 			page 9
+ARM GAS  /tmp/ccr8tOTN.s 			page 9
 
 
  457 0270 3A030000 		.4byte	.LASF28
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  511 02d9 07       		.uleb128 0x7
  512 02da 723500   		.ascii	"r5\000"
  513 02dd 08       		.byte	0x8
-ARM GAS  /tmp/ccmJgi4L.s 			page 10
+ARM GAS  /tmp/ccr8tOTN.s 			page 10
 
 
  514 02de C0       		.byte	0xc0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  568 0344 00       		.byte	0
  569 0345 06       		.uleb128 0x6
  570 0346 2C030000 		.4byte	.LASF54
-ARM GAS  /tmp/ccmJgi4L.s 			page 11
+ARM GAS  /tmp/ccr8tOTN.s 			page 11
 
 
  571 034a 09       		.byte	0x9
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  625 03b6 0A       		.byte	0xa
  626 03b7 31       		.byte	0x31
  627 03b8 BE030000 		.4byte	0x3be
-ARM GAS  /tmp/ccmJgi4L.s 			page 12
+ARM GAS  /tmp/ccr8tOTN.s 			page 12
 
 
  628 03bc 0C       		.byte	0xc
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  682 0425 38010000 		.4byte	.LASF69
  683 0429 0B       		.byte	0xb
  684 042a 2D       		.byte	0x2d
-ARM GAS  /tmp/ccmJgi4L.s 			page 13
+ARM GAS  /tmp/ccr8tOTN.s 			page 13
 
 
  685 042b FD040000 		.4byte	0x4fd
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  739 0497 A2000000 		.4byte	0xa2
  740 049b 0D       		.byte	0xd
  741 049c 06       		.uleb128 0x6
-ARM GAS  /tmp/ccmJgi4L.s 			page 14
+ARM GAS  /tmp/ccr8tOTN.s 			page 14
 
 
  742 049d 00000000 		.4byte	.LASF79
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  796 050c 00       		.byte	0
  797 050d 03       		.uleb128 0x3
  798 050e EA000000 		.4byte	.LASF87
-ARM GAS  /tmp/ccmJgi4L.s 			page 15
+ARM GAS  /tmp/ccr8tOTN.s 			page 15
 
 
  799 0512 0B       		.byte	0xb
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  853 058e 01       		.byte	0x1
  854 058f 42       		.byte	0x42
  855 0590 9A050000 		.4byte	0x59a
-ARM GAS  /tmp/ccmJgi4L.s 			page 16
+ARM GAS  /tmp/ccr8tOTN.s 			page 16
 
 
  856 0594 05       		.uleb128 0x5
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  910 0027 49       		.uleb128 0x49
  911 0028 13       		.uleb128 0x13
  912 0029 00       		.byte	0
-ARM GAS  /tmp/ccmJgi4L.s 			page 17
+ARM GAS  /tmp/ccr8tOTN.s 			page 17
 
 
  913 002a 00       		.byte	0
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  967 0060 0B       		.uleb128 0xb
  968 0061 00       		.byte	0
  969 0062 00       		.byte	0
-ARM GAS  /tmp/ccmJgi4L.s 			page 18
+ARM GAS  /tmp/ccr8tOTN.s 			page 18
 
 
  970 0063 08       		.uleb128 0x8
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1024 0099 3A       		.uleb128 0x3a
  1025 009a 0B       		.uleb128 0xb
  1026 009b 3B       		.uleb128 0x3b
-ARM GAS  /tmp/ccmJgi4L.s 			page 19
+ARM GAS  /tmp/ccr8tOTN.s 			page 19
 
 
  1027 009c 0B       		.uleb128 0xb
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1081 00d3 13       		.uleb128 0x13
  1082 00d4 00       		.byte	0
  1083 00d5 00       		.byte	0
-ARM GAS  /tmp/ccmJgi4L.s 			page 20
+ARM GAS  /tmp/ccr8tOTN.s 			page 20
 
 
  1084 00d6 12       		.uleb128 0x12
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1138 010e 16       		.uleb128 0x16
  1139 010f 34       		.uleb128 0x34
  1140 0110 00       		.byte	0
-ARM GAS  /tmp/ccmJgi4L.s 			page 21
+ARM GAS  /tmp/ccr8tOTN.s 			page 21
 
 
  1141 0111 03       		.uleb128 0x3
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1195 0147 00       		.byte	0
  1196 0148 00       		.byte	0
  1197              		.section	.debug_loc,"",%progbits
-ARM GAS  /tmp/ccmJgi4L.s 			page 22
+ARM GAS  /tmp/ccr8tOTN.s 			page 22
 
 
  1198              	.Ldebug_loc0:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1248      01010101 
  1249              	.LASF79:
  1250 0000 63665F6F 		.ascii	"cf_off_older\000"
-ARM GAS  /tmp/ccmJgi4L.s 			page 23
+ARM GAS  /tmp/ccr8tOTN.s 			page 23
 
 
  1250      66665F6F 
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1275              	.LASF81:
  1276 0098 63665F6F 		.ascii	"cf_off_stklimit\000"
  1276      66665F73 
-ARM GAS  /tmp/ccmJgi4L.s 			page 24
+ARM GAS  /tmp/ccr8tOTN.s 			page 24
 
 
  1276      746B6C69 
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1302      7400
  1303              	.LASF91:
  1304 012f 63685F64 		.ascii	"ch_debug\000"
-ARM GAS  /tmp/ccmJgi4L.s 			page 25
+ARM GAS  /tmp/ccr8tOTN.s 			page 25
 
 
  1304      65627567 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1326              	.LASF70:
  1327 0252 63685F7A 		.ascii	"ch_zero\000"
  1327      65726F00 
-ARM GAS  /tmp/ccmJgi4L.s 			page 26
+ARM GAS  /tmp/ccr8tOTN.s 			page 26
 
 
  1328              	.LASF84:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1359 02e4 696E7433 		.ascii	"int32_t\000"
  1359      325F7400 
  1360              	.LASF4:
-ARM GAS  /tmp/ccmJgi4L.s 			page 27
+ARM GAS  /tmp/ccr8tOTN.s 			page 27
 
 
  1361 02ec 756E7369 		.ascii	"unsigned char\000"
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1389      65776572 
  1389      00
  1390              	.LASF43:
-ARM GAS  /tmp/ccmJgi4L.s 			page 28
+ARM GAS  /tmp/ccr8tOTN.s 			page 28
 
 
  1391 0381 705F6570 		.ascii	"p_epending\000"
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1419 041c 705F6D73 		.ascii	"p_msgqueue\000"
  1419      67717565 
  1419      756500
-ARM GAS  /tmp/ccmJgi4L.s 			page 29
+ARM GAS  /tmp/ccr8tOTN.s 			page 29
 
 
  1420              	.LASF77:
@@ -1725,19 +1725,19 @@ ARM GAS  /tmp/ccmJgi4L.s 			page 1
  1443      6974696E 
  1443      6700
  1444              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccmJgi4L.s 			page 30
+ARM GAS  /tmp/ccr8tOTN.s 			page 30
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chregistry.c
-     /tmp/ccmJgi4L.s:18     .text.chRegFirstThread:00000000 $t
-     /tmp/ccmJgi4L.s:23     .text.chRegFirstThread:00000000 chRegFirstThread
-     /tmp/ccmJgi4L.s:52     .text.chRegFirstThread:00000010 $d
-     /tmp/ccmJgi4L.s:57     .text.chRegNextThread:00000000 $t
-     /tmp/ccmJgi4L.s:62     .text.chRegNextThread:00000000 chRegNextThread
-     /tmp/ccmJgi4L.s:109    .text.chRegNextThread:00000020 $d
-     /tmp/ccmJgi4L.s:118    .rodata.ch_debug:00000000 ch_debug
-     /tmp/ccmJgi4L.s:115    .rodata.ch_debug:00000000 $d
+     /tmp/ccr8tOTN.s:18     .text.chRegFirstThread:00000000 $t
+     /tmp/ccr8tOTN.s:23     .text.chRegFirstThread:00000000 chRegFirstThread
+     /tmp/ccr8tOTN.s:52     .text.chRegFirstThread:00000010 $d
+     /tmp/ccr8tOTN.s:57     .text.chRegNextThread:00000000 $t
+     /tmp/ccr8tOTN.s:62     .text.chRegNextThread:00000000 chRegNextThread
+     /tmp/ccr8tOTN.s:109    .text.chRegNextThread:00000020 $d
+     /tmp/ccr8tOTN.s:118    .rodata.ch_debug:00000000 ch_debug
+     /tmp/ccr8tOTN.s:115    .rodata.ch_debug:00000000 $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

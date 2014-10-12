@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccWCjgKh.s 			page 1
+ARM GAS  /tmp/ccXLFFs9.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
   55 0025 02       		.uleb128 0x2
   56 0026 01       		.byte	0x1
   57 0027 06       		.byte	0x6
-ARM GAS  /tmp/ccWCjgKh.s 			page 2
+ARM GAS  /tmp/ccXLFFs9.s 			page 2
 
 
   58 0028 2A030000 		.4byte	.LASF0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  112 0091 04       		.byte	0x4
  113 0092 07       		.byte	0x7
  114 0093 9A010000 		.4byte	.LASF12
-ARM GAS  /tmp/ccWCjgKh.s 			page 3
+ARM GAS  /tmp/ccXLFFs9.s 			page 3
 
 
  115 0097 03       		.uleb128 0x3
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  169 0100 01       		.byte	0x1
  170 0101 05       		.byte	0x5
  171 0102 02       		.byte	0x2
-ARM GAS  /tmp/ccWCjgKh.s 			page 4
+ARM GAS  /tmp/ccXLFFs9.s 			page 4
 
 
  172 0103 07       		.uleb128 0x7
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  226 0160 35010000 		.4byte	.LASF43
  227 0164 01       		.byte	0x1
  228 0165 27       		.byte	0x27
-ARM GAS  /tmp/ccWCjgKh.s 			page 5
+ARM GAS  /tmp/ccXLFFs9.s 			page 5
 
 
  229 0166 00000000 		.4byte	.LFB97
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  283 01df 43       		.byte	0x43
  284 01e0 E4010000 		.4byte	0x1e4
  285 01e4 08       		.uleb128 0x8
-ARM GAS  /tmp/ccWCjgKh.s 			page 6
+ARM GAS  /tmp/ccXLFFs9.s 			page 6
 
 
  286 01e5 BE010000 		.4byte	0x1be
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  340 0001 11       		.uleb128 0x11
  341 0002 01       		.byte	0x1
  342 0003 25       		.uleb128 0x25
-ARM GAS  /tmp/ccWCjgKh.s 			page 7
+ARM GAS  /tmp/ccXLFFs9.s 			page 7
 
 
  343 0004 0E       		.uleb128 0xe
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  397 003a 0B       		.uleb128 0xb
  398 003b 3A       		.uleb128 0x3a
  399 003c 0B       		.uleb128 0xb
-ARM GAS  /tmp/ccWCjgKh.s 			page 8
+ARM GAS  /tmp/ccXLFFs9.s 			page 8
 
 
  400 003d 3B       		.uleb128 0x3b
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  454 0073 03       		.uleb128 0x3
  455 0074 0E       		.uleb128 0xe
  456 0075 3A       		.uleb128 0x3a
-ARM GAS  /tmp/ccWCjgKh.s 			page 9
+ARM GAS  /tmp/ccXLFFs9.s 			page 9
 
 
  457 0076 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  511 00ad 00       		.byte	0
  512 00ae 0E       		.uleb128 0xe
  513 00af 21       		.uleb128 0x21
-ARM GAS  /tmp/ccWCjgKh.s 			page 10
+ARM GAS  /tmp/ccXLFFs9.s 			page 10
 
 
  514 00b0 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  554 0039 4E427974 		.ascii	"NBytes\000"
  554      657300
  555              	.LASF36:
-ARM GAS  /tmp/ccWCjgKh.s 			page 11
+ARM GAS  /tmp/ccXLFFs9.s 			page 11
 
 
  556 0040 656E6470 		.ascii	"endpointhandle0\000"
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  575              	.LASF40:
  576 00fa 5553426C 		.ascii	"USBlib_11U14/Drivers/USB/Core/Device.c\000"
  576      69625F31 
-ARM GAS  /tmp/ccWCjgKh.s 			page 12
+ARM GAS  /tmp/ccXLFFs9.s 			page 12
 
 
  576      31553134 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  598      385F7400 
  599              	.LASF15:
  600 01c6 696E7433 		.ascii	"int32_t\000"
-ARM GAS  /tmp/ccWCjgKh.s 			page 13
+ARM GAS  /tmp/ccXLFFs9.s 			page 13
 
 
  600      325F7400 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  620              	.LASF28:
  621 02f2 7573625F 		.ascii	"usb_data_buffer_IN\000"
  621      64617461 
-ARM GAS  /tmp/ccWCjgKh.s 			page 14
+ARM GAS  /tmp/ccXLFFs9.s 			page 14
 
 
  621      5F627566 
@@ -814,13 +814,13 @@ ARM GAS  /tmp/ccWCjgKh.s 			page 1
  633      5F546F6F 
  633      676C6500 
  634              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccWCjgKh.s 			page 15
+ARM GAS  /tmp/ccXLFFs9.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 Device.c
-     /tmp/ccWCjgKh.s:18     .text.USB_Device_SendRemoteWakeup:00000000 $t
-     /tmp/ccWCjgKh.s:23     .text.USB_Device_SendRemoteWakeup:00000000 USB_Device_SendRemoteWakeup
+     /tmp/ccXLFFs9.s:18     .text.USB_Device_SendRemoteWakeup:00000000 $t
+     /tmp/ccXLFFs9.s:23     .text.USB_Device_SendRemoteWakeup:00000000 USB_Device_SendRemoteWakeup
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

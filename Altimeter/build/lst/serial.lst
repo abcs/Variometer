@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cctbMVK7.s 			page 1
+ARM GAS  /tmp/ccgTRDw5.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
   55              		.cfi_offset 3, -8
   56              		.cfi_offset 14, -4
   57              		.loc 1 70 0
-ARM GAS  /tmp/cctbMVK7.s 			page 2
+ARM GAS  /tmp/ccgTRDw5.s 			page 2
 
 
   58 0002 0C30     		add	r0, r0, #12
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  112 0004 0123     		mov	r3, #1
  113 0006 5B42     		neg	r3, r3
  114 0008 FFF7FEFF 		bl	chOQWriteTimeout
-ARM GAS  /tmp/cctbMVK7.s 			page 3
+ARM GAS  /tmp/ccgTRDw5.s 			page 3
 
 
  115              	.LVL11:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  169              		@ sp needed
  170 000c 08BD     		pop	{r3, pc}
  171              		.cfi_endproc
-ARM GAS  /tmp/cctbMVK7.s 			page 4
+ARM GAS  /tmp/ccgTRDw5.s 			page 4
 
 
  172              	.LFE42:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  226 000e C046     		.section	.text.sdInit,"ax",%progbits
  227              		.align	2
  228              		.global	sdInit
-ARM GAS  /tmp/cctbMVK7.s 			page 5
+ARM GAS  /tmp/ccgTRDw5.s 			page 5
 
 
  229              		.code	16
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  283 0018 211C     		mov	r1, r4
  284              	.LVL28:
  285 001a 5431     		add	r1, r1, #84
-ARM GAS  /tmp/cctbMVK7.s 			page 6
+ARM GAS  /tmp/ccgTRDw5.s 			page 6
 
 
  286 001c 0094     		str	r4, [sp]
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  340              		.loc 1 169 0
  341              	@ 169 "ChibiOS_2.6.5/os/hal/src/serial.c" 1
  342 000e 62B6     		cpsie   i
-ARM GAS  /tmp/cctbMVK7.s 			page 7
+ARM GAS  /tmp/ccgTRDw5.s 			page 7
 
 
  343              	@ 0 "" 2
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  397              		.code	16
  398              		@ sp needed
  399              	.LVL41:
-ARM GAS  /tmp/cctbMVK7.s 			page 8
+ARM GAS  /tmp/ccgTRDw5.s 			page 8
 
 
  400 0024 10BD     		pop	{r4, pc}
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  454              	.LFE51:
  455              		.size	sdIncomingDataI, .-sdIncomingDataI
  456              		.section	.text.sdRequestDataI,"ax",%progbits
-ARM GAS  /tmp/cctbMVK7.s 			page 9
+ARM GAS  /tmp/ccgTRDw5.s 			page 9
 
 
  457              		.align	2
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  511 0018 00000000 		.word	writet
  512 001c 00000000 		.word	readt
  513              		.text
-ARM GAS  /tmp/cctbMVK7.s 			page 10
+ARM GAS  /tmp/ccgTRDw5.s 			page 10
 
 
  514              	.Letext0:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  568 0053 C5030000 		.4byte	.LASF4
  569 0057 04       		.uleb128 0x4
  570 0058 02       		.byte	0x2
-ARM GAS  /tmp/cctbMVK7.s 			page 11
+ARM GAS  /tmp/ccgTRDw5.s 			page 11
 
 
  571 0059 05       		.byte	0x5
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  625 00c5 02       		.byte	0x2
  626 00c6 B7030000 		.4byte	.LASF17
  627 00ca 03       		.uleb128 0x3
-ARM GAS  /tmp/cctbMVK7.s 			page 12
+ARM GAS  /tmp/ccgTRDw5.s 			page 12
 
 
  628 00cb EA010000 		.4byte	.LASF18
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  682 0140 35020000 		.4byte	0x235
  683 0144 06       		.uleb128 0x6
  684 0145 44040000 		.4byte	.LASF28
-ARM GAS  /tmp/cctbMVK7.s 			page 13
+ARM GAS  /tmp/ccgTRDw5.s 			page 13
 
 
  685 0149 07       		.byte	0x7
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  739 01b5 07       		.byte	0x7
  740 01b6 82       		.byte	0x82
  741 01b7 E0000000 		.4byte	0xe0
-ARM GAS  /tmp/cctbMVK7.s 			page 14
+ARM GAS  /tmp/ccgTRDw5.s 			page 14
 
 
  742 01bb 1E       		.byte	0x1e
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  796 0227 40       		.byte	0x40
  797 0228 06       		.uleb128 0x6
  798 0229 A5000000 		.4byte	.LASF46
-ARM GAS  /tmp/cctbMVK7.s 			page 15
+ARM GAS  /tmp/ccgTRDw5.s 			page 15
 
 
  799 022d 07       		.byte	0x7
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  853 0293 04       		.byte	0x4
  854 0294 05       		.uleb128 0x5
  855 0295 62050000 		.4byte	.LASF50
-ARM GAS  /tmp/cctbMVK7.s 			page 16
+ARM GAS  /tmp/ccgTRDw5.s 			page 16
 
 
  856 0299 24       		.byte	0x24
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  910 02fe 08       		.byte	0x8
  911 02ff C3       		.byte	0xc3
  912 0300 87020000 		.4byte	0x287
-ARM GAS  /tmp/cctbMVK7.s 			page 17
+ARM GAS  /tmp/ccgTRDw5.s 			page 17
 
 
  913 0304 20       		.byte	0x20
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  967 036d 03       		.uleb128 0x3
  968 036e 2C030000 		.4byte	.LASF53
  969 0372 09       		.byte	0x9
-ARM GAS  /tmp/cctbMVK7.s 			page 18
+ARM GAS  /tmp/ccgTRDw5.s 			page 18
 
 
  970 0373 33       		.byte	0x33
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1024 03df 03       		.uleb128 0x3
  1025 03e0 60010000 		.4byte	.LASF62
  1026 03e4 0A       		.byte	0xa
-ARM GAS  /tmp/cctbMVK7.s 			page 19
+ARM GAS  /tmp/ccgTRDw5.s 			page 19
 
 
  1027 03e5 45       		.byte	0x45
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1081 0457 05       		.uleb128 0x5
  1082 0458 E4020000 		.4byte	.LASF69
  1083 045c 24       		.byte	0x24
-ARM GAS  /tmp/cctbMVK7.s 			page 20
+ARM GAS  /tmp/ccgTRDw5.s 			page 20
 
 
  1084 045d 0B       		.byte	0xb
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1138 04c9 0B       		.byte	0xb
  1139 04ca 3A       		.byte	0x3a
  1140 04cb CF040000 		.4byte	0x4cf
-ARM GAS  /tmp/cctbMVK7.s 			page 21
+ARM GAS  /tmp/ccgTRDw5.s 			page 21
 
 
  1141 04cf 09       		.uleb128 0x9
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1195 0547 2C050000 		.4byte	0x52c
  1196 054b 0F       		.uleb128 0xf
  1197 054c 01010000 		.4byte	0x101
-ARM GAS  /tmp/cctbMVK7.s 			page 22
+ARM GAS  /tmp/ccgTRDw5.s 			page 22
 
 
  1198 0550 5F050000 		.4byte	0x55f
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1252 05bc 46435200 		.ascii	"FCR\000"
  1253 05c0 0C       		.byte	0xc
  1254 05c1 BA       		.byte	0xba
-ARM GAS  /tmp/cctbMVK7.s 			page 23
+ARM GAS  /tmp/ccgTRDw5.s 			page 23
 
 
  1255 05c2 25030000 		.4byte	0x325
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1309 062e C2       		.byte	0xc2
  1310 062f 25030000 		.4byte	0x325
  1311 0633 20       		.byte	0x20
-ARM GAS  /tmp/cctbMVK7.s 			page 24
+ARM GAS  /tmp/ccgTRDw5.s 			page 24
 
 
  1312 0634 07       		.uleb128 0x7
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1366 06a0 06       		.uleb128 0x6
  1367 06a1 53040000 		.4byte	.LASF86
  1368 06a5 0C       		.byte	0xc
-ARM GAS  /tmp/cctbMVK7.s 			page 25
+ARM GAS  /tmp/ccgTRDw5.s 			page 25
 
 
  1369 06a6 CC       		.byte	0xcc
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1423 071e 04       		.byte	0x4
  1424 071f 09070000 		.4byte	0x709
  1425 0723 0F       		.uleb128 0xf
-ARM GAS  /tmp/cctbMVK7.s 			page 26
+ARM GAS  /tmp/ccgTRDw5.s 			page 26
 
 
  1426 0724 2C000000 		.4byte	0x2c
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1480 079c 05       		.uleb128 0x5
  1481 079d 98040000 		.4byte	.LASF94
  1482 07a1 78       		.byte	0x78
-ARM GAS  /tmp/cctbMVK7.s 			page 27
+ARM GAS  /tmp/ccgTRDw5.s 			page 27
 
 
  1483 07a2 0D       		.byte	0xd
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1537 0809 0E       		.byte	0xe
  1538 080a 92       		.byte	0x92
  1539 080b 34080000 		.4byte	0x834
-ARM GAS  /tmp/cctbMVK7.s 			page 28
+ARM GAS  /tmp/ccgTRDw5.s 			page 28
 
 
  1540 080f 06       		.uleb128 0x6
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1594 087b 06       		.uleb128 0x6
  1595 087c 0D030000 		.4byte	.LASF107
  1596 0880 0D       		.byte	0xd
-ARM GAS  /tmp/cctbMVK7.s 			page 29
+ARM GAS  /tmp/ccgTRDw5.s 			page 29
 
 
  1597 0881 7D       		.byte	0x7d
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1651 08f5 627000   		.ascii	"bp\000"
  1652 08f8 01       		.byte	0x1
  1653 08f9 63       		.byte	0x63
-ARM GAS  /tmp/cctbMVK7.s 			page 30
+ARM GAS  /tmp/ccgTRDw5.s 			page 30
 
 
  1654 08fa E6040000 		.4byte	0x4e6
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1708 0952 00000000 		.4byte	.LFB40
  1709 0956 0E000000 		.4byte	.LFE40-.LFB40
  1710 095a 01       		.uleb128 0x1
-ARM GAS  /tmp/cctbMVK7.s 			page 31
+ARM GAS  /tmp/ccgTRDw5.s 			page 31
 
 
  1711 095b 9C       		.byte	0x9c
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1765 09b1 18       		.uleb128 0x18
  1766 09b2 E3010000 		.4byte	.LASF109
  1767 09b6 01       		.byte	0x1
-ARM GAS  /tmp/cctbMVK7.s 			page 32
+ARM GAS  /tmp/ccgTRDw5.s 			page 32
 
 
  1768 09b7 5E       		.byte	0x5e
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1822 0a1f 51       		.byte	0x51
  1823 0a20 1C       		.uleb128 0x1c
  1824 0a21 01       		.uleb128 0x1
-ARM GAS  /tmp/cctbMVK7.s 			page 33
+ARM GAS  /tmp/ccgTRDw5.s 			page 33
 
 
  1825 0a22 50       		.byte	0x50
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1879 0a84 01       		.uleb128 0x1
  1880 0a85 51       		.byte	0x51
  1881 0a86 03       		.uleb128 0x3
-ARM GAS  /tmp/cctbMVK7.s 			page 34
+ARM GAS  /tmp/ccgTRDw5.s 			page 34
 
 
  1882 0a87 F3       		.byte	0xf3
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1936 0ae3 0C       		.uleb128 0xc
  1937 0ae4 00       		.byte	0
  1938 0ae5 00       		.byte	0
-ARM GAS  /tmp/cctbMVK7.s 			page 35
+ARM GAS  /tmp/ccgTRDw5.s 			page 35
 
 
  1939 0ae6 1D       		.uleb128 0x1d
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  1993 0b51 01       		.byte	0x1
  1994 0b52 54       		.byte	0x54
  1995 0b53 97000000 		.4byte	0x97
-ARM GAS  /tmp/cctbMVK7.s 			page 36
+ARM GAS  /tmp/ccgTRDw5.s 			page 36
 
 
  1996 0b57 AD020000 		.4byte	.LLST18
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2050 0bc3 01       		.uleb128 0x1
  2051 0bc4 52       		.byte	0x52
  2052 0bc5 02       		.uleb128 0x2
-ARM GAS  /tmp/cctbMVK7.s 			page 37
+ARM GAS  /tmp/ccgTRDw5.s 			page 37
 
 
  2053 0bc6 09       		.byte	0x9
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2107 0c35 24000000 		.4byte	.LVL29
  2108 0c39 D50E0000 		.4byte	0xed5
  2109 0c3d 620C0000 		.4byte	0xc62
-ARM GAS  /tmp/cctbMVK7.s 			page 38
+ARM GAS  /tmp/ccgTRDw5.s 			page 38
 
 
  2110 0c41 1C       		.uleb128 0x1c
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2164 0c7f 50       		.byte	0x50
  2165 0c80 02       		.uleb128 0x2
  2166 0c81 74       		.byte	0x74
-ARM GAS  /tmp/cctbMVK7.s 			page 39
+ARM GAS  /tmp/ccgTRDw5.s 			page 39
 
 
  2167 0c82 30       		.sleb128 48
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2221 0cdf E30C0000 		.4byte	0xce3
  2222 0ce3 0E       		.uleb128 0xe
  2223 0ce4 34080000 		.4byte	0x834
-ARM GAS  /tmp/cctbMVK7.s 			page 40
+ARM GAS  /tmp/ccgTRDw5.s 			page 40
 
 
  2224 0ce8 1E       		.uleb128 0x1e
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2278 0d57 01       		.byte	0x1
  2279 0d58 D5       		.byte	0xd5
  2280 0d59 00000000 		.4byte	.LFB51
-ARM GAS  /tmp/cctbMVK7.s 			page 41
+ARM GAS  /tmp/ccgTRDw5.s 			page 41
 
 
  2281 0d5d 2C000000 		.4byte	.LFE51-.LFB51
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2335 0dc1 51       		.byte	0x51
  2336 0dc2 02       		.uleb128 0x2
  2337 0dc3 08       		.byte	0x8
-ARM GAS  /tmp/cctbMVK7.s 			page 42
+ARM GAS  /tmp/ccgTRDw5.s 			page 42
 
 
  2338 0dc4 80       		.byte	0x80
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2392 0e28 75       		.byte	0x75
  2393 0e29 04       		.sleb128 4
  2394 0e2a 00       		.byte	0
-ARM GAS  /tmp/cctbMVK7.s 			page 43
+ARM GAS  /tmp/ccgTRDw5.s 			page 43
 
 
  2395 0e2b 00       		.byte	0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2449 0ea9 22010000 		.4byte	0x122
  2450 0ead 00       		.byte	0
  2451 0eae 24       		.uleb128 0x24
-ARM GAS  /tmp/cctbMVK7.s 			page 44
+ARM GAS  /tmp/ccgTRDw5.s 			page 44
 
 
  2452 0eaf 48010000 		.4byte	.LASF124
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2506 0f2d 8C0C0000 		.4byte	0xc8c
  2507 0f31 10       		.uleb128 0x10
  2508 0f32 DD0C0000 		.4byte	0xcdd
-ARM GAS  /tmp/cctbMVK7.s 			page 45
+ARM GAS  /tmp/ccgTRDw5.s 			page 45
 
 
  2509 0f36 00       		.byte	0
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2563 0fab DE000000 		.4byte	.LASF135
  2564 0faf 0B       		.byte	0xb
  2565 0fb0 6E01     		.2byte	0x16e
-ARM GAS  /tmp/cctbMVK7.s 			page 46
+ARM GAS  /tmp/ccgTRDw5.s 			page 46
 
 
  2566 0fb2 01010000 		.4byte	0x101
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2620 002f 0B       		.uleb128 0xb
  2621 0030 3E       		.uleb128 0x3e
  2622 0031 0B       		.uleb128 0xb
-ARM GAS  /tmp/cctbMVK7.s 			page 47
+ARM GAS  /tmp/ccgTRDw5.s 			page 47
 
 
  2623 0032 03       		.uleb128 0x3
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2677 0068 3A       		.uleb128 0x3a
  2678 0069 0B       		.uleb128 0xb
  2679 006a 3B       		.uleb128 0x3b
-ARM GAS  /tmp/cctbMVK7.s 			page 48
+ARM GAS  /tmp/ccgTRDw5.s 			page 48
 
 
  2680 006b 0B       		.uleb128 0xb
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2734 00a1 0E       		.uleb128 0xe
  2735 00a2 26       		.uleb128 0x26
  2736 00a3 00       		.byte	0
-ARM GAS  /tmp/cctbMVK7.s 			page 49
+ARM GAS  /tmp/ccgTRDw5.s 			page 49
 
 
  2737 00a4 49       		.uleb128 0x49
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2791 00da 01       		.uleb128 0x1
  2792 00db 01       		.byte	0x1
  2793 00dc 49       		.uleb128 0x49
-ARM GAS  /tmp/cctbMVK7.s 			page 50
+ARM GAS  /tmp/ccgTRDw5.s 			page 50
 
 
  2794 00dd 13       		.uleb128 0x13
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2848 0113 18       		.uleb128 0x18
  2849 0114 9742     		.uleb128 0x2117
  2850 0116 19       		.uleb128 0x19
-ARM GAS  /tmp/cctbMVK7.s 			page 51
+ARM GAS  /tmp/ccgTRDw5.s 			page 51
 
 
  2851 0117 01       		.uleb128 0x1
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2905 0152 01       		.byte	0x1
  2906 0153 03       		.uleb128 0x3
  2907 0154 08       		.uleb128 0x8
-ARM GAS  /tmp/cctbMVK7.s 			page 52
+ARM GAS  /tmp/ccgTRDw5.s 			page 52
 
 
  2908 0155 3A       		.uleb128 0x3a
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  2962 018f 20       		.uleb128 0x20
  2963 0190 898201   		.uleb128 0x4109
  2964 0193 01       		.byte	0x1
-ARM GAS  /tmp/cctbMVK7.s 			page 53
+ARM GAS  /tmp/ccgTRDw5.s 			page 53
 
 
  2965 0194 11       		.uleb128 0x11
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3019 01cb 08       		.uleb128 0x8
  3020 01cc 3A       		.uleb128 0x3a
  3021 01cd 0B       		.uleb128 0xb
-ARM GAS  /tmp/cctbMVK7.s 			page 54
+ARM GAS  /tmp/ccgTRDw5.s 			page 54
 
 
  3022 01ce 3B       		.uleb128 0x3b
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3076 0204 0B       		.uleb128 0xb
  3077 0205 3B       		.uleb128 0x3b
  3078 0206 05       		.uleb128 0x5
-ARM GAS  /tmp/cctbMVK7.s 			page 55
+ARM GAS  /tmp/ccgTRDw5.s 			page 55
 
 
  3079 0207 27       		.uleb128 0x27
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3133 000b 04000000 		.4byte	.LVL1
  3134 000f 07000000 		.4byte	.LVL2-1
  3135 0013 0300     		.2byte	0x3
-ARM GAS  /tmp/cctbMVK7.s 			page 56
+ARM GAS  /tmp/ccgTRDw5.s 			page 56
 
 
  3136 0015 70       		.byte	0x70
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3190              	.LLST4:
  3191 0091 00000000 		.4byte	.LVL3
  3192 0095 04000000 		.4byte	.LVL4
-ARM GAS  /tmp/cctbMVK7.s 			page 57
+ARM GAS  /tmp/ccgTRDw5.s 			page 57
 
 
  3193 0099 0100     		.2byte	0x1
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3247 0117 50       		.sleb128 -48
  3248 0118 9F       		.byte	0x9f
  3249 0119 07000000 		.4byte	.LVL8-1
-ARM GAS  /tmp/cctbMVK7.s 			page 58
+ARM GAS  /tmp/ccgTRDw5.s 			page 58
 
 
  3250 011d 0A000000 		.4byte	.LFE45
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3304 019c 50       		.byte	0x50
  3305 019d 04000000 		.4byte	.LVL10
  3306 01a1 0B000000 		.4byte	.LVL11-1
-ARM GAS  /tmp/cctbMVK7.s 			page 59
+ARM GAS  /tmp/ccgTRDw5.s 			page 59
 
 
  3307 01a5 0300     		.2byte	0x3
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3361 0222 0400     		.2byte	0x4
  3362 0224 F3       		.byte	0xf3
  3363 0225 01       		.uleb128 0x1
-ARM GAS  /tmp/cctbMVK7.s 			page 60
+ARM GAS  /tmp/ccgTRDw5.s 			page 60
 
 
  3364 0226 50       		.byte	0x50
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3418 02a3 50       		.byte	0x50
  3419 02a4 9F       		.byte	0x9f
  3420 02a5 00000000 		.4byte	0
-ARM GAS  /tmp/cctbMVK7.s 			page 61
+ARM GAS  /tmp/ccgTRDw5.s 			page 61
 
 
  3421 02a9 00000000 		.4byte	0
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3475 0328 0B000000 		.4byte	.LVL23-1
  3476 032c 0E000000 		.4byte	.LFE41
  3477 0330 0400     		.2byte	0x4
-ARM GAS  /tmp/cctbMVK7.s 			page 62
+ARM GAS  /tmp/ccgTRDw5.s 			page 62
 
 
  3478 0332 F3       		.byte	0xf3
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3532 03b6 F3       		.byte	0xf3
  3533 03b7 01       		.uleb128 0x1
  3534 03b8 52       		.byte	0x52
-ARM GAS  /tmp/cctbMVK7.s 			page 63
+ARM GAS  /tmp/ccgTRDw5.s 			page 63
 
 
  3535 03b9 9F       		.byte	0x9f
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3589 043b 00000000 		.4byte	.LVL42
  3590 043f 0E000000 		.4byte	.LVL43
  3591 0443 0100     		.2byte	0x1
-ARM GAS  /tmp/cctbMVK7.s 			page 64
+ARM GAS  /tmp/ccgTRDw5.s 			page 64
 
 
  3592 0445 50       		.byte	0x50
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3646 04c9 54       		.byte	0x54
  3647 04ca 18000000 		.4byte	.LVL55
  3648 04ce 1A000000 		.4byte	.LFE52
-ARM GAS  /tmp/cctbMVK7.s 			page 65
+ARM GAS  /tmp/ccgTRDw5.s 			page 65
 
 
  3649 04d2 0100     		.2byte	0x1
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3703 0028 00000000 		.4byte	.LFB42
  3704 002c 0E000000 		.4byte	.LFE42
  3705 0030 00000000 		.4byte	.LFB43
-ARM GAS  /tmp/cctbMVK7.s 			page 66
+ARM GAS  /tmp/ccgTRDw5.s 			page 66
 
 
  3706 0034 0A000000 		.4byte	.LFE43
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3741 0056 63684F51 		.ascii	"chOQInit\000"
  3741      496E6974 
  3741      00
-ARM GAS  /tmp/cctbMVK7.s 			page 67
+ARM GAS  /tmp/ccgTRDw5.s 			page 67
 
 
  3742              	.LASF65:
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3771      47657449 
  3771      00
  3772              	.LASF37:
-ARM GAS  /tmp/cctbMVK7.s 			page 68
+ARM GAS  /tmp/ccgTRDw5.s 			page 68
 
 
  3773 00e7 705F7265 		.ascii	"p_refs\000"
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3799 0179 53657269 		.ascii	"SerialDriverVMT\000"
  3799      616C4472 
  3799      69766572 
-ARM GAS  /tmp/cctbMVK7.s 			page 69
+ARM GAS  /tmp/ccgTRDw5.s 			page 69
 
 
  3799      564D5400 
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3830              	.LASF136:
  3831 0215 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
  3831      4320342E 
-ARM GAS  /tmp/cctbMVK7.s 			page 70
+ARM GAS  /tmp/ccgTRDw5.s 			page 70
 
 
  3831      382E3420 
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3854 032c 4D757465 		.ascii	"Mutex\000"
  3854      7800
  3855              	.LASF30:
-ARM GAS  /tmp/cctbMVK7.s 			page 71
+ARM GAS  /tmp/ccgTRDw5.s 			page 71
 
 
  3856 0332 705F7072 		.ascii	"p_prio\000"
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3887              	.LASF17:
  3888 03b7 5F426F6F 		.ascii	"_Bool\000"
  3888      6C00
-ARM GAS  /tmp/cctbMVK7.s 			page 72
+ARM GAS  /tmp/ccgTRDw5.s 			page 72
 
 
  3889              	.LASF14:
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3916      4D415443 
  3916      4800
  3917              	.LASF91:
-ARM GAS  /tmp/cctbMVK7.s 			page 73
+ARM GAS  /tmp/ccgTRDw5.s 			page 73
 
 
  3918 0461 53445F53 		.ascii	"SD_STOP\000"
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3946 04ea 6D5F6E65 		.ascii	"m_next\000"
  3946      787400
  3947              	.LASF26:
-ARM GAS  /tmp/cctbMVK7.s 			page 74
+ARM GAS  /tmp/ccgTRDw5.s 			page 74
 
 
  3948 04f1 73797374 		.ascii	"systime_t\000"
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  3976 058b 65735F6E 		.ascii	"es_next\000"
  3976      65787400 
  3977              	.LASF76:
-ARM GAS  /tmp/cctbMVK7.s 			page 75
+ARM GAS  /tmp/ccgTRDw5.s 			page 75
 
 
  3978 0593 715F6E6F 		.ascii	"q_notify\000"
@@ -4498,47 +4498,47 @@ ARM GAS  /tmp/cctbMVK7.s 			page 1
  4008 061b 63684951 		.ascii	"chIQGetTimeout\000"
  4008      47657454 
  4008      696D656F 
-ARM GAS  /tmp/cctbMVK7.s 			page 76
+ARM GAS  /tmp/ccgTRDw5.s 			page 76
 
 
  4008      757400
  4009              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cctbMVK7.s 			page 77
+ARM GAS  /tmp/ccgTRDw5.s 			page 77
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 serial.c
-     /tmp/cctbMVK7.s:18     .text.readt:00000000 $t
-     /tmp/cctbMVK7.s:22     .text.readt:00000000 readt
-     /tmp/cctbMVK7.s:44     .text.read:00000000 $t
-     /tmp/cctbMVK7.s:48     .text.read:00000000 read
-     /tmp/cctbMVK7.s:71     .text.writet:00000000 $t
-     /tmp/cctbMVK7.s:75     .text.writet:00000000 writet
-     /tmp/cctbMVK7.s:96     .text.write:00000000 $t
-     /tmp/cctbMVK7.s:100    .text.write:00000000 write
-     /tmp/cctbMVK7.s:123    .text.gett:00000000 $t
-     /tmp/cctbMVK7.s:127    .text.gett:00000000 gett
-     /tmp/cctbMVK7.s:148    .text.get:00000000 $t
-     /tmp/cctbMVK7.s:152    .text.get:00000000 get
-     /tmp/cctbMVK7.s:175    .text.putt:00000000 $t
-     /tmp/cctbMVK7.s:179    .text.putt:00000000 putt
-     /tmp/cctbMVK7.s:200    .text.put:00000000 $t
-     /tmp/cctbMVK7.s:204    .text.put:00000000 put
-     /tmp/cctbMVK7.s:227    .text.sdInit:00000000 $t
-     /tmp/cctbMVK7.s:232    .text.sdInit:00000000 sdInit
-     /tmp/cctbMVK7.s:250    .text.sdObjectInit:00000000 $t
-     /tmp/cctbMVK7.s:255    .text.sdObjectInit:00000000 sdObjectInit
-     /tmp/cctbMVK7.s:309    .text.sdObjectInit:0000003c $d
-     /tmp/cctbMVK7.s:314    .text.sdStart:00000000 $t
-     /tmp/cctbMVK7.s:319    .text.sdStart:00000000 sdStart
-     /tmp/cctbMVK7.s:353    .text.sdStop:00000000 $t
-     /tmp/cctbMVK7.s:358    .text.sdStop:00000000 sdStop
-     /tmp/cctbMVK7.s:405    .text.sdIncomingDataI:00000000 $t
-     /tmp/cctbMVK7.s:410    .text.sdIncomingDataI:00000000 sdIncomingDataI
-     /tmp/cctbMVK7.s:457    .text.sdRequestDataI:00000000 $t
-     /tmp/cctbMVK7.s:462    .text.sdRequestDataI:00000000 sdRequestDataI
-     /tmp/cctbMVK7.s:500    .rodata.vmt:00000000 $d
-     /tmp/cctbMVK7.s:504    .rodata.vmt:00000000 vmt
+     /tmp/ccgTRDw5.s:18     .text.readt:00000000 $t
+     /tmp/ccgTRDw5.s:22     .text.readt:00000000 readt
+     /tmp/ccgTRDw5.s:44     .text.read:00000000 $t
+     /tmp/ccgTRDw5.s:48     .text.read:00000000 read
+     /tmp/ccgTRDw5.s:71     .text.writet:00000000 $t
+     /tmp/ccgTRDw5.s:75     .text.writet:00000000 writet
+     /tmp/ccgTRDw5.s:96     .text.write:00000000 $t
+     /tmp/ccgTRDw5.s:100    .text.write:00000000 write
+     /tmp/ccgTRDw5.s:123    .text.gett:00000000 $t
+     /tmp/ccgTRDw5.s:127    .text.gett:00000000 gett
+     /tmp/ccgTRDw5.s:148    .text.get:00000000 $t
+     /tmp/ccgTRDw5.s:152    .text.get:00000000 get
+     /tmp/ccgTRDw5.s:175    .text.putt:00000000 $t
+     /tmp/ccgTRDw5.s:179    .text.putt:00000000 putt
+     /tmp/ccgTRDw5.s:200    .text.put:00000000 $t
+     /tmp/ccgTRDw5.s:204    .text.put:00000000 put
+     /tmp/ccgTRDw5.s:227    .text.sdInit:00000000 $t
+     /tmp/ccgTRDw5.s:232    .text.sdInit:00000000 sdInit
+     /tmp/ccgTRDw5.s:250    .text.sdObjectInit:00000000 $t
+     /tmp/ccgTRDw5.s:255    .text.sdObjectInit:00000000 sdObjectInit
+     /tmp/ccgTRDw5.s:309    .text.sdObjectInit:0000003c $d
+     /tmp/ccgTRDw5.s:314    .text.sdStart:00000000 $t
+     /tmp/ccgTRDw5.s:319    .text.sdStart:00000000 sdStart
+     /tmp/ccgTRDw5.s:353    .text.sdStop:00000000 $t
+     /tmp/ccgTRDw5.s:358    .text.sdStop:00000000 sdStop
+     /tmp/ccgTRDw5.s:405    .text.sdIncomingDataI:00000000 $t
+     /tmp/ccgTRDw5.s:410    .text.sdIncomingDataI:00000000 sdIncomingDataI
+     /tmp/ccgTRDw5.s:457    .text.sdRequestDataI:00000000 $t
+     /tmp/ccgTRDw5.s:462    .text.sdRequestDataI:00000000 sdRequestDataI
+     /tmp/ccgTRDw5.s:500    .rodata.vmt:00000000 $d
+     /tmp/ccgTRDw5.s:504    .rodata.vmt:00000000 vmt
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

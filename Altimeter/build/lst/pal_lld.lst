@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc0a1ntr.s 			page 1
+ARM GAS  /tmp/ccf1lXIm.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
   55 0024 04200000 		.word	8196
   56 0028 04210000 		.word	8452
   57              		.cfi_endproc
-ARM GAS  /tmp/cc0a1ntr.s 			page 2
+ARM GAS  /tmp/ccf1lXIm.s 			page 2
 
 
   58              	.LFE39:
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  112 0038 D450     		str	r4, [r2, r3]
  113              	.L8:
  114 003a 8000     		lsl	r0, r0, #2
-ARM GAS  /tmp/cc0a1ntr.s 			page 3
+ARM GAS  /tmp/ccf1lXIm.s 			page 3
 
 
  115              	.LVL6:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  169 0041 45000000 		.4byte	0x45
  170 0045 03       		.uleb128 0x3
  171 0046 01       		.byte	0x1
-ARM GAS  /tmp/cc0a1ntr.s 			page 4
+ARM GAS  /tmp/ccf1lXIm.s 			page 4
 
 
  172 0047 08       		.byte	0x8
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  226 00ad 8C000000 		.4byte	0x8c
  227 00b1 BC000000 		.4byte	0xbc
  228 00b5 06       		.uleb128 0x6
-ARM GAS  /tmp/cc0a1ntr.s 			page 5
+ARM GAS  /tmp/ccf1lXIm.s 			page 5
 
 
  229 00b6 9E000000 		.4byte	0x9e
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  283 0126 31010000 		.4byte	0x131
  284 012a 06       		.uleb128 0x6
  285 012b 9E000000 		.4byte	0x9e
-ARM GAS  /tmp/cc0a1ntr.s 			page 6
+ARM GAS  /tmp/ccf1lXIm.s 			page 6
 
 
  286 012f 3F       		.byte	0x3f
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  340 019d 08010000 		.4byte	0x108
  341 01a1 00       		.byte	0
  342 01a2 10       		.uleb128 0x10
-ARM GAS  /tmp/cc0a1ntr.s 			page 7
+ARM GAS  /tmp/ccf1lXIm.s 			page 7
 
 
  343 01a3 47000000 		.4byte	.LASF16
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  397 0220 C6020000 		.4byte	0x2c6
  398 0224 8021     		.2byte	0x2180
  399 0226 12       		.uleb128 0x12
-ARM GAS  /tmp/cc0a1ntr.s 			page 8
+ARM GAS  /tmp/ccf1lXIm.s 			page 8
 
 
  400 0227 7C000000 		.4byte	.LASF23
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  454 02a7 09       		.uleb128 0x9
  455 02a8 BC000000 		.4byte	0xbc
  456 02ac 05       		.uleb128 0x5
-ARM GAS  /tmp/cc0a1ntr.s 			page 9
+ARM GAS  /tmp/ccf1lXIm.s 			page 9
 
 
  457 02ad 8C000000 		.4byte	0x8c
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  511 031f 43       		.byte	0x43
  512 0320 07030000 		.4byte	0x307
  513 0324 00       		.byte	0
-ARM GAS  /tmp/cc0a1ntr.s 			page 10
+ARM GAS  /tmp/ccf1lXIm.s 			page 10
 
 
  514 0325 19       		.uleb128 0x19
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  568 0396 4E000000 		.4byte	.LFE40-.LFB40
  569 039a 01       		.uleb128 0x1
  570 039b 9C       		.byte	0x9c
-ARM GAS  /tmp/cc0a1ntr.s 			page 11
+ARM GAS  /tmp/ccf1lXIm.s 			page 11
 
 
  571 039c 1E       		.uleb128 0x1e
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  625 0020 00       		.byte	0
  626 0021 0B       		.uleb128 0xb
  627 0022 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc0a1ntr.s 			page 12
+ARM GAS  /tmp/ccf1lXIm.s 			page 12
 
 
  628 0023 3E       		.uleb128 0x3e
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  682 0059 08       		.uleb128 0x8
  683 005a 3A       		.uleb128 0x3a
  684 005b 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc0a1ntr.s 			page 13
+ARM GAS  /tmp/ccf1lXIm.s 			page 13
 
 
  685 005c 3B       		.uleb128 0x3b
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  739 0092 0B       		.uleb128 0xb
  740 0093 3B       		.uleb128 0x3b
  741 0094 05       		.uleb128 0x5
-ARM GAS  /tmp/cc0a1ntr.s 			page 14
+ARM GAS  /tmp/ccf1lXIm.s 			page 14
 
 
  742 0095 01       		.uleb128 0x1
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  796 00cb 0E       		.uleb128 0xe
  797 00cc 3A       		.uleb128 0x3a
  798 00cd 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc0a1ntr.s 			page 15
+ARM GAS  /tmp/ccf1lXIm.s 			page 15
 
 
  799 00ce 3B       		.uleb128 0x3b
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  853 0104 01       		.byte	0x1
  854 0105 0B       		.uleb128 0xb
  855 0106 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc0a1ntr.s 			page 16
+ARM GAS  /tmp/ccf1lXIm.s 			page 16
 
 
  856 0107 3A       		.uleb128 0x3a
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  910 013d 06       		.uleb128 0x6
  911 013e 40       		.uleb128 0x40
  912 013f 18       		.uleb128 0x18
-ARM GAS  /tmp/cc0a1ntr.s 			page 17
+ARM GAS  /tmp/ccf1lXIm.s 			page 17
 
 
  913 0140 9742     		.uleb128 0x2117
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  967 0178 05       		.uleb128 0x5
  968 0179 00       		.byte	0
  969 017a 03       		.uleb128 0x3
-ARM GAS  /tmp/cc0a1ntr.s 			page 18
+ARM GAS  /tmp/ccf1lXIm.s 			page 18
 
 
  970 017b 0E       		.uleb128 0xe
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  1024 005b 00000000 		.4byte	.LVL1
  1025 005f 22000000 		.4byte	.LVL3
  1026 0063 0100     		.2byte	0x1
-ARM GAS  /tmp/cc0a1ntr.s 			page 19
+ARM GAS  /tmp/ccf1lXIm.s 			page 19
 
 
  1027 0065 52       		.byte	0x52
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  1074      7400
  1075              	.LASF6:
  1076 000e 5F5F7569 		.ascii	"__uint8_t\000"
-ARM GAS  /tmp/cc0a1ntr.s 			page 20
+ARM GAS  /tmp/ccf1lXIm.s 			page 20
 
 
  1076      6E74385F 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  1102 009a 64617461 		.ascii	"data\000"
  1102      00
  1103              	.LASF38:
-ARM GAS  /tmp/cc0a1ntr.s 			page 21
+ARM GAS  /tmp/ccf1lXIm.s 			page 21
 
 
  1104 009f 43686962 		.ascii	"ChibiOS_2.6.5/os/hal/platforms/LPC11Uxx/pal_lld.c\000"
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  1124      65642069 
  1125              	.LASF11:
  1126 0174 75696E74 		.ascii	"uint8_t\000"
-ARM GAS  /tmp/cc0a1ntr.s 			page 22
+ARM GAS  /tmp/ccf1lXIm.s 			page 22
 
 
  1126      385F7400 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  1151 0282 6770696F 		.ascii	"gpio_setup_t\000"
  1151      5F736574 
  1151      75705F74 
-ARM GAS  /tmp/cc0a1ntr.s 			page 23
+ARM GAS  /tmp/ccf1lXIm.s 			page 23
 
 
  1151      00
@@ -1338,16 +1338,16 @@ ARM GAS  /tmp/cc0a1ntr.s 			page 1
  1159 02ad 5F426F6F 		.ascii	"_Bool\000"
  1159      6C00
  1160              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc0a1ntr.s 			page 24
+ARM GAS  /tmp/ccf1lXIm.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 pal_lld.c
-     /tmp/cc0a1ntr.s:18     .text._pal_lld_init:00000000 $t
-     /tmp/cc0a1ntr.s:23     .text._pal_lld_init:00000000 _pal_lld_init
-     /tmp/cc0a1ntr.s:55     .text._pal_lld_init:00000024 $d
-     /tmp/cc0a1ntr.s:61     .text._pal_lld_setgroupmode:00000000 $t
-     /tmp/cc0a1ntr.s:66     .text._pal_lld_setgroupmode:00000000 _pal_lld_setgroupmode
+     /tmp/ccf1lXIm.s:18     .text._pal_lld_init:00000000 $t
+     /tmp/ccf1lXIm.s:23     .text._pal_lld_init:00000000 _pal_lld_init
+     /tmp/ccf1lXIm.s:55     .text._pal_lld_init:00000024 $d
+     /tmp/ccf1lXIm.s:61     .text._pal_lld_setgroupmode:00000000 $t
+     /tmp/ccf1lXIm.s:66     .text._pal_lld_setgroupmode:00000000 _pal_lld_setgroupmode
                      .debug_frame:00000010 $d
 
 NO UNDEFINED SYMBOLS

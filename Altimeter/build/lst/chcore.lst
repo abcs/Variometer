@@ -1,0 +1,327 @@
+ARM GAS  /tmp/ccasXiU1.s 			page 1
+
+
+   1              		.cpu cortex-m0
+   2              		.fpu softvfp
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 1
+  10              		.eabi_attribute 34, 0
+  11              		.eabi_attribute 18, 4
+  12              		.code	16
+  13              		.file	"chcore.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.port_halt,"ax",%progbits
+  18              		.align	2
+  19              		.weak	port_halt
+  20              		.code	16
+  21              		.thumb_func
+  22              		.type	port_halt, %function
+  23              	port_halt:
+  24              	.LFB7:
+  25              		.file 1 "ChibiOS_2.6.5/os/ports/GCC/ARMCMx/chcore.c"
+  26              		.loc 1 46 0
+  27              		.cfi_startproc
+  28              		.loc 1 48 0
+  29              	@ 48 "ChibiOS_2.6.5/os/ports/GCC/ARMCMx/chcore.c" 1
+  30 0000 72B6     		cpsid   i
+  31              	@ 0 "" 2
+  32              		.code	16
+  33              	.L2:
+  34 0002 FEE7     		b	.L2
+  35              		.cfi_endproc
+  36              	.LFE7:
+  37              		.size	port_halt, .-port_halt
+  38              		.text
+  39              	.Letext0:
+  40              		.section	.debug_info,"",%progbits
+  41              	.Ldebug_info0:
+  42 0000 8E000000 		.4byte	0x8e
+  43 0004 0400     		.2byte	0x4
+  44 0006 00000000 		.4byte	.Ldebug_abbrev0
+  45 000a 04       		.byte	0x4
+  46 000b 01       		.uleb128 0x1
+  47 000c 2D000000 		.4byte	.LASF12
+  48 0010 01       		.byte	0x1
+  49 0011 09010000 		.4byte	.LASF13
+  50 0015 75010000 		.4byte	.LASF14
+  51 0019 00000000 		.4byte	.Ldebug_ranges0+0
+  52 001d 00000000 		.4byte	0
+  53 0021 00000000 		.4byte	.Ldebug_line0
+  54 0025 02       		.uleb128 0x2
+  55 0026 04       		.byte	0x4
+  56 0027 05       		.byte	0x5
+  57 0028 696E7400 		.ascii	"int\000"
+ARM GAS  /tmp/ccasXiU1.s 			page 2
+
+
+  58 002c 03       		.uleb128 0x3
+  59 002d 04       		.byte	0x4
+  60 002e 07       		.byte	0x7
+  61 002f 0E000000 		.4byte	.LASF0
+  62 0033 03       		.uleb128 0x3
+  63 0034 01       		.byte	0x1
+  64 0035 06       		.byte	0x6
+  65 0036 69010000 		.4byte	.LASF1
+  66 003a 03       		.uleb128 0x3
+  67 003b 01       		.byte	0x1
+  68 003c 08       		.byte	0x8
+  69 003d 34010000 		.4byte	.LASF2
+  70 0041 03       		.uleb128 0x3
+  71 0042 02       		.byte	0x2
+  72 0043 05       		.byte	0x5
+  73 0044 A8010000 		.4byte	.LASF3
+  74 0048 03       		.uleb128 0x3
+  75 0049 02       		.byte	0x2
+  76 004a 07       		.byte	0x7
+  77 004b 56010000 		.4byte	.LASF4
+  78 004f 03       		.uleb128 0x3
+  79 0050 04       		.byte	0x4
+  80 0051 05       		.byte	0x5
+  81 0052 47010000 		.4byte	.LASF5
+  82 0056 03       		.uleb128 0x3
+  83 0057 04       		.byte	0x4
+  84 0058 07       		.byte	0x7
+  85 0059 1B000000 		.4byte	.LASF6
+  86 005d 03       		.uleb128 0x3
+  87 005e 08       		.byte	0x8
+  88 005f 05       		.byte	0x5
+  89 0060 00000000 		.4byte	.LASF7
+  90 0064 03       		.uleb128 0x3
+  91 0065 08       		.byte	0x8
+  92 0066 07       		.byte	0x7
+  93 0067 F2000000 		.4byte	.LASF8
+  94 006b 03       		.uleb128 0x3
+  95 006c 01       		.byte	0x1
+  96 006d 02       		.byte	0x2
+  97 006e 50010000 		.4byte	.LASF9
+  98 0072 03       		.uleb128 0x3
+  99 0073 04       		.byte	0x4
+ 100 0074 07       		.byte	0x7
+ 101 0075 B2010000 		.4byte	.LASF10
+ 102 0079 03       		.uleb128 0x3
+ 103 007a 01       		.byte	0x1
+ 104 007b 08       		.byte	0x8
+ 105 007c 42010000 		.4byte	.LASF11
+ 106 0080 04       		.uleb128 0x4
+ 107 0081 9E010000 		.4byte	.LASF15
+ 108 0085 01       		.byte	0x1
+ 109 0086 2E       		.byte	0x2e
+ 110 0087 00000000 		.4byte	.LFB7
+ 111 008b 04000000 		.4byte	.LFE7-.LFB7
+ 112 008f 01       		.uleb128 0x1
+ 113 0090 9C       		.byte	0x9c
+ 114 0091 00       		.byte	0
+ARM GAS  /tmp/ccasXiU1.s 			page 3
+
+
+ 115              		.section	.debug_abbrev,"",%progbits
+ 116              	.Ldebug_abbrev0:
+ 117 0000 01       		.uleb128 0x1
+ 118 0001 11       		.uleb128 0x11
+ 119 0002 01       		.byte	0x1
+ 120 0003 25       		.uleb128 0x25
+ 121 0004 0E       		.uleb128 0xe
+ 122 0005 13       		.uleb128 0x13
+ 123 0006 0B       		.uleb128 0xb
+ 124 0007 03       		.uleb128 0x3
+ 125 0008 0E       		.uleb128 0xe
+ 126 0009 1B       		.uleb128 0x1b
+ 127 000a 0E       		.uleb128 0xe
+ 128 000b 55       		.uleb128 0x55
+ 129 000c 17       		.uleb128 0x17
+ 130 000d 11       		.uleb128 0x11
+ 131 000e 01       		.uleb128 0x1
+ 132 000f 10       		.uleb128 0x10
+ 133 0010 17       		.uleb128 0x17
+ 134 0011 00       		.byte	0
+ 135 0012 00       		.byte	0
+ 136 0013 02       		.uleb128 0x2
+ 137 0014 24       		.uleb128 0x24
+ 138 0015 00       		.byte	0
+ 139 0016 0B       		.uleb128 0xb
+ 140 0017 0B       		.uleb128 0xb
+ 141 0018 3E       		.uleb128 0x3e
+ 142 0019 0B       		.uleb128 0xb
+ 143 001a 03       		.uleb128 0x3
+ 144 001b 08       		.uleb128 0x8
+ 145 001c 00       		.byte	0
+ 146 001d 00       		.byte	0
+ 147 001e 03       		.uleb128 0x3
+ 148 001f 24       		.uleb128 0x24
+ 149 0020 00       		.byte	0
+ 150 0021 0B       		.uleb128 0xb
+ 151 0022 0B       		.uleb128 0xb
+ 152 0023 3E       		.uleb128 0x3e
+ 153 0024 0B       		.uleb128 0xb
+ 154 0025 03       		.uleb128 0x3
+ 155 0026 0E       		.uleb128 0xe
+ 156 0027 00       		.byte	0
+ 157 0028 00       		.byte	0
+ 158 0029 04       		.uleb128 0x4
+ 159 002a 2E       		.uleb128 0x2e
+ 160 002b 00       		.byte	0
+ 161 002c 3F       		.uleb128 0x3f
+ 162 002d 19       		.uleb128 0x19
+ 163 002e 03       		.uleb128 0x3
+ 164 002f 0E       		.uleb128 0xe
+ 165 0030 3A       		.uleb128 0x3a
+ 166 0031 0B       		.uleb128 0xb
+ 167 0032 3B       		.uleb128 0x3b
+ 168 0033 0B       		.uleb128 0xb
+ 169 0034 27       		.uleb128 0x27
+ 170 0035 19       		.uleb128 0x19
+ 171 0036 11       		.uleb128 0x11
+ARM GAS  /tmp/ccasXiU1.s 			page 4
+
+
+ 172 0037 01       		.uleb128 0x1
+ 173 0038 12       		.uleb128 0x12
+ 174 0039 06       		.uleb128 0x6
+ 175 003a 40       		.uleb128 0x40
+ 176 003b 18       		.uleb128 0x18
+ 177 003c 9742     		.uleb128 0x2117
+ 178 003e 19       		.uleb128 0x19
+ 179 003f 00       		.byte	0
+ 180 0040 00       		.byte	0
+ 181 0041 00       		.byte	0
+ 182              		.section	.debug_aranges,"",%progbits
+ 183 0000 1C000000 		.4byte	0x1c
+ 184 0004 0200     		.2byte	0x2
+ 185 0006 00000000 		.4byte	.Ldebug_info0
+ 186 000a 04       		.byte	0x4
+ 187 000b 00       		.byte	0
+ 188 000c 0000     		.2byte	0
+ 189 000e 0000     		.2byte	0
+ 190 0010 00000000 		.4byte	.LFB7
+ 191 0014 04000000 		.4byte	.LFE7-.LFB7
+ 192 0018 00000000 		.4byte	0
+ 193 001c 00000000 		.4byte	0
+ 194              		.section	.debug_ranges,"",%progbits
+ 195              	.Ldebug_ranges0:
+ 196 0000 00000000 		.4byte	.LFB7
+ 197 0004 04000000 		.4byte	.LFE7
+ 198 0008 00000000 		.4byte	0
+ 199 000c 00000000 		.4byte	0
+ 200              		.section	.debug_line,"",%progbits
+ 201              	.Ldebug_line0:
+ 202 0000 57000000 		.section	.debug_str,"MS",%progbits,1
+ 202      02004100 
+ 202      00000201 
+ 202      FB0E0D00 
+ 202      01010101 
+ 203              	.LASF7:
+ 204 0000 6C6F6E67 		.ascii	"long long int\000"
+ 204      206C6F6E 
+ 204      6720696E 
+ 204      7400
+ 205              	.LASF0:
+ 206 000e 756E7369 		.ascii	"unsigned int\000"
+ 206      676E6564 
+ 206      20696E74 
+ 206      00
+ 207              	.LASF6:
+ 208 001b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 208      20756E73 
+ 208      69676E65 
+ 208      6420696E 
+ 208      7400
+ 209              	.LASF12:
+ 210 002d 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 210      4320342E 
+ 210      382E3420 
+ 210      32303134 
+ 210      30353236 
+ARM GAS  /tmp/ccasXiU1.s 			page 5
+
+
+ 211 0060 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mno-thumb-in"
+ 211      20726576 
+ 211      6973696F 
+ 211      6E203231 
+ 211      31333538 
+ 212 0093 74657277 		.ascii	"terwork -mthumb -ggdb -O1 -fomit-frame-pointer -ffu"
+ 212      6F726B20 
+ 212      2D6D7468 
+ 212      756D6220 
+ 212      2D676764 
+ 213 00c6 6E637469 		.ascii	"nction-sections -fdata-sections -fno-common\000"
+ 213      6F6E2D73 
+ 213      65637469 
+ 213      6F6E7320 
+ 213      2D666461 
+ 214              	.LASF8:
+ 215 00f2 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 215      206C6F6E 
+ 215      6720756E 
+ 215      7369676E 
+ 215      65642069 
+ 216              	.LASF13:
+ 217 0109 43686962 		.ascii	"ChibiOS_2.6.5/os/ports/GCC/ARMCMx/chcore.c\000"
+ 217      694F535F 
+ 217      322E362E 
+ 217      352F6F73 
+ 217      2F706F72 
+ 218              	.LASF2:
+ 219 0134 756E7369 		.ascii	"unsigned char\000"
+ 219      676E6564 
+ 219      20636861 
+ 219      7200
+ 220              	.LASF11:
+ 221 0142 63686172 		.ascii	"char\000"
+ 221      00
+ 222              	.LASF5:
+ 223 0147 6C6F6E67 		.ascii	"long int\000"
+ 223      20696E74 
+ 223      00
+ 224              	.LASF9:
+ 225 0150 5F426F6F 		.ascii	"_Bool\000"
+ 225      6C00
+ 226              	.LASF4:
+ 227 0156 73686F72 		.ascii	"short unsigned int\000"
+ 227      7420756E 
+ 227      7369676E 
+ 227      65642069 
+ 227      6E7400
+ 228              	.LASF1:
+ 229 0169 7369676E 		.ascii	"signed char\000"
+ 229      65642063 
+ 229      68617200 
+ 230              	.LASF14:
+ 231 0175 2F484444 		.ascii	"/HDD/Projects/workspace_test4/Altimeter/\000"
+ 231      2F50726F 
+ 231      6A656374 
+ 231      732F776F 
+ARM GAS  /tmp/ccasXiU1.s 			page 6
+
+
+ 231      726B7370 
+ 232              	.LASF15:
+ 233 019e 706F7274 		.ascii	"port_halt\000"
+ 233      5F68616C 
+ 233      7400
+ 234              	.LASF3:
+ 235 01a8 73686F72 		.ascii	"short int\000"
+ 235      7420696E 
+ 235      7400
+ 236              	.LASF10:
+ 237 01b2 73697A65 		.ascii	"sizetype\000"
+ 237      74797065 
+ 237      00
+ 238              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ARM GAS  /tmp/ccasXiU1.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 chcore.c
+     /tmp/ccasXiU1.s:18     .text.port_halt:00000000 $t
+     /tmp/ccasXiU1.s:23     .text.port_halt:00000000 port_halt
+                     .debug_frame:00000010 $d
+
+NO UNDEFINED SYMBOLS

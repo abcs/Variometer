@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="165" key="DIALOG_Y_ORIGIN"/>
+		<item value="932" key="DIALOG_X_ORIGIN"/>
+		<item value="435" key="DIALOG_HEIGHT"/>
+		<item value="1|OxygenSans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="RAM2" key="selection"/>
+		<list key="findhistory">
+			<item value="ram2"/>
+			<item value="0x2000"/>
+			<item value=".c"/>
+			<item value="file:///HDD/ARM/NXP/nxpUSBlib_098/libraries/LPCUSBLib/"/>
+			<item value="VirtualSerial_CDC_Interface"/>
+			<item value="usb_data_buffer"/>
+			<item value="RAM2"/>
+			<item value="SetupPack"/>
+		</list>
+		<list key="replacehistory">
+			<item value=".c \"/>
+			<item value="${USBlib_DIR}/"/>
+			<item value="${USBlib_DIR}"/>
+			<item value="${USBlib_dir}"/>
+		</list>
+	</section>
+</section>

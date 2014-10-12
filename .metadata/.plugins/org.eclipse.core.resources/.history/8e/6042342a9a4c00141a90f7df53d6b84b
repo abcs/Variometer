@@ -1,0 +1,254 @@
+/*
+    HFLE7E - Copyright (C) 2014-2019
+*/
+
+#include "ch.h"
+#include "hal.h"
+#include "LCD.h"
+#include "HP03.h"
+#include "RTC_r2051.h"
+#include "VirtualSerial.h"
+#include "globals.h"
+#include "Kalman.h"
+
+
+/*
+ * SPI configuration (1MHz, CPHA=0, CPOL=0).
+ */
+static SPIConfig spicfg = {
+  NULL,
+  GPIO0,
+  GPIO0_LCD_SEL, //GPIO0_SPI0SEL,
+  CR0_DSS8BIT | CR0_FRFSPI | CR0_CLOCKRATE(0),
+  48
+};
+
+
+/*
+ * I2C configuration (400kHz).
+ */
+static I2CConfig i2ccfg = {
+    I2C_STANDARD_MODE,             /**< @brief Specifies the I2C mode.        */
+	48                             /**< @brief Specifies the clock timing     */
+};
+
+volatile static float calculatedSeaLevelPressure = 0;
+
+/* PWM */
+static void pwm3pcb(PWMDriver *pwmp) {
+
+  (void)pwmp;
+  palClearPad(GPIO1, GPIO1_SPEAKER);
+}
+
+static void pwm3c0cb(PWMDriver *pwmp) {
+
+  (void)pwmp;
+  palSetPad(GPIO1, GPIO1_SPEAKER);
+}
+
+/*
+static const PWMChannelConfig pwmchn = {
+	{PWM_OUTPUT_ACTIVE_LOW, pwm3c0cb},
+	{PWM_OUTPUT_ACTIVE_LOW, NULL}
+};
+*/
+
+static PWMConfig pwmcfg = {
+	100000,                          /**< @brief frequency                      */
+	   100,                           /**< @brief period                         */
+	pwm3pcb,                         /**< @brief callback                       */
+    {
+	    {PWM_OUTPUT_ACTIVE_LOW, pwm3c0cb},
+	    {PWM_OUTPUT_ACTIVE_LOW, NULL}
+    }
+};
+
+
+/* End PWM */
+
+/*
+ * Red LED blinker thread, times are in milliseconds.
+ */
+static WORKING_AREA(waThread1, 48);
+static msg_t Thread1(void *arg) {
+
+  (void)arg;
+  chRegSetThreadName("blinker1");
+
+  while (TRUE) {
+    palClearPad(GPIO0, GPIO0_LED2);
+    chThdSleepMilliseconds(500);
+    palSetPad(GPIO0, GPIO0_LED2);
+    chThdSleepMilliseconds(500);
+  }
+  return 0;
+}
+
+/*
+ * Pressure and temperature reader thread, times are in milliseconds.
+ */
+static WORKING_AREA(waThread2, 208);
+static msg_t Thread2(void *arg)
+{
+    HP03_meas_t temp_press; // = { -3333, 0};
+    int measuredAltitude = 0;
+
+    (void)arg;
+    chRegSetThreadName("temp_press");
+    uint8_t readTemp = 0;
+
+    while (TRUE) {
+    	if ( 0 == readTemp )
+    	{
+    		(void)HP03_getTemperature(&temp_press);
+    	    writeTemp(temp_press);
+    		readTemp = 11;
+    	}
+
+    	(void)HP03_getPressure(&temp_press, true);
+    	readTemp--;
+
+ 	    measuredAltitude = pressureToAltitude(calculatedSeaLevelPressure, temp_press);
+
+	    writePress(temp_press);
+	    writeAlt(measuredAltitude);
+
+	    chThdSleepMilliseconds(1000);
+    }
+    return 0;
+}
+
+
+/*
+ * Date and time handler thread, times are in milliseconds.
+ */
+static WORKING_AREA(waThread3, 152);
+static msg_t Thread3(void *arg)
+{
+    RTC_time_t passedTime;
+
+	(void)arg;
+    chRegSetThreadName("date_time");
+
+    while (TRUE) {
+    	passedTime = RTC_getTime();
+
+    	writeTime(passedTime);
+
+        chThdSleepMilliseconds(100);
+    }
+    return 0;
+}
+
+static WORKING_AREA(waThread4, 176);
+static msg_t Thread4(void *arg)
+{
+	(void)arg;
+    chRegSetThreadName("USB_CDC");
+
+	for (;; ) {
+//		vTaskSuspendAll();
+
+		if(USB_DeviceState[0] == DEVICE_STATE_Configured)
+			writeUSB();
+		else
+			writeUSB_delete();
+
+		EchoCharacter();
+		USB_USBTask(VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device); //VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device
+//	    xTaskResumeAll();
+
+	    chThdSleepMilliseconds(30);
+	}
+	return 0;
+}
+
+/*
+ * Application entry point.
+ */
+int main(void) {
+
+  HP03_meas_t temp_press; // = { -3333, 0};
+
+  /*
+   * System initializations.
+   * - HAL initialization, this also initializes the configured device drivers
+   *   and performs the board-specific initializations.
+   * - Kernel initialization, the main() function becomes a thread and the
+   *   RTOS is active.
+   */
+  halInit();
+  chSysInit();
+
+
+  /*
+   * Activates the SD1 and SPI1 drivers.
+   */
+//  sdStart(&SD1, NULL);                  /* Default: 38400,8,N,1.            */
+  spiStart(&SPID1, &spicfg);
+  i2cStart(&I2CD1, &i2ccfg);
+
+  Lcd_Init();
+  RTC_init();
+  palSetPad(GPIO1, GPIO1_BACKLIGHT);
+
+  resetHP03();
+  readCoeffs();
+
+  SetupVSHardware();
+
+  pwmStart(&PWMD3, &pwmcfg);
+//  chThdSleepMilliseconds(2000);
+
+  pwmEnableChannel(&PWMD3, 0, 50);
+//  pwmEnableChannel(&PWMD3, 1, 500);
+
+  chThdSleepMilliseconds(250);
+
+  pwmDisableChannel(&PWMD3, 0);
+//  pwmDisableChannel(&PWMD3, 1);
+
+  (void)HP03_getTemperature(&temp_press);
+  chThdSleepMilliseconds(25);
+  (void)HP03_getTemperature(&temp_press);
+  chThdSleepMilliseconds(25);
+  (void)HP03_getPressure(&temp_press, false);
+  chThdSleepMilliseconds(25);
+  (void)HP03_getPressure(&temp_press, false);
+
+  init_kalman(temp_press.press);
+  calculatedSeaLevelPressure = pressureSeaLevelFromAltitude(25.0F, temp_press);
+
+  /*
+   * Creates the threads.
+   */
+  chThdCreateStatic(waThread1, sizeof(waThread1), NORMALPRIO, Thread1, NULL);
+  chThdCreateStatic(waThread2, sizeof(waThread2), NORMALPRIO, Thread2, NULL);
+  chThdCreateStatic(waThread3, sizeof(waThread3), NORMALPRIO, Thread3, NULL);
+  chThdCreateStatic(waThread4, sizeof(waThread4), NORMALPRIO, Thread4, NULL);
+
+  /*
+   * Normal main() thread activity, in this demo it updates the 7-segments
+   * display on the LPCXpresso main board using the SPI driver.
+   */
+  while (TRUE) {
+    if ( !palReadPad(GPIO1, GPIO1_SW3) )
+    {
+    	palTogglePad(GPIO1, GPIO1_BACKLIGHT);
+    	while ( !palReadPad(GPIO1, GPIO1_SW3) )
+    		chThdSleepMilliseconds(75);
+    }
+    chThdSleepMilliseconds(125);
+    // TestThread(&SD1);
+    // spiSelect(&SPID1);
+    // spiSend(&SPID1, 1, &digits[i]);                 /* Non polled method.   */
+    // spiUnselect(&SPID1);
+    // chThdSleepMilliseconds(500);
+    // spiSelect(&SPID1);
+    // spiPolledExchange(&SPID1, digits[i | 0x10]);    /* Polled method.       */
+    // spiUnselect(&SPID1);
+    // chThdSleepMilliseconds(500);
+    // i = (i + 1) & 15;
+  }
+}

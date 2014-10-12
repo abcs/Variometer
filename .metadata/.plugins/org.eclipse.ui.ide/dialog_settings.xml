@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="installedFeatures">
+		<item value="com.crt.lpcxpresso.feature:7.3.0.201407090921"/>
+		<item value="org.eclipse.cdt.gdb:8.3.0.201402142303"/>
+		<item value="org.eclipse.cdt:8.3.0.201402142303"/>
+		<item value="org.eclipse.cvs:1.4.0.v20140221-1700"/>
+		<item value="org.eclipse.emf.common:2.9.2.v20131212-0545"/>
+		<item value="org.eclipse.emf.ecore:2.9.2.v20131212-0545"/>
+		<item value="org.eclipse.help:2.0.2.v20140221-1700"/>
+		<item value="org.eclipse.platform:4.3.2.v20140221-1852"/>
+		<item value="org.eclipse.rcp:4.3.2.v20140221-1700"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/HDD/ARM/ChibiOS_2.6.5/ChibiOS_2.6.5/demos/ARMCM0-LPC1114-LPCXPRESSO"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="com.crt.quickstart.new.CProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.cdt.ui.newCWizards"/>
+		</list>
+	</section>
+</section>

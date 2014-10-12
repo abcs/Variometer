@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FileSystemImportWizard">
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
+		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
+		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/HDD/ARM/NXP/nxpUSBlib_098/libraries/LPCUSBLib"/>
+			<item value="/HDD/Projects/workspace_2/Altimeter"/>
+			<item value="/HDD/Projects/workspace_2/Altimeter/inc"/>
+			<item value="/HDD/Projects/workspace_2/Altimeter/src"/>
+			<item value="/HDD/Projects/workspace_test3/nxp_lpcxpresso_11u14_usblib_device"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.internal.QuickAccess">
+		<item value="800" key="dialogWidth"/>
+		<item value="640" key="dialogHeight"/>
+		<list key="orderedProviders">
+		</list>
+		<list key="textArray">
+		</list>
+		<list key="orderedElements">
+		</list>
+		<list key="textEntries">
+		</list>
+	</section>
+	<section name="ShowViewDialog">
+		<item value="332" key="DIALOG_WIDTH"/>
+		<item value="org.eclipse.cdt.dsf.debug.ui.disassembly.view" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<item value="192" key="DIALOG_Y_ORIGIN"/>
+		<item value="476" key="DIALOG_X_ORIGIN"/>
+		<item value="453" key="DIALOG_HEIGHT"/>
+		<item value="1|OxygenSans|10.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.debug.ui"/>
+		</list>
+	</section>
+	<section name="ImportExportAction">
+		<item value="org.eclipse.ui.wizards.import.FileSystem" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
+			<item value="org.eclipse.ui.Basic"/>
+		</list>
+	</section>
+</section>

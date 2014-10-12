@@ -1,0 +1,41 @@
+#ifndef _HP03_H_
+#define _HP03_H_
+
+#define HP03_ADDRESS_ADC  0x77
+#define HP03_ADDRESS_EE   0x50
+
+typedef struct HP03_coeff_s {
+	uint16_t    C1;
+	uint16_t    C2;
+	uint16_t    C3;
+	uint16_t    C4;
+	uint16_t    C5;
+	uint16_t    C6;
+	uint16_t    C7;
+	uint8_t      A;
+	uint8_t      B;
+	uint8_t      C;
+	uint8_t      D;
+} HP03_coeff_t;
+
+typedef struct HP03_calc_s {
+	int        dUT;
+	int        OFF;
+	int       SENS;
+	int          X;
+} HP03_calc_t;
+
+typedef struct HP03_meas_s {
+	int                       temper;
+	int                        press;
+	HP03_calc_t constsForCalculating;
+} HP03_meas_t;
+
+void resetHP03(void);
+void readCoeffs(void);
+int HP03_getPressure(HP03_meas_t * constsIn_pressureOut, bool withKalman);
+int HP03_getTemperature(HP03_meas_t * result);
+int pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp);
+float pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp);
+
+#endif

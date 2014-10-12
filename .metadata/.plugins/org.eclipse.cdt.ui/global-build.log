@@ -1,0 +1,59 @@
+11:15:49 **** Incremental Build of configuration Debug for project Altimeter ****
+make all 
+Compiling main.c
+In file included from src/main.c:7:0:
+inc/LCD.h:19:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+ void writeUSB_delete();
+ ^
+In file included from USBlib_11U14/Drivers/USB/USB.h:356:0,
+                 from inc/VirtualSerial.h:37,
+                 from src/main.c:10:
+USBlib_11U14/Drivers/USB/../../Common/Common.h: In function 'SetGlobalInterruptMask':
+USBlib_11U14/Drivers/USB/../../Common/Common.h:223:63: warning: unused parameter 'GlobalIntState' [-Wunused-parameter]
+    static inline void SetGlobalInterruptMask(const uint_reg_t GlobalIntState)
+                                                               ^
+In file included from USBlib_11U14/Drivers/USB/Core/Endpoint.h:103:0,
+                 from USBlib_11U14/Drivers/USB/Core/Device.h:51,
+                 from USBlib_11U14/Drivers/USB/Core/USBController.h:123,
+                 from USBlib_11U14/Drivers/USB/Core/USBTask.h:40,
+                 from USBlib_11U14/Drivers/USB/USB.h:360,
+                 from inc/VirtualSerial.h:37,
+                 from src/main.c:10:
+USBlib_11U14/Drivers/USB/Core/DCD/LPC11UXX/Endpoint_LPC11Uxx.h: In function 'Endpoint_ResetEndpoint':
+USBlib_11U14/Drivers/USB/Core/DCD/LPC11UXX/Endpoint_LPC11Uxx.h:213:57: warning: unused parameter 'EndpointNumber' [-Wunused-parameter]
+ static inline void Endpoint_ResetEndpoint(const uint8_t EndpointNumber)
+                                                         ^
+In file included from USBlib_11U14/Drivers/USB/Core/Endpoint.h:103:0,
+                 from USBlib_11U14/Drivers/USB/Core/Device.h:51,
+                 from USBlib_11U14/Drivers/USB/Core/USBController.h:123,
+                 from USBlib_11U14/Drivers/USB/Core/USBTask.h:40,
+                 from USBlib_11U14/Drivers/USB/USB.h:360,
+                 from inc/VirtualSerial.h:37,
+                 from src/main.c:10:
+USBlib_11U14/Drivers/USB/Core/DCD/LPC11UXX/Endpoint_LPC11Uxx.h: In function 'Endpoint_IsSETUPReceived':
+USBlib_11U14/Drivers/USB/Core/DCD/LPC11UXX/Endpoint_LPC11Uxx.h:308:53: warning: unused parameter 'corenum' [-Wunused-parameter]
+ static inline bool Endpoint_IsSETUPReceived(uint8_t corenum)
+                                                     ^
+In file included from USBlib_11U14/Drivers/USB/Core/Device.h:141:0,
+                 from USBlib_11U14/Drivers/USB/Core/USBController.h:123,
+                 from USBlib_11U14/Drivers/USB/Core/USBTask.h:40,
+                 from USBlib_11U14/Drivers/USB/USB.h:360,
+                 from inc/VirtualSerial.h:37,
+                 from src/main.c:10:
+USBlib_11U14/Drivers/USB/Core/DCD/LPC11UXX/Device_LPC11Uxx.h: In function 'USB_Device_SetDeviceAddress':
+USBlib_11U14/Drivers/USB/Core/DCD/LPC11UXX/Device_LPC11Uxx.h:141:56: warning: unused parameter 'corenum' [-Wunused-parameter]
+ static inline void USB_Device_SetDeviceAddress(uint8_t corenum, const uint8_t Address)
+                                                        ^
+src/main.c: At top level:
+src/main.c:35:1: warning: 'static' is not at beginning of declaration [-Wold-style-declaration]
+ volatile static float calculatedSeaLevelPressure = 0;
+ ^
+Linking build/Altimeter.elf
+Creating build/Altimeter.hex
+Creating build/Altimeter.bin
+Creating build/Altimeter.dmp
+
+   text	   data	    bss	    dec	    hex	filename
+  22492	    428	   5036	  27956	   6d34	build/Altimeter.elf
+
+Done

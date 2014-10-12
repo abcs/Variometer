@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="FlashDialog">
+		<item value="250" key="id_speed"/>
+		<item value="false" key="erase_pages"/>
+		<item value="true" key="program_all"/>
+		<item value="false" key="erase"/>
+		<item value="false" key="jtag"/>
+		<item value="false" key="repeat"/>
+		<item value="false" key="program_pages"/>
+		<item value="true" key="erase_mass"/>
+		<item value="true" key="program"/>
+		<item value="/HDD/Projects/workspace_test4/Altimeter/build/Altimeter.bin," key="file"/>
+		<item value="" key="base"/>
+		<item value="true" key="logFLag"/>
+		<item value="LPC11_12_13_32K_4K.cfx," key="flashdriver"/>
+		<item value="false" key="clipboard_exec"/>
+		<item value="true" key="exec"/>
+		<item value="false" key="clipboard"/>
+		<item value="false" key="reopen"/>
+	</section>
+</section>

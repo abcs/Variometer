@@ -1,0 +1,5 @@
+Used_literature.txt
+ Created on: 2014.10.12.
+     Author: csabi
+
+http://www.dctsystems.co.uk/Software/power.html

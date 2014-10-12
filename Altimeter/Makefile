@@ -101,6 +101,8 @@ CSRC = $(PORTSRC) \
        src/LCD.c \
        src/RTC_r2051.c \
        src/VirtualSerial.c \
+       src/eeprom.c \
+       src/logger.c \
        src/main.c
        
 

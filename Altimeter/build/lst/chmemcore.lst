@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccdxH4e2.s 			page 1
+ARM GAS  /tmp/ccNnETKe.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
   55              		.global	chCoreAllocI
   56              		.code	16
   57              		.thumb_func
-ARM GAS  /tmp/ccdxH4e2.s 			page 2
+ARM GAS  /tmp/ccNnETKe.s 			page 2
 
 
   58              		.type	chCoreAllocI, %function
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  112              	.LVL6:
  113 0000 08B5     		push	{r3, lr}
  114              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccdxH4e2.s 			page 3
+ARM GAS  /tmp/ccNnETKe.s 			page 3
 
 
  115              		.cfi_offset 3, -8
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  169 0000 00000000 		.space	4
  170              		.section	.bss.nextmem,"aw",%nobits
  171              		.align	2
-ARM GAS  /tmp/ccdxH4e2.s 			page 4
+ARM GAS  /tmp/ccNnETKe.s 			page 4
 
 
  172              		.set	.LANCHOR0,. + 0
@@ -201,7 +201,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  189 000c 5D000000 		.4byte	.LASF22
  190 0010 01       		.byte	0x1
  191 0011 43010000 		.4byte	.LASF23
- 192 0015 D1010000 		.4byte	.LASF24
+ 192 0015 C6010000 		.4byte	.LASF24
  193 0019 00000000 		.4byte	.Ldebug_ranges0+0
  194 001d 00000000 		.4byte	0
  195 0021 00000000 		.4byte	.Ldebug_line0
@@ -217,7 +217,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  205 0037 04       		.uleb128 0x4
  206 0038 04       		.byte	0x4
  207 0039 07       		.byte	0x7
- 208 003a 04020000 		.4byte	.LASF0
+ 208 003a FA010000 		.4byte	.LASF0
  209 003e 04       		.uleb128 0x4
  210 003f 01       		.byte	0x1
  211 0040 06       		.byte	0x6
@@ -234,11 +234,11 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  222 0057 04       		.uleb128 0x4
  223 0058 02       		.byte	0x2
  224 0059 05       		.byte	0x5
- 225 005a FA010000 		.4byte	.LASF5
+ 225 005a F0010000 		.4byte	.LASF5
  226 005e 04       		.uleb128 0x4
  227 005f 02       		.byte	0x2
  228 0060 07       		.byte	0x7
-ARM GAS  /tmp/ccdxH4e2.s 			page 5
+ARM GAS  /tmp/ccNnETKe.s 			page 5
 
 
  229 0061 0E000000 		.4byte	.LASF6
@@ -272,7 +272,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  257 0095 04       		.uleb128 0x4
  258 0096 04       		.byte	0x4
  259 0097 07       		.byte	0x7
- 260 0098 11020000 		.4byte	.LASF13
+ 260 0098 07020000 		.4byte	.LASF13
  261 009c 04       		.uleb128 0x4
  262 009d 01       		.byte	0x1
  263 009e 08       		.byte	0x8
@@ -281,7 +281,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  266 00a4 04       		.byte	0x4
  267 00a5 81000000 		.4byte	0x81
  268 00a9 07       		.uleb128 0x7
- 269 00aa C6010000 		.4byte	.LASF25
+ 269 00aa E5010000 		.4byte	.LASF25
  270 00ae 01       		.byte	0x1
  271 00af 42       		.byte	0x42
  272 00b0 00000000 		.4byte	.LFB7
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  283 00ca 30000000 		.4byte	.LASF16
  284 00ce 01       		.byte	0x1
  285 00cf 45       		.byte	0x45
-ARM GAS  /tmp/ccdxH4e2.s 			page 6
+ARM GAS  /tmp/ccNnETKe.s 			page 6
 
 
  286 00d0 D5000000 		.4byte	0xd5
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  340 014a 08000000 		.4byte	.LVL7
  341 014e E0000000 		.4byte	0xe0
  342 0152 10       		.uleb128 0x10
-ARM GAS  /tmp/ccdxH4e2.s 			page 7
+ARM GAS  /tmp/ccNnETKe.s 			page 7
 
 
  343 0153 01       		.uleb128 0x1
@@ -370,7 +370,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  349 0159 00       		.byte	0
  350 015a 00       		.byte	0
  351 015b 11       		.uleb128 0x11
- 352 015c 1A020000 		.4byte	.LASF26
+ 352 015c 10020000 		.4byte	.LASF26
  353 0160 01       		.byte	0x1
  354 0161 84       		.byte	0x84
  355 0162 2C000000 		.4byte	0x2c
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  397 0008 0E       		.uleb128 0xe
  398 0009 1B       		.uleb128 0x1b
  399 000a 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccdxH4e2.s 			page 8
+ARM GAS  /tmp/ccNnETKe.s 			page 8
 
 
  400 000b 55       		.uleb128 0x55
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  454 0041 0B       		.uleb128 0xb
  455 0042 49       		.uleb128 0x49
  456 0043 13       		.uleb128 0x13
-ARM GAS  /tmp/ccdxH4e2.s 			page 9
+ARM GAS  /tmp/ccNnETKe.s 			page 9
 
 
  457 0044 00       		.byte	0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  511 007b 21       		.uleb128 0x21
  512 007c 00       		.byte	0
  513 007d 00       		.byte	0
-ARM GAS  /tmp/ccdxH4e2.s 			page 10
+ARM GAS  /tmp/ccNnETKe.s 			page 10
 
 
  514 007e 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  568 00b5 02       		.uleb128 0x2
  569 00b6 17       		.uleb128 0x17
  570 00b7 00       		.byte	0
-ARM GAS  /tmp/ccdxH4e2.s 			page 11
+ARM GAS  /tmp/ccNnETKe.s 			page 11
 
 
  571 00b8 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  625 00f3 18       		.uleb128 0x18
  626 00f4 9742     		.uleb128 0x2117
  627 00f6 19       		.uleb128 0x19
-ARM GAS  /tmp/ccdxH4e2.s 			page 12
+ARM GAS  /tmp/ccNnETKe.s 			page 12
 
 
  628 00f7 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  682 0044 F8       		.byte	0xf8
  683 0045 1A       		.byte	0x1a
  684 0046 9F       		.byte	0x9f
-ARM GAS  /tmp/ccdxH4e2.s 			page 13
+ARM GAS  /tmp/ccNnETKe.s 			page 13
 
 
  685 0047 00000000 		.4byte	0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  739              	.Ldebug_line0:
  740 0000 AA010000 		.section	.debug_str,"MS",%progbits,1
  740      02005501 
-ARM GAS  /tmp/ccdxH4e2.s 			page 14
+ARM GAS  /tmp/ccNnETKe.s 			page 14
 
 
  740      00000201 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  759      65637469 
  759      6F6E7320 
  759      2D666461 
-ARM GAS  /tmp/ccdxH4e2.s 			page 15
+ARM GAS  /tmp/ccNnETKe.s 			page 15
 
 
  760              	.LASF10:
@@ -894,58 +894,58 @@ ARM GAS  /tmp/ccdxH4e2.s 			page 1
  784              	.LASF19:
  785 01c1 73697A65 		.ascii	"size\000"
  785      00
- 786              	.LASF25:
- 787 01c6 5F636F72 		.ascii	"_core_init\000"
- 787      655F696E 
- 787      697400
-ARM GAS  /tmp/ccdxH4e2.s 			page 16
+ 786              	.LASF24:
+ 787 01c6 2F484444 		.ascii	"/HDD/GIT/variometer/Altimeter/\000"
+ 787      2F474954 
+ 787      2F766172 
+ARM GAS  /tmp/ccNnETKe.s 			page 16
 
 
- 788              	.LASF24:
- 789 01d1 2F484444 		.ascii	"/HDD/Projects/workspace_test4/Altimeter/\000"
- 789      2F50726F 
- 789      6A656374 
- 789      732F776F 
- 789      726B7370 
+ 787      696F6D65 
+ 787      7465722F 
+ 788              	.LASF25:
+ 789 01e5 5F636F72 		.ascii	"_core_init\000"
+ 789      655F696E 
+ 789      697400
  790              	.LASF5:
- 791 01fa 73686F72 		.ascii	"short int\000"
+ 791 01f0 73686F72 		.ascii	"short int\000"
  791      7420696E 
  791      7400
  792              	.LASF0:
- 793 0204 756E7369 		.ascii	"unsigned int\000"
+ 793 01fa 756E7369 		.ascii	"unsigned int\000"
  793      676E6564 
  793      20696E74 
  793      00
  794              	.LASF13:
- 795 0211 73697A65 		.ascii	"sizetype\000"
+ 795 0207 73697A65 		.ascii	"sizetype\000"
  795      74797065 
  795      00
  796              	.LASF26:
- 797 021a 6368436F 		.ascii	"chCoreStatus\000"
+ 797 0210 6368436F 		.ascii	"chCoreStatus\000"
  797      72655374 
  797      61747573 
  797      00
  798              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccdxH4e2.s 			page 17
+ARM GAS  /tmp/ccNnETKe.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 chmemcore.c
-     /tmp/ccdxH4e2.s:18     .text._core_init:00000000 $t
-     /tmp/ccdxH4e2.s:23     .text._core_init:00000000 _core_init
-     /tmp/ccdxH4e2.s:46     .text._core_init:00000018 $d
-     /tmp/ccdxH4e2.s:54     .text.chCoreAllocI:00000000 $t
-     /tmp/ccdxH4e2.s:59     .text.chCoreAllocI:00000000 chCoreAllocI
-     /tmp/ccdxH4e2.s:97     .text.chCoreAllocI:00000020 $d
-     /tmp/ccdxH4e2.s:103    .text.chCoreAlloc:00000000 $t
-     /tmp/ccdxH4e2.s:108    .text.chCoreAlloc:00000000 chCoreAlloc
-     /tmp/ccdxH4e2.s:137    .text.chCoreStatus:00000000 $t
-     /tmp/ccdxH4e2.s:142    .text.chCoreStatus:00000000 chCoreStatus
-     /tmp/ccdxH4e2.s:158    .text.chCoreStatus:0000000c $d
-     /tmp/ccdxH4e2.s:164    .bss.endmem:00000000 $d
-     /tmp/ccdxH4e2.s:168    .bss.endmem:00000000 endmem
-     /tmp/ccdxH4e2.s:171    .bss.nextmem:00000000 $d
-     /tmp/ccdxH4e2.s:175    .bss.nextmem:00000000 nextmem
+     /tmp/ccNnETKe.s:18     .text._core_init:00000000 $t
+     /tmp/ccNnETKe.s:23     .text._core_init:00000000 _core_init
+     /tmp/ccNnETKe.s:46     .text._core_init:00000018 $d
+     /tmp/ccNnETKe.s:54     .text.chCoreAllocI:00000000 $t
+     /tmp/ccNnETKe.s:59     .text.chCoreAllocI:00000000 chCoreAllocI
+     /tmp/ccNnETKe.s:97     .text.chCoreAllocI:00000020 $d
+     /tmp/ccNnETKe.s:103    .text.chCoreAlloc:00000000 $t
+     /tmp/ccNnETKe.s:108    .text.chCoreAlloc:00000000 chCoreAlloc
+     /tmp/ccNnETKe.s:137    .text.chCoreStatus:00000000 $t
+     /tmp/ccNnETKe.s:142    .text.chCoreStatus:00000000 chCoreStatus
+     /tmp/ccNnETKe.s:158    .text.chCoreStatus:0000000c $d
+     /tmp/ccNnETKe.s:164    .bss.endmem:00000000 $d
+     /tmp/ccNnETKe.s:168    .bss.endmem:00000000 endmem
+     /tmp/ccNnETKe.s:171    .bss.nextmem:00000000 $d
+     /tmp/ccNnETKe.s:175    .bss.nextmem:00000000 nextmem
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

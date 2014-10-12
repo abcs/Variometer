@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccwnIA1Q.s 			page 1
+ARM GAS  /tmp/cclNGraY.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
   55              	.LFB99:
   56              		.loc 1 47 0
   57              		.cfi_startproc
-ARM GAS  /tmp/ccwnIA1Q.s 			page 2
+ARM GAS  /tmp/cclNGraY.s 			page 2
 
 
   58 0000 10B5     		push	{r4, lr}
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  112 0004 FFF7FEFF 		bl	CDC_Device_ConfigureEndpoints
  113              	.LVL5:
  114              		.loc 1 99 0
-ARM GAS  /tmp/ccwnIA1Q.s 			page 3
+ARM GAS  /tmp/cclNGraY.s 			page 3
 
 
  115              		@ sp needed
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  169 000d 00       		.space	1
  170 000e 00000000 		.space	12
  170      00000000 
-ARM GAS  /tmp/ccwnIA1Q.s 			page 4
+ARM GAS  /tmp/cclNGraY.s 			page 4
 
 
  170      00000000 
@@ -199,28 +199,28 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  185 0006 00000000 		.4byte	.Ldebug_abbrev0
  186 000a 04       		.byte	0x4
  187 000b 01       		.uleb128 0x1
- 188 000c 03010000 		.4byte	.LASF81
+ 188 000c 22010000 		.4byte	.LASF81
  189 0010 01       		.byte	0x1
- 190 0011 FC030000 		.4byte	.LASF82
- 191 0015 10040000 		.4byte	.LASF83
+ 190 0011 1B040000 		.4byte	.LASF82
+ 191 0015 74000000 		.4byte	.LASF83
  192 0019 00000000 		.4byte	.Ldebug_ranges0+0
  193 001d 00000000 		.4byte	0
  194 0021 00000000 		.4byte	.Ldebug_line0
  195 0025 02       		.uleb128 0x2
  196 0026 01       		.byte	0x1
  197 0027 06       		.byte	0x6
- 198 0028 56030000 		.4byte	.LASF0
+ 198 0028 75030000 		.4byte	.LASF0
  199 002c 03       		.uleb128 0x3
- 200 002d F9020000 		.4byte	.LASF2
+ 200 002d 18030000 		.4byte	.LASF2
  201 0031 02       		.byte	0x2
  202 0032 1C       		.byte	0x1c
  203 0033 37000000 		.4byte	0x37
  204 0037 02       		.uleb128 0x2
  205 0038 01       		.byte	0x1
  206 0039 08       		.byte	0x8
- 207 003a 34030000 		.4byte	.LASF1
+ 207 003a 53030000 		.4byte	.LASF1
  208 003e 03       		.uleb128 0x3
- 209 003f 84050000 		.4byte	.LASF3
+ 209 003f 7A050000 		.4byte	.LASF3
  210 0043 02       		.byte	0x2
  211 0044 25       		.byte	0x25
  212 0045 49000000 		.4byte	0x49
@@ -229,43 +229,43 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  215 004b 05       		.byte	0x5
  216 004c 6A000000 		.4byte	.LASF4
  217 0050 03       		.uleb128 0x3
- 218 0051 D8010000 		.4byte	.LASF5
+ 218 0051 F7010000 		.4byte	.LASF5
  219 0055 02       		.byte	0x2
  220 0056 26       		.byte	0x26
  221 0057 5B000000 		.4byte	0x5b
  222 005b 02       		.uleb128 0x2
  223 005c 02       		.byte	0x2
  224 005d 07       		.byte	0x7
- 225 005e 9B040000 		.4byte	.LASF6
+ 225 005e 91040000 		.4byte	.LASF6
  226 0062 03       		.uleb128 0x3
-ARM GAS  /tmp/ccwnIA1Q.s 			page 5
+ARM GAS  /tmp/cclNGraY.s 			page 5
 
 
- 227 0063 91040000 		.4byte	.LASF7
+ 227 0063 87040000 		.4byte	.LASF7
  228 0067 02       		.byte	0x2
  229 0068 37       		.byte	0x37
  230 0069 6D000000 		.4byte	0x6d
  231 006d 02       		.uleb128 0x2
  232 006e 04       		.byte	0x4
  233 006f 05       		.byte	0x5
- 234 0070 C4020000 		.4byte	.LASF8
+ 234 0070 E3020000 		.4byte	.LASF8
  235 0074 03       		.uleb128 0x3
- 236 0075 F8000000 		.4byte	.LASF9
+ 236 0075 17010000 		.4byte	.LASF9
  237 0079 02       		.byte	0x2
  238 007a 38       		.byte	0x38
  239 007b 7F000000 		.4byte	0x7f
  240 007f 02       		.uleb128 0x2
  241 0080 04       		.byte	0x4
  242 0081 07       		.byte	0x7
- 243 0082 FC040000 		.4byte	.LASF10
+ 243 0082 F2040000 		.4byte	.LASF10
  244 0086 02       		.uleb128 0x2
  245 0087 08       		.byte	0x8
  246 0088 05       		.byte	0x5
- 247 0089 9D020000 		.4byte	.LASF11
+ 247 0089 BC020000 		.4byte	.LASF11
  248 008d 02       		.uleb128 0x2
  249 008e 08       		.byte	0x8
  250 008f 07       		.byte	0x7
- 251 0090 62030000 		.4byte	.LASF12
+ 251 0090 81030000 		.4byte	.LASF12
  252 0094 04       		.uleb128 0x4
  253 0095 04       		.byte	0x4
  254 0096 05       		.byte	0x5
@@ -273,43 +273,43 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  256 009b 02       		.uleb128 0x2
  257 009c 04       		.byte	0x4
  258 009d 07       		.byte	0x7
- 259 009e B9030000 		.4byte	.LASF13
+ 259 009e D8030000 		.4byte	.LASF13
  260 00a2 03       		.uleb128 0x3
- 261 00a3 23020000 		.4byte	.LASF14
+ 261 00a3 42020000 		.4byte	.LASF14
  262 00a7 03       		.byte	0x3
  263 00a8 2A       		.byte	0x2a
  264 00a9 2C000000 		.4byte	0x2c
  265 00ad 03       		.uleb128 0x3
- 266 00ae AE040000 		.4byte	.LASF15
+ 266 00ae A4040000 		.4byte	.LASF15
  267 00b2 03       		.byte	0x3
  268 00b3 35       		.byte	0x35
  269 00b4 3E000000 		.4byte	0x3e
  270 00b8 03       		.uleb128 0x3
- 271 00b9 C6030000 		.4byte	.LASF16
+ 271 00b9 E5030000 		.4byte	.LASF16
  272 00bd 03       		.byte	0x3
  273 00be 36       		.byte	0x36
  274 00bf 50000000 		.4byte	0x50
  275 00c3 03       		.uleb128 0x3
- 276 00c4 7D040000 		.4byte	.LASF17
+ 276 00c4 73040000 		.4byte	.LASF17
  277 00c8 03       		.byte	0x3
  278 00c9 41       		.byte	0x41
  279 00ca 62000000 		.4byte	0x62
  280 00ce 03       		.uleb128 0x3
- 281 00cf 90030000 		.4byte	.LASF18
+ 281 00cf AF030000 		.4byte	.LASF18
  282 00d3 03       		.byte	0x3
  283 00d4 42       		.byte	0x42
-ARM GAS  /tmp/ccwnIA1Q.s 			page 6
+ARM GAS  /tmp/cclNGraY.s 			page 6
 
 
  284 00d5 74000000 		.4byte	0x74
  285 00d9 02       		.uleb128 0x2
  286 00da 04       		.byte	0x4
  287 00db 07       		.byte	0x7
- 288 00dc 8D000000 		.4byte	.LASF19
+ 288 00dc AC000000 		.4byte	.LASF19
  289 00e0 02       		.uleb128 0x2
  290 00e1 01       		.byte	0x1
  291 00e2 08       		.byte	0x8
- 292 00e3 5F040000 		.4byte	.LASF20
+ 292 00e3 55040000 		.4byte	.LASF20
  293 00e7 05       		.uleb128 0x5
  294 00e8 04       		.byte	0x4
  295 00e9 ED000000 		.4byte	0xed
@@ -321,13 +321,13 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  301 00f5 3B       		.byte	0x3b
  302 00f6 70010000 		.4byte	0x170
  303 00fa 08       		.uleb128 0x8
- 304 00fb CD020000 		.4byte	.LASF33
+ 304 00fb EC020000 		.4byte	.LASF33
  305 00ff 04       		.byte	0x4
  306 0100 3C       		.byte	0x3c
  307 0101 B8000000 		.4byte	0xb8
  308 0105 00       		.byte	0
  309 0106 09       		.uleb128 0x9
- 310 0107 3E050000 		.4byte	.LASF21
+ 310 0107 34050000 		.4byte	.LASF21
  311 010b 04       		.byte	0x4
  312 010c 3E       		.byte	0x3e
  313 010d 70010000 		.4byte	0x170
@@ -336,7 +336,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  316 0113 06       		.byte	0x6
  317 0114 02       		.byte	0x2
  318 0115 09       		.uleb128 0x9
- 319 0116 E9040000 		.4byte	.LASF22
+ 319 0116 DF040000 		.4byte	.LASF22
  320 011a 04       		.byte	0x4
  321 011b 3F       		.byte	0x3f
  322 011c B8000000 		.4byte	0xb8
@@ -345,7 +345,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  325 0122 05       		.byte	0x5
  326 0123 02       		.byte	0x2
  327 0124 09       		.uleb128 0x9
- 328 0125 42030000 		.4byte	.LASF23
+ 328 0125 61030000 		.4byte	.LASF23
  329 0129 04       		.byte	0x4
  330 012a 40       		.byte	0x40
  331 012b B8000000 		.4byte	0xb8
@@ -354,11 +354,11 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  334 0131 04       		.byte	0x4
  335 0132 02       		.byte	0x2
  336 0133 09       		.uleb128 0x9
- 337 0134 FC050000 		.4byte	.LASF24
+ 337 0134 F2050000 		.4byte	.LASF24
  338 0138 04       		.byte	0x4
  339 0139 41       		.byte	0x41
  340 013a B8000000 		.4byte	0xb8
-ARM GAS  /tmp/ccwnIA1Q.s 			page 7
+ARM GAS  /tmp/cclNGraY.s 			page 7
 
 
  341 013e 02       		.byte	0x2
@@ -366,7 +366,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  343 0140 03       		.byte	0x3
  344 0141 02       		.byte	0x2
  345 0142 09       		.uleb128 0x9
- 346 0143 60050000 		.4byte	.LASF25
+ 346 0143 56050000 		.4byte	.LASF25
  347 0147 04       		.byte	0x4
  348 0148 42       		.byte	0x42
  349 0149 70010000 		.4byte	0x170
@@ -375,7 +375,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  352 014f 02       		.byte	0x2
  353 0150 02       		.byte	0x2
  354 0151 09       		.uleb128 0x9
- 355 0152 43060000 		.4byte	.LASF26
+ 355 0152 39060000 		.4byte	.LASF26
  356 0156 04       		.byte	0x4
  357 0157 43       		.byte	0x43
  358 0158 B8000000 		.4byte	0xb8
@@ -384,7 +384,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  361 015e 01       		.byte	0x1
  362 015f 02       		.byte	0x2
  363 0160 09       		.uleb128 0x9
- 364 0161 F2020000 		.4byte	.LASF27
+ 364 0161 11030000 		.4byte	.LASF27
  365 0165 04       		.byte	0x4
  366 0166 44       		.byte	0x44
  367 0167 70010000 		.4byte	0x170
@@ -396,29 +396,29 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  373 0170 0A       		.uleb128 0xa
  374 0171 B8000000 		.4byte	0xb8
  375 0175 03       		.uleb128 0x3
- 376 0176 16020000 		.4byte	.LASF28
+ 376 0176 35020000 		.4byte	.LASF28
  377 017a 04       		.byte	0x4
  378 017b 46       		.byte	0x46
  379 017c F2000000 		.4byte	0xf2
  380 0180 0B       		.uleb128 0xb
- 381 0181 CF030000 		.4byte	.LASF84
+ 381 0181 EE030000 		.4byte	.LASF84
  382 0185 01       		.byte	0x1
  383 0186 09       		.byte	0x9
  384 0187 1D01     		.2byte	0x11d
  385 0189 A6010000 		.4byte	0x1a6
  386 018d 0C       		.uleb128 0xc
- 387 018e EE040000 		.4byte	.LASF29
+ 387 018e E4040000 		.4byte	.LASF29
  388 0192 00       		.sleb128 0
  389 0193 0C       		.uleb128 0xc
- 390 0194 0A030000 		.4byte	.LASF30
+ 390 0194 29030000 		.4byte	.LASF30
  391 0198 01       		.sleb128 1
  392 0199 0C       		.uleb128 0xc
- 393 019a DB030000 		.4byte	.LASF31
+ 393 019a FA030000 		.4byte	.LASF31
  394 019e 02       		.sleb128 2
  395 019f 0C       		.uleb128 0xc
- 396 01a0 F0010000 		.4byte	.LASF32
+ 396 01a0 0F020000 		.4byte	.LASF32
  397 01a4 03       		.sleb128 3
-ARM GAS  /tmp/ccwnIA1Q.s 			page 8
+ARM GAS  /tmp/cclNGraY.s 			page 8
 
 
  398 01a5 00       		.byte	0
@@ -428,32 +428,32 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  402 01a9 6701     		.2byte	0x167
  403 01ab E4010000 		.4byte	0x1e4
  404 01af 0E       		.uleb128 0xe
- 405 01b0 85040000 		.4byte	.LASF34
+ 405 01b0 7B040000 		.4byte	.LASF34
  406 01b4 05       		.byte	0x5
  407 01b5 6901     		.2byte	0x169
  408 01b7 CE000000 		.4byte	0xce
  409 01bb 00       		.byte	0
  410 01bc 0E       		.uleb128 0xe
- 411 01bd 45050000 		.4byte	.LASF35
+ 411 01bd 3B050000 		.4byte	.LASF35
  412 01c1 05       		.byte	0x5
  413 01c2 6A01     		.2byte	0x16a
  414 01c4 A2000000 		.4byte	0xa2
  415 01c8 04       		.byte	0x4
  416 01c9 0E       		.uleb128 0xe
- 417 01ca FD010000 		.4byte	.LASF36
+ 417 01ca 1C020000 		.4byte	.LASF36
  418 01ce 05       		.byte	0x5
  419 01cf 6D01     		.2byte	0x16d
  420 01d1 A2000000 		.4byte	0xa2
  421 01d5 05       		.byte	0x5
  422 01d6 0E       		.uleb128 0xe
- 423 01d7 3E020000 		.4byte	.LASF37
+ 423 01d7 5D020000 		.4byte	.LASF37
  424 01db 05       		.byte	0x5
  425 01dc 7001     		.2byte	0x170
  426 01de A2000000 		.4byte	0xa2
  427 01e2 06       		.byte	0x6
  428 01e3 00       		.byte	0
  429 01e4 0F       		.uleb128 0xf
- 430 01e5 E9030000 		.4byte	.LASF38
+ 430 01e5 08040000 		.4byte	.LASF38
  431 01e9 05       		.byte	0x5
  432 01ea 7101     		.2byte	0x171
  433 01ec A6010000 		.4byte	0x1a6
@@ -469,64 +469,64 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  443 01ff A2000000 		.4byte	0xa2
  444 0203 00       		.byte	0
  445 0204 08       		.uleb128 0x8
- 446 0205 A7000000 		.4byte	.LASF40
+ 446 0205 C6000000 		.4byte	.LASF40
  447 0209 06       		.byte	0x6
  448 020a 60       		.byte	0x60
  449 020b A2000000 		.4byte	0xa2
  450 020f 01       		.byte	0x1
  451 0210 08       		.uleb128 0x8
- 452 0211 AB020000 		.4byte	.LASF41
+ 452 0211 CA020000 		.4byte	.LASF41
  453 0215 06       		.byte	0x6
  454 0216 61       		.byte	0x61
-ARM GAS  /tmp/ccwnIA1Q.s 			page 9
+ARM GAS  /tmp/cclNGraY.s 			page 9
 
 
  455 0217 B8000000 		.4byte	0xb8
  456 021b 02       		.byte	0x2
  457 021c 08       		.uleb128 0x8
- 458 021d 64040000 		.4byte	.LASF42
+ 458 021d 5A040000 		.4byte	.LASF42
  459 0221 06       		.byte	0x6
  460 0222 62       		.byte	0x62
  461 0223 7D020000 		.4byte	0x27d
  462 0227 04       		.byte	0x4
  463 0228 08       		.uleb128 0x8
- 464 0229 28050000 		.4byte	.LASF43
+ 464 0229 1E050000 		.4byte	.LASF43
  465 022d 06       		.byte	0x6
  466 022e 64       		.byte	0x64
  467 022f A2000000 		.4byte	0xa2
  468 0233 05       		.byte	0x5
  469 0234 08       		.uleb128 0x8
- 470 0235 47020000 		.4byte	.LASF44
+ 470 0235 66020000 		.4byte	.LASF44
  471 0239 06       		.byte	0x6
  472 023a 65       		.byte	0x65
  473 023b B8000000 		.4byte	0xb8
  474 023f 06       		.byte	0x6
  475 0240 08       		.uleb128 0x8
- 476 0241 0E050000 		.4byte	.LASF45
+ 476 0241 04050000 		.4byte	.LASF45
  477 0245 06       		.byte	0x6
  478 0246 66       		.byte	0x66
  479 0247 7D020000 		.4byte	0x27d
  480 024b 08       		.byte	0x8
  481 024c 08       		.uleb128 0x8
- 482 024d C6050000 		.4byte	.LASF46
+ 482 024d BC050000 		.4byte	.LASF46
  483 0251 06       		.byte	0x6
  484 0252 68       		.byte	0x68
  485 0253 A2000000 		.4byte	0xa2
  486 0257 09       		.byte	0x9
  487 0258 08       		.uleb128 0x8
- 488 0259 74000000 		.4byte	.LASF47
+ 488 0259 93000000 		.4byte	.LASF47
  489 025d 06       		.byte	0x6
  490 025e 69       		.byte	0x69
  491 025f B8000000 		.4byte	0xb8
  492 0263 0A       		.byte	0xa
  493 0264 08       		.uleb128 0x8
- 494 0265 11060000 		.4byte	.LASF48
+ 494 0265 07060000 		.4byte	.LASF48
  495 0269 06       		.byte	0x6
  496 026a 6A       		.byte	0x6a
  497 026b 7D020000 		.4byte	0x27d
  498 026f 0C       		.byte	0xc
  499 0270 08       		.uleb128 0x8
- 500 0271 71020000 		.4byte	.LASF49
+ 500 0271 90020000 		.4byte	.LASF49
  501 0275 06       		.byte	0x6
  502 0276 6B       		.byte	0x6b
  503 0277 A2000000 		.4byte	0xa2
@@ -535,23 +535,23 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  506 027d 02       		.uleb128 0x2
  507 027e 01       		.byte	0x1
  508 027f 02       		.byte	0x2
- 509 0280 B6040000 		.4byte	.LASF50
+ 509 0280 AC040000 		.4byte	.LASF50
  510 0284 07       		.uleb128 0x7
  511 0285 04       		.byte	0x4
-ARM GAS  /tmp/ccwnIA1Q.s 			page 10
+ARM GAS  /tmp/cclNGraY.s 			page 10
 
 
  512 0286 06       		.byte	0x6
  513 0287 71       		.byte	0x71
  514 0288 A5020000 		.4byte	0x2a5
  515 028c 08       		.uleb128 0x8
- 516 028d E3010000 		.4byte	.LASF51
+ 516 028d 02020000 		.4byte	.LASF51
  517 0291 06       		.byte	0x6
  518 0292 73       		.byte	0x73
  519 0293 B8000000 		.4byte	0xb8
  520 0297 00       		.byte	0
  521 0298 08       		.uleb128 0x8
- 522 0299 7C020000 		.4byte	.LASF52
+ 522 0299 9B020000 		.4byte	.LASF52
  523 029d 06       		.byte	0x6
  524 029e 76       		.byte	0x76
  525 029f B8000000 		.4byte	0xb8
@@ -563,13 +563,13 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  531 02a8 6F       		.byte	0x6f
  532 02a9 C6020000 		.4byte	0x2c6
  533 02ad 08       		.uleb128 0x8
- 534 02ae E6000000 		.4byte	.LASF53
+ 534 02ae 05010000 		.4byte	.LASF53
  535 02b2 06       		.byte	0x6
  536 02b3 7A       		.byte	0x7a
  537 02b4 84020000 		.4byte	0x284
  538 02b8 00       		.byte	0
  539 02b9 08       		.uleb128 0x8
- 540 02ba DC040000 		.4byte	.LASF54
+ 540 02ba D2040000 		.4byte	.LASF54
  541 02be 06       		.byte	0x6
  542 02bf 7C       		.byte	0x7c
  543 02c0 E4010000 		.4byte	0x1e4
@@ -581,13 +581,13 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  549 02c9 5A       		.byte	0x5a
  550 02ca E7020000 		.4byte	0x2e7
  551 02ce 08       		.uleb128 0x8
- 552 02cf 03030000 		.4byte	.LASF55
+ 552 02cf 22030000 		.4byte	.LASF55
  553 02d3 06       		.byte	0x6
  554 02d4 6C       		.byte	0x6c
  555 02d5 E7020000 		.4byte	0x2e7
  556 02d9 00       		.byte	0
  557 02da 08       		.uleb128 0x8
- 558 02db BE020000 		.4byte	.LASF56
+ 558 02db DD020000 		.4byte	.LASF56
  559 02df 06       		.byte	0x6
  560 02e0 80       		.byte	0x80
  561 02e1 A5020000 		.4byte	0x2a5
@@ -596,15 +596,15 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  564 02e7 06       		.uleb128 0x6
  565 02e8 F0010000 		.4byte	0x1f0
  566 02ec 03       		.uleb128 0x3
- 567 02ed E1050000 		.4byte	.LASF57
+ 567 02ed D7050000 		.4byte	.LASF57
  568 02f1 06       		.byte	0x6
-ARM GAS  /tmp/ccwnIA1Q.s 			page 11
+ARM GAS  /tmp/cclNGraY.s 			page 11
 
 
  569 02f2 83       		.byte	0x83
  570 02f3 C6020000 		.4byte	0x2c6
  571 02f7 10       		.uleb128 0x10
- 572 02f8 50050000 		.4byte	.LASF58
+ 572 02f8 46050000 		.4byte	.LASF58
  573 02fc 01       		.byte	0x1
  574 02fd 23       		.byte	0x23
  575 02fe 00000000 		.4byte	.LFB98
@@ -623,7 +623,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  588 031a 00       		.byte	0
  589 031b 00       		.byte	0
  590 031c 10       		.uleb128 0x10
- 591 031d D8000000 		.4byte	.LASF59
+ 591 031d F7000000 		.4byte	.LASF59
  592 0321 01       		.byte	0x1
  593 0322 2E       		.byte	0x2e
  594 0323 00000000 		.4byte	.LFB99
@@ -632,7 +632,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  597 032c 9C       		.byte	0x9c
  598 032d 86030000 		.4byte	0x386
  599 0331 13       		.uleb128 0x13
- 600 0332 BC050000 		.4byte	.LASF61
+ 600 0332 B2050000 		.4byte	.LASF61
  601 0336 01       		.byte	0x1
  602 0337 30       		.byte	0x30
  603 0338 86030000 		.4byte	0x386
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  623 0364 01       		.uleb128 0x1
  624 0365 50       		.byte	0x50
  625 0366 02       		.uleb128 0x2
-ARM GAS  /tmp/ccwnIA1Q.s 			page 12
+ARM GAS  /tmp/cclNGraY.s 			page 12
 
 
  626 0367 74       		.byte	0x74
@@ -694,7 +694,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  656 0394 0F       		.byte	0xf
  657 0395 00       		.byte	0
  658 0396 10       		.uleb128 0x10
- 659 0397 39040000 		.4byte	.LASF60
+ 659 0397 2F040000 		.4byte	.LASF60
  660 039b 01       		.byte	0x1
  661 039c 5C       		.byte	0x5c
  662 039d 00000000 		.4byte	.LFB100
@@ -703,7 +703,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  665 03a6 9C       		.byte	0x9c
  666 03a7 CE030000 		.4byte	0x3ce
  667 03ab 17       		.uleb128 0x17
- 668 03ac 08020000 		.4byte	.LASF62
+ 668 03ac 27020000 		.4byte	.LASF62
  669 03b0 01       		.byte	0x1
  670 03b1 5E       		.byte	0x5e
  671 03b2 7D020000 		.4byte	0x27d
@@ -718,12 +718,12 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  680 03c7 03       		.byte	0x3
  681 03c8 00000000 		.4byte	.LANCHOR0
  682 03cc 00       		.byte	0
-ARM GAS  /tmp/ccwnIA1Q.s 			page 13
+ARM GAS  /tmp/cclNGraY.s 			page 13
 
 
  683 03cd 00       		.byte	0
  684 03ce 10       		.uleb128 0x10
- 685 03cf 99030000 		.4byte	.LASF63
+ 685 03cf B8030000 		.4byte	.LASF63
  686 03d3 01       		.byte	0x1
  687 03d4 67       		.byte	0x67
  688 03d5 00000000 		.4byte	.LFB101
@@ -751,17 +751,17 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  710 0406 FF01     		.2byte	0x1ff
  711 0408 00       		.byte	0
  712 0409 1A       		.uleb128 0x1a
- 713 040a C8010000 		.4byte	.LASF64
+ 713 040a E7010000 		.4byte	.LASF64
  714 040e 07       		.byte	0x7
  715 040f 36       		.byte	0x36
  716 0410 F7030000 		.4byte	0x3f7
  717 0414 1A       		.uleb128 0x1a
- 718 0415 2B020000 		.4byte	.LASF65
+ 718 0415 4A020000 		.4byte	.LASF65
  719 0419 07       		.byte	0x7
  720 041a 38       		.byte	0x38
  721 041b F7030000 		.4byte	0x3f7
  722 041f 1A       		.uleb128 0x1a
- 723 0420 DE020000 		.4byte	.LASF66
+ 723 0420 FD020000 		.4byte	.LASF66
  724 0424 07       		.byte	0x7
  725 0425 3A       		.byte	0x3a
  726 0426 F7030000 		.4byte	0x3f7
@@ -771,14 +771,14 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  730 0433 18       		.uleb128 0x18
  731 0434 00       		.byte	0
  732 0435 1A       		.uleb128 0x1a
- 733 0436 A7050000 		.4byte	.LASF67
+ 733 0436 9D050000 		.4byte	.LASF67
  734 043a 07       		.byte	0x7
  735 043b 3C       		.byte	0x3c
  736 043c 40040000 		.4byte	0x440
  737 0440 0A       		.uleb128 0xa
  738 0441 2A040000 		.4byte	0x42a
  739 0445 15       		.uleb128 0x15
-ARM GAS  /tmp/ccwnIA1Q.s 			page 14
+ARM GAS  /tmp/cclNGraY.s 			page 14
 
 
  740 0446 CE000000 		.4byte	0xce
@@ -786,14 +786,14 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  742 044e 18       		.uleb128 0x18
  743 044f 00       		.byte	0
  744 0450 1A       		.uleb128 0x1a
- 745 0451 8E050000 		.4byte	.LASF68
+ 745 0451 84050000 		.4byte	.LASF68
  746 0455 07       		.byte	0x7
  747 0456 3E       		.byte	0x3e
  748 0457 5B040000 		.4byte	0x45b
  749 045b 0A       		.uleb128 0xa
  750 045c 45040000 		.4byte	0x445
  751 0460 1A       		.uleb128 0x1a
- 752 0461 5B020000 		.4byte	.LASF69
+ 752 0461 7A020000 		.4byte	.LASF69
  753 0465 07       		.byte	0x7
  754 0466 43       		.byte	0x43
  755 0467 6B040000 		.4byte	0x46b
@@ -807,7 +807,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  763 047b 0A       		.uleb128 0xa
  764 047c 45040000 		.4byte	0x445
  765 0480 1A       		.uleb128 0x1a
- 766 0481 1A030000 		.4byte	.LASF71
+ 766 0481 39030000 		.4byte	.LASF71
  767 0485 07       		.byte	0x7
  768 0486 45       		.byte	0x45
  769 0487 8B040000 		.4byte	0x48b
@@ -819,17 +819,17 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  775 0499 18       		.uleb128 0x18
  776 049a 00       		.byte	0
  777 049b 1A       		.uleb128 0x1a
- 778 049c 96000000 		.4byte	.LASF72
+ 778 049c B5000000 		.4byte	.LASF72
  779 04a0 07       		.byte	0x7
  780 04a1 49       		.byte	0x49
  781 04a2 90040000 		.4byte	0x490
  782 04a6 1A       		.uleb128 0x1a
- 783 04a7 BC040000 		.4byte	.LASF73
+ 783 04a7 B2040000 		.4byte	.LASF73
  784 04ab 07       		.byte	0x7
  785 04ac 4D       		.byte	0x4d
  786 04ad 90040000 		.4byte	0x490
  787 04b1 1A       		.uleb128 0x1a
- 788 04b2 CC040000 		.4byte	.LASF74
+ 788 04b2 C2040000 		.4byte	.LASF74
  789 04b6 07       		.byte	0x7
  790 04b7 4E       		.byte	0x4e
  791 04b8 90040000 		.4byte	0x490
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  794 04c1 D2040000 		.4byte	0x4d2
  795 04c5 16       		.uleb128 0x16
  796 04c6 D9000000 		.4byte	0xd9
-ARM GAS  /tmp/ccwnIA1Q.s 			page 15
+ARM GAS  /tmp/cclNGraY.s 			page 15
 
 
  797 04ca 09       		.byte	0x9
@@ -847,12 +847,12 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  800 04d0 01       		.byte	0x1
  801 04d1 00       		.byte	0
  802 04d2 1A       		.uleb128 0x1a
- 803 04d3 30060000 		.4byte	.LASF75
+ 803 04d3 26060000 		.4byte	.LASF75
  804 04d7 08       		.byte	0x8
  805 04d8 C9       		.byte	0xc9
  806 04d9 BC040000 		.4byte	0x4bc
  807 04dd 1B       		.uleb128 0x1b
- 808 04de BC000000 		.4byte	.LASF76
+ 808 04de DB000000 		.4byte	.LASF76
  809 04e2 01       		.byte	0x1
  810 04e3 09       		.byte	0x9
  811 04e4 EC020000 		.4byte	0x2ec
@@ -860,7 +860,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  813 04e9 03       		.byte	0x3
  814 04ea 00000000 		.4byte	VirtualSerial_CDC_Interface
  815 04ee 1C       		.uleb128 0x1c
- 816 04ef 08060000 		.4byte	.LASF85
+ 816 04ef FE050000 		.4byte	.LASF85
  817 04f3 09       		.byte	0x9
  818 04f4 E9       		.byte	0xe9
  819 04f5 04050000 		.4byte	0x504
@@ -884,7 +884,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  837 0520 04       		.byte	0x4
  838 0521 EC020000 		.4byte	0x2ec
  839 0525 1E       		.uleb128 0x1e
- 840 0526 79030000 		.4byte	.LASF78
+ 840 0526 98030000 		.4byte	.LASF78
  841 052a 06       		.byte	0x6
  842 052b 1201     		.2byte	0x112
  843 052d AD000000 		.4byte	0xad
@@ -893,12 +893,12 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  846 0536 1A050000 		.4byte	0x51a
  847 053a 00       		.byte	0
  848 053b 1F       		.uleb128 0x1f
- 849 053c 89020000 		.4byte	.LASF79
+ 849 053c A8020000 		.4byte	.LASF79
  850 0540 06       		.byte	0x6
  851 0541 D4       		.byte	0xd4
  852 0542 A2000000 		.4byte	0xa2
  853 0546 5A050000 		.4byte	0x55a
-ARM GAS  /tmp/ccwnIA1Q.s 			page 16
+ARM GAS  /tmp/cclNGraY.s 			page 16
 
 
  854 054a 1D       		.uleb128 0x1d
@@ -913,7 +913,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  863 055f 06       		.uleb128 0x6
  864 0560 B8000000 		.4byte	0xb8
  865 0564 1F       		.uleb128 0x1f
- 866 0565 66050000 		.4byte	.LASF80
+ 866 0565 5C050000 		.4byte	.LASF80
  867 0569 06       		.byte	0x6
  868 056a 8F       		.byte	0x8f
  869 056b 7D020000 		.4byte	0x27d
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  908 0018 3E       		.uleb128 0x3e
  909 0019 0B       		.uleb128 0xb
  910 001a 03       		.uleb128 0x3
-ARM GAS  /tmp/ccwnIA1Q.s 			page 17
+ARM GAS  /tmp/cclNGraY.s 			page 17
 
 
  911 001b 0E       		.uleb128 0xe
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  965 0051 00       		.byte	0
  966 0052 00       		.byte	0
  967 0053 08       		.uleb128 0x8
-ARM GAS  /tmp/ccwnIA1Q.s 			page 18
+ARM GAS  /tmp/cclNGraY.s 			page 18
 
 
  968 0054 0D       		.uleb128 0xd
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1022 008a 13       		.uleb128 0x13
  1023 008b 00       		.byte	0
  1024 008c 00       		.byte	0
-ARM GAS  /tmp/ccwnIA1Q.s 			page 19
+ARM GAS  /tmp/cclNGraY.s 			page 19
 
 
  1025 008d 0C       		.uleb128 0xc
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1079 00c3 19       		.uleb128 0x19
  1080 00c4 03       		.uleb128 0x3
  1081 00c5 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccwnIA1Q.s 			page 20
+ARM GAS  /tmp/cclNGraY.s 			page 20
 
 
  1082 00c6 3A       		.uleb128 0x3a
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1136 0104 11       		.uleb128 0x11
  1137 0105 01       		.uleb128 0x1
  1138 0106 31       		.uleb128 0x31
-ARM GAS  /tmp/ccwnIA1Q.s 			page 21
+ARM GAS  /tmp/cclNGraY.s 			page 21
 
 
  1139 0107 13       		.uleb128 0x13
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1193 013d 00       		.byte	0
  1194 013e 03       		.uleb128 0x3
  1195 013f 0E       		.uleb128 0xe
-ARM GAS  /tmp/ccwnIA1Q.s 			page 22
+ARM GAS  /tmp/cclNGraY.s 			page 22
 
 
  1196 0140 3A       		.uleb128 0x3a
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1250 0176 00       		.byte	0
  1251 0177 1E       		.uleb128 0x1e
  1252 0178 2E       		.uleb128 0x2e
-ARM GAS  /tmp/ccwnIA1Q.s 			page 23
+ARM GAS  /tmp/cclNGraY.s 			page 23
 
 
  1253 0179 01       		.byte	0x1
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1307 01af 19       		.uleb128 0x19
  1308 01b0 00       		.byte	0
  1309 01b1 00       		.byte	0
-ARM GAS  /tmp/ccwnIA1Q.s 			page 24
+ARM GAS  /tmp/cclNGraY.s 			page 24
 
 
  1310 01b2 00       		.byte	0
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1356              	.LASF39:
  1357 0019 436F6E74 		.ascii	"ControlInterfaceNumber\000"
  1357      726F6C49 
-ARM GAS  /tmp/ccwnIA1Q.s 			page 25
+ARM GAS  /tmp/cclNGraY.s 			page 25
 
 
  1357      6E746572 
@@ -1460,464 +1460,464 @@ ARM GAS  /tmp/ccwnIA1Q.s 			page 1
  1363 006a 73686F72 		.ascii	"short int\000"
  1363      7420696E 
  1363      7400
- 1364              	.LASF47:
- 1365 0074 4E6F7469 		.ascii	"NotificationEndpointSize\000"
- 1365      66696361 
- 1365      74696F6E 
- 1365      456E6470 
- 1365      6F696E74 
- 1366              	.LASF19:
- 1367 008d 73697A65 		.ascii	"sizetype\000"
- 1367      74797065 
- 1367      00
- 1368              	.LASF72:
- 1369 0096 656E6470 		.ascii	"endpointselected\000"
- 1369      6F696E74 
- 1369      73656C65 
- 1369      63746564 
+ 1364              	.LASF83:
+ 1365 0074 2F484444 		.ascii	"/HDD/GIT/variometer/Altimeter/\000"
+ 1365      2F474954 
+ 1365      2F766172 
+ 1365      696F6D65 
+ 1365      7465722F 
+ 1366              	.LASF47:
+ 1367 0093 4E6F7469 		.ascii	"NotificationEndpointSize\000"
+ 1367      66696361 
+ 1367      74696F6E 
+ 1367      456E6470 
+ 1367      6F696E74 
+ 1368              	.LASF19:
+ 1369 00ac 73697A65 		.ascii	"sizetype\000"
+ 1369      74797065 
  1369      00
- 1370              	.LASF40:
- 1371 00a7 44617461 		.ascii	"DataINEndpointNumber\000"
- 1371      494E456E 
- 1371      64706F69 
- 1371      6E744E75 
- 1371      6D626572 
- 1372              	.LASF76:
- 1373 00bc 56697274 		.ascii	"VirtualSerial_CDC_Interface\000"
- 1373      75616C53 
- 1373      65726961 
- 1373      6C5F4344 
- 1373      435F496E 
- 1374              	.LASF59:
- 1375 00d8 4563686F 		.ascii	"EchoCharacter\000"
- 1375      43686172 
- 1375      61637465 
- 1375      7200
- 1376              	.LASF53:
- 1377 00e6 436F6E74 		.ascii	"ControlLineStates\000"
- 1377      726F6C4C 
- 1377      696E6553 
- 1377      74617465 
-ARM GAS  /tmp/ccwnIA1Q.s 			page 26
+ 1370              	.LASF72:
+ 1371 00b5 656E6470 		.ascii	"endpointselected\000"
+ 1371      6F696E74 
+ 1371      73656C65 
+ 1371      63746564 
+ 1371      00
+ 1372              	.LASF40:
+ 1373 00c6 44617461 		.ascii	"DataINEndpointNumber\000"
+ 1373      494E456E 
+ 1373      64706F69 
+ 1373      6E744E75 
+ 1373      6D626572 
+ 1374              	.LASF76:
+ 1375 00db 56697274 		.ascii	"VirtualSerial_CDC_Interface\000"
+ 1375      75616C53 
+ 1375      65726961 
+ 1375      6C5F4344 
+ 1375      435F496E 
+ 1376              	.LASF59:
+ 1377 00f7 4563686F 		.ascii	"EchoCharacter\000"
+ 1377      43686172 
+ 1377      61637465 
+ARM GAS  /tmp/cclNGraY.s 			page 26
 
 
- 1377      7300
- 1378              	.LASF9:
- 1379 00f8 5F5F7569 		.ascii	"__uint32_t\000"
- 1379      6E743332 
- 1379      5F7400
- 1380              	.LASF81:
- 1381 0103 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 1381      4320342E 
- 1381      382E3420 
- 1381      32303134 
- 1381      30353236 
- 1382 0136 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mno-thumb-in"
- 1382      20726576 
- 1382      6973696F 
- 1382      6E203231 
- 1382      31333538 
- 1383 0169 74657277 		.ascii	"terwork -mthumb -ggdb -O1 -fomit-frame-pointer -ffu"
- 1383      6F726B20 
- 1383      2D6D7468 
- 1383      756D6220 
- 1383      2D676764 
- 1384 019c 6E637469 		.ascii	"nction-sections -fdata-sections -fno-common\000"
- 1384      6F6E2D73 
- 1384      65637469 
- 1384      6F6E7320 
- 1384      2D666461 
- 1385              	.LASF64:
- 1386 01c8 7573625F 		.ascii	"usb_data_buffer\000"
- 1386      64617461 
- 1386      5F627566 
- 1386      66657200 
- 1387              	.LASF5:
- 1388 01d8 5F5F7569 		.ascii	"__uint16_t\000"
- 1388      6E743136 
- 1388      5F7400
- 1389              	.LASF51:
- 1390 01e3 486F7374 		.ascii	"HostToDevice\000"
- 1390      546F4465 
- 1390      76696365 
- 1390      00
- 1391              	.LASF32:
- 1392 01f0 5553425F 		.ascii	"USB_MODE_UID\000"
- 1392      4D4F4445 
- 1392      5F554944 
+ 1377      7200
+ 1378              	.LASF53:
+ 1379 0105 436F6E74 		.ascii	"ControlLineStates\000"
+ 1379      726F6C4C 
+ 1379      696E6553 
+ 1379      74617465 
+ 1379      7300
+ 1380              	.LASF9:
+ 1381 0117 5F5F7569 		.ascii	"__uint32_t\000"
+ 1381      6E743332 
+ 1381      5F7400
+ 1382              	.LASF81:
+ 1383 0122 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 1383      4320342E 
+ 1383      382E3420 
+ 1383      32303134 
+ 1383      30353236 
+ 1384 0155 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mno-thumb-in"
+ 1384      20726576 
+ 1384      6973696F 
+ 1384      6E203231 
+ 1384      31333538 
+ 1385 0188 74657277 		.ascii	"terwork -mthumb -ggdb -O1 -fomit-frame-pointer -ffu"
+ 1385      6F726B20 
+ 1385      2D6D7468 
+ 1385      756D6220 
+ 1385      2D676764 
+ 1386 01bb 6E637469 		.ascii	"nction-sections -fdata-sections -fno-common\000"
+ 1386      6F6E2D73 
+ 1386      65637469 
+ 1386      6F6E7320 
+ 1386      2D666461 
+ 1387              	.LASF64:
+ 1388 01e7 7573625F 		.ascii	"usb_data_buffer\000"
+ 1388      64617461 
+ 1388      5F627566 
+ 1388      66657200 
+ 1389              	.LASF5:
+ 1390 01f7 5F5F7569 		.ascii	"__uint16_t\000"
+ 1390      6E743136 
+ 1390      5F7400
+ 1391              	.LASF51:
+ 1392 0202 486F7374 		.ascii	"HostToDevice\000"
+ 1392      546F4465 
+ 1392      76696365 
  1392      00
- 1393              	.LASF36:
- 1394 01fd 50617269 		.ascii	"ParityType\000"
- 1394      74795479 
- 1394      706500
- 1395              	.LASF62:
- 1396 0208 436F6E66 		.ascii	"ConfigSuccess\000"
- 1396      69675375 
- 1396      63636573 
- 1396      7300
- 1397              	.LASF28:
- 1398 0216 5553425F 		.ascii	"USB_CMD_STAT\000"
- 1398      434D445F 
-ARM GAS  /tmp/ccwnIA1Q.s 			page 27
+ 1393              	.LASF32:
+ 1394 020f 5553425F 		.ascii	"USB_MODE_UID\000"
+ 1394      4D4F4445 
+ 1394      5F554944 
+ 1394      00
+ 1395              	.LASF36:
+ 1396 021c 50617269 		.ascii	"ParityType\000"
+ 1396      74795479 
+ 1396      706500
+ 1397              	.LASF62:
+ 1398 0227 436F6E66 		.ascii	"ConfigSuccess\000"
+ARM GAS  /tmp/cclNGraY.s 			page 27
 
 
- 1398      53544154 
- 1398      00
- 1399              	.LASF14:
- 1400 0223 75696E74 		.ascii	"uint8_t\000"
- 1400      385F7400 
- 1401              	.LASF65:
- 1402 022b 7573625F 		.ascii	"usb_data_buffer_IN\000"
- 1402      64617461 
- 1402      5F627566 
- 1402      6665725F 
- 1402      494E00
- 1403              	.LASF37:
- 1404 023e 44617461 		.ascii	"DataBits\000"
- 1404      42697473 
- 1404      00
- 1405              	.LASF44:
- 1406 0247 44617461 		.ascii	"DataOUTEndpointSize\000"
- 1406      4F555445 
- 1406      6E64706F 
- 1406      696E7453 
- 1406      697A6500 
- 1407              	.LASF69:
- 1408 025b 7573625F 		.ascii	"usb_data_buffer_index\000"
- 1408      64617461 
- 1408      5F627566 
- 1408      6665725F 
- 1408      696E6465 
- 1409              	.LASF49:
- 1410 0271 506F7274 		.ascii	"PortNumber\000"
- 1410      4E756D62 
- 1410      657200
- 1411              	.LASF52:
- 1412 027c 44657669 		.ascii	"DeviceToHost\000"
- 1412      6365546F 
- 1412      486F7374 
- 1412      00
- 1413              	.LASF79:
- 1414 0289 4344435F 		.ascii	"CDC_Device_SendData\000"
- 1414      44657669 
- 1414      63655F53 
- 1414      656E6444 
- 1414      61746100 
- 1415              	.LASF11:
- 1416 029d 6C6F6E67 		.ascii	"long long int\000"
- 1416      206C6F6E 
- 1416      6720696E 
- 1416      7400
- 1417              	.LASF41:
- 1418 02ab 44617461 		.ascii	"DataINEndpointSize\000"
- 1418      494E456E 
- 1418      64706F69 
- 1418      6E745369 
- 1418      7A6500
- 1419              	.LASF56:
- 1420 02be 53746174 		.ascii	"State\000"
- 1420      6500
- 1421              	.LASF8:
-ARM GAS  /tmp/ccwnIA1Q.s 			page 28
+ 1398      69675375 
+ 1398      63636573 
+ 1398      7300
+ 1399              	.LASF28:
+ 1400 0235 5553425F 		.ascii	"USB_CMD_STAT\000"
+ 1400      434D445F 
+ 1400      53544154 
+ 1400      00
+ 1401              	.LASF14:
+ 1402 0242 75696E74 		.ascii	"uint8_t\000"
+ 1402      385F7400 
+ 1403              	.LASF65:
+ 1404 024a 7573625F 		.ascii	"usb_data_buffer_IN\000"
+ 1404      64617461 
+ 1404      5F627566 
+ 1404      6665725F 
+ 1404      494E00
+ 1405              	.LASF37:
+ 1406 025d 44617461 		.ascii	"DataBits\000"
+ 1406      42697473 
+ 1406      00
+ 1407              	.LASF44:
+ 1408 0266 44617461 		.ascii	"DataOUTEndpointSize\000"
+ 1408      4F555445 
+ 1408      6E64706F 
+ 1408      696E7453 
+ 1408      697A6500 
+ 1409              	.LASF69:
+ 1410 027a 7573625F 		.ascii	"usb_data_buffer_index\000"
+ 1410      64617461 
+ 1410      5F627566 
+ 1410      6665725F 
+ 1410      696E6465 
+ 1411              	.LASF49:
+ 1412 0290 506F7274 		.ascii	"PortNumber\000"
+ 1412      4E756D62 
+ 1412      657200
+ 1413              	.LASF52:
+ 1414 029b 44657669 		.ascii	"DeviceToHost\000"
+ 1414      6365546F 
+ 1414      486F7374 
+ 1414      00
+ 1415              	.LASF79:
+ 1416 02a8 4344435F 		.ascii	"CDC_Device_SendData\000"
+ 1416      44657669 
+ 1416      63655F53 
+ 1416      656E6444 
+ 1416      61746100 
+ 1417              	.LASF11:
+ 1418 02bc 6C6F6E67 		.ascii	"long long int\000"
+ 1418      206C6F6E 
+ 1418      6720696E 
+ 1418      7400
+ 1419              	.LASF41:
+ 1420 02ca 44617461 		.ascii	"DataINEndpointSize\000"
+ 1420      494E456E 
+ 1420      64706F69 
+ARM GAS  /tmp/cclNGraY.s 			page 28
 
 
- 1422 02c4 6C6F6E67 		.ascii	"long int\000"
- 1422      20696E74 
- 1422      00
- 1423              	.LASF33:
- 1424 02cd 42756666 		.ascii	"BufferAddrOffset\000"
- 1424      65724164 
- 1424      64724F66 
- 1424      66736574 
+ 1420      6E745369 
+ 1420      7A6500
+ 1421              	.LASF56:
+ 1422 02dd 53746174 		.ascii	"State\000"
+ 1422      6500
+ 1423              	.LASF8:
+ 1424 02e3 6C6F6E67 		.ascii	"long int\000"
+ 1424      20696E74 
  1424      00
- 1425              	.LASF66:
- 1426 02de 7573625F 		.ascii	"usb_data_buffer_OUT\000"
- 1426      64617461 
- 1426      5F627566 
- 1426      6665725F 
- 1426      4F555400 
- 1427              	.LASF27:
- 1428 02f2 41637469 		.ascii	"Active\000"
- 1428      766500
- 1429              	.LASF2:
- 1430 02f9 5F5F7569 		.ascii	"__uint8_t\000"
- 1430      6E74385F 
- 1430      7400
- 1431              	.LASF55:
- 1432 0303 436F6E66 		.ascii	"Config\000"
- 1432      696700
- 1433              	.LASF30:
- 1434 030a 5553425F 		.ascii	"USB_MODE_Device\000"
- 1434      4D4F4445 
- 1434      5F446576 
- 1434      69636500 
- 1435              	.LASF71:
- 1436 031a 7573625F 		.ascii	"usb_data_buffer_OUT_index\000"
- 1436      64617461 
- 1436      5F627566 
- 1436      6665725F 
- 1436      4F55545F 
- 1437              	.LASF1:
- 1438 0334 756E7369 		.ascii	"unsigned char\000"
- 1438      676E6564 
- 1438      20636861 
- 1438      7200
- 1439              	.LASF23:
- 1440 0342 52617465 		.ascii	"RateFeedback_Toogle\000"
- 1440      46656564 
- 1440      6261636B 
- 1440      5F546F6F 
- 1440      676C6500 
- 1441              	.LASF0:
- 1442 0356 7369676E 		.ascii	"signed char\000"
- 1442      65642063 
- 1442      68617200 
- 1443              	.LASF12:
- 1444 0362 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1444      206C6F6E 
- 1444      6720756E 
- 1444      7369676E 
- 1444      65642069 
-ARM GAS  /tmp/ccwnIA1Q.s 			page 29
+ 1425              	.LASF33:
+ 1426 02ec 42756666 		.ascii	"BufferAddrOffset\000"
+ 1426      65724164 
+ 1426      64724F66 
+ 1426      66736574 
+ 1426      00
+ 1427              	.LASF66:
+ 1428 02fd 7573625F 		.ascii	"usb_data_buffer_OUT\000"
+ 1428      64617461 
+ 1428      5F627566 
+ 1428      6665725F 
+ 1428      4F555400 
+ 1429              	.LASF27:
+ 1430 0311 41637469 		.ascii	"Active\000"
+ 1430      766500
+ 1431              	.LASF2:
+ 1432 0318 5F5F7569 		.ascii	"__uint8_t\000"
+ 1432      6E74385F 
+ 1432      7400
+ 1433              	.LASF55:
+ 1434 0322 436F6E66 		.ascii	"Config\000"
+ 1434      696700
+ 1435              	.LASF30:
+ 1436 0329 5553425F 		.ascii	"USB_MODE_Device\000"
+ 1436      4D4F4445 
+ 1436      5F446576 
+ 1436      69636500 
+ 1437              	.LASF71:
+ 1438 0339 7573625F 		.ascii	"usb_data_buffer_OUT_index\000"
+ 1438      64617461 
+ 1438      5F627566 
+ 1438      6665725F 
+ 1438      4F55545F 
+ 1439              	.LASF1:
+ 1440 0353 756E7369 		.ascii	"unsigned char\000"
+ 1440      676E6564 
+ 1440      20636861 
+ 1440      7200
+ 1441              	.LASF23:
+ 1442 0361 52617465 		.ascii	"RateFeedback_Toogle\000"
+ 1442      46656564 
+ 1442      6261636B 
+ 1442      5F546F6F 
+ 1442      676C6500 
+ 1443              	.LASF0:
+ 1444 0375 7369676E 		.ascii	"signed char\000"
+ 1444      65642063 
+ 1444      68617200 
+ARM GAS  /tmp/cclNGraY.s 			page 29
 
 
- 1445              	.LASF78:
- 1446 0379 4344435F 		.ascii	"CDC_Device_ReceiveByte\000"
- 1446      44657669 
- 1446      63655F52 
- 1446      65636569 
- 1446      76654279 
- 1447              	.LASF18:
- 1448 0390 75696E74 		.ascii	"uint32_t\000"
- 1448      33325F74 
- 1448      00
- 1449              	.LASF63:
- 1450 0399 4556454E 		.ascii	"EVENT_USB_Device_ControlRequest\000"
- 1450      545F5553 
- 1450      425F4465 
- 1450      76696365 
- 1450      5F436F6E 
- 1451              	.LASF13:
- 1452 03b9 756E7369 		.ascii	"unsigned int\000"
- 1452      676E6564 
- 1452      20696E74 
- 1452      00
- 1453              	.LASF16:
- 1454 03c6 75696E74 		.ascii	"uint16_t\000"
- 1454      31365F74 
+ 1445              	.LASF12:
+ 1446 0381 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1446      206C6F6E 
+ 1446      6720756E 
+ 1446      7369676E 
+ 1446      65642069 
+ 1447              	.LASF78:
+ 1448 0398 4344435F 		.ascii	"CDC_Device_ReceiveByte\000"
+ 1448      44657669 
+ 1448      63655F52 
+ 1448      65636569 
+ 1448      76654279 
+ 1449              	.LASF18:
+ 1450 03af 75696E74 		.ascii	"uint32_t\000"
+ 1450      33325F74 
+ 1450      00
+ 1451              	.LASF63:
+ 1452 03b8 4556454E 		.ascii	"EVENT_USB_Device_ControlRequest\000"
+ 1452      545F5553 
+ 1452      425F4465 
+ 1452      76696365 
+ 1452      5F436F6E 
+ 1453              	.LASF13:
+ 1454 03d8 756E7369 		.ascii	"unsigned int\000"
+ 1454      676E6564 
+ 1454      20696E74 
  1454      00
- 1455              	.LASF84:
- 1456 03cf 5553425F 		.ascii	"USB_Modes_t\000"
- 1456      4D6F6465 
- 1456      735F7400 
- 1457              	.LASF31:
- 1458 03db 5553425F 		.ascii	"USB_MODE_Host\000"
- 1458      4D4F4445 
- 1458      5F486F73 
- 1458      7400
- 1459              	.LASF38:
- 1460 03e9 4344435F 		.ascii	"CDC_LineEncoding_t\000"
- 1460      4C696E65 
- 1460      456E636F 
- 1460      64696E67 
- 1460      5F7400
- 1461              	.LASF82:
- 1462 03fc 7372632F 		.ascii	"src/VirtualSerial.c\000"
- 1462      56697274 
- 1462      75616C53 
- 1462      65726961 
- 1462      6C2E6300 
- 1463              	.LASF83:
- 1464 0410 2F484444 		.ascii	"/HDD/Projects/workspace_test4/Altimeter/\000"
- 1464      2F50726F 
- 1464      6A656374 
- 1464      732F776F 
- 1464      726B7370 
+ 1455              	.LASF16:
+ 1456 03e5 75696E74 		.ascii	"uint16_t\000"
+ 1456      31365F74 
+ 1456      00
+ 1457              	.LASF84:
+ 1458 03ee 5553425F 		.ascii	"USB_Modes_t\000"
+ 1458      4D6F6465 
+ 1458      735F7400 
+ 1459              	.LASF31:
+ 1460 03fa 5553425F 		.ascii	"USB_MODE_Host\000"
+ 1460      4D4F4445 
+ 1460      5F486F73 
+ 1460      7400
+ 1461              	.LASF38:
+ 1462 0408 4344435F 		.ascii	"CDC_LineEncoding_t\000"
+ 1462      4C696E65 
+ 1462      456E636F 
+ 1462      64696E67 
+ 1462      5F7400
+ 1463              	.LASF82:
+ 1464 041b 7372632F 		.ascii	"src/VirtualSerial.c\000"
+ 1464      56697274 
+ 1464      75616C53 
+ 1464      65726961 
+ 1464      6C2E6300 
  1465              	.LASF60:
- 1466 0439 4556454E 		.ascii	"EVENT_USB_Device_ConfigurationChanged\000"
+ 1466 042f 4556454E 		.ascii	"EVENT_USB_Device_ConfigurationChanged\000"
  1466      545F5553 
  1466      425F4465 
  1466      76696365 
-ARM GAS  /tmp/ccwnIA1Q.s 			page 30
+ARM GAS  /tmp/cclNGraY.s 			page 30
 
 
  1466      5F436F6E 
  1467              	.LASF20:
- 1468 045f 63686172 		.ascii	"char\000"
+ 1468 0455 63686172 		.ascii	"char\000"
  1468      00
  1469              	.LASF42:
- 1470 0464 44617461 		.ascii	"DataINEndpointDoubleBank\000"
+ 1470 045a 44617461 		.ascii	"DataINEndpointDoubleBank\000"
  1470      494E456E 
  1470      64706F69 
  1470      6E74446F 
  1470      75626C65 
  1471              	.LASF17:
- 1472 047d 696E7433 		.ascii	"int32_t\000"
+ 1472 0473 696E7433 		.ascii	"int32_t\000"
  1472      325F7400 
  1473              	.LASF34:
- 1474 0485 42617564 		.ascii	"BaudRateBPS\000"
+ 1474 047b 42617564 		.ascii	"BaudRateBPS\000"
  1474      52617465 
  1474      42505300 
  1475              	.LASF7:
- 1476 0491 5F5F696E 		.ascii	"__int32_t\000"
+ 1476 0487 5F5F696E 		.ascii	"__int32_t\000"
  1476      7433325F 
  1476      7400
  1477              	.LASF6:
- 1478 049b 73686F72 		.ascii	"short unsigned int\000"
+ 1478 0491 73686F72 		.ascii	"short unsigned int\000"
  1478      7420756E 
  1478      7369676E 
  1478      65642069 
  1478      6E7400
  1479              	.LASF15:
- 1480 04ae 696E7431 		.ascii	"int16_t\000"
+ 1480 04a4 696E7431 		.ascii	"int16_t\000"
  1480      365F7400 
  1481              	.LASF50:
- 1482 04b6 5F426F6F 		.ascii	"_Bool\000"
+ 1482 04ac 5F426F6F 		.ascii	"_Bool\000"
  1482      6C00
  1483              	.LASF73:
- 1484 04bc 656E6470 		.ascii	"endpointhandle0\000"
+ 1484 04b2 656E6470 		.ascii	"endpointhandle0\000"
  1484      6F696E74 
  1484      68616E64 
  1484      6C653000 
  1485              	.LASF74:
- 1486 04cc 656E6470 		.ascii	"endpointhandle1\000"
+ 1486 04c2 656E6470 		.ascii	"endpointhandle1\000"
  1486      6F696E74 
  1486      68616E64 
  1486      6C653100 
  1487              	.LASF54:
- 1488 04dc 4C696E65 		.ascii	"LineEncoding\000"
+ 1488 04d2 4C696E65 		.ascii	"LineEncoding\000"
  1488      456E636F 
  1488      64696E67 
  1488      00
  1489              	.LASF22:
- 1490 04e9 54797065 		.ascii	"Type\000"
+ 1490 04df 54797065 		.ascii	"Type\000"
  1490      00
  1491              	.LASF29:
- 1492 04ee 5553425F 		.ascii	"USB_MODE_None\000"
+ 1492 04e4 5553425F 		.ascii	"USB_MODE_None\000"
  1492      4D4F4445 
  1492      5F4E6F6E 
  1492      6500
  1493              	.LASF10:
-ARM GAS  /tmp/ccwnIA1Q.s 			page 31
+ARM GAS  /tmp/cclNGraY.s 			page 31
 
 
- 1494 04fc 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1494 04f2 6C6F6E67 		.ascii	"long unsigned int\000"
  1494      20756E73 
  1494      69676E65 
  1494      6420696E 
  1494      7400
  1495              	.LASF45:
- 1496 050e 44617461 		.ascii	"DataOUTEndpointDoubleBank\000"
+ 1496 0504 44617461 		.ascii	"DataOUTEndpointDoubleBank\000"
  1496      4F555445 
  1496      6E64706F 
  1496      696E7444 
  1496      6F75626C 
  1497              	.LASF43:
- 1498 0528 44617461 		.ascii	"DataOUTEndpointNumber\000"
+ 1498 051e 44617461 		.ascii	"DataOUTEndpointNumber\000"
  1498      4F555445 
  1498      6E64706F 
  1498      696E744E 
  1498      756D6265 
  1499              	.LASF21:
- 1500 053e 4E427974 		.ascii	"NBytes\000"
+ 1500 0534 4E427974 		.ascii	"NBytes\000"
  1500      657300
  1501              	.LASF35:
- 1502 0545 43686172 		.ascii	"CharFormat\000"
+ 1502 053b 43686172 		.ascii	"CharFormat\000"
  1502      466F726D 
  1502      617400
  1503              	.LASF58:
- 1504 0550 53657475 		.ascii	"SetupVSHardware\000"
+ 1504 0546 53657475 		.ascii	"SetupVSHardware\000"
  1504      70565348 
  1504      61726477 
  1504      61726500 
  1505              	.LASF25:
- 1506 0560 5374616C 		.ascii	"Stall\000"
+ 1506 0556 5374616C 		.ascii	"Stall\000"
  1506      6C00
  1507              	.LASF80:
- 1508 0566 4344435F 		.ascii	"CDC_Device_ConfigureEndpoints\000"
+ 1508 055c 4344435F 		.ascii	"CDC_Device_ConfigureEndpoints\000"
  1508      44657669 
  1508      63655F43 
  1508      6F6E6669 
  1508      67757265 
  1509              	.LASF3:
- 1510 0584 5F5F696E 		.ascii	"__int16_t\000"
+ 1510 057a 5F5F696E 		.ascii	"__int16_t\000"
  1510      7431365F 
  1510      7400
  1511              	.LASF68:
- 1512 058e 7573625F 		.ascii	"usb_data_buffer_OUT_size\000"
+ 1512 0584 7573625F 		.ascii	"usb_data_buffer_OUT_size\000"
  1512      64617461 
  1512      5F627566 
  1512      6665725F 
  1512      4F55545F 
  1513              	.LASF67:
- 1514 05a7 7573625F 		.ascii	"usb_data_buffer_size\000"
+ 1514 059d 7573625F 		.ascii	"usb_data_buffer_size\000"
  1514      64617461 
  1514      5F627566 
  1514      6665725F 
  1514      73697A65 
  1515              	.LASF61:
- 1516 05bc 72656376 		.ascii	"recv_byte\000"
+ 1516 05b2 72656376 		.ascii	"recv_byte\000"
  1516      5F627974 
-ARM GAS  /tmp/ccwnIA1Q.s 			page 32
+ARM GAS  /tmp/cclNGraY.s 			page 32
 
 
  1516      6500
  1517              	.LASF46:
- 1518 05c6 4E6F7469 		.ascii	"NotificationEndpointNumber\000"
+ 1518 05bc 4E6F7469 		.ascii	"NotificationEndpointNumber\000"
  1518      66696361 
  1518      74696F6E 
  1518      456E6470 
  1518      6F696E74 
  1519              	.LASF57:
- 1520 05e1 5553425F 		.ascii	"USB_ClassInfo_CDC_Device_t\000"
+ 1520 05d7 5553425F 		.ascii	"USB_ClassInfo_CDC_Device_t\000"
  1520      436C6173 
  1520      73496E66 
  1520      6F5F4344 
  1520      435F4465 
  1521              	.LASF24:
- 1522 05fc 546F6F67 		.ascii	"ToogleReset\000"
+ 1522 05f2 546F6F67 		.ascii	"ToogleReset\000"
  1522      6C655265 
  1522      73657400 
  1523              	.LASF85:
- 1524 0608 5553425F 		.ascii	"USB_Init\000"
+ 1524 05fe 5553425F 		.ascii	"USB_Init\000"
  1524      496E6974 
  1524      00
  1525              	.LASF48:
- 1526 0611 4E6F7469 		.ascii	"NotificationEndpointDoubleBank\000"
+ 1526 0607 4E6F7469 		.ascii	"NotificationEndpointDoubleBank\000"
  1526      66696361 
  1526      74696F6E 
  1526      456E6470 
  1526      6F696E74 
  1527              	.LASF75:
- 1528 0630 456E6450 		.ascii	"EndPointCmdStsList\000"
+ 1528 0626 456E6450 		.ascii	"EndPointCmdStsList\000"
  1528      6F696E74 
  1528      436D6453 
  1528      74734C69 
  1528      737400
  1529              	.LASF26:
- 1530 0643 44697361 		.ascii	"Disabled\000"
+ 1530 0639 44697361 		.ascii	"Disabled\000"
  1530      626C6564 
  1530      00
  1531              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/ccwnIA1Q.s 			page 33
+ARM GAS  /tmp/cclNGraY.s 			page 33
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 VirtualSerial.c
-     /tmp/ccwnIA1Q.s:18     .text.SetupVSHardware:00000000 $t
-     /tmp/ccwnIA1Q.s:23     .text.SetupVSHardware:00000000 SetupVSHardware
-     /tmp/ccwnIA1Q.s:44     .text.SetupVSHardware:00000010 $d
-     /tmp/ccwnIA1Q.s:49     .text.EchoCharacter:00000000 $t
-     /tmp/ccwnIA1Q.s:54     .text.EchoCharacter:00000000 EchoCharacter
-     /tmp/ccwnIA1Q.s:91     .text.EchoCharacter:00000028 $d
-     /tmp/ccwnIA1Q.s:96     .text.EVENT_USB_Device_ConfigurationChanged:00000000 $t
-     /tmp/ccwnIA1Q.s:101    .text.EVENT_USB_Device_ConfigurationChanged:00000000 EVENT_USB_Device_ConfigurationChanged
-     /tmp/ccwnIA1Q.s:120    .text.EVENT_USB_Device_ConfigurationChanged:0000000c $d
-     /tmp/ccwnIA1Q.s:125    .text.EVENT_USB_Device_ControlRequest:00000000 $t
-     /tmp/ccwnIA1Q.s:130    .text.EVENT_USB_Device_ControlRequest:00000000 EVENT_USB_Device_ControlRequest
-     /tmp/ccwnIA1Q.s:148    .text.EVENT_USB_Device_ControlRequest:0000000c $d
-     /tmp/ccwnIA1Q.s:158    .data.VirtualSerial_CDC_Interface:00000000 VirtualSerial_CDC_Interface
-     /tmp/ccwnIA1Q.s:154    .data.VirtualSerial_CDC_Interface:00000000 $d
+     /tmp/cclNGraY.s:18     .text.SetupVSHardware:00000000 $t
+     /tmp/cclNGraY.s:23     .text.SetupVSHardware:00000000 SetupVSHardware
+     /tmp/cclNGraY.s:44     .text.SetupVSHardware:00000010 $d
+     /tmp/cclNGraY.s:49     .text.EchoCharacter:00000000 $t
+     /tmp/cclNGraY.s:54     .text.EchoCharacter:00000000 EchoCharacter
+     /tmp/cclNGraY.s:91     .text.EchoCharacter:00000028 $d
+     /tmp/cclNGraY.s:96     .text.EVENT_USB_Device_ConfigurationChanged:00000000 $t
+     /tmp/cclNGraY.s:101    .text.EVENT_USB_Device_ConfigurationChanged:00000000 EVENT_USB_Device_ConfigurationChanged
+     /tmp/cclNGraY.s:120    .text.EVENT_USB_Device_ConfigurationChanged:0000000c $d
+     /tmp/cclNGraY.s:125    .text.EVENT_USB_Device_ControlRequest:00000000 $t
+     /tmp/cclNGraY.s:130    .text.EVENT_USB_Device_ControlRequest:00000000 EVENT_USB_Device_ControlRequest
+     /tmp/cclNGraY.s:148    .text.EVENT_USB_Device_ControlRequest:0000000c $d
+     /tmp/cclNGraY.s:158    .data.VirtualSerial_CDC_Interface:00000000 VirtualSerial_CDC_Interface
+     /tmp/cclNGraY.s:154    .data.VirtualSerial_CDC_Interface:00000000 $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

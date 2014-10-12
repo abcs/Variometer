@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc2Nui6C.s 			page 1
+ARM GAS  /tmp/cc3slX5N.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
   55              	.LBB27:
   56              	.LBB28:
   57              		.loc 2 205 0
-ARM GAS  /tmp/cc2Nui6C.s 			page 2
+ARM GAS  /tmp/cc3slX5N.s 			page 2
 
 
   58 0010 0022     		mov	r2, #0
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  112 0000 00       		.space	1
  113 0001 000000   		.section	.bss.USB_IsInitialized,"aw",%nobits
  114              		.type	USB_IsInitialized, %object
-ARM GAS  /tmp/cc2Nui6C.s 			page 3
+ARM GAS  /tmp/cc3slX5N.s 			page 3
 
 
  115              		.size	USB_IsInitialized, 1
@@ -148,68 +148,68 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  138 0006 00000000 		.4byte	.Ldebug_abbrev0
  139 000a 04       		.byte	0x4
  140 000b 01       		.uleb128 0x1
- 141 000c CF020000 		.4byte	.LASF77
+ 141 000c EE020000 		.4byte	.LASF77
  142 0010 01       		.byte	0x1
- 143 0011 7A010000 		.4byte	.LASF78
- 144 0015 A7030000 		.4byte	.LASF79
+ 143 0011 99010000 		.4byte	.LASF78
+ 144 0015 53000000 		.4byte	.LASF79
  145 0019 00000000 		.4byte	.Ldebug_ranges0+0
  146 001d 00000000 		.4byte	0
  147 0021 00000000 		.4byte	.Ldebug_line0
  148 0025 02       		.uleb128 0x2
  149 0026 01       		.byte	0x1
  150 0027 06       		.byte	0x6
- 151 0028 4D010000 		.4byte	.LASF0
+ 151 0028 6C010000 		.4byte	.LASF0
  152 002c 03       		.uleb128 0x3
- 153 002d D3010000 		.4byte	.LASF3
+ 153 002d F2010000 		.4byte	.LASF3
  154 0031 04       		.byte	0x4
  155 0032 1C       		.byte	0x1c
  156 0033 37000000 		.4byte	0x37
  157 0037 02       		.uleb128 0x2
  158 0038 01       		.byte	0x1
  159 0039 08       		.byte	0x8
- 160 003a 1E020000 		.4byte	.LASF1
+ 160 003a 3D020000 		.4byte	.LASF1
  161 003e 02       		.uleb128 0x2
  162 003f 02       		.byte	0x2
  163 0040 05       		.byte	0x5
  164 0041 49000000 		.4byte	.LASF2
  165 0045 03       		.uleb128 0x3
- 166 0046 AF000000 		.4byte	.LASF4
+ 166 0046 CE000000 		.4byte	.LASF4
  167 004a 04       		.byte	0x4
  168 004b 26       		.byte	0x26
  169 004c 50000000 		.4byte	0x50
  170 0050 02       		.uleb128 0x2
-ARM GAS  /tmp/cc2Nui6C.s 			page 4
+ARM GAS  /tmp/cc3slX5N.s 			page 4
 
 
  171 0051 02       		.byte	0x2
  172 0052 07       		.byte	0x7
- 173 0053 94030000 		.4byte	.LASF5
+ 173 0053 B3030000 		.4byte	.LASF5
  174 0057 03       		.uleb128 0x3
- 175 0058 B8040000 		.4byte	.LASF6
+ 175 0058 AE040000 		.4byte	.LASF6
  176 005c 04       		.byte	0x4
  177 005d 37       		.byte	0x37
  178 005e 62000000 		.4byte	0x62
  179 0062 02       		.uleb128 0x2
  180 0063 04       		.byte	0x4
  181 0064 05       		.byte	0x5
- 182 0065 A2010000 		.4byte	.LASF7
+ 182 0065 C1010000 		.4byte	.LASF7
  183 0069 03       		.uleb128 0x3
- 184 006a 6D000000 		.4byte	.LASF8
+ 184 006a 8C000000 		.4byte	.LASF8
  185 006e 04       		.byte	0x4
  186 006f 38       		.byte	0x38
  187 0070 74000000 		.4byte	0x74
  188 0074 02       		.uleb128 0x2
  189 0075 04       		.byte	0x4
  190 0076 07       		.byte	0x7
- 191 0077 70040000 		.4byte	.LASF9
+ 191 0077 66040000 		.4byte	.LASF9
  192 007b 02       		.uleb128 0x2
  193 007c 08       		.byte	0x8
  194 007d 05       		.byte	0x5
- 195 007e 6C010000 		.4byte	.LASF10
+ 195 007e 8B010000 		.4byte	.LASF10
  196 0082 02       		.uleb128 0x2
  197 0083 08       		.byte	0x8
  198 0084 07       		.byte	0x7
- 199 0085 50020000 		.4byte	.LASF11
+ 199 0085 6F020000 		.4byte	.LASF11
  200 0089 04       		.uleb128 0x4
  201 008a 04       		.byte	0x4
  202 008b 05       		.byte	0x5
@@ -217,38 +217,38 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  204 0090 02       		.uleb128 0x2
  205 0091 04       		.byte	0x4
  206 0092 07       		.byte	0x7
- 207 0093 84020000 		.4byte	.LASF12
+ 207 0093 A3020000 		.4byte	.LASF12
  208 0097 03       		.uleb128 0x3
- 209 0098 D1040000 		.4byte	.LASF13
+ 209 0098 C7040000 		.4byte	.LASF13
  210 009c 05       		.byte	0x5
  211 009d 2A       		.byte	0x2a
  212 009e 2C000000 		.4byte	0x2c
  213 00a2 03       		.uleb128 0x3
- 214 00a3 91020000 		.4byte	.LASF14
+ 214 00a3 B0020000 		.4byte	.LASF14
  215 00a7 05       		.byte	0x5
  216 00a8 36       		.byte	0x36
  217 00a9 45000000 		.4byte	0x45
  218 00ad 03       		.uleb128 0x3
- 219 00ae 10040000 		.4byte	.LASF15
+ 219 00ae 06040000 		.4byte	.LASF15
  220 00b2 05       		.byte	0x5
  221 00b3 41       		.byte	0x41
  222 00b4 57000000 		.4byte	0x57
  223 00b8 03       		.uleb128 0x3
- 224 00b9 67020000 		.4byte	.LASF16
+ 224 00b9 86020000 		.4byte	.LASF16
  225 00bd 05       		.byte	0x5
  226 00be 42       		.byte	0x42
  227 00bf 69000000 		.4byte	0x69
-ARM GAS  /tmp/cc2Nui6C.s 			page 5
+ARM GAS  /tmp/cc3slX5N.s 			page 5
 
 
  228 00c3 02       		.uleb128 0x2
  229 00c4 04       		.byte	0x4
  230 00c5 07       		.byte	0x7
- 231 00c6 53000000 		.4byte	.LASF17
+ 231 00c6 72000000 		.4byte	.LASF17
  232 00ca 02       		.uleb128 0x2
  233 00cb 01       		.byte	0x1
  234 00cc 08       		.byte	0x8
- 235 00cd F1030000 		.4byte	.LASF18
+ 235 00cd E7030000 		.4byte	.LASF18
  236 00d1 05       		.uleb128 0x5
  237 00d2 B8000000 		.4byte	0xb8
  238 00d6 E1000000 		.4byte	0xe1
@@ -266,25 +266,25 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  250 00ee 2202     		.2byte	0x222
  251 00f0 AB010000 		.4byte	0x1ab
  252 00f4 0A       		.uleb128 0xa
- 253 00f5 03010000 		.4byte	.LASF19
+ 253 00f5 22010000 		.4byte	.LASF19
  254 00f9 06       		.byte	0x6
  255 00fa 2302     		.2byte	0x223
  256 00fc E6000000 		.4byte	0xe6
  257 0100 00       		.byte	0
  258 0101 0A       		.uleb128 0xa
- 259 0102 9A020000 		.4byte	.LASF20
+ 259 0102 B9020000 		.4byte	.LASF20
  260 0106 06       		.byte	0x6
  261 0107 2402     		.2byte	0x224
  262 0109 E6000000 		.4byte	0xe6
  263 010d 04       		.byte	0x4
  264 010e 0A       		.uleb128 0xa
- 265 010f 52050000 		.4byte	.LASF21
+ 265 010f 48050000 		.4byte	.LASF21
  266 0113 06       		.byte	0x6
  267 0114 2502     		.2byte	0x225
  268 0116 E6000000 		.4byte	0xe6
  269 011a 08       		.byte	0x8
  270 011b 0A       		.uleb128 0xa
- 271 011c 9D040000 		.4byte	.LASF22
+ 271 011c 93040000 		.4byte	.LASF22
  272 0120 06       		.byte	0x6
  273 0121 2602     		.2byte	0x226
  274 0123 E6000000 		.4byte	0xe6
@@ -296,16 +296,16 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  280 0130 E6000000 		.4byte	0xe6
  281 0134 10       		.byte	0x10
  282 0135 0A       		.uleb128 0xa
- 283 0136 02020000 		.4byte	.LASF23
+ 283 0136 21020000 		.4byte	.LASF23
  284 013a 06       		.byte	0x6
-ARM GAS  /tmp/cc2Nui6C.s 			page 6
+ARM GAS  /tmp/cc3slX5N.s 			page 6
 
 
  285 013b 2802     		.2byte	0x228
  286 013d E6000000 		.4byte	0xe6
  287 0141 14       		.byte	0x14
  288 0142 0A       		.uleb128 0xa
- 289 0143 AA040000 		.4byte	.LASF24
+ 289 0143 A0040000 		.4byte	.LASF24
  290 0147 06       		.byte	0x6
  291 0148 2902     		.2byte	0x229
  292 014a E6000000 		.4byte	0xe6
@@ -317,37 +317,37 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  298 0157 E6000000 		.4byte	0xe6
  299 015b 1C       		.byte	0x1c
  300 015c 0A       		.uleb128 0xa
- 301 015d 08040000 		.4byte	.LASF26
+ 301 015d FE030000 		.4byte	.LASF26
  302 0161 06       		.byte	0x6
  303 0162 2B02     		.2byte	0x22b
  304 0164 E6000000 		.4byte	0xe6
  305 0168 20       		.byte	0x20
  306 0169 0A       		.uleb128 0xa
- 307 016a D9040000 		.4byte	.LASF27
+ 307 016a CF040000 		.4byte	.LASF27
  308 016e 06       		.byte	0x6
  309 016f 2C02     		.2byte	0x22c
  310 0171 E6000000 		.4byte	0xe6
  311 0175 24       		.byte	0x24
  312 0176 0A       		.uleb128 0xa
- 313 0177 EB000000 		.4byte	.LASF28
+ 313 0177 0A010000 		.4byte	.LASF28
  314 017b 06       		.byte	0x6
  315 017c 2D02     		.2byte	0x22d
  316 017e E6000000 		.4byte	0xe6
  317 0182 28       		.byte	0x28
  318 0183 0A       		.uleb128 0xa
- 319 0184 F0010000 		.4byte	.LASF29
+ 319 0184 0F020000 		.4byte	.LASF29
  320 0188 06       		.byte	0x6
  321 0189 2E02     		.2byte	0x22e
  322 018b E6000000 		.4byte	0xe6
  323 018f 2C       		.byte	0x2c
  324 0190 0A       		.uleb128 0xa
- 325 0191 61040000 		.4byte	.LASF30
+ 325 0191 57040000 		.4byte	.LASF30
  326 0195 06       		.byte	0x6
  327 0196 2F02     		.2byte	0x22f
  328 0198 AB010000 		.4byte	0x1ab
  329 019c 30       		.byte	0x30
  330 019d 0A       		.uleb128 0xa
- 331 019e 0F050000 		.4byte	.LASF31
+ 331 019e 05050000 		.4byte	.LASF31
  332 01a2 06       		.byte	0x6
  333 01a3 3002     		.2byte	0x230
  334 01a5 E1000000 		.4byte	0xe1
@@ -358,10 +358,10 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  339 01b0 08       		.uleb128 0x8
  340 01b1 D1000000 		.4byte	0xd1
  341 01b5 0C       		.uleb128 0xc
-ARM GAS  /tmp/cc2Nui6C.s 			page 7
+ARM GAS  /tmp/cc3slX5N.s 			page 7
 
 
- 342 01b6 A2000000 		.4byte	.LASF32
+ 342 01b6 C1000000 		.4byte	.LASF32
  343 01ba 06       		.byte	0x6
  344 01bb 3102     		.2byte	0x231
  345 01bd EB000000 		.4byte	0xeb
@@ -371,13 +371,13 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  349 01c4 3B       		.byte	0x3b
  350 01c5 3F020000 		.4byte	0x23f
  351 01c9 0E       		.uleb128 0xe
- 352 01ca BB010000 		.4byte	.LASF33
+ 352 01ca DA010000 		.4byte	.LASF33
  353 01ce 07       		.byte	0x7
  354 01cf 3C       		.byte	0x3c
  355 01d0 A2000000 		.4byte	0xa2
  356 01d4 00       		.byte	0
  357 01d5 0F       		.uleb128 0xf
- 358 01d6 96040000 		.4byte	.LASF34
+ 358 01d6 8C040000 		.4byte	.LASF34
  359 01da 07       		.byte	0x7
  360 01db 3E       		.byte	0x3e
  361 01dc 3F020000 		.4byte	0x23f
@@ -386,7 +386,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  364 01e2 06       		.byte	0x6
  365 01e3 02       		.byte	0x2
  366 01e4 0F       		.uleb128 0xf
- 367 01e5 6B040000 		.4byte	.LASF35
+ 367 01e5 61040000 		.4byte	.LASF35
  368 01e9 07       		.byte	0x7
  369 01ea 3F       		.byte	0x3f
  370 01eb A2000000 		.4byte	0xa2
@@ -395,7 +395,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  373 01f1 05       		.byte	0x5
  374 01f2 02       		.byte	0x2
  375 01f3 0F       		.uleb128 0xf
- 376 01f4 2C020000 		.4byte	.LASF36
+ 376 01f4 4B020000 		.4byte	.LASF36
  377 01f8 07       		.byte	0x7
  378 01f9 40       		.byte	0x40
  379 01fa A2000000 		.4byte	0xa2
@@ -404,7 +404,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  382 0200 04       		.byte	0x4
  383 0201 02       		.byte	0x2
  384 0202 0F       		.uleb128 0xf
- 385 0203 2F050000 		.4byte	.LASF37
+ 385 0203 25050000 		.4byte	.LASF37
  386 0207 07       		.byte	0x7
  387 0208 41       		.byte	0x41
  388 0209 A2000000 		.4byte	0xa2
@@ -413,19 +413,19 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  391 020f 03       		.byte	0x3
  392 0210 02       		.byte	0x2
  393 0211 0F       		.uleb128 0xf
- 394 0212 B2040000 		.4byte	.LASF38
+ 394 0212 A8040000 		.4byte	.LASF38
  395 0216 07       		.byte	0x7
  396 0217 42       		.byte	0x42
  397 0218 3F020000 		.4byte	0x23f
  398 021c 02       		.byte	0x2
-ARM GAS  /tmp/cc2Nui6C.s 			page 8
+ARM GAS  /tmp/cc3slX5N.s 			page 8
 
 
  399 021d 01       		.byte	0x1
  400 021e 02       		.byte	0x2
  401 021f 02       		.byte	0x2
  402 0220 0F       		.uleb128 0xf
- 403 0221 8D050000 		.4byte	.LASF39
+ 403 0221 83050000 		.4byte	.LASF39
  404 0225 07       		.byte	0x7
  405 0226 43       		.byte	0x43
  406 0227 A2000000 		.4byte	0xa2
@@ -434,7 +434,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  409 022d 01       		.byte	0x1
  410 022e 02       		.byte	0x2
  411 022f 0F       		.uleb128 0xf
- 412 0230 CC010000 		.4byte	.LASF40
+ 412 0230 EB010000 		.4byte	.LASF40
  413 0234 07       		.byte	0x7
  414 0235 44       		.byte	0x44
  415 0236 3F020000 		.4byte	0x23f
@@ -446,45 +446,45 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  421 023f 08       		.uleb128 0x8
  422 0240 A2000000 		.4byte	0xa2
  423 0244 03       		.uleb128 0x3
- 424 0245 F6000000 		.4byte	.LASF41
+ 424 0245 15010000 		.4byte	.LASF41
  425 0249 07       		.byte	0x7
  426 024a 46       		.byte	0x46
  427 024b C1010000 		.4byte	0x1c1
  428 024f 10       		.uleb128 0x10
- 429 0250 82040000 		.4byte	.LASF80
+ 429 0250 78040000 		.4byte	.LASF80
  430 0254 01       		.byte	0x1
  431 0255 0A       		.byte	0xa
  432 0256 48       		.byte	0x48
  433 0257 80020000 		.4byte	0x280
  434 025b 11       		.uleb128 0x11
- 435 025c BA000000 		.4byte	.LASF42
+ 435 025c D9000000 		.4byte	.LASF42
  436 0260 00       		.sleb128 0
  437 0261 11       		.uleb128 0x11
  438 0262 2B000000 		.4byte	.LASF43
  439 0266 01       		.sleb128 1
  440 0267 11       		.uleb128 0x11
- 441 0268 78050000 		.4byte	.LASF44
+ 441 0268 6E050000 		.4byte	.LASF44
  442 026c 02       		.sleb128 2
  443 026d 11       		.uleb128 0x11
- 444 026e DF040000 		.4byte	.LASF45
+ 444 026e D5040000 		.4byte	.LASF45
  445 0272 03       		.sleb128 3
  446 0273 11       		.uleb128 0x11
- 447 0274 B7020000 		.4byte	.LASF46
+ 447 0274 D6020000 		.4byte	.LASF46
  448 0278 04       		.sleb128 4
  449 0279 11       		.uleb128 0x11
- 450 027a 3B050000 		.4byte	.LASF47
+ 450 027a 31050000 		.4byte	.LASF47
  451 027e 05       		.sleb128 5
  452 027f 00       		.byte	0
  453 0280 0D       		.uleb128 0xd
  454 0281 08       		.byte	0x8
  455 0282 08       		.byte	0x8
-ARM GAS  /tmp/cc2Nui6C.s 			page 9
+ARM GAS  /tmp/cc3slX5N.s 			page 9
 
 
  456 0283 9E       		.byte	0x9e
  457 0284 C5020000 		.4byte	0x2c5
  458 0288 0E       		.uleb128 0xe
- 459 0289 33040000 		.4byte	.LASF48
+ 459 0289 29040000 		.4byte	.LASF48
  460 028d 08       		.byte	0x8
  461 028e A0       		.byte	0xa0
  462 028f 97000000 		.4byte	0x97
@@ -496,31 +496,31 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  468 029b 97000000 		.4byte	0x97
  469 029f 01       		.byte	0x1
  470 02a0 0E       		.uleb128 0xe
- 471 02a1 FB010000 		.4byte	.LASF50
+ 471 02a1 1A020000 		.4byte	.LASF50
  472 02a5 08       		.byte	0x8
  473 02a6 A2       		.byte	0xa2
  474 02a7 A2000000 		.4byte	0xa2
  475 02ab 02       		.byte	0x2
  476 02ac 0E       		.uleb128 0xe
- 477 02ad 5E050000 		.4byte	.LASF51
+ 477 02ad 54050000 		.4byte	.LASF51
  478 02b1 08       		.byte	0x8
  479 02b2 A3       		.byte	0xa3
  480 02b3 A2000000 		.4byte	0xa2
  481 02b7 04       		.byte	0x4
  482 02b8 0E       		.uleb128 0xe
- 483 02b9 27050000 		.4byte	.LASF52
+ 483 02b9 1D050000 		.4byte	.LASF52
  484 02bd 08       		.byte	0x8
  485 02be A4       		.byte	0xa4
  486 02bf A2000000 		.4byte	0xa2
  487 02c3 06       		.byte	0x6
  488 02c4 00       		.byte	0
  489 02c5 03       		.uleb128 0x3
- 490 02c6 09020000 		.4byte	.LASF53
+ 490 02c6 28020000 		.4byte	.LASF53
  491 02ca 08       		.byte	0x8
  492 02cb A5       		.byte	0xa5
  493 02cc 80020000 		.4byte	0x280
  494 02d0 12       		.uleb128 0x12
- 495 02d1 1B010000 		.4byte	.LASF56
+ 495 02d1 3A010000 		.4byte	.LASF56
  496 02d5 02       		.byte	0x2
  497 02d6 B7       		.byte	0xb7
  498 02d7 97000000 		.4byte	0x97
@@ -533,12 +533,12 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  505 02e7 97000000 		.4byte	0x97
  506 02eb 00       		.byte	0
  507 02ec 14       		.uleb128 0x14
- 508 02ed 9F020000 		.4byte	.LASF59
+ 508 02ed BE020000 		.4byte	.LASF59
  509 02f1 02       		.byte	0x2
  510 02f2 CB       		.byte	0xcb
  511 02f3 03       		.byte	0x3
  512 02f4 0F030000 		.4byte	0x30f
-ARM GAS  /tmp/cc2Nui6C.s 			page 10
+ARM GAS  /tmp/cc3slX5N.s 			page 10
 
 
  513 02f8 13       		.uleb128 0x13
@@ -547,7 +547,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  516 02fe CB       		.byte	0xcb
  517 02ff 97000000 		.4byte	0x97
  518 0303 13       		.uleb128 0x13
- 519 0304 18050000 		.4byte	.LASF55
+ 519 0304 0E050000 		.4byte	.LASF55
  520 0308 02       		.byte	0x2
  521 0309 CB       		.byte	0xcb
  522 030a 0F030000 		.4byte	0x30f
@@ -555,7 +555,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  524 030f 07       		.uleb128 0x7
  525 0310 97000000 		.4byte	0x97
  526 0314 15       		.uleb128 0x15
- 527 0315 89000000 		.4byte	.LASF57
+ 527 0315 A8000000 		.4byte	.LASF57
  528 0319 03       		.byte	0x3
  529 031a 3401     		.2byte	0x134
  530 031c 32030000 		.4byte	0x332
@@ -570,9 +570,9 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  539 0332 02       		.uleb128 0x2
  540 0333 01       		.byte	0x1
  541 0334 02       		.byte	0x2
- 542 0335 2D040000 		.4byte	.LASF58
+ 542 0335 23040000 		.4byte	.LASF58
  543 0339 14       		.uleb128 0x14
- 544 033a C2040000 		.4byte	.LASF60
+ 544 033a B8040000 		.4byte	.LASF60
  545 033e 01       		.byte	0x1
  546 033f 43       		.byte	0x43
  547 0340 01       		.byte	0x1
@@ -584,21 +584,21 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  553 034c 97000000 		.4byte	0x97
  554 0350 17       		.uleb128 0x17
  555 0351 18       		.uleb128 0x18
- 556 0352 0E010000 		.4byte	.LASF81
+ 556 0352 2D010000 		.4byte	.LASF81
  557 0356 01       		.byte	0x1
  558 0357 47       		.byte	0x47
  559 0358 97000000 		.4byte	0x97
  560 035c 00       		.byte	0
  561 035d 00       		.byte	0
  562 035e 19       		.uleb128 0x19
- 563 035f 78000000 		.4byte	.LASF82
+ 563 035f 97000000 		.4byte	.LASF82
  564 0363 01       		.byte	0x1
  565 0364 34       		.byte	0x34
  566 0365 00000000 		.4byte	.LFB97
  567 0369 34000000 		.4byte	.LFE97-.LFB97
  568 036d 01       		.uleb128 0x1
  569 036e 9C       		.byte	0x9c
-ARM GAS  /tmp/cc2Nui6C.s 			page 11
+ARM GAS  /tmp/cc3slX5N.s 			page 11
 
 
  570 036f 50040000 		.4byte	0x450
@@ -609,7 +609,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  575 037a 97000000 		.4byte	0x97
  576 037e 00000000 		.4byte	.LLST0
  577 0382 1A       		.uleb128 0x1a
- 578 0383 84000000 		.4byte	.LASF61
+ 578 0383 A3000000 		.4byte	.LASF61
  579 0387 01       		.byte	0x1
  580 0388 34       		.byte	0x34
  581 0389 97000000 		.4byte	0x97
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  624 03ff 14000000 		.4byte	.LBB29
  625 0403 04000000 		.4byte	.LBE29-.LBB29
  626 0407 01       		.byte	0x1
-ARM GAS  /tmp/cc2Nui6C.s 			page 12
+ARM GAS  /tmp/cc3slX5N.s 			page 12
 
 
  627 0408 4B       		.byte	0x4b
@@ -703,22 +703,22 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  666 045f FF01     		.2byte	0x1ff
  667 0461 00       		.byte	0
  668 0462 24       		.uleb128 0x24
- 669 0463 40020000 		.4byte	.LASF62
+ 669 0463 5F020000 		.4byte	.LASF62
  670 0467 09       		.byte	0x9
  671 0468 36       		.byte	0x36
  672 0469 50040000 		.4byte	0x450
  673 046d 24       		.uleb128 0x24
- 674 046e DD010000 		.4byte	.LASF63
+ 674 046e FC010000 		.4byte	.LASF63
  675 0472 09       		.byte	0x9
  676 0473 38       		.byte	0x38
  677 0474 50040000 		.4byte	0x450
  678 0478 24       		.uleb128 0x24
- 679 0479 70020000 		.4byte	.LASF64
+ 679 0479 8F020000 		.4byte	.LASF64
  680 047d 09       		.byte	0x9
  681 047e 3A       		.byte	0x3a
  682 047f 50040000 		.4byte	0x450
  683 0483 05       		.uleb128 0x5
-ARM GAS  /tmp/cc2Nui6C.s 			page 13
+ARM GAS  /tmp/cc3slX5N.s 			page 13
 
 
  684 0484 AD000000 		.4byte	0xad
@@ -726,7 +726,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  686 048c 22       		.uleb128 0x22
  687 048d 00       		.byte	0
  688 048e 24       		.uleb128 0x24
- 689 048f 18040000 		.4byte	.LASF65
+ 689 048f 0E040000 		.4byte	.LASF65
  690 0493 09       		.byte	0x9
  691 0494 3C       		.byte	0x3c
  692 0495 99040000 		.4byte	0x499
@@ -738,21 +738,21 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  698 04a7 22       		.uleb128 0x22
  699 04a8 00       		.byte	0
  700 04a9 24       		.uleb128 0x24
- 701 04aa F6040000 		.4byte	.LASF66
+ 701 04aa EC040000 		.4byte	.LASF66
  702 04ae 09       		.byte	0x9
  703 04af 3E       		.byte	0x3e
  704 04b0 B4040000 		.4byte	0x4b4
  705 04b4 08       		.uleb128 0x8
  706 04b5 9E040000 		.4byte	0x49e
  707 04b9 24       		.uleb128 0x24
- 708 04ba 37010000 		.4byte	.LASF67
+ 708 04ba 56010000 		.4byte	.LASF67
  709 04be 09       		.byte	0x9
  710 04bf 43       		.byte	0x43
  711 04c0 C4040000 		.4byte	0x4c4
  712 04c4 08       		.uleb128 0x8
  713 04c5 9E040000 		.4byte	0x49e
  714 04c9 24       		.uleb128 0x24
- 715 04ca D2000000 		.4byte	.LASF68
+ 715 04ca F1000000 		.4byte	.LASF68
  716 04ce 09       		.byte	0x9
  717 04cf 44       		.byte	0x44
  718 04d0 D4040000 		.4byte	0x4d4
@@ -771,20 +771,20 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  731 04f2 22       		.uleb128 0x22
  732 04f3 00       		.byte	0
  733 04f4 24       		.uleb128 0x24
- 734 04f5 5C000000 		.4byte	.LASF70
+ 734 04f5 7B000000 		.4byte	.LASF70
  735 04f9 09       		.byte	0x9
  736 04fa 49       		.byte	0x49
  737 04fb E9040000 		.4byte	0x4e9
  738 04ff 24       		.uleb128 0x24
- 739 0500 41040000 		.4byte	.LASF71
+ 739 0500 37040000 		.4byte	.LASF71
  740 0504 09       		.byte	0x9
-ARM GAS  /tmp/cc2Nui6C.s 			page 14
+ARM GAS  /tmp/cc3slX5N.s 			page 14
 
 
  741 0505 4D       		.byte	0x4d
  742 0506 E9040000 		.4byte	0x4e9
  743 050a 24       		.uleb128 0x24
- 744 050b 51040000 		.4byte	.LASF72
+ 744 050b 47040000 		.4byte	.LASF72
  745 050f 09       		.byte	0x9
  746 0510 4E       		.byte	0x4e
  747 0511 E9040000 		.4byte	0x4e9
@@ -799,12 +799,12 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  756 0529 01       		.byte	0x1
  757 052a 00       		.byte	0
  758 052b 24       		.uleb128 0x24
- 759 052c 65050000 		.4byte	.LASF73
+ 759 052c 5B050000 		.4byte	.LASF73
  760 0530 03       		.byte	0x3
  761 0531 C9       		.byte	0xc9
  762 0532 15050000 		.4byte	0x515
  763 0536 25       		.uleb128 0x25
- 764 0537 F6030000 		.4byte	.LASF74
+ 764 0537 EC030000 		.4byte	.LASF74
  765 053b 01       		.byte	0x1
  766 053c 26       		.byte	0x26
  767 053d 47050000 		.4byte	0x547
@@ -814,7 +814,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  771 0547 08       		.uleb128 0x8
  772 0548 32030000 		.4byte	0x332
  773 054c 25       		.uleb128 0x25
- 774 054d 59010000 		.4byte	.LASF75
+ 774 054d 78010000 		.4byte	.LASF75
  775 0551 01       		.byte	0x1
  776 0552 2A       		.byte	0x2a
  777 0553 C5020000 		.4byte	0x2c5
@@ -829,7 +829,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  786 056b 00       		.byte	0
  787 056c 00       		.byte	0
  788 056d 25       		.uleb128 0x25
- 789 056e AB010000 		.4byte	.LASF76
+ 789 056e CA010000 		.4byte	.LASF76
  790 0572 01       		.byte	0x1
  791 0573 31       		.byte	0x31
  792 0574 7E050000 		.4byte	0x57e
@@ -838,11 +838,11 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  795 057a 00000000 		.4byte	USB_DeviceState
  796 057e 08       		.uleb128 0x8
  797 057f 5D050000 		.4byte	0x55d
-ARM GAS  /tmp/cc2Nui6C.s 			page 15
+ARM GAS  /tmp/cc3slX5N.s 			page 15
 
 
  798 0583 26       		.uleb128 0x26
- 799 0584 D0030000 		.4byte	.LASF83
+ 799 0584 C6030000 		.4byte	.LASF83
  800 0588 0B       		.byte	0xb
  801 0589 83       		.byte	0x83
  802 058a 27       		.uleb128 0x27
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  852 002c 24       		.uleb128 0x24
  853 002d 00       		.byte	0
  854 002e 0B       		.uleb128 0xb
-ARM GAS  /tmp/cc2Nui6C.s 			page 16
+ARM GAS  /tmp/cc3slX5N.s 			page 16
 
 
  855 002f 0B       		.uleb128 0xb
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  909 0065 00       		.byte	0
  910 0066 03       		.uleb128 0x3
  911 0067 0E       		.uleb128 0xe
-ARM GAS  /tmp/cc2Nui6C.s 			page 17
+ARM GAS  /tmp/cc3slX5N.s 			page 17
 
 
  912 0068 3A       		.uleb128 0x3a
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  966 009e 03       		.uleb128 0x3
  967 009f 0E       		.uleb128 0xe
  968 00a0 3A       		.uleb128 0x3a
-ARM GAS  /tmp/cc2Nui6C.s 			page 18
+ARM GAS  /tmp/cc3slX5N.s 			page 18
 
 
  969 00a1 0B       		.uleb128 0xb
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1023 00d7 12       		.uleb128 0x12
  1024 00d8 2E       		.uleb128 0x2e
  1025 00d9 01       		.byte	0x1
-ARM GAS  /tmp/cc2Nui6C.s 			page 19
+ARM GAS  /tmp/cc3slX5N.s 			page 19
 
 
  1026 00da 03       		.uleb128 0x3
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1080 0110 05       		.uleb128 0x5
  1081 0111 27       		.uleb128 0x27
  1082 0112 19       		.uleb128 0x19
-ARM GAS  /tmp/cc2Nui6C.s 			page 20
+ARM GAS  /tmp/cc3slX5N.s 			page 20
 
 
  1083 0113 49       		.uleb128 0x49
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1137 0149 12       		.uleb128 0x12
  1138 014a 06       		.uleb128 0x6
  1139 014b 40       		.uleb128 0x40
-ARM GAS  /tmp/cc2Nui6C.s 			page 21
+ARM GAS  /tmp/cc3slX5N.s 			page 21
 
 
  1140 014c 18       		.uleb128 0x18
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1194 0183 00       		.byte	0
  1195 0184 1E       		.uleb128 0x1e
  1196 0185 34       		.uleb128 0x34
-ARM GAS  /tmp/cc2Nui6C.s 			page 22
+ARM GAS  /tmp/cc3slX5N.s 			page 22
 
 
  1197 0186 00       		.byte	0
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1251 01c1 24       		.uleb128 0x24
  1252 01c2 34       		.uleb128 0x34
  1253 01c3 00       		.byte	0
-ARM GAS  /tmp/cc2Nui6C.s 			page 23
+ARM GAS  /tmp/cc3slX5N.s 			page 23
 
 
  1254 01c4 03       		.uleb128 0x3
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1308 01fa 00       		.byte	0
  1309 01fb 00       		.byte	0
  1310              		.section	.debug_loc,"",%progbits
-ARM GAS  /tmp/cc2Nui6C.s 			page 24
+ARM GAS  /tmp/cc3slX5N.s 			page 24
 
 
  1311              	.Ldebug_loc0:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1365 0086 0200     		.2byte	0x2
  1366 0088 30       		.byte	0x30
  1367 0089 9F       		.byte	0x9f
-ARM GAS  /tmp/cc2Nui6C.s 			page 25
+ARM GAS  /tmp/cc3slX5N.s 			page 25
 
 
  1368 008a 00000000 		.4byte	0
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1422 0008 00000000 		.4byte	0
  1423 000c 00000000 		.4byte	0
  1424              		.section	.debug_line,"",%progbits
-ARM GAS  /tmp/cc2Nui6C.s 			page 26
+ARM GAS  /tmp/cc3slX5N.s 			page 26
 
 
  1425              	.Ldebug_line0:
@@ -1534,424 +1534,424 @@ ARM GAS  /tmp/cc2Nui6C.s 			page 1
  1438 0049 73686F72 		.ascii	"short int\000"
  1438      7420696E 
  1438      7400
- 1439              	.LASF17:
- 1440 0053 73697A65 		.ascii	"sizetype\000"
- 1440      74797065 
- 1440      00
- 1441              	.LASF70:
- 1442 005c 656E6470 		.ascii	"endpointselected\000"
- 1442      6F696E74 
- 1442      73656C65 
- 1442      63746564 
+ 1439              	.LASF79:
+ 1440 0053 2F484444 		.ascii	"/HDD/GIT/variometer/Altimeter/\000"
+ 1440      2F474954 
+ 1440      2F766172 
+ 1440      696F6D65 
+ 1440      7465722F 
+ 1441              	.LASF17:
+ 1442 0072 73697A65 		.ascii	"sizetype\000"
+ 1442      74797065 
  1442      00
- 1443              	.LASF8:
- 1444 006d 5F5F7569 		.ascii	"__uint32_t\000"
- 1444      6E743332 
- 1444      5F7400
- 1445              	.LASF82:
- 1446 0078 5553425F 		.ascii	"USB_USBTask\000"
- 1446      55534254 
- 1446      61736B00 
- 1447              	.LASF61:
- 1448 0084 6D6F6465 		.ascii	"mode\000"
- 1448      00
- 1449              	.LASF57:
- 1450 0089 456E6470 		.ascii	"Endpoint_IsSETUPReceived\000"
- 1450      6F696E74 
-ARM GAS  /tmp/cc2Nui6C.s 			page 27
+ 1443              	.LASF70:
+ 1444 007b 656E6470 		.ascii	"endpointselected\000"
+ 1444      6F696E74 
+ 1444      73656C65 
+ 1444      63746564 
+ 1444      00
+ 1445              	.LASF8:
+ 1446 008c 5F5F7569 		.ascii	"__uint32_t\000"
+ 1446      6E743332 
+ 1446      5F7400
+ 1447              	.LASF82:
+ 1448 0097 5553425F 		.ascii	"USB_USBTask\000"
+ 1448      55534254 
+ 1448      61736B00 
+ARM GAS  /tmp/cc3slX5N.s 			page 27
 
 
- 1450      5F497353 
- 1450      45545550 
- 1450      52656365 
- 1451              	.LASF32:
- 1452 00a2 4C50435F 		.ascii	"LPC_USB_Type\000"
- 1452      5553425F 
- 1452      54797065 
- 1452      00
- 1453              	.LASF4:
- 1454 00af 5F5F7569 		.ascii	"__uint16_t\000"
- 1454      6E743136 
- 1454      5F7400
- 1455              	.LASF42:
- 1456 00ba 44455649 		.ascii	"DEVICE_STATE_Unattached\000"
- 1456      43455F53 
- 1456      54415445 
- 1456      5F556E61 
- 1456      74746163 
- 1457              	.LASF68:
- 1458 00d2 7573625F 		.ascii	"usb_data_buffer_IN_index\000"
- 1458      64617461 
- 1458      5F627566 
- 1458      6665725F 
- 1458      494E5F69 
- 1459              	.LASF28:
- 1460 00eb 494E5453 		.ascii	"INTSETSTAT\000"
- 1460      45545354 
- 1460      415400
- 1461              	.LASF41:
- 1462 00f6 5553425F 		.ascii	"USB_CMD_STAT\000"
- 1462      434D445F 
- 1462      53544154 
- 1462      00
- 1463              	.LASF19:
- 1464 0103 44455643 		.ascii	"DEVCMDSTAT\000"
- 1464      4D445354 
- 1464      415400
- 1465              	.LASF81:
- 1466 010e 50726576 		.ascii	"PrevEndpoint\000"
- 1466      456E6470 
- 1466      6F696E74 
- 1466      00
- 1467              	.LASF56:
- 1468 011b 456E6470 		.ascii	"Endpoint_GetCurrentEndpoint\000"
+ 1449              	.LASF61:
+ 1450 00a3 6D6F6465 		.ascii	"mode\000"
+ 1450      00
+ 1451              	.LASF57:
+ 1452 00a8 456E6470 		.ascii	"Endpoint_IsSETUPReceived\000"
+ 1452      6F696E74 
+ 1452      5F497353 
+ 1452      45545550 
+ 1452      52656365 
+ 1453              	.LASF32:
+ 1454 00c1 4C50435F 		.ascii	"LPC_USB_Type\000"
+ 1454      5553425F 
+ 1454      54797065 
+ 1454      00
+ 1455              	.LASF4:
+ 1456 00ce 5F5F7569 		.ascii	"__uint16_t\000"
+ 1456      6E743136 
+ 1456      5F7400
+ 1457              	.LASF42:
+ 1458 00d9 44455649 		.ascii	"DEVICE_STATE_Unattached\000"
+ 1458      43455F53 
+ 1458      54415445 
+ 1458      5F556E61 
+ 1458      74746163 
+ 1459              	.LASF68:
+ 1460 00f1 7573625F 		.ascii	"usb_data_buffer_IN_index\000"
+ 1460      64617461 
+ 1460      5F627566 
+ 1460      6665725F 
+ 1460      494E5F69 
+ 1461              	.LASF28:
+ 1462 010a 494E5453 		.ascii	"INTSETSTAT\000"
+ 1462      45545354 
+ 1462      415400
+ 1463              	.LASF41:
+ 1464 0115 5553425F 		.ascii	"USB_CMD_STAT\000"
+ 1464      434D445F 
+ 1464      53544154 
+ 1464      00
+ 1465              	.LASF19:
+ 1466 0122 44455643 		.ascii	"DEVCMDSTAT\000"
+ 1466      4D445354 
+ 1466      415400
+ 1467              	.LASF81:
+ 1468 012d 50726576 		.ascii	"PrevEndpoint\000"
+ 1468      456E6470 
  1468      6F696E74 
- 1468      5F476574 
- 1468      43757272 
- 1468      656E7445 
- 1469              	.LASF67:
- 1470 0137 7573625F 		.ascii	"usb_data_buffer_index\000"
- 1470      64617461 
- 1470      5F627566 
- 1470      6665725F 
- 1470      696E6465 
- 1471              	.LASF0:
- 1472 014d 7369676E 		.ascii	"signed char\000"
- 1472      65642063 
-ARM GAS  /tmp/cc2Nui6C.s 			page 28
+ 1468      00
+ 1469              	.LASF56:
+ 1470 013a 456E6470 		.ascii	"Endpoint_GetCurrentEndpoint\000"
+ 1470      6F696E74 
+ 1470      5F476574 
+ 1470      43757272 
+ 1470      656E7445 
+ 1471              	.LASF67:
+ 1472 0156 7573625F 		.ascii	"usb_data_buffer_index\000"
+ 1472      64617461 
+ARM GAS  /tmp/cc3slX5N.s 			page 28
 
 
- 1472      68617200 
- 1473              	.LASF75:
- 1474 0159 5553425F 		.ascii	"USB_ControlRequest\000"
- 1474      436F6E74 
- 1474      726F6C52 
- 1474      65717565 
- 1474      737400
- 1475              	.LASF10:
- 1476 016c 6C6F6E67 		.ascii	"long long int\000"
- 1476      206C6F6E 
- 1476      6720696E 
- 1476      7400
- 1477              	.LASF78:
- 1478 017a 5553426C 		.ascii	"USBlib_11U14/Drivers/USB/Core/USBTask.c\000"
- 1478      69625F31 
- 1478      31553134 
- 1478      2F447269 
- 1478      76657273 
- 1479              	.LASF7:
- 1480 01a2 6C6F6E67 		.ascii	"long int\000"
- 1480      20696E74 
- 1480      00
- 1481              	.LASF76:
- 1482 01ab 5553425F 		.ascii	"USB_DeviceState\000"
- 1482      44657669 
- 1482      63655374 
- 1482      61746500 
- 1483              	.LASF33:
- 1484 01bb 42756666 		.ascii	"BufferAddrOffset\000"
- 1484      65724164 
- 1484      64724F66 
- 1484      66736574 
- 1484      00
- 1485              	.LASF40:
- 1486 01cc 41637469 		.ascii	"Active\000"
- 1486      766500
- 1487              	.LASF3:
- 1488 01d3 5F5F7569 		.ascii	"__uint8_t\000"
- 1488      6E74385F 
- 1488      7400
- 1489              	.LASF63:
- 1490 01dd 7573625F 		.ascii	"usb_data_buffer_IN\000"
- 1490      64617461 
- 1490      5F627566 
- 1490      6665725F 
- 1490      494E00
- 1491              	.LASF29:
- 1492 01f0 494E5452 		.ascii	"INTROUTING\000"
- 1492      4F555449 
- 1492      4E4700
- 1493              	.LASF50:
- 1494 01fb 7756616C 		.ascii	"wValue\000"
- 1494      756500
- 1495              	.LASF23:
- 1496 0202 4550534B 		.ascii	"EPSKIP\000"
- 1496      495000
- 1497              	.LASF53:
-ARM GAS  /tmp/cc2Nui6C.s 			page 29
+ 1472      5F627566 
+ 1472      6665725F 
+ 1472      696E6465 
+ 1473              	.LASF0:
+ 1474 016c 7369676E 		.ascii	"signed char\000"
+ 1474      65642063 
+ 1474      68617200 
+ 1475              	.LASF75:
+ 1476 0178 5553425F 		.ascii	"USB_ControlRequest\000"
+ 1476      436F6E74 
+ 1476      726F6C52 
+ 1476      65717565 
+ 1476      737400
+ 1477              	.LASF10:
+ 1478 018b 6C6F6E67 		.ascii	"long long int\000"
+ 1478      206C6F6E 
+ 1478      6720696E 
+ 1478      7400
+ 1479              	.LASF78:
+ 1480 0199 5553426C 		.ascii	"USBlib_11U14/Drivers/USB/Core/USBTask.c\000"
+ 1480      69625F31 
+ 1480      31553134 
+ 1480      2F447269 
+ 1480      76657273 
+ 1481              	.LASF7:
+ 1482 01c1 6C6F6E67 		.ascii	"long int\000"
+ 1482      20696E74 
+ 1482      00
+ 1483              	.LASF76:
+ 1484 01ca 5553425F 		.ascii	"USB_DeviceState\000"
+ 1484      44657669 
+ 1484      63655374 
+ 1484      61746500 
+ 1485              	.LASF33:
+ 1486 01da 42756666 		.ascii	"BufferAddrOffset\000"
+ 1486      65724164 
+ 1486      64724F66 
+ 1486      66736574 
+ 1486      00
+ 1487              	.LASF40:
+ 1488 01eb 41637469 		.ascii	"Active\000"
+ 1488      766500
+ 1489              	.LASF3:
+ 1490 01f2 5F5F7569 		.ascii	"__uint8_t\000"
+ 1490      6E74385F 
+ 1490      7400
+ 1491              	.LASF63:
+ 1492 01fc 7573625F 		.ascii	"usb_data_buffer_IN\000"
+ 1492      64617461 
+ 1492      5F627566 
+ 1492      6665725F 
+ 1492      494E00
+ 1493              	.LASF29:
+ 1494 020f 494E5452 		.ascii	"INTROUTING\000"
+ 1494      4F555449 
+ 1494      4E4700
+ 1495              	.LASF50:
+ARM GAS  /tmp/cc3slX5N.s 			page 29
 
 
- 1498 0209 5553425F 		.ascii	"USB_Request_Header_t\000"
- 1498      52657175 
- 1498      6573745F 
- 1498      48656164 
- 1498      65725F74 
- 1499              	.LASF1:
- 1500 021e 756E7369 		.ascii	"unsigned char\000"
- 1500      676E6564 
- 1500      20636861 
- 1500      7200
- 1501              	.LASF36:
- 1502 022c 52617465 		.ascii	"RateFeedback_Toogle\000"
- 1502      46656564 
- 1502      6261636B 
- 1502      5F546F6F 
- 1502      676C6500 
- 1503              	.LASF62:
- 1504 0240 7573625F 		.ascii	"usb_data_buffer\000"
- 1504      64617461 
- 1504      5F627566 
- 1504      66657200 
- 1505              	.LASF11:
- 1506 0250 6C6F6E67 		.ascii	"long long unsigned int\000"
- 1506      206C6F6E 
- 1506      6720756E 
- 1506      7369676E 
- 1506      65642069 
- 1507              	.LASF16:
- 1508 0267 75696E74 		.ascii	"uint32_t\000"
- 1508      33325F74 
- 1508      00
- 1509              	.LASF64:
- 1510 0270 7573625F 		.ascii	"usb_data_buffer_OUT\000"
- 1510      64617461 
- 1510      5F627566 
- 1510      6665725F 
- 1510      4F555400 
- 1511              	.LASF12:
- 1512 0284 756E7369 		.ascii	"unsigned int\000"
- 1512      676E6564 
- 1512      20696E74 
- 1512      00
- 1513              	.LASF14:
- 1514 0291 75696E74 		.ascii	"uint16_t\000"
- 1514      31365F74 
+ 1496 021a 7756616C 		.ascii	"wValue\000"
+ 1496      756500
+ 1497              	.LASF23:
+ 1498 0221 4550534B 		.ascii	"EPSKIP\000"
+ 1498      495000
+ 1499              	.LASF53:
+ 1500 0228 5553425F 		.ascii	"USB_Request_Header_t\000"
+ 1500      52657175 
+ 1500      6573745F 
+ 1500      48656164 
+ 1500      65725F74 
+ 1501              	.LASF1:
+ 1502 023d 756E7369 		.ascii	"unsigned char\000"
+ 1502      676E6564 
+ 1502      20636861 
+ 1502      7200
+ 1503              	.LASF36:
+ 1504 024b 52617465 		.ascii	"RateFeedback_Toogle\000"
+ 1504      46656564 
+ 1504      6261636B 
+ 1504      5F546F6F 
+ 1504      676C6500 
+ 1505              	.LASF62:
+ 1506 025f 7573625F 		.ascii	"usb_data_buffer\000"
+ 1506      64617461 
+ 1506      5F627566 
+ 1506      66657200 
+ 1507              	.LASF11:
+ 1508 026f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1508      206C6F6E 
+ 1508      6720756E 
+ 1508      7369676E 
+ 1508      65642069 
+ 1509              	.LASF16:
+ 1510 0286 75696E74 		.ascii	"uint32_t\000"
+ 1510      33325F74 
+ 1510      00
+ 1511              	.LASF64:
+ 1512 028f 7573625F 		.ascii	"usb_data_buffer_OUT\000"
+ 1512      64617461 
+ 1512      5F627566 
+ 1512      6665725F 
+ 1512      4F555400 
+ 1513              	.LASF12:
+ 1514 02a3 756E7369 		.ascii	"unsigned int\000"
+ 1514      676E6564 
+ 1514      20696E74 
  1514      00
- 1515              	.LASF20:
- 1516 029a 494E464F 		.ascii	"INFO\000"
+ 1515              	.LASF14:
+ 1516 02b0 75696E74 		.ascii	"uint16_t\000"
+ 1516      31365F74 
  1516      00
- 1517              	.LASF59:
- 1518 029f 456E6470 		.ascii	"Endpoint_SelectEndpoint\000"
- 1518      6F696E74 
- 1518      5F53656C 
- 1518      65637445 
- 1518      6E64706F 
- 1519              	.LASF46:
- 1520 02b7 44455649 		.ascii	"DEVICE_STATE_Configured\000"
-ARM GAS  /tmp/cc2Nui6C.s 			page 30
+ 1517              	.LASF20:
+ 1518 02b9 494E464F 		.ascii	"INFO\000"
+ 1518      00
+ 1519              	.LASF59:
+ 1520 02be 456E6470 		.ascii	"Endpoint_SelectEndpoint\000"
+ARM GAS  /tmp/cc3slX5N.s 			page 30
 
 
- 1520      43455F53 
- 1520      54415445 
- 1520      5F436F6E 
- 1520      66696775 
- 1521              	.LASF77:
- 1522 02cf 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 1522      4320342E 
- 1522      382E3420 
- 1522      32303134 
- 1522      30353236 
- 1523 0302 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mno-thumb-in"
- 1523      20726576 
- 1523      6973696F 
- 1523      6E203231 
- 1523      31333538 
- 1524 0335 74657277 		.ascii	"terwork -mthumb -ggdb -O1 -fomit-frame-pointer -ffu"
- 1524      6F726B20 
- 1524      2D6D7468 
- 1524      756D6220 
- 1524      2D676764 
- 1525 0368 6E637469 		.ascii	"nction-sections -fdata-sections -fno-common\000"
- 1525      6F6E2D73 
- 1525      65637469 
- 1525      6F6E7320 
- 1525      2D666461 
- 1526              	.LASF5:
- 1527 0394 73686F72 		.ascii	"short unsigned int\000"
- 1527      7420756E 
- 1527      7369676E 
- 1527      65642069 
- 1527      6E7400
- 1528              	.LASF79:
- 1529 03a7 2F484444 		.ascii	"/HDD/Projects/workspace_test4/Altimeter/\000"
- 1529      2F50726F 
- 1529      6A656374 
- 1529      732F776F 
- 1529      726B7370 
+ 1520      6F696E74 
+ 1520      5F53656C 
+ 1520      65637445 
+ 1520      6E64706F 
+ 1521              	.LASF46:
+ 1522 02d6 44455649 		.ascii	"DEVICE_STATE_Configured\000"
+ 1522      43455F53 
+ 1522      54415445 
+ 1522      5F436F6E 
+ 1522      66696775 
+ 1523              	.LASF77:
+ 1524 02ee 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 1524      4320342E 
+ 1524      382E3420 
+ 1524      32303134 
+ 1524      30353236 
+ 1525 0321 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mno-thumb-in"
+ 1525      20726576 
+ 1525      6973696F 
+ 1525      6E203231 
+ 1525      31333538 
+ 1526 0354 74657277 		.ascii	"terwork -mthumb -ggdb -O1 -fomit-frame-pointer -ffu"
+ 1526      6F726B20 
+ 1526      2D6D7468 
+ 1526      756D6220 
+ 1526      2D676764 
+ 1527 0387 6E637469 		.ascii	"nction-sections -fdata-sections -fno-common\000"
+ 1527      6F6E2D73 
+ 1527      65637469 
+ 1527      6F6E7320 
+ 1527      2D666461 
+ 1528              	.LASF5:
+ 1529 03b3 73686F72 		.ascii	"short unsigned int\000"
+ 1529      7420756E 
+ 1529      7369676E 
+ 1529      65642069 
+ 1529      6E7400
  1530              	.LASF83:
- 1531 03d0 5553425F 		.ascii	"USB_Device_ProcessControlRequest\000"
+ 1531 03c6 5553425F 		.ascii	"USB_Device_ProcessControlRequest\000"
  1531      44657669 
  1531      63655F50 
  1531      726F6365 
  1531      7373436F 
  1532              	.LASF18:
- 1533 03f1 63686172 		.ascii	"char\000"
+ 1533 03e7 63686172 		.ascii	"char\000"
  1533      00
  1534              	.LASF74:
- 1535 03f6 5553425F 		.ascii	"USB_IsInitialized\000"
+ 1535 03ec 5553425F 		.ascii	"USB_IsInitialized\000"
  1535      4973496E 
  1535      69746961 
  1535      6C697A65 
  1535      6400
  1536              	.LASF26:
- 1537 0408 494E5453 		.ascii	"INTSTAT\000"
+ 1537 03fe 494E5453 		.ascii	"INTSTAT\000"
  1537      54415400 
  1538              	.LASF15:
- 1539 0410 696E7433 		.ascii	"int32_t\000"
-ARM GAS  /tmp/cc2Nui6C.s 			page 31
+ 1539 0406 696E7433 		.ascii	"int32_t\000"
+ARM GAS  /tmp/cc3slX5N.s 			page 31
 
 
  1539      325F7400 
  1540              	.LASF65:
- 1541 0418 7573625F 		.ascii	"usb_data_buffer_size\000"
+ 1541 040e 7573625F 		.ascii	"usb_data_buffer_size\000"
  1541      64617461 
  1541      5F627566 
  1541      6665725F 
  1541      73697A65 
  1542              	.LASF58:
- 1543 042d 5F426F6F 		.ascii	"_Bool\000"
+ 1543 0423 5F426F6F 		.ascii	"_Bool\000"
  1543      6C00
  1544              	.LASF48:
- 1545 0433 626D5265 		.ascii	"bmRequestType\000"
+ 1545 0429 626D5265 		.ascii	"bmRequestType\000"
  1545      71756573 
  1545      74547970 
  1545      6500
  1546              	.LASF71:
- 1547 0441 656E6470 		.ascii	"endpointhandle0\000"
+ 1547 0437 656E6470 		.ascii	"endpointhandle0\000"
  1547      6F696E74 
  1547      68616E64 
  1547      6C653000 
  1548              	.LASF72:
- 1549 0451 656E6470 		.ascii	"endpointhandle1\000"
+ 1549 0447 656E6470 		.ascii	"endpointhandle1\000"
  1549      6F696E74 
  1549      68616E64 
  1549      6C653100 
  1550              	.LASF30:
- 1551 0461 52455345 		.ascii	"RESERVED0\000"
+ 1551 0457 52455345 		.ascii	"RESERVED0\000"
  1551      52564544 
  1551      3000
  1552              	.LASF35:
- 1553 046b 54797065 		.ascii	"Type\000"
+ 1553 0461 54797065 		.ascii	"Type\000"
  1553      00
  1554              	.LASF9:
- 1555 0470 6C6F6E67 		.ascii	"long unsigned int\000"
+ 1555 0466 6C6F6E67 		.ascii	"long unsigned int\000"
  1555      20756E73 
  1555      69676E65 
  1555      6420696E 
  1555      7400
  1556              	.LASF80:
- 1557 0482 5553425F 		.ascii	"USB_Device_States_t\000"
+ 1557 0478 5553425F 		.ascii	"USB_Device_States_t\000"
  1557      44657669 
  1557      63655F53 
  1557      74617465 
  1557      735F7400 
  1558              	.LASF34:
- 1559 0496 4E427974 		.ascii	"NBytes\000"
+ 1559 048c 4E427974 		.ascii	"NBytes\000"
  1559      657300
  1560              	.LASF22:
- 1561 049d 44415441 		.ascii	"DATABUFSTART\000"
+ 1561 0493 44415441 		.ascii	"DATABUFSTART\000"
  1561      42554653 
  1561      54415254 
  1561      00
  1562              	.LASF24:
- 1563 04aa 4550494E 		.ascii	"EPINUSE\000"
+ 1563 04a0 4550494E 		.ascii	"EPINUSE\000"
  1563      55534500 
  1564              	.LASF38:
- 1565 04b2 5374616C 		.ascii	"Stall\000"
-ARM GAS  /tmp/cc2Nui6C.s 			page 32
+ 1565 04a8 5374616C 		.ascii	"Stall\000"
+ARM GAS  /tmp/cc3slX5N.s 			page 32
 
 
  1565      6C00
  1566              	.LASF6:
- 1567 04b8 5F5F696E 		.ascii	"__int32_t\000"
+ 1567 04ae 5F5F696E 		.ascii	"__int32_t\000"
  1567      7433325F 
  1567      7400
  1568              	.LASF60:
- 1569 04c2 5553425F 		.ascii	"USB_DeviceTask\000"
+ 1569 04b8 5553425F 		.ascii	"USB_DeviceTask\000"
  1569      44657669 
  1569      63655461 
  1569      736B00
  1570              	.LASF13:
- 1571 04d1 75696E74 		.ascii	"uint8_t\000"
+ 1571 04c7 75696E74 		.ascii	"uint8_t\000"
  1571      385F7400 
  1572              	.LASF27:
- 1573 04d9 494E5445 		.ascii	"INTEN\000"
+ 1573 04cf 494E5445 		.ascii	"INTEN\000"
  1573      4E00
  1574              	.LASF45:
- 1575 04df 44455649 		.ascii	"DEVICE_STATE_Addressed\000"
+ 1575 04d5 44455649 		.ascii	"DEVICE_STATE_Addressed\000"
  1575      43455F53 
  1575      54415445 
  1575      5F416464 
  1575      72657373 
  1576              	.LASF66:
- 1577 04f6 7573625F 		.ascii	"usb_data_buffer_OUT_size\000"
+ 1577 04ec 7573625F 		.ascii	"usb_data_buffer_OUT_size\000"
  1577      64617461 
  1577      5F627566 
  1577      6665725F 
  1577      4F55545F 
  1578              	.LASF31:
- 1579 050f 4550544F 		.ascii	"EPTOGGLE\000"
+ 1579 0505 4550544F 		.ascii	"EPTOGGLE\000"
  1579      47474C45 
  1579      00
  1580              	.LASF55:
- 1581 0518 456E6470 		.ascii	"EndpointNumber\000"
+ 1581 050e 456E6470 		.ascii	"EndpointNumber\000"
  1581      6F696E74 
  1581      4E756D62 
  1581      657200
  1582              	.LASF52:
- 1583 0527 774C656E 		.ascii	"wLength\000"
+ 1583 051d 774C656E 		.ascii	"wLength\000"
  1583      67746800 
  1584              	.LASF37:
- 1585 052f 546F6F67 		.ascii	"ToogleReset\000"
+ 1585 0525 546F6F67 		.ascii	"ToogleReset\000"
  1585      6C655265 
  1585      73657400 
  1586              	.LASF47:
- 1587 053b 44455649 		.ascii	"DEVICE_STATE_Suspended\000"
+ 1587 0531 44455649 		.ascii	"DEVICE_STATE_Suspended\000"
  1587      43455F53 
  1587      54415445 
  1587      5F537573 
  1587      70656E64 
  1588              	.LASF21:
- 1589 0552 45504C49 		.ascii	"EPLISTSTART\000"
+ 1589 0548 45504C49 		.ascii	"EPLISTSTART\000"
  1589      53545354 
  1589      41525400 
  1590              	.LASF51:
- 1591 055e 77496E64 		.ascii	"wIndex\000"
+ 1591 0554 77496E64 		.ascii	"wIndex\000"
  1591      657800
-ARM GAS  /tmp/cc2Nui6C.s 			page 33
+ARM GAS  /tmp/cc3slX5N.s 			page 33
 
 
  1592              	.LASF73:
- 1593 0565 456E6450 		.ascii	"EndPointCmdStsList\000"
+ 1593 055b 456E6450 		.ascii	"EndPointCmdStsList\000"
  1593      6F696E74 
  1593      436D6453 
  1593      74734C69 
  1593      737400
  1594              	.LASF44:
- 1595 0578 44455649 		.ascii	"DEVICE_STATE_Default\000"
+ 1595 056e 44455649 		.ascii	"DEVICE_STATE_Default\000"
  1595      43455F53 
  1595      54415445 
  1595      5F446566 
  1595      61756C74 
  1596              	.LASF39:
- 1597 058d 44697361 		.ascii	"Disabled\000"
+ 1597 0583 44697361 		.ascii	"Disabled\000"
  1597      626C6564 
  1597      00
  1598              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  /tmp/cc2Nui6C.s 			page 34
+ARM GAS  /tmp/cc3slX5N.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 USBTask.c
-     /tmp/cc2Nui6C.s:18     .text.USB_USBTask:00000000 $t
-     /tmp/cc2Nui6C.s:23     .text.USB_USBTask:00000000 USB_USBTask
-     /tmp/cc2Nui6C.s:97     .text.USB_USBTask:00000028 $d
-     /tmp/cc2Nui6C.s:111    .bss.USB_DeviceState:00000000 USB_DeviceState
-     /tmp/cc2Nui6C.s:122    .bss.$RAM2:00000000 USB_ControlRequest
-     /tmp/cc2Nui6C.s:116    .bss.USB_IsInitialized:00000000 USB_IsInitialized
-     /tmp/cc2Nui6C.s:107    .bss.USB_DeviceState:00000000 $d
-     /tmp/cc2Nui6C.s:117    .bss.USB_IsInitialized:00000000 $d
-     /tmp/cc2Nui6C.s:119    .bss.$RAM2:00000000 $d
+     /tmp/cc3slX5N.s:18     .text.USB_USBTask:00000000 $t
+     /tmp/cc3slX5N.s:23     .text.USB_USBTask:00000000 USB_USBTask
+     /tmp/cc3slX5N.s:97     .text.USB_USBTask:00000028 $d
+     /tmp/cc3slX5N.s:111    .bss.USB_DeviceState:00000000 USB_DeviceState
+     /tmp/cc3slX5N.s:122    .bss.$RAM2:00000000 USB_ControlRequest
+     /tmp/cc3slX5N.s:116    .bss.USB_IsInitialized:00000000 USB_IsInitialized
+     /tmp/cc3slX5N.s:107    .bss.USB_DeviceState:00000000 $d
+     /tmp/cc3slX5N.s:117    .bss.USB_IsInitialized:00000000 $d
+     /tmp/cc3slX5N.s:119    .bss.$RAM2:00000000 $d
                      .debug_frame:00000010 $d
 
 UNDEFINED SYMBOLS

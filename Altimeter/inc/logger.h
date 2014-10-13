@@ -11,7 +11,7 @@
 #include <stdint.h>
 #include "ch.h"
 
-#define LOG_BUFFER_SIZE 10
+#define LOG_BUFFER_SIZE 7
 
 typedef struct log_rec_s {
 	uint8_t year;

@@ -103,6 +103,8 @@ CSRC = $(PORTSRC) \
        src/VirtualSerial.c \
        src/eeprom.c \
        src/logger.c \
+       src/periph.c \
+       src/tasks.c \
        src/main.c
        
 

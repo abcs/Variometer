@@ -41,27 +41,24 @@ int main(void) {
   spiStart(&SPID1, &spicfg);
   i2cStart(&I2CD1, &i2ccfg);
 
+  /*
+   * Initialize the peripherals and modules.
+   */
   logger_init();
   LCD_init();
   RTC_init();
-
-  palSetPad(GPIO1, GPIO1_BACKLIGHT);
 
   HP03_reset();
   HP03_readCoeffs();
 
   VS_setupHardware();
 
-  actualDate = RTC_getDate();
 
-
-  pwmStart(&PWMD3, &pwmcfg);
-  pwmEnableChannel(&PWMD3, 0, 50);
-
-  chThdSleepMilliseconds(50);
-
-  pwmDisableChannel(&PWMD3, 0);
-
+  /*
+   * Calculate the sea level pressure.
+   * The first reading from HP03 is not always correct,
+   * therefore two reading is needed.
+   */
   (void)HP03_getTemperature(&temp_press);
   chThdSleepMilliseconds(25);
   (void)HP03_getTemperature(&temp_press);
@@ -72,6 +69,24 @@ int main(void) {
 
   init_kalman(temp_press.press);
   calculatedSeaLevelPressure = HP03_pressureSeaLevelFromAltitude(25.0F, temp_press);
+
+  /*
+   * Set the actual date.
+   */
+  actualDate = RTC_getDate();
+
+  /*
+   * Testing the beeper.
+   */
+  pwmStart(&PWMD3, &pwmcfg);
+  pwmEnableChannel(&PWMD3, 0, 50);
+  chThdSleepMilliseconds(50);
+  pwmDisableChannel(&PWMD3, 0);
+
+  /*
+   * Switch the back light on.
+   */
+  palSetPad(GPIO1, GPIO1_BACKLIGHT);
 
   /*
    * Creates the threads.

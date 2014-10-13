@@ -11,12 +11,12 @@
 /*
  * SPI configuration (1MHz, CPHA=0, CPOL=0).
  */
-extern SPIConfig spicfg;
+extern volatile SPIConfig spicfg;
 
 /*
  * I2C configuration (400kHz).
  */
-extern I2CConfig i2ccfg;
+extern volatile I2CConfig i2ccfg;
 
 /*
  * PWM configuration
@@ -24,6 +24,6 @@ extern I2CConfig i2ccfg;
 void pwm3pcb(PWMDriver *pwmp);
 void pwm3c0cb(PWMDriver *pwmp);
 
-extern PWMConfig pwmcfg;
+extern volatile PWMConfig pwmcfg;
 
 #endif /* PERIPH_H_ */

@@ -9,14 +9,14 @@
 #include "eeprom.h"
 
 static log_buffer_t log_buffer;
-static uint32_t first_free;
+static uint16_t first_free;
 
 void logger_init()
 {
 	log_buffer.start_to_read = 0;
 	log_buffer.can_write = 0;
 	chMtxInit( &(log_buffer.mtx) ); /* Mutex initialization before use */
-	first_free = ee_get_first_free_pointer();
+	first_free = ee_get_first_free_address();
 }
 
 int logger_logThis(log_rec_t * rec_to_log)

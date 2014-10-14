@@ -44,7 +44,6 @@ int main(void) {
   /*
    * Initialize the peripherals and modules.
    */
-  logger_init();
   LCD_init();
   RTC_init();
 
@@ -53,6 +52,7 @@ int main(void) {
 
   VS_setupHardware();
 
+  logger_init();
 
   /*
    * Calculate the sea level pressure.

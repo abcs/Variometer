@@ -11,8 +11,8 @@
 #include <stdint.h>
 #include "logger.h"
 
-#define EE_ADDR_B0	0x50
-#define EE_ADDR_B1	0x54
+#define EE_ADDR_B0	0x51
+#define EE_ADDR_B1	0x55
 
 
 typedef struct ee_descriptor_s {

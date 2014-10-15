@@ -12,7 +12,7 @@
 /*
  * SPI configuration (1MHz, CPHA=0, CPOL=0).
  */
-volatile SPIConfig spicfg = {
+SPIConfig spicfg = {
   NULL,
   GPIO0,
   GPIO0_LCD_SEL, //GPIO0_SPI0SEL,
@@ -23,12 +23,12 @@ volatile SPIConfig spicfg = {
 /*
  * I2C configuration (400kHz).
  */
-volatile I2CConfig i2ccfg = {
+I2CConfig i2ccfg = {
     I2C_STANDARD_MODE,             /**< @brief Specifies the I2C mode.        */
 	48                             /**< @brief Specifies the clock timing     */
 };
 
-volatile PWMConfig pwmcfg = {
+PWMConfig pwmcfg = {
 	100000,                          /**< @brief frequency                      */
 	   100,                          /**< @brief period                         */
 	pwm3pcb,                         /**< @brief callback                       */

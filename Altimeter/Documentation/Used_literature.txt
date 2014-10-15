@@ -3,3 +3,6 @@ Used_literature.txt
      Author: csabi
 
 http://www.dctsystems.co.uk/Software/power.html
+http://www.tophatstuff.co.uk/archive.php?p=116
+http://www.chibios.org/dokuwiki/doku.php
+http://recursive-labs.com/blog/2012/05/12/chibios-stm32-priority-inversion/

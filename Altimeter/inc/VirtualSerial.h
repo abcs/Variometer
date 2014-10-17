@@ -221,9 +221,9 @@ extern "C" {
 
 /** Select example task, currently lpc11Uxx and lpc17xx don't support for bridging task
  * Only LPC18xx has this feature */
-#define CDC_TASK_SELECT ECHO_CHARACTER_TASK
-#define ECHO_CHARACTER_TASK     (0)
-#define CDC_BRIDGE_TASK         (ECHO_CHARACTER_TASK + 1)
+#define CDC_TASK_SELECT			255	//ECHO_CHARACTER_TASK
+//#define ECHO_CHARACTER_TASK     (0)
+//#define CDC_BRIDGE_TASK         (ECHO_CHARACTER_TASK + 1)
 
 
 /** Variables */
@@ -239,11 +239,12 @@ void VS_setupHardware(void);
 
 #if (CDC_TASK_SELECT == ECHO_CHARACTER_TASK)
 	void VS_echoCharacter(void);
-#else
+#elif (CDC_TASK_SELECT == CDC_BRIDGE_TASK)
 	/** USB-UART Bridge Task */
 	void CDC_Bridge_Task(void);
 #endif
 
+void VS_USBdataHandling(void);
 
 /**
  * @}

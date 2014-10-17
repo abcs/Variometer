@@ -10,6 +10,7 @@
 
 static log_buffer_t log_buffer;
 static uint16_t first_free;
+static uint16_t first_rec_to_read;
 
 void logger_init()
 {
@@ -17,6 +18,11 @@ void logger_init()
 	log_buffer.can_write = 0;
 	chMtxInit( &(log_buffer.mtx) ); /* Mutex initialization before use */
 	first_free = ee_get_first_free_address();
+
+	if( 0xFFFF == first_free )
+		first_free = 0;
+
+	first_rec_to_read = 0;
 }
 
 int logger_logThis(log_rec_t * rec_to_log)
@@ -55,7 +61,7 @@ int logger_writeToEE()
 	{
 		log_rec_p = log_buffer.record[log_buffer.start_to_read];
 
-		rc = ee_write_log_rec(log_rec_p);
+		rc = ee_write_log_rec(log_rec_p, &first_free);
 		if ( RDY_OK == rc )
 		{
 			log_buffer.start_to_read = (log_buffer.start_to_read + 1) % LOG_BUFFER_SIZE;
@@ -65,4 +71,13 @@ int logger_writeToEE()
 	}
 
 	return (int)log_buffer.active;
+}
+
+int logger_readFromEE(log_rec_t * buffer, uint16_t size_in_rec)
+{
+	first_rec_to_read = ee_read_log_rec(buffer, first_rec_to_read * 10, size_in_rec);
+}
+
+int logger_deleteLog()
+{
 }

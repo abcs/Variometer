@@ -1,6 +1,6 @@
 #include "VirtualSerial.h"
-//#include "FreeRTOS.h"
-//#include "task.h"
+#include "ch.h"
+#include "logger.h"
 
 /** LPCUSBlib CDC Class driver interface configuration and state information. This structure is
  *  passed to all CDC Class driver functions, so that multiple instances of the same class
@@ -20,9 +20,19 @@ USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface = {
 
 		.NotificationEndpointNumber     = CDC_NOTIFICATION_EPNUM,
 		.NotificationEndpointSize       = CDC_NOTIFICATION_EPSIZE,
-		.NotificationEndpointDoubleBank = false
+		.NotificationEndpointDoubleBank = false,
+		.PortNumber		                = 0
 	},
-}; //		.PortNumber             = 0,
+
+	.State = {
+		.LineEncoding = {
+				.BaudRateBPS			= 115200,
+				.CharFormat        		= CDC_LINEENCODING_OneStopBit,
+				.ParityType        		= CDC_PARITY_None,
+				.DataBits          		= 8
+		}
+	}
+};
 
 
 /** Standard file stream for the CDC interface when set up, so that the virtual CDC COM port can be
@@ -54,7 +64,7 @@ void VS_echoCharacter(void)
 	}
 }
 
-#else
+#elif (CDC_TASK_SELECT == CDC_BRIDGE_TASK)
 /** USB-UART Bridge Task */
 void CDC_Bridge_Task(void)
 {
@@ -103,4 +113,43 @@ void EVENT_USB_Device_ConfigurationChanged(void)
 void EVENT_USB_Device_ControlRequest(void)
 {
 	CDC_Device_ProcessControlRequest(&VirtualSerial_CDC_Interface);
+}
+
+
+void VS_USBdataHandling(void)
+{
+	uint8_t recv_byte[CDC_TXRX_EPSIZE];
+	uint16_t recv_bytes_count = 0;
+
+	recv_bytes_count = CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface);
+
+	if ( recv_bytes_count > 1 )
+	{
+		uint16_t c = 0;
+		log_rec_t sendBuffer[5];
+
+
+//		vTaskSuspendAll();
+
+		do
+		{
+			recv_byte[c] = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
+			c++;
+			recv_byte[c] = 0;
+		}
+		while( (c < recv_bytes_count) && (c < CDC_TXRX_EPSIZE) );
+
+		if (recv_byte[0] == 'S' && recv_byte[1] == '*')
+		{
+			(void)logger_readFromEE(sendBuffer, 5);
+			CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)sendBuffer, 5*10);
+		}
+
+		if (recv_byte[0] == 'D' && recv_byte[1] == '*')
+		{
+
+		}
+
+//		xTaskResumeAll();
+	}
 }

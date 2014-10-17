@@ -16,7 +16,7 @@ void LCD_writeSpeed(int speedToWrite);
 void LCD_writeDate(RTC_date_t dateToWrite);
 void LCD_writeTime(RTC_time_t timeToWrite);
 void LCD_writeUSB(void);
-void LCD_writeUSB_delete();
+void LCD_writeUSB_delete(void);
 void LCD_init(void);
 void LCD_clear(void);
 /*

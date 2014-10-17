@@ -128,11 +128,13 @@ msg_t Thread4(void *arg)
 		else
 			LCD_writeUSB_delete();
 
-		VS_echoCharacter();
+//		VS_echoCharacter();
+		VS_USBdataHandling();
 		USB_USBTask(VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device); //VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device
+
 //	    xTaskResumeAll();
 
-	    chThdSleepMilliseconds(30);
+	    chThdSleepMilliseconds(50);
 	}
 	return 0;
 }

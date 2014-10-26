@@ -34,7 +34,7 @@ typedef struct log_buffer_s {
 void logger_init(void);
 int logger_logThis(log_rec_t * rec_to_log);
 int logger_writeToEE(void);
-int logger_readFromEE(log_rec_t * buffer, uint16_t size_in_rec);
+uint16_t logger_readFromEE(log_rec_t * buffer, uint16_t size_in_rec);
 int logger_deleteLog(void);
 
 #endif /* LOGGER_H_ */

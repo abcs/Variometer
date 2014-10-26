@@ -108,8 +108,8 @@ uint16_t ee_read_log_rec(log_rec_t * record, uint16_t from_addr, uint16_t num_of
 
 
 
-	return from_addr + num_of_rec * 10;
-};
+	return (from_addr + num_of_rec * 10) / 10; /* % 0x8000; */
+}
 
 uint16_t ee_get_first_free_address()
 {

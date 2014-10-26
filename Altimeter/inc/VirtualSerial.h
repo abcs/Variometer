@@ -226,6 +226,9 @@ extern "C" {
 //#define CDC_BRIDGE_TASK         (ECHO_CHARACTER_TASK + 1)
 
 
+#define STX						2
+#define ETX						3
+
 /** Variables */
 
 /** LPCUSBlib CDC Class driver interface configuration and state information. This structure is
@@ -245,6 +248,7 @@ void VS_setupHardware(void);
 #endif
 
 void VS_USBdataHandling(void);
+static void VS_SendAllLogs(void);
 
 /**
  * @}

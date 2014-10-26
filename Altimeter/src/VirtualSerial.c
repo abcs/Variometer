@@ -1,6 +1,7 @@
 #include "VirtualSerial.h"
 #include "ch.h"
 #include "logger.h"
+#include <string.h>
 
 /** LPCUSBlib CDC Class driver interface configuration and state information. This structure is
  *  passed to all CDC Class driver functions, so that multiple instances of the same class
@@ -118,38 +119,66 @@ void EVENT_USB_Device_ControlRequest(void)
 
 void VS_USBdataHandling(void)
 {
-	uint8_t recv_byte[CDC_TXRX_EPSIZE];
-	uint16_t recv_bytes_count = 0;
+	static uint8_t recv_byte[CDC_TXRX_EPSIZE];
+	static uint16_t recv_bytes_count = 0;
 
-	recv_bytes_count = CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface);
-
-	if ( recv_bytes_count > 1 )
+	if(USB_DeviceState[0] != DEVICE_STATE_Configured)
 	{
-		uint16_t c = 0;
-		log_rec_t sendBuffer[5];
-
-
-//		vTaskSuspendAll();
-
-		do
-		{
-			recv_byte[c] = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
-			c++;
-			recv_byte[c] = 0;
-		}
-		while( (c < recv_bytes_count) && (c < CDC_TXRX_EPSIZE) );
-
-		if (recv_byte[0] == 'S' && recv_byte[1] == '*')
-		{
-			(void)logger_readFromEE(sendBuffer, 5);
-			CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)sendBuffer, 5*10);
-		}
-
-		if (recv_byte[0] == 'D' && recv_byte[1] == '*')
-		{
-
-		}
-
-//		xTaskResumeAll();
+		recv_bytes_count = 0;
+		recv_byte[0] = 0;
+		return;
 	}
+
+	if ( CDC_Device_BytesReceived(&VirtualSerial_CDC_Interface) )
+	{
+	//		vTaskSuspendAll();
+
+		recv_byte[recv_bytes_count] = CDC_Device_ReceiveByte(&VirtualSerial_CDC_Interface);
+		if (recv_byte[0] == STX)
+		{
+			recv_bytes_count = (recv_bytes_count + 1) % CDC_TXRX_EPSIZE;
+			if (recv_bytes_count == 0)
+				recv_bytes_count = 1;
+		}
+
+		if ( recv_byte[recv_bytes_count - 1] == ETX )
+		{
+			if ( recv_bytes_count != 4 )
+			{
+				recv_byte[0] = 0;
+				recv_bytes_count = 0;
+				return;
+			}
+			switch ( *(uint32_t*)recv_byte )
+			{
+				case 0x032A5202:					/* STX R * ETX - read log (02522A03:) */
+					VS_SendAllLogs();
+					recv_byte[0] = 0;
+					recv_bytes_count = 0;
+					break;
+
+				case 0x032A4402:					/* STX D * ETX - delete log (02442A03:)*/
+					//VS_DeleteAllLogs();
+					recv_byte[0] = 0;
+					recv_bytes_count = 0;
+					break;
+
+				default:
+					recv_byte[0] = 0;
+					recv_bytes_count = 0;
+			}
+		}
+	}
+}
+
+
+static void VS_SendAllLogs()
+{
+	log_rec_t sendBuffer[5];
+
+	(void)logger_readFromEE(sendBuffer, 5);
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)sendBuffer, 5*10);
+
+
+	// xTaskResumeAll();
 }

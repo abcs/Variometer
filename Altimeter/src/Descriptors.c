@@ -67,7 +67,7 @@ USB_Descriptor_Device_t DeviceDescriptor = {
 	.Endpoint0Size          = FIXED_CONTROL_ENDPOINT_SIZE,
 
 	.VendorID               = 0x1fc9,	/* NXP */
-	.ProductID              = 0x2047,
+	.ProductID              = 0x0083,	/* 0x2047, */
 	.ReleaseNumber          = VERSION_BCD(00.01),
 
 	.ManufacturerStrIndex   = 0x01,

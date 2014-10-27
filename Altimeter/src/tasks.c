@@ -71,7 +71,7 @@ msg_t Thread2(void *arg)
 
 			if (to_log)
 			{
-				to_log->altitude = measuredAltitude;
+				to_log->altitude = (uint16_t)measuredAltitude;
 				to_log->year = actualDate.year;
 				to_log->month = actualDate.month;
 				to_log->day = actualDate.day;

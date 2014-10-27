@@ -20,7 +20,7 @@ typedef struct log_rec_s {
 	uint8_t hour;
 	uint8_t minute;
 	uint8_t second;
-	int altitude;
+	uint16_t altitude;
 } log_rec_t;
 
 typedef struct log_buffer_s {

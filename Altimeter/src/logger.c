@@ -75,7 +75,7 @@ int logger_writeToEE()
 
 uint16_t logger_readFromEE(log_rec_t * buffer, uint16_t size_in_rec)
 {
-	first_rec_to_read = ee_read_log_rec(buffer, first_rec_to_read * 10, size_in_rec);
+	first_rec_to_read = ee_read_log_rec(buffer, first_rec_to_read * sizeof(log_rec_t), size_in_rec);
 	return first_rec_to_read;
 }
 

@@ -11,7 +11,7 @@
 
 typedef struct log_rec_ext_s {
 	uint16_t ff_addr;
-	log_rec_t * record_to_write;
+	log_rec_t record_to_write;
 } log_rec_ext_t;
 
 
@@ -35,12 +35,12 @@ int ee_write_log_rec(log_rec_t * record, uint16_t * address)
     to_write.ff_addr <<= 8;
     to_write.ff_addr |= hibyte;
 
-    to_write.record_to_write = record;
+    to_write.record_to_write = *record;
 
 
 	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)EE_ADDR_B0,
-                                   (uint8_t *)(&to_write), 12,
+                                   (uint8_t *)(&to_write), sizeof(log_rec_ext_t),
                                    0, 0, TIME_INFINITE ); //sizeof(to_write)
 
 	if ( rc != RDY_OK )
@@ -54,13 +54,13 @@ int ee_write_log_rec(log_rec_t * record, uint16_t * address)
     to_write.ff_addr <<= 8;
     to_write.ff_addr |= hibyte;
 
-    if (to_write.ff_addr > 0x8000 - 10)
+    if (to_write.ff_addr > 0x8000 - sizeof(log_rec_t))
     {
     	to_write.ff_addr = 0x0000;
     }
     else
     {
-    	to_write.ff_addr += 10; //sizeof(log_rec_t);
+    	to_write.ff_addr += sizeof(log_rec_t); //sizeof(log_rec_t);
     }
 
     desc_to_write.first_free_rec = to_write.ff_addr;
@@ -80,7 +80,7 @@ int ee_write_log_rec(log_rec_t * record, uint16_t * address)
 uint16_t ee_read_log_rec(log_rec_t * record, uint16_t from_addr, uint16_t num_of_rec)
 {
 	uint8_t hibyte = 0;
-	uint16_t control_block_address = 0x0080;	//0x8000 swapped
+//	uint16_t control_block_address = 0x0080;	//0x8000 swapped
 	msg_t rc = RDY_OK;
 
 	/* swap bytes of Data */
@@ -100,15 +100,18 @@ uint16_t ee_read_log_rec(log_rec_t * record, uint16_t from_addr, uint16_t num_of
 	}
 
 	rc = i2cMasterReceiveTimeout( &I2CD1, (i2caddr_t)EE_ADDR_B0,
-								  (uint8_t *)(record), num_of_rec * 10, TIME_INFINITE );
+								  (uint8_t *)(record), num_of_rec * sizeof(log_rec_t), TIME_INFINITE );
 	i2cReleaseBus(&I2CD1);
 
 	if ( rc != RDY_OK )
 		return 0xFFFF;
 
+	/* swap bytes of Data */
+    hibyte = ( from_addr & 0xff00) >> 8;
+    from_addr <<= 8;
+    from_addr |= hibyte;
 
-
-	return (from_addr + num_of_rec * 10) / 10; /* % 0x8000; */
+	return (from_addr + num_of_rec * sizeof(log_rec_t)) / sizeof(log_rec_t); /* % 0x8000; */
 }
 
 uint16_t ee_get_first_free_address()

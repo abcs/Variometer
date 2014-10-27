@@ -177,7 +177,7 @@ static void VS_SendAllLogs()
 	log_rec_t sendBuffer[5];
 
 	(void)logger_readFromEE(sendBuffer, 5);
-	CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)sendBuffer, 5*10);
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)sendBuffer, 5 * sizeof(log_rec_t));
 
 
 	// xTaskResumeAll();

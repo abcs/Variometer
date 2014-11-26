@@ -11,6 +11,9 @@
 #include "RTC_r2051.h"
 
 
+/*!
+* A Real Time Clock áramkör inicializálása.
+*/
 void RTC_init()
 {
 	msg_t rc = RDY_OK;
@@ -32,6 +35,10 @@ void RTC_init()
 }
 
 
+/*!
+* Beállítja az időt az RTC áramkörben.
+* @param[in] timeToBeSet A beállítandó idő.
+*/
 void RTC_setTime(RTC_time_t timeToBeSet)
 {
 	msg_t rc = RDY_OK;
@@ -54,6 +61,10 @@ void RTC_setTime(RTC_time_t timeToBeSet)
 }
 
 
+/*!
+* Beállítja a dátumot az RTC áramkörben.
+* @param[in] dateToBeSet A beállítandó dátum.
+*/
 void RTC_setDate(RTC_date_t dateToBeSet)
 {
 	msg_t rc = RDY_OK;
@@ -67,6 +78,10 @@ void RTC_setDate(RTC_date_t dateToBeSet)
 }
 
 
+/*!
+* Az idő kiolvasása az RTC áramkörből.
+* @return Az aktuális idő.
+*/
 RTC_time_t RTC_getTime()
 {
 	msg_t rc = RDY_OK;
@@ -101,6 +116,10 @@ RTC_time_t RTC_getTime()
 }
 
 
+/*!
+* A dátum kiolvasása az RTC áramkörből.
+* @return Az aktuális dátum.
+*/
 RTC_date_t RTC_getDate()
 {
 	msg_t rc = RDY_OK;

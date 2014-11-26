@@ -39,31 +39,31 @@
 extern "C" {
 #endif
 
-/** @defgroup Virtual_Serial_Device_Descriptor Class descriptors
+/* @defgroup Virtual_Serial_Device_Descriptor Class descriptors
  * @ingroup USB_Virtual_Serial_Device_18xx43xx USB_Virtual_Serial_Device_17xx40xx USB_Virtual_Serial_Device_11Uxx
  * @{
  */
 
-/** Endpoint number of the CDC device-to-host notification IN endpoint. */
+/* Endpoint number of the CDC device-to-host notification IN endpoint. */
 #define CDC_NOTIFICATION_EPNUM         1
 
-/** Endpoint number of the CDC device-to-host data IN endpoint. */
+/* Endpoint number of the CDC device-to-host data IN endpoint. */
 #define CDC_TX_EPNUM                   2
 
-/** Endpoint number of the CDC host-to-device data OUT endpoint. */
+/* Endpoint number of the CDC host-to-device data OUT endpoint. */
 #if defined(__LPC175X_6X__) || defined(__LPC177X_8X__) || defined(__LPC407X_8X__)
 	#define CDC_RX_EPNUM               5
 #else
 	#define CDC_RX_EPNUM               3
 #endif
 
-/** Size in bytes of the CDC device-to-host notification IN endpoint. */
+/* Size in bytes of the CDC device-to-host notification IN endpoint. */
 #define CDC_NOTIFICATION_EPSIZE        8
 
 /** Size in bytes of the CDC data IN and OUT endpoints. */
 #define CDC_TXRX_EPSIZE                16
 
-/** @brief	Type define for the device configuration descriptor structure. This must be defined in the
+/* @brief	Type define for the device configuration descriptor structure. This must be defined in the
  *          application code, as the configuration descriptor contains several sub-descriptors which
  *          vary between devices, and which describe the device's usage to the host.
  */
@@ -80,7 +80,7 @@ typedef struct {
 	unsigned char                            CDC_Termination;
 } USB_Descriptor_Configuration_t;
 
-/**
+/*
  * @}
  */
 

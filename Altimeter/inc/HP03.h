@@ -1,9 +1,12 @@
 #ifndef _HP03_H_
 #define _HP03_H_
 
-#define HP03_ADDRESS_ADC  0x77
-#define HP03_ADDRESS_EE   0x50
+#define HP03_ADDRESS_ADC  0x77	/*!< Szenzor I2C címe a méréshez. */
+#define HP03_ADDRESS_EE   0x50	/*!< Szenzor I2C címe a koefficiensekhez. */
 
+/*!
+ * Struktúra a kiolvasott koefficiensek számára.
+ */
 typedef struct HP03_coeff_s {
 	uint16_t    C1;
 	uint16_t    C2;
@@ -18,6 +21,9 @@ typedef struct HP03_coeff_s {
 	uint8_t      D;
 } HP03_coeff_t;
 
+/*!
+ * Struktúra a számításokhoz számára.
+ */
 typedef struct HP03_calc_s {
 	int        dUT;
 	int        OFF;
@@ -25,6 +31,9 @@ typedef struct HP03_calc_s {
 	int          X;
 } HP03_calc_t;
 
+/*!
+ * Struktúra a mért értékek számára.
+ */
 typedef struct HP03_meas_s {
 	int                       temper;
 	int                        press;

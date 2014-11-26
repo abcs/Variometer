@@ -6,6 +6,10 @@
 
 volatile static bool isUSBWritten = false;
 
+/*!
+* Vezérli a kijelző Reset kivezetését.
+* @param[in]	active	TRUE - LCD Reset aktív.
+*/
 static inline void LCD_reset(bool_t active)
 {
 	if( active )
@@ -18,7 +22,10 @@ static inline void LCD_reset(bool_t active)
 	}
 }
 
-
+/*!
+* A kijelző parancs vagy adat módba való váltását valósítja meg.
+* @param[in]	CD	0 - Parancs mód, >0 - Adat mód.
+*/
 static inline void LCD_CD(unsigned char CD)
 {
 	if( CD )
@@ -31,7 +38,12 @@ static inline void LCD_CD(unsigned char CD)
 	}
 }
 
-
+/*!
+* Átrendezi a bájtsorrendet.
+* @param[in]	from	Mutató a felcserélendő tömbre.
+* @param[out]	to		Mutató a felcserélt tömbre.
+* @param[in]	n		Elemek száma.
+*/
 static inline void reorderBytes(const unsigned char * from, unsigned char * to, int n)
 {
 	int k;
@@ -42,7 +54,13 @@ static inline void reorderBytes(const unsigned char * from, unsigned char * to, 
 	}
 }
 
-
+/*!
+* Megjelenít egy karaktersort a kijelzőn.
+* @param[in] row	  A sor száma, ahol meg kell jelennie a szövegnek.
+* @param[in] col	  Az oszlop száma, ahol kezdődnie kell a szövegnek.
+* @param[in] text	  Mutató a karakterláncra.
+* @param[in] fontSize Egy- vagy kétsoros karakterkészlet kiválasztása.
+*/
 static void LCD_writeLine(unsigned char row,
 		           unsigned char col,
 		           char * text,
@@ -123,7 +141,9 @@ static void LCD_writeLine(unsigned char row,
 }
 
 
-// clear LCD
+/*!
+* Törli a kijelző tartalmát.
+*/
 void LCD_clear()
 {
 	unsigned int i;
@@ -142,17 +162,19 @@ void LCD_clear()
 }
 
 
-// init LCD
+/*!
+* A kijelző inicializálását végzi.
+*/
 void LCD_init() //PCF8813
 {
 	unsigned char toSend = 0U;
-	unsigned char initCommand[] = {0x39,	// PowerON, ExtCommandSet - 0x21
-                                   0x08,	// Internal HV-gen x3 - 0x09
-			                       0xE0,	// Set Vop
-			                       0x16,	// Bias n=2    //15 - 0x16
-			                       0x06,	// Temperature coeff 2
-			                       0x38,	// StandartCommandSet - 0x20
-			                       0x0C};	// normal mode, display non-inverted
+	unsigned char initCommand[] = {0x39,	/*!< PowerON, ExtCommandSet - 0x21 */
+                                   0x08,	/*!< Internal HV-gen x3 - 0x09 */
+			                       0xE0,	/*!< Set Vop */
+			                       0x16,	/*!< Bias n=2 */   //15 - 0x16
+			                       0x06,	/*!< Temperature coeff 2 */
+			                       0x38,	/*!< StandartCommandSet - 0x20 */
+			                       0x0C};	/*!< normal mode, display non-inverted */
 
 	LCD_reset(TRUE);
 	chThdSleepMilliseconds(10);
@@ -177,7 +199,10 @@ void LCD_init() //PCF8813
 	spiSend(&SPID1, 1, &toSend);
 }
 
-
+/*!
+* Hőmérséklet megjelenítése a kijelzőn.
+* @param[in] measuredByHP03	Hőmérséklet érték.
+*/
 void LCD_writeTemp(HP03_meas_t measuredByHP03)
 {
 	char * prefix = ")";
@@ -188,7 +213,10 @@ void LCD_writeTemp(HP03_meas_t measuredByHP03)
     LCD_writeLine(1U, 0U, toLCD, 2U);
 }
 
-
+/*!
+* Légnyomás megjelenítése a kijelzőn.
+* @param[in] measuredByHP03	Nyomás érték.
+*/
 void LCD_writePress(HP03_meas_t measuredByHP03)
 {
 	char * prefix = "\'";
@@ -210,7 +238,10 @@ void LCD_writePress(HP03_meas_t measuredByHP03)
     return;
 }
 
-
+/*!
+* Magasság megjelenítése a kijelzőn.
+* @param[in] altToWrite	Magasság érték.
+*/
 void LCD_writeAlt(int altToWrite)
 {
 	char * prefix = "#";
@@ -224,18 +255,29 @@ void LCD_writeAlt(int altToWrite)
 }
 
 
+/*!
+* Függőleges sebesség megjelenítése a kijelzőn.
+* @param[in] speedToWrite	Sebesség érték.
+*/
 void LCD_writeSpeed(int speedToWrite)
 {
 	return;
 }
 
-
+/*!
+* Dátum megjelenítése a kijelzőn.
+* @param[in] dateToWrite	Dátum érték.
+*/
 void LCD_writeDate(RTC_date_t dateToWrite)
 {
 	return;
 }
 
 
+/*!
+* Idő megjelenítése a kijelzőn.
+* @param[in] timeToWrite	Idő érték.
+*/
 void LCD_writeTime(RTC_time_t timeToWrite)
 {
     char toLCD[4] = {0};
@@ -258,6 +300,9 @@ void LCD_writeTime(RTC_time_t timeToWrite)
     LCD_writeLine(0U, 11U, toLCD, 1U);
 }
 
+/*!
+* USB felirat megjelenítése a kijelzőn.
+*/
 void LCD_writeUSB()
 {
 	if(isUSBWritten)
@@ -268,6 +313,9 @@ void LCD_writeUSB()
 	isUSBWritten = true;
 }
 
+/*!
+* USB felirat törlése a kijelzőről.
+*/
 void LCD_writeUSB_delete()
 {
 	if(!isUSBWritten)

@@ -13,16 +13,22 @@
 
 #define LOG_BUFFER_SIZE 5
 
+/*!
+ * A naplózandó rekord struktúrája.
+ */
 typedef struct log_rec_s {
-	uint8_t year;
-	uint8_t month;	//The MSB is the century bit; 0 - 1900, 1 - 2000
-	uint8_t day;
-	uint8_t hour;
-	uint8_t minute;
-	uint8_t second;
-	uint16_t altitude;
+	uint8_t year;		/*!< Év */
+	uint8_t month;		/*!< Hó (Az MSB az évszázad jelölő; 0 - 1900, 1 - 2000) */
+	uint8_t day;		/*!< Nap */
+	uint8_t hour;		/*!< Óra */
+	uint8_t minute;		/*!< Perc */
+	uint8_t second;		/*!< Másodperc */
+	uint16_t altitude;	/*!< Magasság */
 } log_rec_t;
 
+/*!
+ * A ringbufferben tárolt elemek struktúrája.
+ */
 typedef struct log_buffer_s {
 	log_rec_t * record[LOG_BUFFER_SIZE];
 	int8_t can_write;

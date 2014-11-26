@@ -12,6 +12,9 @@ static log_buffer_t log_buffer;
 static uint16_t first_free;
 static uint16_t first_rec_to_read;
 
+/*!
+* A naplózó alrendszer inicializálása.
+*/
 void logger_init()
 {
 	log_buffer.start_to_read = 0;
@@ -25,6 +28,12 @@ void logger_init()
 	first_rec_to_read = 0;
 }
 
+/*!
+* A paraméterként kapott rekordot berakja a ringbufferbe,
+* ahonnan később ki fog íródni az EEPROM-ba.
+* @param[in] rec_to_log	A naplózandó rekord.
+* @return	 0 - normál működés, 1 - túlcsordulás, a legrégebbi elem felülíródott.
+*/
 int logger_logThis(log_rec_t * rec_to_log)
 {
 	int rc = 0;
@@ -52,6 +61,10 @@ int logger_logThis(log_rec_t * rec_to_log)
 	return rc;
 }
 
+/*!
+* A ringbufferből kiírja az EEPROM-ba.
+* @return A ringbufferben maradt elemek száma.
+*/
 int logger_writeToEE()
 {
 	int rc = 0;
@@ -73,12 +86,23 @@ int logger_writeToEE()
 	return (int)log_buffer.active;
 }
 
+/*!
+* Adott számú rekord kikérése az EEPROM-ból.
+* @param[out] buffer	  Mutató az eredménybufferre.
+* @param[in]  size_in_rec Rekordok száma.
+* @return A következő kiolvasható rekord címe.
+*/
 uint16_t logger_readFromEE(log_rec_t * buffer, uint16_t size_in_rec)
 {
 	first_rec_to_read = ee_read_log_rec(buffer, first_rec_to_read * sizeof(log_rec_t), size_in_rec);
 	return first_rec_to_read;
 }
 
+/*!
+* Kitörli a naplóállományt az EEPROM-ból.
+* (Még nincs implementálva.)
+* @return 0.
+*/
 int logger_deleteLog()
 {
 }

@@ -51,7 +51,7 @@
  * Public types/enumerations/variables
  ****************************************************************************/
 
-/** Device descriptor structure. This descriptor, located in FLASH memory, describes the overall
+/* Device descriptor structure. This descriptor, located in FLASH memory, describes the overall
  *  device characteristics, including the supported USB version, control endpoint size and the
  *  number of device configurations. The descriptor is read out by the USB host when the enumeration
  *  process begins.
@@ -77,7 +77,7 @@ USB_Descriptor_Device_t DeviceDescriptor = {
 	.NumberOfConfigurations = FIXED_NUM_CONFIGURATIONS
 };
 
-/** Configuration descriptor structure. This descriptor, located in FLASH memory, describes the usage
+/* Configuration descriptor structure. This descriptor, located in FLASH memory, describes the usage
  *  of the device in one of its supported configurations, including information about any device interfaces
  *  and endpoints. The descriptor is read out by the USB host during the enumeration process when selecting
  *  a configuration so that the host may correctly communicate with the USB device.
@@ -181,7 +181,7 @@ USB_Descriptor_Configuration_t ConfigurationDescriptor = {
 	.CDC_Termination = 0x00
 };
 
-/** Language descriptor structure. This descriptor, located in FLASH memory, is returned when the host requests
+/* Language descriptor structure. This descriptor, located in FLASH memory, is returned when the host requests
  *  the string descriptor with index 0 (the first index). It is actually an array of 16-bit integers, which indicate
  *  via the language ID table available at USB.org what languages the device supports for its string descriptors.
  */
@@ -192,7 +192,7 @@ uint8_t LanguageString[] = {
 };
 USB_Descriptor_String_t *LanguageStringPtr = (USB_Descriptor_String_t *) LanguageString;
 
-/** Manufacturer descriptor string. This is a Unicode string containing the manufacturer's details in human readable
+/* Manufacturer descriptor string. This is a Unicode string containing the manufacturer's details in human readable
  *  form, and is read out upon request by the host when the appropriate string ID is requested, listed in the Device
  *  Descriptor.
  */
@@ -205,7 +205,7 @@ uint8_t ManufacturerString[] = {
 };
 USB_Descriptor_String_t *ManufacturerStringPtr = (USB_Descriptor_String_t *) ManufacturerString;
 
-/** Product descriptor string. This is a Unicode string containing the product's details in human readable form,
+/* Product descriptor string. This is a Unicode string containing the product's details in human readable form,
  *  and is read out upon request by the host when the appropriate string ID is requested, listed in the Device
  *  Descriptor.
  */
@@ -241,7 +241,7 @@ USB_Descriptor_String_t *ProductStringPtr = (USB_Descriptor_String_t *) ProductS
  * Public functions
  ****************************************************************************/
 
-/** This function is called by the library when in device mode, and must be overridden (see library "USB Descriptors"
+/* This function is called by the library when in device mode, and must be overridden (see library "USB Descriptors"
  *  documentation) by the application code so that the address and size of a requested descriptor can be given
  *  to the USB library. When the device receives a Get Descriptor request on the control endpoint, this function
  *  is called so that the descriptor details can be passed back and the appropriate descriptor sent back to the

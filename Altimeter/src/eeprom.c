@@ -9,17 +9,29 @@
 #include "hal.h"
 #include "eeprom.h"
 
+
 typedef struct log_rec_ext_s {
 	uint16_t ff_addr;
 	log_rec_t record_to_write;
 } log_rec_ext_t;
 
-
+/*!
+* Elmenti az EEPROM-ba az aktuális mutató (leíró) értékét,
+* hogy a naplózás onnan folytatódjon, ahol befejeződött.
+* @param[in] to_write A beírandó leíró.
+* @return 0 - egyelőre.
+*/
 static int ee_write_descriptors(ee_descriptor_t * to_write)
 {
 	return 0;
 }
 
+/*!
+* Beír egy rekordot az EEPROM-ba az adott címtől kezdődően.
+* @param[in] record A beírandó rekord.
+* @param[in] address EEPROM cím, ahová a rekord kerül.
+* @return 0 - sikeres, < 0 - sikertelen.
+*/
 int ee_write_log_rec(log_rec_t * record, uint16_t * address)
 {
 	uint8_t hibyte = 0;
@@ -77,6 +89,13 @@ int ee_write_log_rec(log_rec_t * record, uint16_t * address)
 	return rc;
 };
 
+/*!
+* Kiolvas adott számú rekordot az EEPROM-ból az adott címtől kezdődően.
+* @param[out] record Rekordokból álló tömb, melyet a függvény tölt fel.
+* @param[in] from_addr EEPROM cím, ahonnan a kiolvasás kezdődik.
+* @param[in] num_of_rec A kiolvasandó rekordok száma.
+* @return A következő kiolvasandó rekord címe.
+*/
 uint16_t ee_read_log_rec(log_rec_t * record, uint16_t from_addr, uint16_t num_of_rec)
 {
 	uint8_t hibyte = 0;
@@ -114,6 +133,10 @@ uint16_t ee_read_log_rec(log_rec_t * record, uint16_t from_addr, uint16_t num_of
 	return (from_addr + num_of_rec * sizeof(log_rec_t)) / sizeof(log_rec_t); /* % 0x8000; */
 }
 
+/*!
+* Visszaadja az első szabad hely címét.
+* @return Az első szabad hely címe az EEPROM-ban.
+*/
 uint16_t ee_get_first_free_address()
 {
 	uint16_t ff_addr = 0xFFFF;

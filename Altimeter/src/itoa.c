@@ -9,34 +9,22 @@
  * Based on: 		---
  *******************************************************************************/
 
-/*==============================================================================
- Includes
-==============================================================================*/
 # include "itoa.h"
 
-/*==============================================================================
- Defines
-==============================================================================*/
-
-/*==============================================================================
- Globals
-==============================================================================*/
-
-/*==============================================================================
- Static function prototypes
-==============================================================================*/
 static void __reverse (char* start, char* end);
 
-/*==============================================================================
- Global function definitions
-==============================================================================*/
-/*------------------------------------------------------------------------------
- function name:	itoa
- description:		converts signed integer to an char array. Valid 'base' in [2;16].
- 						Only base == 10 values are treated as signed.
- parameters:		value for converting, the output buffer, conversion base
- returned value:	pointer to the output buffer
-------------------------------------------------------------------------------*/
+/*!
+* Előjeles egészet karakter tömbbé konvertál.
+* @param[in]	value	 		Az átalakítandó egész szám.
+* @param[out]	buffer	 		Itt keletkezik az eredmény.
+* @param[in]	base	 		Alap (2; 10; 16 lehet).
+* @param[in]	decimals		Tizedesek száma.
+* @param[in]	expectedLength	Kívánt karakterhosszúság.
+* @param[in]	padding_char	Kitöltő karakter.
+* @param[in]	prefix			Előtag, mely a karakterlánc elejéhez fűződik.
+* @param[in]	suffix			Utótag, mely a karakterlánc végéhez fűződik.
+* @return		Mutató az eredmény bufferre.
+*/
 char* itoa (int value, char* buffer, int base, int decimals,
 		    int expectedLength, char padding_char, char * prefix, char * suffix) //, char * prefix, char * suffix
 {
@@ -100,16 +88,11 @@ char* itoa (int value, char* buffer, int base, int decimals,
 	return tmpBuffer;
 }
 
-/*==============================================================================
- Static function definitions
-==============================================================================*/
-/*------------------------------------------------------------------------------
- function name:	__reverse
- description:		local function reversing order of a string
- parameters:		pointer to the beginning of a string, pointer to the end of a string
- returned value:	none
-------------------------------------------------------------------------------*/
-
+/*!
+* Megfordítja a karakterlánc sorrendjét.
+* @param[in]	start	Mutató a sztring elejére.
+* @param[in]	end		Mutató a sztring végére.
+*/
 static void __reverse (char* start, char* end)
 {
 	char tmp;
@@ -121,8 +104,3 @@ static void __reverse (char* start, char* end)
 		*start++ = tmp;				/* and write to the beginning stuff from tmp */
 	}
 }
-
-/******************************************************************************
-* END OF FILE
-******************************************************************************/
-

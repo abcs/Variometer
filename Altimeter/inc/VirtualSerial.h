@@ -43,7 +43,7 @@
 extern "C" {
 #endif
 */
-/** @defgroup USB_Virtual_Serial_Device_18xx43xx Virtual Serial Device
+/* @defgroup USB_Virtual_Serial_Device_18xx43xx Virtual Serial Device
  * @ingroup EXAMPLES_USB_18XX43XX
  * <b>Example description</b><br>
  * This example implements a CDC/ACM (USB-to-COM) virtual serial device. The
@@ -82,11 +82,11 @@ extern "C" {
  * @{
  */
 
-/**
+/*
  * @}
  */
 
-/** @defgroup USB_Virtual_Serial_Device_17xx40xx Virtual Serial Device
+/* @defgroup USB_Virtual_Serial_Device_17xx40xx Virtual Serial Device
  * @ingroup EXAMPLES_USB_17XX40XX
  * <b>Example description</b><br>
  * This example implements a CDC/ACM (USB-to-COM) virtual serial device. The
@@ -122,11 +122,11 @@ extern "C" {
  * @{
  */
 
-/**
+/*
  * @}
  */
 
-/** @defgroup USB_Virtual_Serial_Device_13xx Virtual Serial Device
+/* @defgroup USB_Virtual_Serial_Device_13xx Virtual Serial Device
  * @ingroup EXAMPLES_USB_13XX
  * <b>Example description</b><br>
  * This example implements a CDC/ACM (USB-to-COM) virtual serial device. The
@@ -158,11 +158,11 @@ extern "C" {
  * @{
  */
 
-/**
+/*
  * @}
  */
 
-/** @defgroup USB_Virtual_Serial_Device_11Uxx Virtual Serial Device
+/* @defgroup USB_Virtual_Serial_Device_11Uxx Virtual Serial Device
  * @ingroup EXAMPLES_USB_11UXX
  * <b>Example description</b><br>
  * This example implements a CDC/ACM (USB-to-COM) virtual serial device. The
@@ -194,32 +194,32 @@ extern "C" {
  * @{
  */
 
-/**
+/*
  * @}
  */
 
-/** @defgroup Virtual_Serial_Device_Definition Main definitions
+/* @defgroup Virtual_Serial_Device_Definition Main definitions
  * @ingroup USB_Virtual_Serial_Device_18xx43xx USB_Virtual_Serial_Device_17xx40xx USB_Virtual_Serial_Device_11Uxx
  * @{
  */
 
-/** LED mask for the library LED driver, to indicate that the USB interface is not ready. */
+/* LED mask for the library LED driver, to indicate that the USB interface is not ready. */
 #define LEDMASK_USB_NOTREADY      LEDS_LED1
 
-/** LED mask for the library LED driver, to indicate that the USB interface is enumerating. */
+/* LED mask for the library LED driver, to indicate that the USB interface is enumerating. */
 #define LEDMASK_USB_ENUMERATING  (LEDS_LED2 | LEDS_LED3)
 
-/** LED mask for the library LED driver, to indicate that the USB interface is ready. */
+/* LED mask for the library LED driver, to indicate that the USB interface is ready. */
 #define LEDMASK_USB_READY        (LEDS_LED2 | LEDS_LED4)
 
-/** LED mask for the library LED driver, to indicate that an error has occurred in the USB interface. */
+/* LED mask for the library LED driver, to indicate that an error has occurred in the USB interface. */
 #define LEDMASK_USB_ERROR        (LEDS_LED1 | LEDS_LED3)
 
 #define ECHO_CHARACTER_TASK     (0)
 #define CDC_BRIDGE_TASK         (ECHO_CHARACTER_TASK + 1)
 
 
-/** Select example task, currently lpc11Uxx and lpc17xx don't support for bridging task
+/* Select example task, currently lpc11Uxx and lpc17xx don't support for bridging task
  * Only LPC18xx has this feature */
 #define CDC_TASK_SELECT			255	//ECHO_CHARACTER_TASK
 //#define ECHO_CHARACTER_TASK     (0)
@@ -229,15 +229,15 @@ extern "C" {
 #define STX						2
 #define ETX						3
 
-/** Variables */
+/* Variables */
 
-/** LPCUSBlib CDC Class driver interface configuration and state information. This structure is
+/* LPCUSBlib CDC Class driver interface configuration and state information. This structure is
   *  passed to all CDC Class driver functions, so that multiple instances of the same class
   *  within a device can be differentiated from one another.
   */
 extern USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface;
 
- /** Functions */
+ /* Functions */
 void VS_setupHardware(void);
 
 #if (CDC_TASK_SELECT == ECHO_CHARACTER_TASK)
@@ -250,7 +250,7 @@ void VS_setupHardware(void);
 void VS_USBdataHandling(void);
 static void VS_SendAllLogs(void);
 
-/**
+/*
  * @}
  */
 /*

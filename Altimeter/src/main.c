@@ -17,32 +17,30 @@ volatile RTC_time_t actualTime;
 volatile RTC_date_t actualDate;
 volatile float calculatedSeaLevelPressure = 0;
 
-/*
- * Application entry point.
+/*!
+ * Az alkalmazás belépési pontja.
  */
 int main(void) {
 
   HP03_meas_t temp_press; // = { -3333, 0};
 
-  /*
-   * System initializations.
-   * - HAL initialization, this also initializes the configured device drivers
-   *   and performs the board-specific initializations.
-   * - Kernel initialization, the main() function becomes a thread and the
-   *   RTOS is active.
+  /*!
+   * Rendszer-inicializálás.
+   * - HAL inicializálás (SoC és kártya specifikus)
+   * - Kernel inicializálás, a main() függvényből szál lesz és az RTOS elindul.
    */
   halInit();
   chSysInit();
 
-  /*
-   * Activates the SD1 and SPI1 drivers.
+  /*!
+   * Az SPI és az I2C aktiválása.
    */
 //  sdStart(&SD1, NULL);                  /* Default: 38400,8,N,1.            */
   spiStart(&SPID1, &spicfg);
   i2cStart(&I2CD1, &i2ccfg);
 
-  /*
-   * Initialize the peripherals and modules.
+  /*!
+   * A perifériák és modulok inicializálása.
    */
   LCD_init();
   RTC_init();
@@ -54,10 +52,10 @@ int main(void) {
 
   logger_init();
 
-  /*
-   * Calculate the sea level pressure.
-   * The first reading from HP03 is not always correct,
-   * therefore two reading is needed.
+  /*!
+   * A tengerszintre átszámított légnyomás kiszámíttatása.
+   * Az első kiolvasás a szenzorból nem biztos, hogy helyes,
+   * ezért két kiolvasás szükséges.
    */
   (void)HP03_getTemperature(&temp_press);
   chThdSleepMilliseconds(25);
@@ -70,26 +68,26 @@ int main(void) {
   init_kalman(temp_press.press);
   calculatedSeaLevelPressure = HP03_pressureSeaLevelFromAltitude(25.0F, temp_press);
 
-  /*
-   * Set the actual date.
+  /*!
+   * Aktuális dátum kiolvasása az RTC-ből.
    */
   actualDate = RTC_getDate();
 
-  /*
-   * Testing the beeper.
+  /*!
+   * Hangszóró tesztelése (PWM).
    */
   pwmStart(&PWMD3, &pwmcfg);
   pwmEnableChannel(&PWMD3, 0, 50);
   chThdSleepMilliseconds(50);
   pwmDisableChannel(&PWMD3, 0);
 
-  /*
-   * Switch the back light on.
+  /*!
+   * Háttérvilágítás bekapcsolása.
    */
   palSetPad(GPIO1, GPIO1_BACKLIGHT);
 
-  /*
-   * Creates the threads.
+  /*!
+   * Szálak létrehozása.
    */
   chThdCreateStatic(waThread1, sizeof(waThread1), LOWPRIO, Thread1, NULL);
   chThdCreateStatic(waThread2, sizeof(waThread2), HIGHPRIO, Thread2, NULL);

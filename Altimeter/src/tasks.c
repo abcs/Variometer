@@ -19,8 +19,9 @@ extern volatile RTC_date_t actualDate;
 extern volatile float calculatedSeaLevelPressure;
 
 
-/*
- * Red LED blinker thread, times are in milliseconds.
+/*!
+ * "HeartBeat" LED villogtató szál.
+ * (Az idő msec)
  */
 msg_t Thread1(void *arg)
 {
@@ -36,8 +37,8 @@ msg_t Thread1(void *arg)
   return 0;
 }
 
-/*
- * Pressure and temperature reader thread, times are in milliseconds.
+/*!
+ * Nyomás és hőmérséklet kiolvasó szál.
  */
 msg_t Thread2(void *arg)
 {
@@ -92,8 +93,8 @@ msg_t Thread2(void *arg)
 }
 
 
-/*
- * Date and time handler thread, times are in milliseconds.
+/*!
+ * Dátum és idő kezelő szál.
  */
 msg_t Thread3(void *arg)
 {
@@ -115,6 +116,9 @@ msg_t Thread3(void *arg)
     return 0;
 }
 
+/*!
+ * USB kezelő szál.
+ */
 msg_t Thread4(void *arg)
 {
 	(void)arg;
@@ -139,6 +143,9 @@ msg_t Thread4(void *arg)
 	return 0;
 }
 
+/*!
+ * EEPROM író szál (ringbuffer -> EEPROM)
+ */
 msg_t Thread5(void *arg)
 {
 	(void)arg;

@@ -3,7 +3,7 @@
 #include "logger.h"
 #include <string.h>
 
-/** LPCUSBlib CDC Class driver interface configuration and state information. This structure is
+/* LPCUSBlib CDC Class driver interface configuration and state information. This structure is
  *  passed to all CDC Class driver functions, so that multiple instances of the same class
  *  within a device can be differentiated from one another.
  */
@@ -36,13 +36,13 @@ USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface = {
 };
 
 
-/** Standard file stream for the CDC interface when set up, so that the virtual CDC COM port can be
+/* Standard file stream for the CDC interface when set up, so that the virtual CDC COM port can be
  *  used like any regular character stream in the C APIs
  */
 // static FILE USBSerialStream;
 
 
-/** Configures the board hardware and chip peripherals for the functionality. */
+/* Configures the board hardware and chip peripherals for the functionality. */
 void VS_setupHardware(void)
 {
 	USB_Init(VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device); //VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device
@@ -53,7 +53,7 @@ void VS_setupHardware(void)
 }
 
 #if (CDC_TASK_SELECT == ECHO_CHARACTER_TASK)
-/** Checks for data input, reply back to the host. */
+/* Checks for data input, reply back to the host. */
 void VS_echoCharacter(void)
 {
 	uint8_t recv_byte[CDC_TXRX_EPSIZE];
@@ -66,7 +66,7 @@ void VS_echoCharacter(void)
 }
 
 #elif (CDC_TASK_SELECT == CDC_BRIDGE_TASK)
-/** USB-UART Bridge Task */
+/* USB-UART Bridge Task */
 void CDC_Bridge_Task(void)
 {
 	/* Echo back character */
@@ -99,7 +99,7 @@ void CDC_Bridge_Task(void)
 #endif
 
 
-/** Event handler for the library USB Configuration Changed event. */
+/* Event handler for the library USB Configuration Changed event. */
 void EVENT_USB_Device_ConfigurationChanged(void)
 {
 	bool ConfigSuccess = true;
@@ -110,7 +110,7 @@ void EVENT_USB_Device_ConfigurationChanged(void)
 }
 
 
-/** Event handler for the library USB Control Request reception event. */
+/* Event handler for the library USB Control Request reception event. */
 void EVENT_USB_Device_ControlRequest(void)
 {
 	CDC_Device_ProcessControlRequest(&VirtualSerial_CDC_Interface);

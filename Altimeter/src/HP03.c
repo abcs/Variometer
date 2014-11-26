@@ -30,16 +30,13 @@ static int power(int base, int exp)
     return result;
 }
 
-/**************************************************************************/
 /*!
-    Calculates the altitude (in meters) from the specified atmospheric
-    pressure (in hPa), sea-level pressure (in hPa), and temperature (in °C)
-
-    @param  seaLevel      Sea-level pressure in hPa
-    @param  atmospheric   Atmospheric pressure in hPa
-    @param  temp          Temperature in degrees Celsius
+* Kiszámítja a magasságot (méterben) a hPa-ban megadott légnyomás,
+* tengerszintre átszámított légnyomás és a °C-ban megadott hőmérséklet alapján.
+* @param[in] seaLevel			Tengerszintre átszámított légnyomás hPa-ban.
+* @param[in] measuredPressTemp	Mért légnyomás és hőmérséklet.
+* @return						Magasság méterben.
 */
-/**************************************************************************/
 int HP03_pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp)
 {
   /* Hyposometric formula:                      */
@@ -63,18 +60,14 @@ int HP03_pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp)
   return (int)(result * 10.0F);
 }
 
-/**************************************************************************/
 /*!
-    Calculates the sea-level pressure (in hPa) based on the current
-    altitude (in meters), atmospheric pressure (in hPa), and temperature
-    (in °C)
-
-    @param  altitude      altitude in meters
-    @param  atmospheric   Atmospheric pressure in hPa
-    @param  temp          Temperature in degrees Celsius
+* Kiszámítja a tengerszintre átszámított légnyomást hPa-ban
+* az aktuális méterben megadott magasság, hPa-ban megadott légnyomás
+* és a °C-ban megadott hőmérséklet alapján.
+* @param[in] altitude			Magasság méterben.
+* @param[in] measuredPressTemp	Mért légnyomás és hőmérséklet.
+* @return						Tengerszintre átszámított légnyomás hPa-ban.
 */
-/**************************************************************************/
-//float pressureSeaLevelFromAltitude(float altitude, float atmospheric, float temp)
 float HP03_pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp)
 {
   /* Sea-level pressure:                        */
@@ -101,6 +94,10 @@ float HP03_pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPres
 }
 
 
+/*!
+* Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének
+* alacsony szintre történő álíításával.
+*/
 void HP03_reset()
 {
 	palClearPad(GPIO1, GPIO1_XCLR);
@@ -111,6 +108,11 @@ void HP03_reset()
 }
 
 
+/*!
+* Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás
+* kiszámításához szükséges koefficiensek értékeit
+* @return	HP03_coeff változó.
+*/
 void HP03_readCoeffs()
 {
 	uint8_t HP03_ee_addr = 16;
@@ -138,6 +140,13 @@ void HP03_readCoeffs()
 }
 
 
+/*!
+* Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek
+* segítségével kiszámítja a pontos értéket.
+* @param[in,out] constsIn_pressureOut Itt keletkezik az eredmény.
+* @param[in]	 withKalman			  Használja-e a Kálmán szűrőt.
+* @return		 0, ha sikeres.
+*/
 int HP03_getPressure(HP03_meas_t * constsIn_pressureOut, bool withKalman)
 {
 	uint16_t D = 0; //Measured and pressure
@@ -197,6 +206,12 @@ int HP03_getPressure(HP03_meas_t * constsIn_pressureOut, bool withKalman)
 }
 
 
+/*!
+* Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek
+* segítségével kiszámítja a pontos értéket.
+* @param[out]	result	Itt keletkezik az eredmény.
+* @return		 0, ha sikeres.
+*/
 int HP03_getTemperature(HP03_meas_t * result)
 {
 	uint16_t D = 0; //Measured temperature

@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>altimeter: /HDD/GIT/variometer/Altimeter/src/LCD.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">altimeter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Főoldal</span></a></li>
+      <li><a href="annotated.html"><span>Adatszerkezetek</span></a></li>
+      <li class="current"><a href="files.html"><span>Fájl</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Keresés" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Fájllista</span></a></li>
+      <li><a href="globals.html"><span>Globális&#160;elemek</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Összes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Adatszerkezetek</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fájl</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Függvények</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Változók</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Típusdefiníciók</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">LCD.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;ch.h&quot;</code><br/>
+<code>#include &quot;hal.h&quot;</code><br/>
+<code>#include &quot;LCD.h&quot;</code><br/>
+<code>#include &quot;LCD_fonts.h&quot;</code><br/>
+<code>#include &quot;globals.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+A LCD.c definíciós fájl függési gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c__incl.png" border="0" usemap="#_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_l_c_d_8c" alt=""/></div>
+<map name="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_l_c_d_8c" id="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_l_c_d_8c">
+</map>
+</div>
+</div>
+<p><a href="_l_c_d_8c_source.html">Ugrás a fájl forráskódjához.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:abe38d05e225c701bebf5a61201331a85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#abe38d05e225c701bebf5a61201331a85">LCD_clear</a> ()</td></tr>
+<tr class="memdesc:abe38d05e225c701bebf5a61201331a85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Törli a kijelző tartalmát.  <a href="#abe38d05e225c701bebf5a61201331a85">Részletek...</a><br/></td></tr>
+<tr class="separator:abe38d05e225c701bebf5a61201331a85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0742e25c23ca1096ceba081b98fd58ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#a0742e25c23ca1096ceba081b98fd58ba">LCD_init</a> ()</td></tr>
+<tr class="memdesc:a0742e25c23ca1096ceba081b98fd58ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">A kijelző inicializálását végzi.  <a href="#a0742e25c23ca1096ceba081b98fd58ba">Részletek...</a><br/></td></tr>
+<tr class="separator:a0742e25c23ca1096ceba081b98fd58ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bb56ab53c7d9c0e363e59c48f5a959"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#a34bb56ab53c7d9c0e363e59c48f5a959">LCD_writeTemp</a> (HP03_meas_t measuredByHP03)</td></tr>
+<tr class="memdesc:a34bb56ab53c7d9c0e363e59c48f5a959"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hőmérséklet megjelenítése a kijelzőn.  <a href="#a34bb56ab53c7d9c0e363e59c48f5a959">Részletek...</a><br/></td></tr>
+<tr class="separator:a34bb56ab53c7d9c0e363e59c48f5a959"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c85acb573ef9bcfa2ae5f95feb596f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#a66c85acb573ef9bcfa2ae5f95feb596f">LCD_writePress</a> (HP03_meas_t measuredByHP03)</td></tr>
+<tr class="memdesc:a66c85acb573ef9bcfa2ae5f95feb596f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Légnyomás megjelenítése a kijelzőn.  <a href="#a66c85acb573ef9bcfa2ae5f95feb596f">Részletek...</a><br/></td></tr>
+<tr class="separator:a66c85acb573ef9bcfa2ae5f95feb596f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f21373ce23ee38fa023546e0b262fdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#a4f21373ce23ee38fa023546e0b262fdf">LCD_writeAlt</a> (int altToWrite)</td></tr>
+<tr class="memdesc:a4f21373ce23ee38fa023546e0b262fdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magasság megjelenítése a kijelzőn.  <a href="#a4f21373ce23ee38fa023546e0b262fdf">Részletek...</a><br/></td></tr>
+<tr class="separator:a4f21373ce23ee38fa023546e0b262fdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed928ccaaf404b142910bbda63b2314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#a9ed928ccaaf404b142910bbda63b2314">LCD_writeSpeed</a> (int speedToWrite)</td></tr>
+<tr class="memdesc:a9ed928ccaaf404b142910bbda63b2314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Függőleges sebesség megjelenítése a kijelzőn.  <a href="#a9ed928ccaaf404b142910bbda63b2314">Részletek...</a><br/></td></tr>
+<tr class="separator:a9ed928ccaaf404b142910bbda63b2314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfcdedfb3a022310629af2dc94a1f658"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#adfcdedfb3a022310629af2dc94a1f658">LCD_writeDate</a> (RTC_date_t dateToWrite)</td></tr>
+<tr class="memdesc:adfcdedfb3a022310629af2dc94a1f658"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dátum megjelenítése a kijelzőn.  <a href="#adfcdedfb3a022310629af2dc94a1f658">Részletek...</a><br/></td></tr>
+<tr class="separator:adfcdedfb3a022310629af2dc94a1f658"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e9fbcb9579b78118f6add9d1e78ba8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#a86e9fbcb9579b78118f6add9d1e78ba8">LCD_writeTime</a> (RTC_time_t timeToWrite)</td></tr>
+<tr class="memdesc:a86e9fbcb9579b78118f6add9d1e78ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Idő megjelenítése a kijelzőn.  <a href="#a86e9fbcb9579b78118f6add9d1e78ba8">Részletek...</a><br/></td></tr>
+<tr class="separator:a86e9fbcb9579b78118f6add9d1e78ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab128f02215b4c1e80793338995eada18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#ab128f02215b4c1e80793338995eada18">LCD_writeUSB</a> ()</td></tr>
+<tr class="memdesc:ab128f02215b4c1e80793338995eada18"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB felirat megjelenítése a kijelzőn.  <a href="#ab128f02215b4c1e80793338995eada18">Részletek...</a><br/></td></tr>
+<tr class="separator:ab128f02215b4c1e80793338995eada18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad738a14f7ceaf0da125b1337a4e9e10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_l_c_d_8c.html#ad738a14f7ceaf0da125b1337a4e9e10b">LCD_writeUSB_delete</a> ()</td></tr>
+<tr class="memdesc:ad738a14f7ceaf0da125b1337a4e9e10b"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB felirat törlése a kijelzőről.  <a href="#ad738a14f7ceaf0da125b1337a4e9e10b">Részletek...</a><br/></td></tr>
+<tr class="separator:ad738a14f7ceaf0da125b1337a4e9e10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Függvények dokumentációja</h2>
+<a class="anchor" id="abe38d05e225c701bebf5a61201331a85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_clear </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Törli a kijelző tartalmát. </p>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00147">147</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_abe38d05e225c701bebf5a61201331a85_icgraph.png" border="0" usemap="#_l_c_d_8c_abe38d05e225c701bebf5a61201331a85_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_abe38d05e225c701bebf5a61201331a85_icgraph" id="_l_c_d_8c_abe38d05e225c701bebf5a61201331a85_icgraph">
+<area shape="rect" id="node3" href="_l_c_d_8c.html#a0742e25c23ca1096ceba081b98fd58ba" title="A kijelző inicializálását végzi. " alt="" coords="140,5,212,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="261,5,312,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0742e25c23ca1096ceba081b98fd58ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_init </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A kijelző inicializálását végzi. </p>
+<p>&lt; PowerON, ExtCommandSet - 0x21</p>
+<p>&lt; Internal HV-gen x3 - 0x09</p>
+<p>&lt; Set Vop</p>
+<p>&lt; Bias n=2</p>
+<p>&lt; Temperature coeff 2</p>
+<p>&lt; StandartCommandSet - 0x20</p>
+<p>&lt; normal mode, display non-inverted </p>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00168">168</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_cgraph.png" border="0" usemap="#_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_cgraph" alt=""/></div>
+<map name="_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_cgraph" id="_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_cgraph">
+<area shape="rect" id="node3" href="_l_c_d_8c.html#abe38d05e225c701bebf5a61201331a85" title="Törli a kijelző tartalmát. " alt="" coords="129,5,212,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_icgraph.png" border="0" usemap="#_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_icgraph" id="_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="128,5,179,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f21373ce23ee38fa023546e0b262fdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writeAlt </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>altToWrite</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Magasság megjelenítése a kijelzőn. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">altToWrite</td><td>Magasság érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00245">245</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_cgraph.png" border="0" usemap="#_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_cgraph" alt=""/></div>
+<map name="_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_cgraph" id="_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_cgraph">
+<area shape="rect" id="node3" href="itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="155,5,197,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_icgraph.png" border="0" usemap="#_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_icgraph" id="_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_icgraph">
+<area shape="rect" id="node3" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="155,5,224,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="272,5,323,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adfcdedfb3a022310629af2dc94a1f658"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writeDate </td>
+          <td>(</td>
+          <td class="paramtype">RTC_date_t&#160;</td>
+          <td class="paramname"><em>dateToWrite</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dátum megjelenítése a kijelzőn. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">dateToWrite</td><td>Dátum érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00271">271</a>. sorában.</p>
+
+</div>
+</div>
+<a class="anchor" id="a66c85acb573ef9bcfa2ae5f95feb596f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writePress </td>
+          <td>(</td>
+          <td class="paramtype">HP03_meas_t&#160;</td>
+          <td class="paramname"><em>measuredByHP03</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Légnyomás megjelenítése a kijelzőn. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">measuredByHP03</td><td>Nyomás érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00220">220</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_cgraph.png" border="0" usemap="#_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_cgraph" alt=""/></div>
+<map name="_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_cgraph" id="_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_cgraph">
+<area shape="rect" id="node3" href="itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="173,5,216,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_icgraph.png" border="0" usemap="#_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_icgraph" id="_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_icgraph">
+<area shape="rect" id="node3" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="173,5,243,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="291,5,341,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ed928ccaaf404b142910bbda63b2314"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writeSpeed </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>speedToWrite</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Függőleges sebesség megjelenítése a kijelzőn. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">speedToWrite</td><td>Sebesség érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00262">262</a>. sorában.</p>
+
+</div>
+</div>
+<a class="anchor" id="a34bb56ab53c7d9c0e363e59c48f5a959"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writeTemp </td>
+          <td>(</td>
+          <td class="paramtype">HP03_meas_t&#160;</td>
+          <td class="paramname"><em>measuredByHP03</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Hőmérséklet megjelenítése a kijelzőn. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">measuredByHP03</td><td>Hőmérséklet érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00206">206</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_cgraph.png" border="0" usemap="#_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_cgraph" alt=""/></div>
+<map name="_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_cgraph" id="_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_cgraph">
+<area shape="rect" id="node3" href="itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="171,5,213,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_icgraph.png" border="0" usemap="#_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_icgraph" id="_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_icgraph">
+<area shape="rect" id="node3" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="171,5,240,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="288,5,339,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a86e9fbcb9579b78118f6add9d1e78ba8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writeTime </td>
+          <td>(</td>
+          <td class="paramtype">RTC_time_t&#160;</td>
+          <td class="paramname"><em>timeToWrite</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Idő megjelenítése a kijelzőn. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeToWrite</td><td>Idő érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00281">281</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_cgraph.png" border="0" usemap="#_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_cgraph" alt=""/></div>
+<map name="_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_cgraph" id="_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_cgraph">
+<area shape="rect" id="node3" href="itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="168,5,211,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_icgraph.png" border="0" usemap="#_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_icgraph" id="_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_icgraph">
+<area shape="rect" id="node3" href="tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38" title="Dátum és idő kezelő szál. " alt="" coords="168,5,237,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="285,5,336,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab128f02215b4c1e80793338995eada18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writeUSB </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USB felirat megjelenítése a kijelzőn. </p>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00306">306</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_ab128f02215b4c1e80793338995eada18_icgraph.png" border="0" usemap="#_l_c_d_8c_ab128f02215b4c1e80793338995eada18_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_ab128f02215b4c1e80793338995eada18_icgraph" id="_l_c_d_8c_ab128f02215b4c1e80793338995eada18_icgraph">
+<area shape="rect" id="node3" href="tasks_8c.html#ad2036d3514561ba8a748ff170baf1e3a" title="USB kezelő szál. " alt="" coords="165,5,235,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="283,5,333,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad738a14f7ceaf0da125b1337a4e9e10b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCD_writeUSB_delete </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USB felirat törlése a kijelzőről. </p>
+
+<p>Definíció a(z) <a class="el" href="_l_c_d_8c_source.html">LCD.c</a> fájl <a class="el" href="_l_c_d_8c_source.html#l00319">319</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_l_c_d_8c_ad738a14f7ceaf0da125b1337a4e9e10b_icgraph.png" border="0" usemap="#_l_c_d_8c_ad738a14f7ceaf0da125b1337a4e9e10b_icgraph" alt=""/></div>
+<map name="_l_c_d_8c_ad738a14f7ceaf0da125b1337a4e9e10b_icgraph" id="_l_c_d_8c_ad738a14f7ceaf0da125b1337a4e9e10b_icgraph">
+<area shape="rect" id="node3" href="tasks_8c.html#ad2036d3514561ba8a748ff170baf1e3a" title="USB kezelő szál. " alt="" coords="208,5,277,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="325,5,376,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

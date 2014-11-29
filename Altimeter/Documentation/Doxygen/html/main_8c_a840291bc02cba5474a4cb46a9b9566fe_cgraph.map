@@ -1,0 +1,35 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$_l_c_d_8c.html#a0742e25c23ca1096ceba081b98fd58ba" title="A kijelző inicializálását végzi. " alt="" coords="167,5,239,35"/>
+<area shape="rect" id="node7" href="$_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2" title="A Real Time Clock áramkör inicializálása. " alt="" coords="165,59,240,88"/>
+<area shape="rect" id="node9" href="$_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d" title="Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének alacsony szintre történő álíításával..." alt="" coords="157,112,248,141"/>
+<area shape="rect" id="node11" href="$_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab" title="Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek érték..." alt="" coords="140,165,265,195"/>
+<area shape="rect" id="node13" href="$_virtual_serial_8c.html#a5703403c88d1771df8424477dec18318" title="VS_setupHardware" alt="" coords="136,219,269,248"/>
+<area shape="rect" id="node15" href="$logger_8c.html#acca02da5a5a8b842893ecc30ea12fda7" title="A naplózó alrendszer inicializálása. " alt="" coords="163,272,243,301"/>
+<area shape="rect" id="node19" href="$_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486" title="Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="360,160,512,189"/>
+<area shape="rect" id="node21" href="$_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="371,213,501,243"/>
+<area shape="rect" id="node25" href="$_kalman_8c.html#a6ff19aa3f59897d3931e2d728eb37b50" title="A Kálmán szűrő inicializálása. " alt="" coords="159,672,247,701"/>
+<area shape="rect" id="node27" href="$_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794" title="Kiszámítja a tengerszintre átszámított légnyomást hPa&#45;ban az aktuális méterben megadott magasság..." alt="" coords="105,602,300,649"/>
+<area shape="rect" id="node31" href="$_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc" title="A dátum kiolvasása az RTC áramkörből. " alt="" coords="385,640,487,669"/>
+<area shape="rect" id="node33" href="$tasks_8c.html#a0af304e6c5bca609f1da9a35a49da5c6" title="&quot;HeartBeat&quot; LED villogtató szál. " alt="" coords="168,725,237,755"/>
+<area shape="rect" id="node35" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="168,427,237,456"/>
+<area shape="rect" id="node54" href="$tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38" title="Dátum és idő kezelő szál. " alt="" coords="168,499,237,528"/>
+<area shape="rect" id="node62" href="$tasks_8c.html#ad2036d3514561ba8a748ff170baf1e3a" title="USB kezelő szál. " alt="" coords="168,788,237,817"/>
+<area shape="rect" id="node70" href="$tasks_8c.html#aad01c280ed05ea63627f5518167c5003" title="EEPROM író szál (ringbuffer &#45;&gt; EEPROM) " alt="" coords="168,877,237,907"/>
+<area shape="rect" id="node5" href="$_l_c_d_8c.html#abe38d05e225c701bebf5a61201331a85" title="Törli a kijelző tartalmát. " alt="" coords="395,5,477,35"/>
+<area shape="rect" id="node17" href="$eeprom_8c.html#aa61d5bd2a11169dbd512934b1fb384b7" title="Visszaadja az első szabad hely címét. " alt="" coords="351,107,521,136"/>
+<area shape="rect" id="node23" href="$_kalman_8c.html#a805a67ac627b7712612544e1c006b12d" title="Elvégzi a szűrést (jóslás, erősítés, korrekció). " alt="" coords="599,213,663,243"/>
+<area shape="rect" id="node29" href="$mymath_8c.html#a73b3c2799ff1322f5f274157cbfdd4a1" title="myPow" alt="" coords="597,587,664,616"/>
+<area shape="rect" id="node38" href="$_l_c_d_8c.html#a34bb56ab53c7d9c0e363e59c48f5a959" title="Hőmérséklet megjelenítése a kijelzőn. " alt="" coords="377,427,495,456"/>
+<area shape="rect" id="node43" href="$_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106" title="Kiszámítja a magasságot (méterben) a hPa&#45;ban megadott légnyomás, tengerszintre átszámított légnyomás ..." alt="" coords="351,480,521,509"/>
+<area shape="rect" id="node46" href="$logger_8c.html#ab32b0e36c611a22cba880cc3aacda3db" title="A paraméterként kapott rekordot berakja a ringbufferbe, ahonnan később ki fog íródni az EEPROM&#45;ba..." alt="" coords="383,373,489,403"/>
+<area shape="rect" id="node48" href="$_l_c_d_8c.html#a66c85acb573ef9bcfa2ae5f95feb596f" title="Légnyomás megjelenítése a kijelzőn. " alt="" coords="377,267,495,296"/>
+<area shape="rect" id="node51" href="$_l_c_d_8c.html#a4f21373ce23ee38fa023546e0b262fdf" title="Magasság megjelenítése a kijelzőn. " alt="" coords="387,320,485,349"/>
+<area shape="rect" id="node40" href="$itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="609,373,652,403"/>
+<area shape="rect" id="node56" href="$_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81" title="Az idő kiolvasása az RTC áramkörből. " alt="" coords="384,587,488,616"/>
+<area shape="rect" id="node59" href="$_l_c_d_8c.html#a86e9fbcb9579b78118f6add9d1e78ba8" title="Idő megjelenítése a kijelzőn. " alt="" coords="380,533,492,563"/>
+<area shape="rect" id="node64" href="$_l_c_d_8c.html#ab128f02215b4c1e80793338995eada18" title="USB felirat megjelenítése a kijelzőn. " alt="" coords="380,744,492,773"/>
+<area shape="rect" id="node66" href="$_l_c_d_8c.html#ad738a14f7ceaf0da125b1337a4e9e10b" title="USB felirat törlése a kijelzőről. " alt="" coords="359,797,513,827"/>
+<area shape="rect" id="node68" href="$_virtual_serial_8c.html#a0cc248961962a9961503bd1fc4b0ef11" title="VS_USBdataHandling" alt="" coords="361,851,511,880"/>
+<area shape="rect" id="node72" href="$logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="373,904,499,933"/>
+<area shape="rect" id="node74" href="$eeprom_8c.html#a601d64b049e61217914cbf9e3c84180a" title="Beír egy rekordot az EEPROM&#45;ba az adott címtől kezdődően. " alt="" coords="571,904,691,933"/>
+</map>

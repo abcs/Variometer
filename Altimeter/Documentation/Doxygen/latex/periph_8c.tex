@@ -1,0 +1,107 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/periph.c fájlreferencia}
+\label{periph_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/periph.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/periph.\-c}}
+{\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}periph.\-h\char`\"{}}\\*
+A periph.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{periph_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf pwm3pcb} (P\-W\-M\-Driver $\ast$pwmp)
+\item 
+void {\bf pwm3c0cb} (P\-W\-M\-Driver $\ast$pwmp)
+\end{DoxyCompactItemize}
+\subsection*{Változók}
+\begin{DoxyCompactItemize}
+\item 
+S\-P\-I\-Config {\bf spicfg}
+\item 
+I2\-C\-Config {\bf i2ccfg}
+\item 
+P\-W\-M\-Config {\bf pwmcfg}
+\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{periph.\-c@{periph.\-c}!pwm3c0cb@{pwm3c0cb}}
+\index{pwm3c0cb@{pwm3c0cb}!periph.c@{periph.\-c}}
+\subsubsection[{pwm3c0cb}]{\setlength{\rightskip}{0pt plus 5cm}void pwm3c0cb (
+\begin{DoxyParamCaption}
+\item[{P\-W\-M\-Driver $\ast$}]{pwmp}
+\end{DoxyParamCaption}
+)}\label{periph_8c_af6f3a2503083af2614563d0cc1f0c96c}
+
+
+Definíció a(z) periph.\-c fájl 50. sorában.
+
+\index{periph.\-c@{periph.\-c}!pwm3pcb@{pwm3pcb}}
+\index{pwm3pcb@{pwm3pcb}!periph.c@{periph.\-c}}
+\subsubsection[{pwm3pcb}]{\setlength{\rightskip}{0pt plus 5cm}void pwm3pcb (
+\begin{DoxyParamCaption}
+\item[{P\-W\-M\-Driver $\ast$}]{pwmp}
+\end{DoxyParamCaption}
+)}\label{periph_8c_ad3406d6a8fd6f21ccb106ecce466ec52}
+
+
+Definíció a(z) periph.\-c fájl 44. sorában.
+
+
+
+\subsection{Változók dokumentációja}
+\index{periph.\-c@{periph.\-c}!i2ccfg@{i2ccfg}}
+\index{i2ccfg@{i2ccfg}!periph.c@{periph.\-c}}
+\subsubsection[{i2ccfg}]{\setlength{\rightskip}{0pt plus 5cm}I2\-C\-Config i2ccfg}\label{periph_8c_a5dadd1387ac7b6a9a9bf2416cb1e2894}
+{\bfseries Kezdő érték\-:}
+\begin{DoxyCode}
+= \{
+    I2C\_STANDARD\_MODE,             
+    48                             
+\}
+\end{DoxyCode}
+
+
+Definíció a(z) periph.\-c fájl 26. sorában.
+
+\index{periph.\-c@{periph.\-c}!pwmcfg@{pwmcfg}}
+\index{pwmcfg@{pwmcfg}!periph.c@{periph.\-c}}
+\subsubsection[{pwmcfg}]{\setlength{\rightskip}{0pt plus 5cm}P\-W\-M\-Config pwmcfg}\label{periph_8c_a902ad52cd507aae1615bd2858a47020d}
+{\bfseries Kezdő érték\-:}
+\begin{DoxyCode}
+= \{
+    100000,                          
+       100,                          
+    pwm3pcb,                         
+    \{
+        \{PWM\_OUTPUT\_ACTIVE\_LOW, pwm3c0cb\},
+        \{PWM\_OUTPUT\_ACTIVE\_LOW, NULL\}
+    \}
+\}
+\end{DoxyCode}
+
+
+Definíció a(z) periph.\-c fájl 31. sorában.
+
+\index{periph.\-c@{periph.\-c}!spicfg@{spicfg}}
+\index{spicfg@{spicfg}!periph.c@{periph.\-c}}
+\subsubsection[{spicfg}]{\setlength{\rightskip}{0pt plus 5cm}S\-P\-I\-Config spicfg}\label{periph_8c_afc4986c4ff59c9cd490bd7fd437f7c1a}
+{\bfseries Kezdő érték\-:}
+\begin{DoxyCode}
+= \{
+  NULL,
+  GPIO0,
+  GPIO0\_LCD\_SEL, 
+  CR0\_DSS8BIT | CR0\_FRFSPI | CR0\_CLOCKRATE(0),
+  48
+\}
+\end{DoxyCode}
+
+
+Definíció a(z) periph.\-c fájl 15. sorában.
+

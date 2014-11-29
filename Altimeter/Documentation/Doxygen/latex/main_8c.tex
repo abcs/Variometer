@@ -1,0 +1,106 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/main.c fájlreferencia}
+\label{main_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/main.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/main.\-c}}
+{\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\-C\-D.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}H\-P03.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}R\-T\-C\-\_\-r2051.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Virtual\-Serial.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Kalman.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}logger.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}periph.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}tasks.\-h\char`\"{}}\\*
+A main.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf main} (void)
+\begin{DoxyCompactList}\small\item\em Az alkalmazás belépési pontja. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Változók}
+\begin{DoxyCompactItemize}
+\item 
+volatile R\-T\-C\-\_\-time\-\_\-t {\bf actual\-Time}
+\item 
+volatile R\-T\-C\-\_\-date\-\_\-t {\bf actual\-Date}
+\item 
+volatile float {\bf calculated\-Sea\-Level\-Pressure} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{main.\-c@{main.\-c}!main@{main}}
+\index{main@{main}!main.c@{main.\-c}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+
+Az alkalmazás belépési pontja. 
+
+Rendszer-\/inicializálás.
+\begin{DoxyItemize}
+\item H\-A\-L inicializálás (So\-C és kártya specifikus)
+\item Kernel inicializálás, a \doxyref{main()}{o.}{main_8c_a840291bc02cba5474a4cb46a9b9566fe} függvényből szál lesz és az R\-T\-O\-S elindul.
+\end{DoxyItemize}
+
+Az S\-P\-I és az I2\-C aktiválása.
+
+A perifériák és modulok inicializálása.
+
+A tengerszintre átszámított légnyomás kiszámíttatása. Az első kiolvasás a szenzorból nem biztos, hogy helyes, ezért két kiolvasás szükséges.
+
+Aktuális dátum kiolvasása az R\-T\-C-\/ből.
+
+Hangszóró tesztelése (P\-W\-M).
+
+Háttérvilágítás bekapcsolása.
+
+Szálak létrehozása.
+
+Definíció a(z) main.\-c fájl 23. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Változók dokumentációja}
+\index{main.\-c@{main.\-c}!actual\-Date@{actual\-Date}}
+\index{actual\-Date@{actual\-Date}!main.c@{main.\-c}}
+\subsubsection[{actual\-Date}]{\setlength{\rightskip}{0pt plus 5cm}volatile R\-T\-C\-\_\-date\-\_\-t actual\-Date}\label{main_8c_a1fcf2a74e06883fb690c0c062bf9408c}
+
+
+Definíció a(z) main.\-c fájl 17. sorában.
+
+\index{main.\-c@{main.\-c}!actual\-Time@{actual\-Time}}
+\index{actual\-Time@{actual\-Time}!main.c@{main.\-c}}
+\subsubsection[{actual\-Time}]{\setlength{\rightskip}{0pt plus 5cm}volatile R\-T\-C\-\_\-time\-\_\-t actual\-Time}\label{main_8c_adf161c6b74a74517e1683aa5f3cc038a}
+
+
+Definíció a(z) main.\-c fájl 16. sorában.
+
+\index{main.\-c@{main.\-c}!calculated\-Sea\-Level\-Pressure@{calculated\-Sea\-Level\-Pressure}}
+\index{calculated\-Sea\-Level\-Pressure@{calculated\-Sea\-Level\-Pressure}!main.c@{main.\-c}}
+\subsubsection[{calculated\-Sea\-Level\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}volatile float calculated\-Sea\-Level\-Pressure = 0}\label{main_8c_ae33a247a27845609a2f5d2893060d2bb}
+
+
+Definíció a(z) main.\-c fájl 18. sorában.
+

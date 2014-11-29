@@ -1,0 +1,4 @@
+<map id="HP03_getPressure" name="HP03_getPressure">
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="304,5,355,35"/>
+<area shape="rect" id="node5" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="187,31,256,60"/>
+</map>

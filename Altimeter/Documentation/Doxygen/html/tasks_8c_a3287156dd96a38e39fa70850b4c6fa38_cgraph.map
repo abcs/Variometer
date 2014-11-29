@@ -1,0 +1,6 @@
+<map id="Thread3" name="Thread3">
+<area shape="rect" id="node3" href="$_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81" title="Az idő kiolvasása az RTC áramkörből. " alt="" coords="128,5,232,35"/>
+<area shape="rect" id="node5" href="$_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc" title="A dátum kiolvasása az RTC áramkörből. " alt="" coords="129,59,231,88"/>
+<area shape="rect" id="node7" href="$_l_c_d_8c.html#a86e9fbcb9579b78118f6add9d1e78ba8" title="Idő megjelenítése a kijelzőn. " alt="" coords="124,112,236,141"/>
+<area shape="rect" id="node9" href="$itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="285,112,328,141"/>
+</map>

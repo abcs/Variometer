@@ -1,0 +1,177 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Descriptors.c fájlreferencia}
+\label{_descriptors_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Descriptors.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Descriptors.\-c}}
+{\ttfamily \#include \char`\"{}Descriptors.\-h\char`\"{}}\\*
+A Descriptors.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{_descriptors_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+uint16\-\_\-t {\bf C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor} (uint8\-\_\-t corenum, const uint16\-\_\-t w\-Value, const uint8\-\_\-t w\-Index, const void $\ast$$\ast$const Descriptor\-Address)
+\end{DoxyCompactItemize}
+\subsection*{Változók}
+\begin{DoxyCompactItemize}
+\item 
+U\-S\-B\-\_\-\-Descriptor\-\_\-\-Device\-\_\-t {\bf Device\-Descriptor}
+\item 
+U\-S\-B\-\_\-\-Descriptor\-\_\-\-Configuration\-\_\-t {\bf Configuration\-Descriptor}
+\item 
+uint8\-\_\-t {\bf Language\-String} [$\,$]
+\item 
+U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$ {\bf Language\-String\-Ptr} = (U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$) {\bf Language\-String}
+\item 
+uint8\-\_\-t {\bf Manufacturer\-String} [$\,$]
+\item 
+U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$ {\bf Manufacturer\-String\-Ptr} = (U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$) {\bf Manufacturer\-String}
+\item 
+uint8\-\_\-t {\bf Product\-String} [$\,$]
+\item 
+U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$ {\bf Product\-String\-Ptr} = (U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$) {\bf Product\-String}
+\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{Descriptors.\-c@{Descriptors.\-c}!C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor@{C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor}}
+\index{C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor@{C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{corenum, }
+\item[{const uint16\-\_\-t}]{w\-Value, }
+\item[{const uint8\-\_\-t}]{w\-Index, }
+\item[{const void $\ast$$\ast$const}]{Descriptor\-Address}
+\end{DoxyParamCaption}
+)}\label{_descriptors_8c_a25529e40317cd4470fae630438b53eff}
+
+
+Definíció a(z) Descriptors.\-c fájl 250. sorában.
+
+
+
+\subsection{Változók dokumentációja}
+\index{Descriptors.\-c@{Descriptors.\-c}!Configuration\-Descriptor@{Configuration\-Descriptor}}
+\index{Configuration\-Descriptor@{Configuration\-Descriptor}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Configuration\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}U\-S\-B\-\_\-\-Descriptor\-\_\-\-Configuration\-\_\-t Configuration\-Descriptor}\label{_descriptors_8c_a2d091eefbfaf5bd43f4cf77d140e2d9f}
+
+
+Definíció a(z) Descriptors.\-c fájl 85. sorában.
+
+\index{Descriptors.\-c@{Descriptors.\-c}!Device\-Descriptor@{Device\-Descriptor}}
+\index{Device\-Descriptor@{Device\-Descriptor}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Device\-Descriptor}]{\setlength{\rightskip}{0pt plus 5cm}U\-S\-B\-\_\-\-Descriptor\-\_\-\-Device\-\_\-t Device\-Descriptor}\label{_descriptors_8c_a6a373a28a14fd420dd82bdd0f6978544}
+{\bfseries Kezdő érték\-:}
+\begin{DoxyCode}
+= \{
+    .Header                 = \{.Size = \textcolor{keyword}{sizeof}(USB\_Descriptor\_Device\_t), .Type = DTYPE\_Device\},
+
+    .USBSpecification       = VERSION\_BCD(01.10),
+    .Class                  = CDC\_CSCP\_CDCClass,
+    .SubClass               = CDC\_CSCP\_NoSpecificSubclass,
+    .Protocol               = CDC\_CSCP\_NoSpecificProtocol,
+
+    .Endpoint0Size          = FIXED\_CONTROL\_ENDPOINT\_SIZE,
+
+    .VendorID               = 0x1fc9,   
+    .ProductID              = 0x0083,   
+    .ReleaseNumber          = VERSION\_BCD(00.01),
+
+    .ManufacturerStrIndex   = 0x01,
+    .ProductStrIndex        = 0x02,
+    .SerialNumStrIndex      = USE\_INTERNAL\_SERIAL,
+
+    .NumberOfConfigurations = FIXED\_NUM\_CONFIGURATIONS
+\}
+\end{DoxyCode}
+
+
+Definíció a(z) Descriptors.\-c fájl 59. sorában.
+
+\index{Descriptors.\-c@{Descriptors.\-c}!Language\-String@{Language\-String}}
+\index{Language\-String@{Language\-String}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Language\-String}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Language\-String[$\,$]}\label{_descriptors_8c_a156d44ced236ce8b684a10b2ebb9cd70}
+{\bfseries Kezdő érték\-:}
+\begin{DoxyCode}
+= \{
+    USB\_STRING\_LEN(1),
+    DTYPE\_String,
+    WBVAL(LANGUAGE\_ID\_ENG),
+\}
+\end{DoxyCode}
+
+
+Definíció a(z) Descriptors.\-c fájl 188. sorában.
+
+\index{Descriptors.\-c@{Descriptors.\-c}!Language\-String\-Ptr@{Language\-String\-Ptr}}
+\index{Language\-String\-Ptr@{Language\-String\-Ptr}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Language\-String\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t$\ast$ Language\-String\-Ptr = (U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$) {\bf Language\-String}}\label{_descriptors_8c_a9f3f62928cb9d5d2ca9fbf5eede1cc52}
+
+
+Definíció a(z) Descriptors.\-c fájl 193. sorában.
+
+\index{Descriptors.\-c@{Descriptors.\-c}!Manufacturer\-String@{Manufacturer\-String}}
+\index{Manufacturer\-String@{Manufacturer\-String}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Manufacturer\-String}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Manufacturer\-String[$\,$]}\label{_descriptors_8c_af43938f971837cb37b3191312503a7a3}
+{\bfseries Kezdő érték\-:}
+\begin{DoxyCode}
+= \{
+    USB\_STRING\_LEN(3),
+    DTYPE\_String,
+    WBVAL(\textcolor{charliteral}{'N'}),
+    WBVAL(\textcolor{charliteral}{'X'}),
+    WBVAL(\textcolor{charliteral}{'P'}),
+\}
+\end{DoxyCode}
+
+
+Definíció a(z) Descriptors.\-c fájl 199. sorában.
+
+\index{Descriptors.\-c@{Descriptors.\-c}!Manufacturer\-String\-Ptr@{Manufacturer\-String\-Ptr}}
+\index{Manufacturer\-String\-Ptr@{Manufacturer\-String\-Ptr}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Manufacturer\-String\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t$\ast$ Manufacturer\-String\-Ptr = (U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$) {\bf Manufacturer\-String}}\label{_descriptors_8c_a48338794dea700974f8b0b043d0a4d60}
+
+
+Definíció a(z) Descriptors.\-c fájl 206. sorában.
+
+\index{Descriptors.\-c@{Descriptors.\-c}!Product\-String@{Product\-String}}
+\index{Product\-String@{Product\-String}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Product\-String}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t Product\-String[$\,$]}\label{_descriptors_8c_afb016d49474419471ed53243c36007f6}
+{\bfseries Kezdő érték\-:}
+\begin{DoxyCode}
+= \{
+    USB\_STRING\_LEN(18),
+    DTYPE\_String,
+    WBVAL(\textcolor{charliteral}{'A'}),
+    WBVAL(\textcolor{charliteral}{'l'}),
+    WBVAL(\textcolor{charliteral}{'t'}),
+    WBVAL(\textcolor{charliteral}{'i'}),
+    WBVAL(\textcolor{charliteral}{'m'}),
+    WBVAL(\textcolor{charliteral}{'e'}),
+    WBVAL(\textcolor{charliteral}{'t'}),
+    WBVAL(\textcolor{charliteral}{'e'}),
+    WBVAL(\textcolor{charliteral}{'r'}),
+    WBVAL(\textcolor{charliteral}{' '}),
+    WBVAL(\textcolor{charliteral}{'C'}),
+    WBVAL(\textcolor{charliteral}{'D'}),
+    WBVAL(\textcolor{charliteral}{'C'}),
+    WBVAL(\textcolor{charliteral}{' '}),
+    WBVAL(\textcolor{charliteral}{'C'}),
+    WBVAL(\textcolor{charliteral}{'o'}),
+    WBVAL(\textcolor{charliteral}{'n'}),
+    WBVAL(\textcolor{charliteral}{'n'}),
+\}
+\end{DoxyCode}
+
+
+Definíció a(z) Descriptors.\-c fájl 212. sorában.
+
+\index{Descriptors.\-c@{Descriptors.\-c}!Product\-String\-Ptr@{Product\-String\-Ptr}}
+\index{Product\-String\-Ptr@{Product\-String\-Ptr}!Descriptors.c@{Descriptors.\-c}}
+\subsubsection[{Product\-String\-Ptr}]{\setlength{\rightskip}{0pt plus 5cm}U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t$\ast$ Product\-String\-Ptr = (U\-S\-B\-\_\-\-Descriptor\-\_\-\-String\-\_\-t $\ast$) {\bf Product\-String}}\label{_descriptors_8c_aa7a5f39bd07b0c4ded3f6f7f797b1d92}
+
+
+Definíció a(z) Descriptors.\-c fájl 234. sorában.
+

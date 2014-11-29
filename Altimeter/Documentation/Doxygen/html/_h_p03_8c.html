@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>altimeter: /HDD/GIT/variometer/Altimeter/src/HP03.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">altimeter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Főoldal</span></a></li>
+      <li><a href="annotated.html"><span>Adatszerkezetek</span></a></li>
+      <li class="current"><a href="files.html"><span>Fájl</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Keresés" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Fájllista</span></a></li>
+      <li><a href="globals.html"><span>Globális&#160;elemek</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Összes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Adatszerkezetek</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fájl</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Függvények</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Változók</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Típusdefiníciók</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">HP03.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;ch.h&quot;</code><br/>
+<code>#include &quot;hal.h&quot;</code><br/>
+<code>#include &quot;HP03.h&quot;</code><br/>
+<code>#include &quot;globals.h&quot;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &quot;mymath.h&quot;</code><br/>
+<code>#include &quot;Kalman.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+A HP03.c definíciós fájl függési gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c__incl.png" border="0" usemap="#_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_h_p03_8c" alt=""/></div>
+<map name="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_h_p03_8c" id="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_h_p03_8c">
+</map>
+</div>
+</div>
+<p><a href="_h_p03_8c_source.html">Ugrás a fájl forráskódjához.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:a212fee37479d1b104e74f33ccfaab106"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106">HP03_pressureToAltitude</a> (float seaLevel, HP03_meas_t measuredPressTemp)</td></tr>
+<tr class="memdesc:a212fee37479d1b104e74f33ccfaab106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiszámítja a magasságot (méterben) a hPa-ban megadott légnyomás, tengerszintre átszámított légnyomás és a °C-ban megadott hőmérséklet alapján.  <a href="#a212fee37479d1b104e74f33ccfaab106">Részletek...</a><br/></td></tr>
+<tr class="separator:a212fee37479d1b104e74f33ccfaab106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1013cdcfcdf48995025d9d2cf1778794"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794">HP03_pressureSeaLevelFromAltitude</a> (float altitude, HP03_meas_t measuredPressTemp)</td></tr>
+<tr class="memdesc:a1013cdcfcdf48995025d9d2cf1778794"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiszámítja a tengerszintre átszámított légnyomást hPa-ban az aktuális méterben megadott magasság, hPa-ban megadott légnyomás és a °C-ban megadott hőmérséklet alapján.  <a href="#a1013cdcfcdf48995025d9d2cf1778794">Részletek...</a><br/></td></tr>
+<tr class="separator:a1013cdcfcdf48995025d9d2cf1778794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20b369f3261a05f3049139a070607b6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d">HP03_reset</a> ()</td></tr>
+<tr class="memdesc:a20b369f3261a05f3049139a070607b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének alacsony szintre történő álíításával.  <a href="#a20b369f3261a05f3049139a070607b6d">Részletek...</a><br/></td></tr>
+<tr class="separator:a20b369f3261a05f3049139a070607b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b6f09ca977f999dfc96f1c355713bab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab">HP03_readCoeffs</a> ()</td></tr>
+<tr class="memdesc:a8b6f09ca977f999dfc96f1c355713bab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek értékeit.  <a href="#a8b6f09ca977f999dfc96f1c355713bab">Részletek...</a><br/></td></tr>
+<tr class="separator:a8b6f09ca977f999dfc96f1c355713bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e206ea1f307f9565982ad14b3582be5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">HP03_getPressure</a> (HP03_meas_t *constsIn_pressureOut, bool withKalman)</td></tr>
+<tr class="memdesc:a2e206ea1f307f9565982ad14b3582be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pontos értéket.  <a href="#a2e206ea1f307f9565982ad14b3582be5">Részletek...</a><br/></td></tr>
+<tr class="separator:a2e206ea1f307f9565982ad14b3582be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514dfc9c4a90f039f562c24d6a372486"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">HP03_getTemperature</a> (HP03_meas_t *result)</td></tr>
+<tr class="memdesc:a514dfc9c4a90f039f562c24d6a372486"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pontos értéket.  <a href="#a514dfc9c4a90f039f562c24d6a372486">Részletek...</a><br/></td></tr>
+<tr class="separator:a514dfc9c4a90f039f562c24d6a372486"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Függvények dokumentációja</h2>
+<a class="anchor" id="a2e206ea1f307f9565982ad14b3582be5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HP03_getPressure </td>
+          <td>(</td>
+          <td class="paramtype">HP03_meas_t *&#160;</td>
+          <td class="paramname"><em>constsIn_pressureOut</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>withKalman</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pontos értéket. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">constsIn_pressureOut</td><td>Itt keletkezik az eredmény. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">withKalman</td><td>Használja-e a Kálmán szűrőt. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>0, ha sikeres. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="_h_p03_8c_source.html">HP03.c</a> fájl <a class="el" href="_h_p03_8c_source.html#l00150">150</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_cgraph.png" border="0" usemap="#_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_cgraph" alt=""/></div>
+<map name="_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_cgraph" id="_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_cgraph">
+<area shape="rect" id="node3" href="_kalman_8c.html#a805a67ac627b7712612544e1c006b12d" title="Elvégzi a szűrést (jóslás, erősítés, korrekció). " alt="" coords="187,5,251,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_icgraph.png" border="0" usemap="#_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_icgraph" alt=""/></div>
+<map name="_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_icgraph" id="_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="304,5,355,35"/><area shape="rect" id="node5" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="187,31,256,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a514dfc9c4a90f039f562c24d6a372486"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HP03_getTemperature </td>
+          <td>(</td>
+          <td class="paramtype">HP03_meas_t *&#160;</td>
+          <td class="paramname"><em>result</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pontos értéket. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Itt keletkezik az eredmény. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>0, ha sikeres. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="_h_p03_8c_source.html">HP03.c</a> fájl <a class="el" href="_h_p03_8c_source.html#l00215">215</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a514dfc9c4a90f039f562c24d6a372486_icgraph.png" border="0" usemap="#_h_p03_8c_a514dfc9c4a90f039f562c24d6a372486_icgraph" alt=""/></div>
+<map name="_h_p03_8c_a514dfc9c4a90f039f562c24d6a372486_icgraph" id="_h_p03_8c_a514dfc9c4a90f039f562c24d6a372486_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="325,5,376,35"/><area shape="rect" id="node5" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="208,31,277,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1013cdcfcdf48995025d9d2cf1778794"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float HP03_pressureSeaLevelFromAltitude </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>altitude</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HP03_meas_t&#160;</td>
+          <td class="paramname"><em>measuredPressTemp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiszámítja a tengerszintre átszámított légnyomást hPa-ban az aktuális méterben megadott magasság, hPa-ban megadott légnyomás és a °C-ban megadott hőmérséklet alapján. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">altitude</td><td>Magasság méterben. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">measuredPressTemp</td><td>Mért légnyomás és hőmérséklet. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Tengerszintre átszámított légnyomás hPa-ban. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="_h_p03_8c_source.html">HP03.c</a> fájl <a class="el" href="_h_p03_8c_source.html#l00071">71</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_cgraph.png" border="0" usemap="#_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_cgraph" alt=""/></div>
+<map name="_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_cgraph" id="_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_cgraph">
+<area shape="rect" id="node3" href="mymath_8c.html#a73b3c2799ff1322f5f274157cbfdd4a1" title="myPow" alt="" coords="251,13,317,43"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_icgraph.png" border="0" usemap="#_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_icgraph" alt=""/></div>
+<map name="_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_icgraph" id="_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="251,13,301,43"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a212fee37479d1b104e74f33ccfaab106"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int HP03_pressureToAltitude </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>seaLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">HP03_meas_t&#160;</td>
+          <td class="paramname"><em>measuredPressTemp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiszámítja a magasságot (méterben) a hPa-ban megadott légnyomás, tengerszintre átszámított légnyomás és a °C-ban megadott hőmérséklet alapján. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">seaLevel</td><td>Tengerszintre átszámított légnyomás hPa-ban. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">measuredPressTemp</td><td>Mért légnyomás és hőmérséklet. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Magasság méterben. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="_h_p03_8c_source.html">HP03.c</a> fájl <a class="el" href="_h_p03_8c_source.html#l00040">40</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_cgraph.png" border="0" usemap="#_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_cgraph" alt=""/></div>
+<map name="_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_cgraph" id="_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_cgraph">
+<area shape="rect" id="node3" href="mymath_8c.html#a73b3c2799ff1322f5f274157cbfdd4a1" title="myPow" alt="" coords="224,5,291,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_icgraph.png" border="0" usemap="#_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_icgraph" alt=""/></div>
+<map name="_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_icgraph" id="_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_icgraph">
+<area shape="rect" id="node3" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="224,5,293,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="341,5,392,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b6f09ca977f999dfc96f1c355713bab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HP03_readCoeffs </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek értékeit. </p>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>HP03_coeff változó. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="_h_p03_8c_source.html">HP03.c</a> fájl <a class="el" href="_h_p03_8c_source.html#l00116">116</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a8b6f09ca977f999dfc96f1c355713bab_icgraph.png" border="0" usemap="#_h_p03_8c_a8b6f09ca977f999dfc96f1c355713bab_icgraph" alt=""/></div>
+<map name="_h_p03_8c_a8b6f09ca977f999dfc96f1c355713bab_icgraph" id="_h_p03_8c_a8b6f09ca977f999dfc96f1c355713bab_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="181,5,232,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a20b369f3261a05f3049139a070607b6d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HP03_reset </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének alacsony szintre történő álíításával. </p>
+
+<p>Definíció a(z) <a class="el" href="_h_p03_8c_source.html">HP03.c</a> fájl <a class="el" href="_h_p03_8c_source.html#l00101">101</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_h_p03_8c_a20b369f3261a05f3049139a070607b6d_icgraph.png" border="0" usemap="#_h_p03_8c_a20b369f3261a05f3049139a070607b6d_icgraph" alt=""/></div>
+<map name="_h_p03_8c_a20b369f3261a05f3049139a070607b6d_icgraph" id="_h_p03_8c_a20b369f3261a05f3049139a070607b6d_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="144,5,195,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>altimeter: /HDD/GIT/variometer/Altimeter/src/Kalman.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">altimeter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Főoldal</span></a></li>
+      <li><a href="annotated.html"><span>Adatszerkezetek</span></a></li>
+      <li class="current"><a href="files.html"><span>Fájl</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Keresés" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Fájllista</span></a></li>
+      <li><a href="globals.html"><span>Globális&#160;elemek</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Összes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Adatszerkezetek</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fájl</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Függvények</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Változók</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Típusdefiníciók</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">Kalman.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;Kalman.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+A Kalman.c definíciós fájl függési gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="_kalman_8c__incl.png" border="0" usemap="#_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_kalman_8c" alt=""/></div>
+<map name="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_kalman_8c" id="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2_kalman_8c">
+</map>
+</div>
+</div>
+<p><a href="_kalman_8c_source.html">Ugrás a fájl forráskódjához.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:a6ff19aa3f59897d3931e2d728eb37b50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kalman_8c.html#a6ff19aa3f59897d3931e2d728eb37b50">init_kalman</a> (int z_measured)</td></tr>
+<tr class="memdesc:a6ff19aa3f59897d3931e2d728eb37b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Kálmán szűrő inicializálása.  <a href="#a6ff19aa3f59897d3931e2d728eb37b50">Részletek...</a><br/></td></tr>
+<tr class="separator:a6ff19aa3f59897d3931e2d728eb37b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a805a67ac627b7712612544e1c006b12d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_kalman_8c.html#a805a67ac627b7712612544e1c006b12d">kalman</a> (int z_measured)</td></tr>
+<tr class="memdesc:a805a67ac627b7712612544e1c006b12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elvégzi a szűrést (jóslás, erősítés, korrekció).  <a href="#a805a67ac627b7712612544e1c006b12d">Részletek...</a><br/></td></tr>
+<tr class="separator:a805a67ac627b7712612544e1c006b12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Függvények dokumentációja</h2>
+<a class="anchor" id="a6ff19aa3f59897d3931e2d728eb37b50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_kalman </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>z_measured</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A Kálmán szűrő inicializálása. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">z_measured</td><td>A mért érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definíció a(z) <a class="el" href="_kalman_8c_source.html">Kalman.c</a> fájl <a class="el" href="_kalman_8c_source.html#l00023">23</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_kalman_8c_a6ff19aa3f59897d3931e2d728eb37b50_icgraph.png" border="0" usemap="#_kalman_8c_a6ff19aa3f59897d3931e2d728eb37b50_icgraph" alt=""/></div>
+<map name="_kalman_8c_a6ff19aa3f59897d3931e2d728eb37b50_icgraph" id="_kalman_8c_a6ff19aa3f59897d3931e2d728eb37b50_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="141,5,192,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a805a67ac627b7712612544e1c006b12d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kalman </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>z_measured</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Elvégzi a szűrést (jóslás, erősítés, korrekció). </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">z_measured</td><td>A mért érték. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Számított (jósolt) érték. </dd></dl>
+<p>&lt; Jóslás</p>
+<p>&lt; Kálmán erősítés számítása</p>
+<p>&lt; Korrekció</p>
+<p>Utolsó érték frissítése </p>
+
+<p>Definíció a(z) <a class="el" href="_kalman_8c_source.html">Kalman.c</a> fájl <a class="el" href="_kalman_8c_source.html#l00033">33</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="_kalman_8c_a805a67ac627b7712612544e1c006b12d_icgraph.png" border="0" usemap="#_kalman_8c_a805a67ac627b7712612544e1c006b12d_icgraph" alt=""/></div>
+<map name="_kalman_8c_a805a67ac627b7712612544e1c006b12d_icgraph" id="_kalman_8c_a805a67ac627b7712612544e1c006b12d_icgraph">
+<area shape="rect" id="node3" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="119,5,249,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="416,5,467,35"/><area shape="rect" id="node7" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="299,31,368,60"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

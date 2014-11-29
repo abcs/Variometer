@@ -1,0 +1,200 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/logger.c fájlreferencia}
+\label{logger_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/logger.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/logger.\-c}}
+{\ttfamily \#include \char`\"{}logger.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}eeprom.\-h\char`\"{}}\\*
+A logger.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{logger_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf logger\-\_\-init} ()
+\begin{DoxyCompactList}\small\item\em A naplózó alrendszer inicializálása. \end{DoxyCompactList}\item 
+int {\bf logger\-\_\-log\-This} (log\-\_\-rec\-\_\-t $\ast$rec\-\_\-to\-\_\-log)
+\begin{DoxyCompactList}\small\item\em A paraméterként kapott rekordot berakja a ringbufferbe, ahonnan később ki fog íródni az E\-E\-P\-R\-O\-M-\/ba. \end{DoxyCompactList}\item 
+int {\bf logger\-\_\-write\-To\-E\-E} ()
+\begin{DoxyCompactList}\small\item\em A ringbufferből kiír egy rekordot az E\-E\-P\-R\-O\-M-\/ba. \end{DoxyCompactList}\item 
+uint16\-\_\-t {\bf logger\-\_\-read\-From\-E\-E} (log\-\_\-rec\-\_\-t $\ast$buffer, uint16\-\_\-t size\-\_\-in\-\_\-rec)
+\begin{DoxyCompactList}\small\item\em Adott számú rekord kikérése az E\-E\-P\-R\-O\-M-\/ból. \end{DoxyCompactList}\item 
+int {\bf logger\-\_\-delete\-Log} ()
+\begin{DoxyCompactList}\small\item\em Kitörli a naplóállományt az E\-E\-P\-R\-O\-M-\/ból. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{logger.\-c@{logger.\-c}!logger\-\_\-delete\-Log@{logger\-\_\-delete\-Log}}
+\index{logger\-\_\-delete\-Log@{logger\-\_\-delete\-Log}!logger.c@{logger.\-c}}
+\subsubsection[{logger\-\_\-delete\-Log}]{\setlength{\rightskip}{0pt plus 5cm}int logger\-\_\-delete\-Log (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{logger_8c_a14c8fca7ded47975eb3ca731a8eacfef}
+
+
+Kitörli a naplóállományt az E\-E\-P\-R\-O\-M-\/ból. 
+
+(Még nincs implementálva.) \begin{DoxyReturn}{Visszatérési érték}
+0. 
+\end{DoxyReturn}
+
+
+Definíció a(z) logger.\-c fájl 107. sorában.
+
+\index{logger.\-c@{logger.\-c}!logger\-\_\-init@{logger\-\_\-init}}
+\index{logger\-\_\-init@{logger\-\_\-init}!logger.c@{logger.\-c}}
+\subsubsection[{logger\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void logger\-\_\-init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{logger_8c_acca02da5a5a8b842893ecc30ea12fda7}
+
+
+A naplózó alrendszer inicializálása. 
+
+
+
+Definíció a(z) logger.\-c fájl 18. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{logger_8c_acca02da5a5a8b842893ecc30ea12fda7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{logger_8c_acca02da5a5a8b842893ecc30ea12fda7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{logger.\-c@{logger.\-c}!logger\-\_\-log\-This@{logger\-\_\-log\-This}}
+\index{logger\-\_\-log\-This@{logger\-\_\-log\-This}!logger.c@{logger.\-c}}
+\subsubsection[{logger\-\_\-log\-This}]{\setlength{\rightskip}{0pt plus 5cm}int logger\-\_\-log\-This (
+\begin{DoxyParamCaption}
+\item[{log\-\_\-rec\-\_\-t $\ast$}]{rec\-\_\-to\-\_\-log}
+\end{DoxyParamCaption}
+)}\label{logger_8c_ab32b0e36c611a22cba880cc3aacda3db}
+
+
+A paraméterként kapott rekordot berakja a ringbufferbe, ahonnan később ki fog íródni az E\-E\-P\-R\-O\-M-\/ba. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em rec\-\_\-to\-\_\-log} & A naplózandó rekord. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+0 -\/ normál működés, 1 -\/ túlcsordulás, a legrégebbi elem felülíródott. 
+\end{DoxyReturn}
+
+
+Definíció a(z) logger.\-c fájl 37. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{logger_8c_ab32b0e36c611a22cba880cc3aacda3db_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{logger.\-c@{logger.\-c}!logger\-\_\-read\-From\-E\-E@{logger\-\_\-read\-From\-E\-E}}
+\index{logger\-\_\-read\-From\-E\-E@{logger\-\_\-read\-From\-E\-E}!logger.c@{logger.\-c}}
+\subsubsection[{logger\-\_\-read\-From\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t logger\-\_\-read\-From\-E\-E (
+\begin{DoxyParamCaption}
+\item[{log\-\_\-rec\-\_\-t $\ast$}]{buffer, }
+\item[{uint16\-\_\-t}]{size\-\_\-in\-\_\-rec}
+\end{DoxyParamCaption}
+)}\label{logger_8c_a6d5881c4551c02ba1ca81719d375eeac}
+
+
+Adott számú rekord kikérése az E\-E\-P\-R\-O\-M-\/ból. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt out}  & {\em buffer} & Mutató az eredménybufferre. \\
+\hline
+\mbox{\tt in}  & {\em size\-\_\-in\-\_\-rec} & Rekordok száma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A következő kiolvasható rekord címe. 
+\end{DoxyReturn}
+
+
+Definíció a(z) logger.\-c fájl 96. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{logger_8c_a6d5881c4551c02ba1ca81719d375eeac_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{logger.\-c@{logger.\-c}!logger\-\_\-write\-To\-E\-E@{logger\-\_\-write\-To\-E\-E}}
+\index{logger\-\_\-write\-To\-E\-E@{logger\-\_\-write\-To\-E\-E}!logger.c@{logger.\-c}}
+\subsubsection[{logger\-\_\-write\-To\-E\-E}]{\setlength{\rightskip}{0pt plus 5cm}int logger\-\_\-write\-To\-E\-E (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{logger_8c_a8f9e5decfda36c73889dcb1ebd212022}
+
+
+A ringbufferből kiír egy rekordot az E\-E\-P\-R\-O\-M-\/ba. 
+
+Ha az írás sikeres volt, törli az elemet a bufferből. \begin{DoxyReturn}{Visszatérési érték}
+A ringbufferben maradt elemek száma. 
+\end{DoxyReturn}
+
+
+Definíció a(z) logger.\-c fájl 69. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{logger_8c_a8f9e5decfda36c73889dcb1ebd212022_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{logger_8c_a8f9e5decfda36c73889dcb1ebd212022_icgraph}
+\end{center}
+\end{figure}
+
+

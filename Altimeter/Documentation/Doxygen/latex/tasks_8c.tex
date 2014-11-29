@@ -1,0 +1,250 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/tasks.c fájlreferencia}
+\label{tasks_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/tasks.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/tasks.\-c}}
+{\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\-C\-D.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}H\-P03.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}R\-T\-C\-\_\-r2051.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Virtual\-Serial.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}logger.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}periph.\-h\char`\"{}}\\*
+A tasks.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tasks_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+msg\-\_\-t {\bf Thread1} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em \char`\"{}\-Heart\-Beat\char`\"{} L\-E\-D villogtató szál. \end{DoxyCompactList}\item 
+msg\-\_\-t {\bf Thread2} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Nyomás és hőmérséklet kiolvasó szál. \end{DoxyCompactList}\item 
+msg\-\_\-t {\bf Thread3} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em Dátum és idő kezelő szál. \end{DoxyCompactList}\item 
+msg\-\_\-t {\bf Thread4} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em U\-S\-B kezelő szál. \end{DoxyCompactList}\item 
+msg\-\_\-t {\bf Thread5} (void $\ast$arg)
+\begin{DoxyCompactList}\small\item\em E\-E\-P\-R\-O\-M író szál (ringbuffer -\/$>$ E\-E\-P\-R\-O\-M) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Változók}
+\begin{DoxyCompactItemize}
+\item 
+volatile R\-T\-C\-\_\-time\-\_\-t {\bf actual\-Time}
+\item 
+volatile R\-T\-C\-\_\-date\-\_\-t {\bf actual\-Date}
+\item 
+volatile float {\bf calculated\-Sea\-Level\-Pressure}
+\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{tasks.\-c@{tasks.\-c}!Thread1@{Thread1}}
+\index{Thread1@{Thread1}!tasks.c@{tasks.\-c}}
+\subsubsection[{Thread1}]{\setlength{\rightskip}{0pt plus 5cm}msg\-\_\-t Thread1 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\label{tasks_8c_a0af304e6c5bca609f1da9a35a49da5c6}
+
+
+\char`\"{}\-Heart\-Beat\char`\"{} L\-E\-D villogtató szál. 
+
+(Az idő msec) 
+
+Definíció a(z) tasks.\-c fájl 26. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{tasks_8c_a0af304e6c5bca609f1da9a35a49da5c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tasks.\-c@{tasks.\-c}!Thread2@{Thread2}}
+\index{Thread2@{Thread2}!tasks.c@{tasks.\-c}}
+\subsubsection[{Thread2}]{\setlength{\rightskip}{0pt plus 5cm}msg\-\_\-t Thread2 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\label{tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa}
+
+
+Nyomás és hőmérséklet kiolvasó szál. 
+
+
+
+Definíció a(z) tasks.\-c fájl 43. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tasks.\-c@{tasks.\-c}!Thread3@{Thread3}}
+\index{Thread3@{Thread3}!tasks.c@{tasks.\-c}}
+\subsubsection[{Thread3}]{\setlength{\rightskip}{0pt plus 5cm}msg\-\_\-t Thread3 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\label{tasks_8c_a3287156dd96a38e39fa70850b4c6fa38}
+
+
+Dátum és idő kezelő szál. 
+
+
+
+Definíció a(z) tasks.\-c fájl 99. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tasks.\-c@{tasks.\-c}!Thread4@{Thread4}}
+\index{Thread4@{Thread4}!tasks.c@{tasks.\-c}}
+\subsubsection[{Thread4}]{\setlength{\rightskip}{0pt plus 5cm}msg\-\_\-t Thread4 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\label{tasks_8c_ad2036d3514561ba8a748ff170baf1e3a}
+
+
+U\-S\-B kezelő szál. 
+
+
+
+Definíció a(z) tasks.\-c fájl 122. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tasks.\-c@{tasks.\-c}!Thread5@{Thread5}}
+\index{Thread5@{Thread5}!tasks.c@{tasks.\-c}}
+\subsubsection[{Thread5}]{\setlength{\rightskip}{0pt plus 5cm}msg\-\_\-t Thread5 (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{arg}
+\end{DoxyParamCaption}
+)}\label{tasks_8c_aad01c280ed05ea63627f5518167c5003}
+
+
+E\-E\-P\-R\-O\-M író szál (ringbuffer -\/$>$ E\-E\-P\-R\-O\-M) 
+
+
+
+Definíció a(z) tasks.\-c fájl 149. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tasks_8c_aad01c280ed05ea63627f5518167c5003_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{tasks_8c_aad01c280ed05ea63627f5518167c5003_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Változók dokumentációja}
+\index{tasks.\-c@{tasks.\-c}!actual\-Date@{actual\-Date}}
+\index{actual\-Date@{actual\-Date}!tasks.c@{tasks.\-c}}
+\subsubsection[{actual\-Date}]{\setlength{\rightskip}{0pt plus 5cm}volatile R\-T\-C\-\_\-date\-\_\-t actual\-Date}\label{tasks_8c_a1fcf2a74e06883fb690c0c062bf9408c}
+
+
+Definíció a(z) main.\-c fájl 17. sorában.
+
+\index{tasks.\-c@{tasks.\-c}!actual\-Time@{actual\-Time}}
+\index{actual\-Time@{actual\-Time}!tasks.c@{tasks.\-c}}
+\subsubsection[{actual\-Time}]{\setlength{\rightskip}{0pt plus 5cm}volatile R\-T\-C\-\_\-time\-\_\-t actual\-Time}\label{tasks_8c_adf161c6b74a74517e1683aa5f3cc038a}
+
+
+Definíció a(z) main.\-c fájl 16. sorában.
+
+\index{tasks.\-c@{tasks.\-c}!calculated\-Sea\-Level\-Pressure@{calculated\-Sea\-Level\-Pressure}}
+\index{calculated\-Sea\-Level\-Pressure@{calculated\-Sea\-Level\-Pressure}!tasks.c@{tasks.\-c}}
+\subsubsection[{calculated\-Sea\-Level\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}volatile float calculated\-Sea\-Level\-Pressure}\label{tasks_8c_ae33a247a27845609a2f5d2893060d2bb}
+
+
+Definíció a(z) main.\-c fájl 18. sorában.
+

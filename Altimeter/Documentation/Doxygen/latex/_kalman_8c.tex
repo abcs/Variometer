@@ -1,0 +1,94 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Kalman.c fájlreferencia}
+\label{_kalman_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Kalman.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Kalman.\-c}}
+{\ttfamily \#include \char`\"{}Kalman.\-h\char`\"{}}\\*
+A Kalman.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{_kalman_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf init\-\_\-kalman} (int z\-\_\-measured)
+\begin{DoxyCompactList}\small\item\em A Kálmán szűrő inicializálása. \end{DoxyCompactList}\item 
+int {\bf kalman} (int z\-\_\-measured)
+\begin{DoxyCompactList}\small\item\em Elvégzi a szűrést (jóslás, erősítés, korrekció). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{Kalman.\-c@{Kalman.\-c}!init\-\_\-kalman@{init\-\_\-kalman}}
+\index{init\-\_\-kalman@{init\-\_\-kalman}!Kalman.c@{Kalman.\-c}}
+\subsubsection[{init\-\_\-kalman}]{\setlength{\rightskip}{0pt plus 5cm}void init\-\_\-kalman (
+\begin{DoxyParamCaption}
+\item[{int}]{z\-\_\-measured}
+\end{DoxyParamCaption}
+)}\label{_kalman_8c_a6ff19aa3f59897d3931e2d728eb37b50}
+
+
+A Kálmán szűrő inicializálása. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em z\-\_\-measured} & A mért érték. \\
+\hline
+\end{DoxyParams}
+
+
+Definíció a(z) Kalman.\-c fájl 23. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{_kalman_8c_a6ff19aa3f59897d3931e2d728eb37b50_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Kalman.\-c@{Kalman.\-c}!kalman@{kalman}}
+\index{kalman@{kalman}!Kalman.c@{Kalman.\-c}}
+\subsubsection[{kalman}]{\setlength{\rightskip}{0pt plus 5cm}int kalman (
+\begin{DoxyParamCaption}
+\item[{int}]{z\-\_\-measured}
+\end{DoxyParamCaption}
+)}\label{_kalman_8c_a805a67ac627b7712612544e1c006b12d}
+
+
+Elvégzi a szűrést (jóslás, erősítés, korrekció). 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em z\-\_\-measured} & A mért érték. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+Számított (jósolt) érték. 
+\end{DoxyReturn}
+$<$ Jóslás
+
+$<$ Kálmán erősítés számítása
+
+$<$ Korrekció
+
+Utolsó érték frissítése 
+
+Definíció a(z) Kalman.\-c fájl 33. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_kalman_8c_a805a67ac627b7712612544e1c006b12d_icgraph}
+\end{center}
+\end{figure}
+
+

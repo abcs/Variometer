@@ -1,0 +1,4 @@
+<map id="Thread5" name="Thread5">
+<area shape="rect" id="node3" href="$logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="123,5,248,35"/>
+<area shape="rect" id="node5" href="$eeprom_8c.html#a601d64b049e61217914cbf9e3c84180a" title="Beír egy rekordot az EEPROM&#45;ba az adott címtől kezdődően. " alt="" coords="296,5,416,35"/>
+</map>

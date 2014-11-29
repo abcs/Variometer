@@ -1,0 +1,150 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/eeprom.c fájlreferencia}
+\label{eeprom_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/eeprom.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/eeprom.\-c}}
+{\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}eeprom.\-h\char`\"{}}\\*
+Az eeprom.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{eeprom_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Adatszerkezetek}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf log\-\_\-rec\-\_\-ext\-\_\-s}
+\end{DoxyCompactItemize}
+\subsection*{Típusdefiníciók}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct {\bf log\-\_\-rec\-\_\-ext\-\_\-s} {\bf log\-\_\-rec\-\_\-ext\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf ee\-\_\-write\-\_\-log\-\_\-rec} (log\-\_\-rec\-\_\-t $\ast$record, uint16\-\_\-t $\ast$address)
+\begin{DoxyCompactList}\small\item\em Beír egy rekordot az E\-E\-P\-R\-O\-M-\/ba az adott címtől kezdődően. \end{DoxyCompactList}\item 
+uint16\-\_\-t {\bf ee\-\_\-read\-\_\-log\-\_\-rec} (log\-\_\-rec\-\_\-t $\ast$record, uint16\-\_\-t from\-\_\-addr, uint16\-\_\-t num\-\_\-of\-\_\-rec)
+\begin{DoxyCompactList}\small\item\em Kiolvas adott számú rekordot az E\-E\-P\-R\-O\-M-\/ból az adott címtől kezdődően. \end{DoxyCompactList}\item 
+uint16\-\_\-t {\bf ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address} ()
+\begin{DoxyCompactList}\small\item\em Visszaadja az első szabad hely címét. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Típusdefiníciók dokumentációja}
+\index{eeprom.\-c@{eeprom.\-c}!log\-\_\-rec\-\_\-ext\-\_\-t@{log\-\_\-rec\-\_\-ext\-\_\-t}}
+\index{log\-\_\-rec\-\_\-ext\-\_\-t@{log\-\_\-rec\-\_\-ext\-\_\-t}!eeprom.c@{eeprom.\-c}}
+\subsubsection[{log\-\_\-rec\-\_\-ext\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf log\-\_\-rec\-\_\-ext\-\_\-s}  {\bf log\-\_\-rec\-\_\-ext\-\_\-t}}\label{eeprom_8c_a87e61d040028e5a92f9169b2dc301095}
+
+
+\subsection{Függvények dokumentációja}
+\index{eeprom.\-c@{eeprom.\-c}!ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address@{ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address}}
+\index{ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address@{ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address}!eeprom.c@{eeprom.\-c}}
+\subsubsection[{ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{eeprom_8c_aa61d5bd2a11169dbd512934b1fb384b7}
+
+
+Visszaadja az első szabad hely címét. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+Az első szabad hely címe az E\-E\-P\-R\-O\-M-\/ban. 
+\end{DoxyReturn}
+
+
+Definíció a(z) eeprom.\-c fájl 140. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eeprom_8c_aa61d5bd2a11169dbd512934b1fb384b7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{eeprom.\-c@{eeprom.\-c}!ee\-\_\-read\-\_\-log\-\_\-rec@{ee\-\_\-read\-\_\-log\-\_\-rec}}
+\index{ee\-\_\-read\-\_\-log\-\_\-rec@{ee\-\_\-read\-\_\-log\-\_\-rec}!eeprom.c@{eeprom.\-c}}
+\subsubsection[{ee\-\_\-read\-\_\-log\-\_\-rec}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t ee\-\_\-read\-\_\-log\-\_\-rec (
+\begin{DoxyParamCaption}
+\item[{log\-\_\-rec\-\_\-t $\ast$}]{record, }
+\item[{uint16\-\_\-t}]{from\-\_\-addr, }
+\item[{uint16\-\_\-t}]{num\-\_\-of\-\_\-rec}
+\end{DoxyParamCaption}
+)}\label{eeprom_8c_a801cca373370aacce8631bd6dfff1373}
+
+
+Kiolvas adott számú rekordot az E\-E\-P\-R\-O\-M-\/ból az adott címtől kezdődően. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt out}  & {\em record} & Rekordokból álló tömb, melyet a függvény tölt fel. \\
+\hline
+\mbox{\tt in}  & {\em from\-\_\-addr} & E\-E\-P\-R\-O\-M cím, ahonnan a kiolvasás kezdődik. \\
+\hline
+\mbox{\tt in}  & {\em num\-\_\-of\-\_\-rec} & A kiolvasandó rekordok száma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+A következő kiolvasandó rekord címe. 
+\end{DoxyReturn}
+
+
+Definíció a(z) eeprom.\-c fájl 99. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{eeprom_8c_a801cca373370aacce8631bd6dfff1373_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{eeprom.\-c@{eeprom.\-c}!ee\-\_\-write\-\_\-log\-\_\-rec@{ee\-\_\-write\-\_\-log\-\_\-rec}}
+\index{ee\-\_\-write\-\_\-log\-\_\-rec@{ee\-\_\-write\-\_\-log\-\_\-rec}!eeprom.c@{eeprom.\-c}}
+\subsubsection[{ee\-\_\-write\-\_\-log\-\_\-rec}]{\setlength{\rightskip}{0pt plus 5cm}int ee\-\_\-write\-\_\-log\-\_\-rec (
+\begin{DoxyParamCaption}
+\item[{log\-\_\-rec\-\_\-t $\ast$}]{record, }
+\item[{uint16\-\_\-t $\ast$}]{address}
+\end{DoxyParamCaption}
+)}\label{eeprom_8c_a601d64b049e61217914cbf9e3c84180a}
+
+
+Beír egy rekordot az E\-E\-P\-R\-O\-M-\/ba az adott címtől kezdődően. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em record} & A beírandó rekord. \\
+\hline
+\mbox{\tt in}  & {\em address} & E\-E\-P\-R\-O\-M cím, ahová a rekord kerül. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+0 -\/ sikeres, $<$ 0 -\/ sikertelen. 
+\end{DoxyReturn}
+
+
+Definíció a(z) eeprom.\-c fájl 35. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{eeprom_8c_a601d64b049e61217914cbf9e3c84180a_icgraph}
+\end{center}
+\end{figure}
+
+

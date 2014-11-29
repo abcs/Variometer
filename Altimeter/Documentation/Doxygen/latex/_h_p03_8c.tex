@@ -1,0 +1,277 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-H\-P03.c fájlreferencia}
+\label{_h_p03_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-H\-P03.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-H\-P03.\-c}}
+{\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}H\-P03.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}globals.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}mymath.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Kalman.\-h\char`\"{}}\\*
+A H\-P03.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_h_p03_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf H\-P03\-\_\-pressure\-To\-Altitude} (float sea\-Level, H\-P03\-\_\-meas\-\_\-t measured\-Press\-Temp)
+\begin{DoxyCompactList}\small\item\em Kiszámítja a magasságot (méterben) a h\-Pa-\/ban megadott légnyomás, tengerszintre átszámított légnyomás és a °\-C-\/ban megadott hőmérséklet alapján. \end{DoxyCompactList}\item 
+float {\bf H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude} (float altitude, H\-P03\-\_\-meas\-\_\-t measured\-Press\-Temp)
+\begin{DoxyCompactList}\small\item\em Kiszámítja a tengerszintre átszámított légnyomást h\-Pa-\/ban az aktuális méterben megadott magasság, h\-Pa-\/ban megadott légnyomás és a °\-C-\/ban megadott hőmérséklet alapján. \end{DoxyCompactList}\item 
+void {\bf H\-P03\-\_\-reset} ()
+\begin{DoxyCompactList}\small\item\em Alaphelyzetbe állítja a légnyomás szenzort az X\-C\-L\-R kivezetésének alacsony szintre történő álíításával. \end{DoxyCompactList}\item 
+void {\bf H\-P03\-\_\-read\-Coeffs} ()
+\begin{DoxyCompactList}\small\item\em Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek értékeit. \end{DoxyCompactList}\item 
+int {\bf H\-P03\-\_\-get\-Pressure} (H\-P03\-\_\-meas\-\_\-t $\ast$consts\-In\-\_\-pressure\-Out, bool with\-Kalman)
+\begin{DoxyCompactList}\small\item\em Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pontos értéket. \end{DoxyCompactList}\item 
+int {\bf H\-P03\-\_\-get\-Temperature} (H\-P03\-\_\-meas\-\_\-t $\ast$result)
+\begin{DoxyCompactList}\small\item\em Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pontos értéket. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{H\-P03.\-c@{H\-P03.\-c}!H\-P03\-\_\-get\-Pressure@{H\-P03\-\_\-get\-Pressure}}
+\index{H\-P03\-\_\-get\-Pressure@{H\-P03\-\_\-get\-Pressure}!HP03.c@{H\-P03.\-c}}
+\subsubsection[{H\-P03\-\_\-get\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}int H\-P03\-\_\-get\-Pressure (
+\begin{DoxyParamCaption}
+\item[{H\-P03\-\_\-meas\-\_\-t $\ast$}]{consts\-In\-\_\-pressure\-Out, }
+\item[{bool}]{with\-Kalman}
+\end{DoxyParamCaption}
+)}\label{_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5}
+
+
+Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pontos értéket. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in,out}  & {\em consts\-In\-\_\-pressure\-Out} & Itt keletkezik az eredmény. \\
+\hline
+\mbox{\tt in}  & {\em with\-Kalman} & Használja-\/e a Kálmán szűrőt. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+0, ha sikeres. 
+\end{DoxyReturn}
+
+
+Definíció a(z) H\-P03.\-c fájl 150. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_h_p03_8c_a2e206ea1f307f9565982ad14b3582be5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{H\-P03.\-c@{H\-P03.\-c}!H\-P03\-\_\-get\-Temperature@{H\-P03\-\_\-get\-Temperature}}
+\index{H\-P03\-\_\-get\-Temperature@{H\-P03\-\_\-get\-Temperature}!HP03.c@{H\-P03.\-c}}
+\subsubsection[{H\-P03\-\_\-get\-Temperature}]{\setlength{\rightskip}{0pt plus 5cm}int H\-P03\-\_\-get\-Temperature (
+\begin{DoxyParamCaption}
+\item[{H\-P03\-\_\-meas\-\_\-t $\ast$}]{result}
+\end{DoxyParamCaption}
+)}\label{_h_p03_8c_a514dfc9c4a90f039f562c24d6a372486}
+
+
+Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pontos értéket. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt out}  & {\em result} & Itt keletkezik az eredmény. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+0, ha sikeres. 
+\end{DoxyReturn}
+
+
+Definíció a(z) H\-P03.\-c fájl 215. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_h_p03_8c_a514dfc9c4a90f039f562c24d6a372486_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{H\-P03.\-c@{H\-P03.\-c}!H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude@{H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude}}
+\index{H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude@{H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude}!HP03.c@{H\-P03.\-c}}
+\subsubsection[{H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude}]{\setlength{\rightskip}{0pt plus 5cm}float H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude (
+\begin{DoxyParamCaption}
+\item[{float}]{altitude, }
+\item[{H\-P03\-\_\-meas\-\_\-t}]{measured\-Press\-Temp}
+\end{DoxyParamCaption}
+)}\label{_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794}
+
+
+Kiszámítja a tengerszintre átszámított légnyomást h\-Pa-\/ban az aktuális méterben megadott magasság, h\-Pa-\/ban megadott légnyomás és a °\-C-\/ban megadott hőmérséklet alapján. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em altitude} & Magasság méterben. \\
+\hline
+\mbox{\tt in}  & {\em measured\-Press\-Temp} & Mért légnyomás és hőmérséklet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+Tengerszintre átszámított légnyomás h\-Pa-\/ban. 
+\end{DoxyReturn}
+
+
+Definíció a(z) H\-P03.\-c fájl 71. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_h_p03_8c_a1013cdcfcdf48995025d9d2cf1778794_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{H\-P03.\-c@{H\-P03.\-c}!H\-P03\-\_\-pressure\-To\-Altitude@{H\-P03\-\_\-pressure\-To\-Altitude}}
+\index{H\-P03\-\_\-pressure\-To\-Altitude@{H\-P03\-\_\-pressure\-To\-Altitude}!HP03.c@{H\-P03.\-c}}
+\subsubsection[{H\-P03\-\_\-pressure\-To\-Altitude}]{\setlength{\rightskip}{0pt plus 5cm}int H\-P03\-\_\-pressure\-To\-Altitude (
+\begin{DoxyParamCaption}
+\item[{float}]{sea\-Level, }
+\item[{H\-P03\-\_\-meas\-\_\-t}]{measured\-Press\-Temp}
+\end{DoxyParamCaption}
+)}\label{_h_p03_8c_a212fee37479d1b104e74f33ccfaab106}
+
+
+Kiszámítja a magasságot (méterben) a h\-Pa-\/ban megadott légnyomás, tengerszintre átszámított légnyomás és a °\-C-\/ban megadott hőmérséklet alapján. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em sea\-Level} & Tengerszintre átszámított légnyomás h\-Pa-\/ban. \\
+\hline
+\mbox{\tt in}  & {\em measured\-Press\-Temp} & Mért légnyomás és hőmérséklet. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+Magasság méterben. 
+\end{DoxyReturn}
+
+
+Definíció a(z) H\-P03.\-c fájl 40. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_h_p03_8c_a212fee37479d1b104e74f33ccfaab106_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{H\-P03.\-c@{H\-P03.\-c}!H\-P03\-\_\-read\-Coeffs@{H\-P03\-\_\-read\-Coeffs}}
+\index{H\-P03\-\_\-read\-Coeffs@{H\-P03\-\_\-read\-Coeffs}!HP03.c@{H\-P03.\-c}}
+\subsubsection[{H\-P03\-\_\-read\-Coeffs}]{\setlength{\rightskip}{0pt plus 5cm}void H\-P03\-\_\-read\-Coeffs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_h_p03_8c_a8b6f09ca977f999dfc96f1c355713bab}
+
+
+Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek értékeit. 
+
+\begin{DoxyReturn}{Visszatérési érték}
+H\-P03\-\_\-coeff változó. 
+\end{DoxyReturn}
+
+
+Definíció a(z) H\-P03.\-c fájl 116. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{_h_p03_8c_a8b6f09ca977f999dfc96f1c355713bab_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{H\-P03.\-c@{H\-P03.\-c}!H\-P03\-\_\-reset@{H\-P03\-\_\-reset}}
+\index{H\-P03\-\_\-reset@{H\-P03\-\_\-reset}!HP03.c@{H\-P03.\-c}}
+\subsubsection[{H\-P03\-\_\-reset}]{\setlength{\rightskip}{0pt plus 5cm}void H\-P03\-\_\-reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_h_p03_8c_a20b369f3261a05f3049139a070607b6d}
+
+
+Alaphelyzetbe állítja a légnyomás szenzort az X\-C\-L\-R kivezetésének alacsony szintre történő álíításával. 
+
+
+
+Definíció a(z) H\-P03.\-c fájl 101. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{_h_p03_8c_a20b369f3261a05f3049139a070607b6d_icgraph}
+\end{center}
+\end{figure}
+
+

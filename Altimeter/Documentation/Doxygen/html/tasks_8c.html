@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>altimeter: /HDD/GIT/variometer/Altimeter/src/tasks.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">altimeter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Főoldal</span></a></li>
+      <li><a href="annotated.html"><span>Adatszerkezetek</span></a></li>
+      <li class="current"><a href="files.html"><span>Fájl</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Keresés" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Fájllista</span></a></li>
+      <li><a href="globals.html"><span>Globális&#160;elemek</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Összes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Adatszerkezetek</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fájl</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Függvények</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Változók</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Típusdefiníciók</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Függvények</a> &#124;
+<a href="#var-members">Változók</a>  </div>
+  <div class="headertitle">
+<div class="title">tasks.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;ch.h&quot;</code><br/>
+<code>#include &quot;hal.h&quot;</code><br/>
+<code>#include &quot;LCD.h&quot;</code><br/>
+<code>#include &quot;HP03.h&quot;</code><br/>
+<code>#include &quot;RTC_r2051.h&quot;</code><br/>
+<code>#include &quot;VirtualSerial.h&quot;</code><br/>
+<code>#include &quot;logger.h&quot;</code><br/>
+<code>#include &quot;periph.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+A tasks.c definíciós fájl függési gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c__incl.png" border="0" usemap="#_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2tasks_8c" alt=""/></div>
+<map name="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2tasks_8c" id="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2tasks_8c">
+</map>
+</div>
+</div>
+<p><a href="tasks_8c_source.html">Ugrás a fájl forráskódjához.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:a0af304e6c5bca609f1da9a35a49da5c6"><td class="memItemLeft" align="right" valign="top">msg_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#a0af304e6c5bca609f1da9a35a49da5c6">Thread1</a> (void *arg)</td></tr>
+<tr class="memdesc:a0af304e6c5bca609f1da9a35a49da5c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">"HeartBeat" LED villogtató szál.  <a href="#a0af304e6c5bca609f1da9a35a49da5c6">Részletek...</a><br/></td></tr>
+<tr class="separator:a0af304e6c5bca609f1da9a35a49da5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc0a4f34ef3333216c2f7c0de2b1f9aa"><td class="memItemLeft" align="right" valign="top">msg_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa">Thread2</a> (void *arg)</td></tr>
+<tr class="memdesc:afc0a4f34ef3333216c2f7c0de2b1f9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nyomás és hőmérséklet kiolvasó szál.  <a href="#afc0a4f34ef3333216c2f7c0de2b1f9aa">Részletek...</a><br/></td></tr>
+<tr class="separator:afc0a4f34ef3333216c2f7c0de2b1f9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3287156dd96a38e39fa70850b4c6fa38"><td class="memItemLeft" align="right" valign="top">msg_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38">Thread3</a> (void *arg)</td></tr>
+<tr class="memdesc:a3287156dd96a38e39fa70850b4c6fa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dátum és idő kezelő szál.  <a href="#a3287156dd96a38e39fa70850b4c6fa38">Részletek...</a><br/></td></tr>
+<tr class="separator:a3287156dd96a38e39fa70850b4c6fa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2036d3514561ba8a748ff170baf1e3a"><td class="memItemLeft" align="right" valign="top">msg_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#ad2036d3514561ba8a748ff170baf1e3a">Thread4</a> (void *arg)</td></tr>
+<tr class="memdesc:ad2036d3514561ba8a748ff170baf1e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">USB kezelő szál.  <a href="#ad2036d3514561ba8a748ff170baf1e3a">Részletek...</a><br/></td></tr>
+<tr class="separator:ad2036d3514561ba8a748ff170baf1e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad01c280ed05ea63627f5518167c5003"><td class="memItemLeft" align="right" valign="top">msg_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#aad01c280ed05ea63627f5518167c5003">Thread5</a> (void *arg)</td></tr>
+<tr class="memdesc:aad01c280ed05ea63627f5518167c5003"><td class="mdescLeft">&#160;</td><td class="mdescRight">EEPROM író szál (ringbuffer -&gt; EEPROM)  <a href="#aad01c280ed05ea63627f5518167c5003">Részletek...</a><br/></td></tr>
+<tr class="separator:aad01c280ed05ea63627f5518167c5003"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Változók</h2></td></tr>
+<tr class="memitem:adf161c6b74a74517e1683aa5f3cc038a"><td class="memItemLeft" align="right" valign="top">volatile RTC_time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#adf161c6b74a74517e1683aa5f3cc038a">actualTime</a></td></tr>
+<tr class="separator:adf161c6b74a74517e1683aa5f3cc038a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcf2a74e06883fb690c0c062bf9408c"><td class="memItemLeft" align="right" valign="top">volatile RTC_date_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">actualDate</a></td></tr>
+<tr class="separator:a1fcf2a74e06883fb690c0c062bf9408c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae33a247a27845609a2f5d2893060d2bb"><td class="memItemLeft" align="right" valign="top">volatile float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tasks_8c.html#ae33a247a27845609a2f5d2893060d2bb">calculatedSeaLevelPressure</a></td></tr>
+<tr class="separator:ae33a247a27845609a2f5d2893060d2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Függvények dokumentációja</h2>
+<a class="anchor" id="a0af304e6c5bca609f1da9a35a49da5c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">msg_t Thread1 </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>"HeartBeat" LED villogtató szál. </p>
+<p>(Az idő msec) </p>
+
+<p>Definíció a(z) <a class="el" href="tasks_8c_source.html">tasks.c</a> fájl <a class="el" href="tasks_8c_source.html#l00026">26</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_a0af304e6c5bca609f1da9a35a49da5c6_icgraph.png" border="0" usemap="#tasks_8c_a0af304e6c5bca609f1da9a35a49da5c6_icgraph" alt=""/></div>
+<map name="tasks_8c_a0af304e6c5bca609f1da9a35a49da5c6_icgraph" id="tasks_8c_a0af304e6c5bca609f1da9a35a49da5c6_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="123,5,173,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="afc0a4f34ef3333216c2f7c0de2b1f9aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">msg_t Thread2 </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Nyomás és hőmérséklet kiolvasó szál. </p>
+
+<p>Definíció a(z) <a class="el" href="tasks_8c_source.html">tasks.c</a> fájl <a class="el" href="tasks_8c_source.html#l00043">43</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_cgraph.png" border="0" usemap="#tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_cgraph" alt=""/></div>
+<map name="tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_cgraph" id="tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_cgraph">
+<area shape="rect" id="node3" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486" title="Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="132,5,284,35"/><area shape="rect" id="node5" href="_l_c_d_8c.html#a34bb56ab53c7d9c0e363e59c48f5a959" title="Hőmérséklet megjelenítése a kijelzőn. " alt="" coords="149,165,267,195"/><area shape="rect" id="node9" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="143,59,273,88"/><area shape="rect" id="node13" href="_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106" title="Kiszámítja a magasságot (méterben) a hPa&#45;ban megadott légnyomás, tengerszintre átszámított légnyomás ..." alt="" coords="123,112,293,141"/><area shape="rect" id="node17" href="logger_8c.html#ab32b0e36c611a22cba880cc3aacda3db" title="A paraméterként kapott rekordot berakja a ringbufferbe, ahonnan később ki fog íródni az EEPROM&#45;ba..." alt="" coords="155,219,261,248"/><area shape="rect" id="node19" href="_l_c_d_8c.html#a66c85acb573ef9bcfa2ae5f95feb596f" title="Légnyomás megjelenítése a kijelzőn. " alt="" coords="149,272,267,301"/><area shape="rect" id="node22" href="_l_c_d_8c.html#a4f21373ce23ee38fa023546e0b262fdf" title="Magasság megjelenítése a kijelzőn. " alt="" coords="159,325,257,355"/><area shape="rect" id="node7" href="itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="353,272,396,301"/><area shape="rect" id="node11" href="_kalman_8c.html#a805a67ac627b7712612544e1c006b12d" title="Elvégzi a szűrést (jóslás, erősítés, korrekció). " alt="" coords="343,59,407,88"/><area shape="rect" id="node15" href="mymath_8c.html#a73b3c2799ff1322f5f274157cbfdd4a1" title="myPow" alt="" coords="341,112,408,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_icgraph.png" border="0" usemap="#tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_icgraph" alt=""/></div>
+<map name="tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_icgraph" id="tasks_8c_afc0a4f34ef3333216c2f7c0de2b1f9aa_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="123,5,173,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3287156dd96a38e39fa70850b4c6fa38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">msg_t Thread3 </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dátum és idő kezelő szál. </p>
+
+<p>Definíció a(z) <a class="el" href="tasks_8c_source.html">tasks.c</a> fájl <a class="el" href="tasks_8c_source.html#l00099">99</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_cgraph.png" border="0" usemap="#tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_cgraph" alt=""/></div>
+<map name="tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_cgraph" id="tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_cgraph">
+<area shape="rect" id="node3" href="_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81" title="Az idő kiolvasása az RTC áramkörből. " alt="" coords="128,5,232,35"/><area shape="rect" id="node5" href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc" title="A dátum kiolvasása az RTC áramkörből. " alt="" coords="129,59,231,88"/><area shape="rect" id="node7" href="_l_c_d_8c.html#a86e9fbcb9579b78118f6add9d1e78ba8" title="Idő megjelenítése a kijelzőn. " alt="" coords="124,112,236,141"/><area shape="rect" id="node9" href="itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="285,112,328,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_icgraph.png" border="0" usemap="#tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_icgraph" alt=""/></div>
+<map name="tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_icgraph" id="tasks_8c_a3287156dd96a38e39fa70850b4c6fa38_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="123,5,173,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad2036d3514561ba8a748ff170baf1e3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">msg_t Thread4 </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>USB kezelő szál. </p>
+
+<p>Definíció a(z) <a class="el" href="tasks_8c_source.html">tasks.c</a> fájl <a class="el" href="tasks_8c_source.html#l00122">122</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_cgraph.png" border="0" usemap="#tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_cgraph" alt=""/></div>
+<map name="tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_cgraph" id="tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_cgraph">
+<area shape="rect" id="node3" href="_l_c_d_8c.html#ab128f02215b4c1e80793338995eada18" title="USB felirat megjelenítése a kijelzőn. " alt="" coords="144,5,256,35"/><area shape="rect" id="node5" href="_l_c_d_8c.html#ad738a14f7ceaf0da125b1337a4e9e10b" title="USB felirat törlése a kijelzőről. " alt="" coords="123,59,277,88"/><area shape="rect" id="node7" href="_virtual_serial_8c.html#a0cc248961962a9961503bd1fc4b0ef11" title="VS_USBdataHandling" alt="" coords="125,112,275,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_icgraph.png" border="0" usemap="#tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_icgraph" alt=""/></div>
+<map name="tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_icgraph" id="tasks_8c_ad2036d3514561ba8a748ff170baf1e3a_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="123,5,173,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aad01c280ed05ea63627f5518167c5003"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">msg_t Thread5 </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>arg</em>)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>EEPROM író szál (ringbuffer -&gt; EEPROM) </p>
+
+<p>Definíció a(z) <a class="el" href="tasks_8c_source.html">tasks.c</a> fájl <a class="el" href="tasks_8c_source.html#l00149">149</a>. sorában.</p>
+
+<p><div class="dynheader">
+A függvény hívási gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_aad01c280ed05ea63627f5518167c5003_cgraph.png" border="0" usemap="#tasks_8c_aad01c280ed05ea63627f5518167c5003_cgraph" alt=""/></div>
+<map name="tasks_8c_aad01c280ed05ea63627f5518167c5003_cgraph" id="tasks_8c_aad01c280ed05ea63627f5518167c5003_cgraph">
+<area shape="rect" id="node3" href="logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="123,5,248,35"/><area shape="rect" id="node5" href="eeprom_8c.html#a601d64b049e61217914cbf9e3c84180a" title="Beír egy rekordot az EEPROM&#45;ba az adott címtől kezdődően. " alt="" coords="296,5,416,35"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="tasks_8c_aad01c280ed05ea63627f5518167c5003_icgraph.png" border="0" usemap="#tasks_8c_aad01c280ed05ea63627f5518167c5003_icgraph" alt=""/></div>
+<map name="tasks_8c_aad01c280ed05ea63627f5518167c5003_icgraph" id="tasks_8c_aad01c280ed05ea63627f5518167c5003_icgraph">
+<area shape="rect" id="node3" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="123,5,173,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Változók dokumentációja</h2>
+<a class="anchor" id="a1fcf2a74e06883fb690c0c062bf9408c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile RTC_date_t actualDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definíció a(z) <a class="el" href="main_8c_source.html">main.c</a> fájl <a class="el" href="main_8c_source.html#l00017">17</a>. sorában.</p>
+
+</div>
+</div>
+<a class="anchor" id="adf161c6b74a74517e1683aa5f3cc038a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile RTC_time_t actualTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definíció a(z) <a class="el" href="main_8c_source.html">main.c</a> fájl <a class="el" href="main_8c_source.html#l00016">16</a>. sorában.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae33a247a27845609a2f5d2893060d2bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">volatile float calculatedSeaLevelPressure</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definíció a(z) <a class="el" href="main_8c_source.html">main.c</a> fájl <a class="el" href="main_8c_source.html#l00018">18</a>. sorában.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

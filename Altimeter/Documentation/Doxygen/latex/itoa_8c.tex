@@ -1,0 +1,75 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/itoa.c fájlreferencia}
+\label{itoa_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/itoa.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/itoa.\-c}}
+{\ttfamily \#include \char`\"{}itoa.\-h\char`\"{}}\\*
+Az itoa.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{itoa_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$ {\bf itoa} (int value, char $\ast$buffer, int base, int decimals, int expected\-Length, char padding\-\_\-char, char $\ast$prefix, char $\ast$suffix)
+\begin{DoxyCompactList}\small\item\em Előjeles egészet karakter tömbbé konvertál. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{itoa.\-c@{itoa.\-c}!itoa@{itoa}}
+\index{itoa@{itoa}!itoa.c@{itoa.\-c}}
+\subsubsection[{itoa}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ itoa (
+\begin{DoxyParamCaption}
+\item[{int}]{value, }
+\item[{char $\ast$}]{buffer, }
+\item[{int}]{base, }
+\item[{int}]{decimals, }
+\item[{int}]{expected\-Length, }
+\item[{char}]{padding\-\_\-char, }
+\item[{char $\ast$}]{prefix, }
+\item[{char $\ast$}]{suffix}
+\end{DoxyParamCaption}
+)}\label{itoa_8c_ad140b3216ed9e7c8a084acc96dbd5678}
+
+
+Előjeles egészet karakter tömbbé konvertál. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em value} & Az átalakítandó egész szám. \\
+\hline
+\mbox{\tt out}  & {\em buffer} & Itt keletkezik az eredmény. \\
+\hline
+\mbox{\tt in}  & {\em base} & Alap (2; 10; 16 lehet). \\
+\hline
+\mbox{\tt in}  & {\em decimals} & Tizedesek száma. \\
+\hline
+\mbox{\tt in}  & {\em expected\-Length} & Kívánt karakterhosszúság. \\
+\hline
+\mbox{\tt in}  & {\em padding\-\_\-char} & Kitöltő karakter. \\
+\hline
+\mbox{\tt in}  & {\em prefix} & Előtag, mely a karakterlánc elejéhez fűződik. \\
+\hline
+\mbox{\tt in}  & {\em suffix} & Utótag, mely a karakterlánc végéhez fűződik. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+Mutató az eredmény bufferre. 
+\end{DoxyReturn}
+
+
+Definíció a(z) itoa.\-c fájl 28. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{itoa_8c_ad140b3216ed9e7c8a084acc96dbd5678_icgraph}
+\end{center}
+\end{figure}
+
+

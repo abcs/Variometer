@@ -1,0 +1,389 @@
+\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-L\-C\-D.c fájlreferencia}
+\label{_l_c_d_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-L\-C\-D.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-L\-C\-D.\-c}}
+{\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\-C\-D.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}L\-C\-D\-\_\-fonts.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}globals.\-h\char`\"{}}\\*
+A L\-C\-D.\-c definíciós fájl függési gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_l_c_d_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Függvények}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf L\-C\-D\-\_\-clear} ()
+\begin{DoxyCompactList}\small\item\em Törli a kijelző tartalmát. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-init} ()
+\begin{DoxyCompactList}\small\item\em A kijelző inicializálását végzi. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-Temp} (H\-P03\-\_\-meas\-\_\-t measured\-By\-H\-P03)
+\begin{DoxyCompactList}\small\item\em Hőmérséklet megjelenítése a kijelzőn. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-Press} (H\-P03\-\_\-meas\-\_\-t measured\-By\-H\-P03)
+\begin{DoxyCompactList}\small\item\em Légnyomás megjelenítése a kijelzőn. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-Alt} (int alt\-To\-Write)
+\begin{DoxyCompactList}\small\item\em Magasság megjelenítése a kijelzőn. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-Speed} (int speed\-To\-Write)
+\begin{DoxyCompactList}\small\item\em Függőleges sebesség megjelenítése a kijelzőn. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-Date} (R\-T\-C\-\_\-date\-\_\-t date\-To\-Write)
+\begin{DoxyCompactList}\small\item\em Dátum megjelenítése a kijelzőn. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-Time} (R\-T\-C\-\_\-time\-\_\-t time\-To\-Write)
+\begin{DoxyCompactList}\small\item\em Idő megjelenítése a kijelzőn. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-U\-S\-B} ()
+\begin{DoxyCompactList}\small\item\em U\-S\-B felirat megjelenítése a kijelzőn. \end{DoxyCompactList}\item 
+void {\bf L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete} ()
+\begin{DoxyCompactList}\small\item\em U\-S\-B felirat törlése a kijelzőről. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Függvények dokumentációja}
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-clear@{L\-C\-D\-\_\-clear}}
+\index{L\-C\-D\-\_\-clear@{L\-C\-D\-\_\-clear}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-clear}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_abe38d05e225c701bebf5a61201331a85}
+
+
+Törli a kijelző tartalmát. 
+
+
+
+Definíció a(z) L\-C\-D.\-c fájl 147. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{_l_c_d_8c_abe38d05e225c701bebf5a61201331a85_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-init@{L\-C\-D\-\_\-init}}
+\index{L\-C\-D\-\_\-init@{L\-C\-D\-\_\-init}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba}
+
+
+A kijelző inicializálását végzi. 
+
+$<$ Power\-O\-N, Ext\-Command\-Set -\/ 0x21
+
+$<$ Internal H\-V-\/gen x3 -\/ 0x09
+
+$<$ Set Vop
+
+$<$ Bias n=2
+
+$<$ Temperature coeff 2
+
+$<$ Standart\-Command\-Set -\/ 0x20
+
+$<$ normal mode, display non-\/inverted 
+
+Definíció a(z) L\-C\-D.\-c fájl 168. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{_l_c_d_8c_a0742e25c23ca1096ceba081b98fd58ba_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-Alt@{L\-C\-D\-\_\-write\-Alt}}
+\index{L\-C\-D\-\_\-write\-Alt@{L\-C\-D\-\_\-write\-Alt}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-Alt}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-Alt (
+\begin{DoxyParamCaption}
+\item[{int}]{alt\-To\-Write}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf}
+
+
+Magasság megjelenítése a kijelzőn. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em alt\-To\-Write} & Magasság érték. \\
+\hline
+\end{DoxyParams}
+
+
+Definíció a(z) L\-C\-D.\-c fájl 245. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{_l_c_d_8c_a4f21373ce23ee38fa023546e0b262fdf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-Date@{L\-C\-D\-\_\-write\-Date}}
+\index{L\-C\-D\-\_\-write\-Date@{L\-C\-D\-\_\-write\-Date}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-Date}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-Date (
+\begin{DoxyParamCaption}
+\item[{R\-T\-C\-\_\-date\-\_\-t}]{date\-To\-Write}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_adfcdedfb3a022310629af2dc94a1f658}
+
+
+Dátum megjelenítése a kijelzőn. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em date\-To\-Write} & Dátum érték. \\
+\hline
+\end{DoxyParams}
+
+
+Definíció a(z) L\-C\-D.\-c fájl 271. sorában.
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-Press@{L\-C\-D\-\_\-write\-Press}}
+\index{L\-C\-D\-\_\-write\-Press@{L\-C\-D\-\_\-write\-Press}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-Press}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-Press (
+\begin{DoxyParamCaption}
+\item[{H\-P03\-\_\-meas\-\_\-t}]{measured\-By\-H\-P03}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f}
+
+
+Légnyomás megjelenítése a kijelzőn. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em measured\-By\-H\-P03} & Nyomás érték. \\
+\hline
+\end{DoxyParams}
+
+
+Definíció a(z) L\-C\-D.\-c fájl 220. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{_l_c_d_8c_a66c85acb573ef9bcfa2ae5f95feb596f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-Speed@{L\-C\-D\-\_\-write\-Speed}}
+\index{L\-C\-D\-\_\-write\-Speed@{L\-C\-D\-\_\-write\-Speed}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-Speed}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-Speed (
+\begin{DoxyParamCaption}
+\item[{int}]{speed\-To\-Write}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_a9ed928ccaaf404b142910bbda63b2314}
+
+
+Függőleges sebesség megjelenítése a kijelzőn. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em speed\-To\-Write} & Sebesség érték. \\
+\hline
+\end{DoxyParams}
+
+
+Definíció a(z) L\-C\-D.\-c fájl 262. sorában.
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-Temp@{L\-C\-D\-\_\-write\-Temp}}
+\index{L\-C\-D\-\_\-write\-Temp@{L\-C\-D\-\_\-write\-Temp}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-Temp}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-Temp (
+\begin{DoxyParamCaption}
+\item[{H\-P03\-\_\-meas\-\_\-t}]{measured\-By\-H\-P03}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959}
+
+
+Hőmérséklet megjelenítése a kijelzőn. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em measured\-By\-H\-P03} & Hőmérséklet érték. \\
+\hline
+\end{DoxyParams}
+
+
+Definíció a(z) L\-C\-D.\-c fájl 206. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{_l_c_d_8c_a34bb56ab53c7d9c0e363e59c48f5a959_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-Time@{L\-C\-D\-\_\-write\-Time}}
+\index{L\-C\-D\-\_\-write\-Time@{L\-C\-D\-\_\-write\-Time}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-Time (
+\begin{DoxyParamCaption}
+\item[{R\-T\-C\-\_\-time\-\_\-t}]{time\-To\-Write}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8}
+
+
+Idő megjelenítése a kijelzőn. 
+
+
+\begin{DoxyParams}[1]{Paraméterek}
+\mbox{\tt in}  & {\em time\-To\-Write} & Idő érték. \\
+\hline
+\end{DoxyParams}
+
+
+Definíció a(z) L\-C\-D.\-c fájl 281. sorában.
+
+
+
+A függvény hívási gráfja\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{_l_c_d_8c_a86e9fbcb9579b78118f6add9d1e78ba8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-U\-S\-B@{L\-C\-D\-\_\-write\-U\-S\-B}}
+\index{L\-C\-D\-\_\-write\-U\-S\-B@{L\-C\-D\-\_\-write\-U\-S\-B}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-U\-S\-B}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-U\-S\-B (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_ab128f02215b4c1e80793338995eada18}
+
+
+U\-S\-B felirat megjelenítése a kijelzőn. 
+
+
+
+Definíció a(z) L\-C\-D.\-c fájl 306. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{_l_c_d_8c_ab128f02215b4c1e80793338995eada18_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\-C\-D.\-c@{L\-C\-D.\-c}!L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete@{L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete}}
+\index{L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete@{L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete}!LCD.c@{L\-C\-D.\-c}}
+\subsubsection[{L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}void L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{_l_c_d_8c_ad738a14f7ceaf0da125b1337a4e9e10b}
+
+
+U\-S\-B felirat törlése a kijelzőről. 
+
+
+
+Definíció a(z) L\-C\-D.\-c fájl 319. sorában.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_l_c_d_8c_ad738a14f7ceaf0da125b1337a4e9e10b_icgraph}
+\end{center}
+\end{figure}
+
+

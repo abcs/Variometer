@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.4"/>
+<title>altimeter: /HDD/GIT/variometer/Altimeter/src/eeprom.c fájlreferencia</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">altimeter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.4 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Főoldal</span></a></li>
+      <li><a href="annotated.html"><span>Adatszerkezetek</span></a></li>
+      <li class="current"><a href="files.html"><span>Fájl</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Keresés" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Fájllista</span></a></li>
+      <li><a href="globals.html"><span>Globális&#160;elemek</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Összes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Adatszerkezetek</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fájl</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Függvények</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Változók</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Típusdefiníciók</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Adatszerkezetek</a> &#124;
+<a href="#typedef-members">Típusdefiníciók</a> &#124;
+<a href="#func-members">Függvények</a>  </div>
+  <div class="headertitle">
+<div class="title">eeprom.c fájlreferencia</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;ch.h&quot;</code><br/>
+<code>#include &quot;hal.h&quot;</code><br/>
+<code>#include &quot;eeprom.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Az eeprom.c definíciós fájl függési gráfja:</div>
+<div class="dyncontent">
+<div class="center"><img src="eeprom_8c__incl.png" border="0" usemap="#_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2eeprom_8c" alt=""/></div>
+<map name="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2eeprom_8c" id="_2_h_d_d_2_g_i_t_2variometer_2_altimeter_2src_2eeprom_8c">
+</map>
+</div>
+</div>
+<p><a href="eeprom_8c_source.html">Ugrás a fájl forráskódjához.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Adatszerkezetek</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlog__rec__ext__s.html">log_rec_ext_s</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Típusdefiníciók</h2></td></tr>
+<tr class="memitem:a87e61d040028e5a92f9169b2dc301095"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structlog__rec__ext__s.html">log_rec_ext_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a87e61d040028e5a92f9169b2dc301095">log_rec_ext_t</a></td></tr>
+<tr class="separator:a87e61d040028e5a92f9169b2dc301095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Függvények</h2></td></tr>
+<tr class="memitem:a601d64b049e61217914cbf9e3c84180a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a601d64b049e61217914cbf9e3c84180a">ee_write_log_rec</a> (log_rec_t *record, uint16_t *address)</td></tr>
+<tr class="memdesc:a601d64b049e61217914cbf9e3c84180a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Beír egy rekordot az EEPROM-ba az adott címtől kezdődően.  <a href="#a601d64b049e61217914cbf9e3c84180a">Részletek...</a><br/></td></tr>
+<tr class="separator:a601d64b049e61217914cbf9e3c84180a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801cca373370aacce8631bd6dfff1373"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#a801cca373370aacce8631bd6dfff1373">ee_read_log_rec</a> (log_rec_t *record, uint16_t from_addr, uint16_t num_of_rec)</td></tr>
+<tr class="memdesc:a801cca373370aacce8631bd6dfff1373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Kiolvas adott számú rekordot az EEPROM-ból az adott címtől kezdődően.  <a href="#a801cca373370aacce8631bd6dfff1373">Részletek...</a><br/></td></tr>
+<tr class="separator:a801cca373370aacce8631bd6dfff1373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61d5bd2a11169dbd512934b1fb384b7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eeprom_8c.html#aa61d5bd2a11169dbd512934b1fb384b7">ee_get_first_free_address</a> ()</td></tr>
+<tr class="memdesc:aa61d5bd2a11169dbd512934b1fb384b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Visszaadja az első szabad hely címét.  <a href="#aa61d5bd2a11169dbd512934b1fb384b7">Részletek...</a><br/></td></tr>
+<tr class="separator:aa61d5bd2a11169dbd512934b1fb384b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Típusdefiníciók dokumentációja</h2>
+<a class="anchor" id="a87e61d040028e5a92f9169b2dc301095"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structlog__rec__ext__s.html">log_rec_ext_s</a>  <a class="el" href="eeprom_8c.html#a87e61d040028e5a92f9169b2dc301095">log_rec_ext_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Függvények dokumentációja</h2>
+<a class="anchor" id="aa61d5bd2a11169dbd512934b1fb384b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ee_get_first_free_address </td>
+          <td>(</td>
+          <td class="paramname">)</td><td></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Visszaadja az első szabad hely címét. </p>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>Az első szabad hely címe az EEPROM-ban. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="eeprom_8c_source.html">eeprom.c</a> fájl <a class="el" href="eeprom_8c_source.html#l00140">140</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="eeprom_8c_aa61d5bd2a11169dbd512934b1fb384b7_icgraph.png" border="0" usemap="#eeprom_8c_aa61d5bd2a11169dbd512934b1fb384b7_icgraph" alt=""/></div>
+<map name="eeprom_8c_aa61d5bd2a11169dbd512934b1fb384b7_icgraph" id="eeprom_8c_aa61d5bd2a11169dbd512934b1fb384b7_icgraph">
+<area shape="rect" id="node3" href="logger_8c.html#acca02da5a5a8b842893ecc30ea12fda7" title="A naplózó alrendszer inicializálása. " alt="" coords="228,5,308,35"/><area shape="rect" id="node5" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="357,5,408,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a801cca373370aacce8631bd6dfff1373"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ee_read_log_rec </td>
+          <td>(</td>
+          <td class="paramtype">log_rec_t *&#160;</td>
+          <td class="paramname"><em>record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>from_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>num_of_rec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Kiolvas adott számú rekordot az EEPROM-ból az adott címtől kezdődően. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">record</td><td>Rekordokból álló tömb, melyet a függvény tölt fel. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">from_addr</td><td>EEPROM cím, ahonnan a kiolvasás kezdődik. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_of_rec</td><td>A kiolvasandó rekordok száma. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>A következő kiolvasandó rekord címe. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="eeprom_8c_source.html">eeprom.c</a> fájl <a class="el" href="eeprom_8c_source.html#l00099">99</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="eeprom_8c_a801cca373370aacce8631bd6dfff1373_icgraph.png" border="0" usemap="#eeprom_8c_a801cca373370aacce8631bd6dfff1373_icgraph" alt=""/></div>
+<map name="eeprom_8c_a801cca373370aacce8631bd6dfff1373_icgraph" id="eeprom_8c_a801cca373370aacce8631bd6dfff1373_icgraph">
+<area shape="rect" id="node3" href="logger_8c.html#a6d5881c4551c02ba1ca81719d375eeac" title="Adott számú rekord kikérése az EEPROM&#45;ból. " alt="" coords="172,5,308,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a601d64b049e61217914cbf9e3c84180a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ee_write_log_rec </td>
+          <td>(</td>
+          <td class="paramtype">log_rec_t *&#160;</td>
+          <td class="paramname"><em>record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t *&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Beír egy rekordot az EEPROM-ba az adott címtől kezdődően. </p>
+<dl class="params"><dt>Paraméterek</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">record</td><td>A beírandó rekord. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">address</td><td>EEPROM cím, ahová a rekord kerül. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Visszatérési érték</dt><dd>0 - sikeres, &lt; 0 - sikertelen. </dd></dl>
+
+<p>Definíció a(z) <a class="el" href="eeprom_8c_source.html">eeprom.c</a> fájl <a class="el" href="eeprom_8c_source.html#l00035">35</a>. sorában.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="eeprom_8c_a601d64b049e61217914cbf9e3c84180a_icgraph.png" border="0" usemap="#eeprom_8c_a601d64b049e61217914cbf9e3c84180a_icgraph" alt=""/></div>
+<map name="eeprom_8c_a601d64b049e61217914cbf9e3c84180a_icgraph" id="eeprom_8c_a601d64b049e61217914cbf9e3c84180a_icgraph">
+<area shape="rect" id="node3" href="logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="173,5,299,35"/><area shape="rect" id="node5" href="tasks_8c.html#aad01c280ed05ea63627f5518167c5003" title="EEPROM író szál (ringbuffer &#45;&gt; EEPROM) " alt="" coords="347,5,416,35"/><area shape="rect" id="node7" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="464,5,515,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.4
+</small></address>
+</body>
+</html>

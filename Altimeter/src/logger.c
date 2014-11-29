@@ -62,7 +62,8 @@ int logger_logThis(log_rec_t * rec_to_log)
 }
 
 /*!
-* A ringbufferből kiírja az EEPROM-ba.
+* A ringbufferből kiír egy rekordot az EEPROM-ba.
+* Ha az írás sikeres volt, törli az elemet a bufferből.
 * @return A ringbufferben maradt elemek száma.
 */
 int logger_writeToEE()

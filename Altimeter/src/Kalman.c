@@ -26,8 +26,7 @@ void init_kalman(int z_measured)
 }
 
 /*!
-* Elmenti az EEPROM-ba az aktuális mutató (leíró) értékét,
-* hogy a naplózás onnan folytatódjon, ahol befejeződött.
+* Elvégzi a szűrést (jóslás, erősítés, korrekció).
 * @param[in]	z_measured	A mért érték.
 * @return		Számított (jósolt) érték.
 */

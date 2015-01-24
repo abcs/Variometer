@@ -104,7 +104,7 @@ msg_t Thread3(void *arg)
     while (TRUE) {
     	actualTime = RTC_getTime();
 
-    	if( 2 > actualTime.second && 0 == actualTime.minute && 0 == actualTime.hour )
+    	if( (2 > actualTime.second) && (0 == actualTime.minute) && (0 == actualTime.hour) )
     	{
     		actualDate = RTC_getDate();
     	}

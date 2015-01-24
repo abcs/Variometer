@@ -17,9 +17,10 @@
 void RTC_init()
 {
 	msg_t rc = RDY_OK;
-	uint8_t RTC_control_regs[3]  = { 0xE0, 0b00100000, 0b00000000 }; // Control regs base addr., 24H mode, 0
+	uint8_t RTC_control_regs[3]  = { 0xE0, 0b00100000, 0b00010000 }; // Control regs base addr., 24H mode, 0
 
 	RTC_time_t timeToSet;
+	RTC_date_t dateToSet;
 
 	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
@@ -27,10 +28,16 @@ void RTC_init()
 			                       0, 0, TIME_INFINITE );
 	i2cReleaseBus(&I2CD1);
 /*
-	timeToSet.hour = 16;
-	timeToSet.minute = 30;
-	timeToSet.second = 0;
+	timeToSet.hour = 18;
+	timeToSet.minute = 31;
+	timeToSet.second = 00;
 	RTC_setTime(timeToSet);
+
+	dateToSet.day = 24;
+	dateToSet.dayOfWeek = 5;
+	dateToSet.month = 1;
+	dateToSet.year = 15;
+	RTC_setDate(dateToSet);
 */
 }
 
@@ -68,11 +75,22 @@ void RTC_setTime(RTC_time_t timeToBeSet)
 void RTC_setDate(RTC_date_t dateToBeSet)
 {
 	msg_t rc = RDY_OK;
+	uint8_t i = 2;
 	dateToBeSet.calendarCounterAddress = 0x30;
+
+	uint8_t * dateToBeSet_p = &dateToBeSet.calendarCounterAddress;
+
+    /* Converting binary to BCD */
+	for ( ; i <= 4; i++ )
+	{
+		*(dateToBeSet_p + i) = BIN_TO_BCD(*(dateToBeSet_p + i));
+	}
+
+	dateToBeSet.month |= 0b10000000;
 
 	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
-			                      (uint8_t *)(&dateToBeSet), sizeof(dateToBeSet),
+								   dateToBeSet_p, 5,
 			                       0, 0, TIME_INFINITE );
 	i2cReleaseBus(&I2CD1);
 }
@@ -89,7 +107,7 @@ RTC_time_t RTC_getTime()
 	timeBuffer.timeCounterAddress = 0x00;
 	uint8_t i = 0;
 
-	uint8_t * timeBuffer_p = &timeBuffer.timeCounterAddress;
+	uint8_t * timeBuffer_p = &(timeBuffer.timeCounterAddress);
 
 	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterReceiveTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
@@ -106,7 +124,7 @@ RTC_time_t RTC_getTime()
 	i2cReleaseBus(&I2CD1);
 
 	/* Converting BCD to binary */
-	timeBuffer_p = &timeBuffer.second;
+	timeBuffer_p = &(timeBuffer.second);
 	for ( ; i < 3; i++ )
 	{
 		*(timeBuffer_p + i) = BCD_TO_BIN(*(timeBuffer_p + i)); //((*(timeBuffer_p + i) >> 4) * 10) + (*(timeBuffer_p + i) & 0b00001111);
@@ -125,13 +143,33 @@ RTC_date_t RTC_getDate()
 	msg_t rc = RDY_OK;
 	RTC_date_t dateBuffer;
 	dateBuffer.calendarCounterAddress = 0x30;
+	uint8_t i = 0;
+
+	uint8_t * dateBuffer_p;
 
 	i2cAcquireBus(&I2CD1);
+
 	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
-			                      (uint8_t *)( &dateBuffer ), 1,
-			                      (uint8_t *)((&dateBuffer) + 1),
-			                      sizeof(dateBuffer) - 1, TIME_INFINITE);
+								   &(dateBuffer.calendarCounterAddress), 1,
+								   &(dateBuffer.dayOfWeek), 4, TIME_INFINITE );
+/* Lehet, hogy ez a megoldás kell...
+	if ( rc == RDY_OK )
+	{
+		rc = i2cMasterReceiveTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
+									  &(dateBuffer.dayOfWeek), 4, TIME_INFINITE );
+	}
+*/
 	i2cReleaseBus(&I2CD1);
+
+	dateBuffer.month &= 0b01111111;
+
+	/* Converting BCD to binary */
+	dateBuffer_p = &(dateBuffer.day);
+	for ( ; i < 3; i++ )
+	{
+		*(dateBuffer_p + i) = BCD_TO_BIN(*(dateBuffer_p + i));
+	}
+
 	return dateBuffer;
 }
 

@@ -32,19 +32,19 @@ typedef struct RTC_time_s {
 	uint8_t second;
 	uint8_t minute;
 	uint8_t hour;
-} RTC_time_t;
+} RTC_time_t __attribute__ ((aligned (4)));
 
 /*!
  * A dátum tárolására használt struktúra.
  */
 typedef struct RTC_date_s {
-	uint8_t readFrom_Fh[3];
+//	uint8_t readFrom_Fh[3];
 	uint8_t calendarCounterAddress;
 	uint8_t dayOfWeek;
 	uint8_t day;
 	uint8_t month;	/*!< Az MSB az évszázadot jelöli; 0 - 1900, 1 - 2000 */
 	uint8_t year;
-} RTC_date_t;
+} RTC_date_t __attribute__ ((aligned (8)));
 
 void RTC_init(void);
 void RTC_setTime(RTC_time_t timeToBeSet);

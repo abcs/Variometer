@@ -38,8 +38,8 @@ typedef struct RTC_time_s {
  * A dátum tárolására használt struktúra.
  */
 typedef struct RTC_date_s {
-//	uint8_t readFrom_Fh[3];
 	uint8_t calendarCounterAddress;
+	uint8_t readFrom_Fh[3];
 	uint8_t dayOfWeek;
 	uint8_t day;
 	uint8_t month;	/*!< Az MSB az évszázadot jelöli; 0 - 1900, 1 - 2000 */

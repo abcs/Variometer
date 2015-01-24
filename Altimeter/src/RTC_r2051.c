@@ -104,7 +104,7 @@ RTC_time_t RTC_getTime()
 {
 	msg_t rc = RDY_OK;
 	RTC_time_t timeBuffer;
-	timeBuffer.timeCounterAddress = 0x00;
+//	timeBuffer.timeCounterAddress = 0x00;
 	uint8_t i = 0;
 
 	uint8_t * timeBuffer_p = &(timeBuffer.timeCounterAddress);
@@ -142,16 +142,19 @@ RTC_date_t RTC_getDate()
 {
 	msg_t rc = RDY_OK;
 	RTC_date_t dateBuffer;
-	dateBuffer.calendarCounterAddress = 0x30;
+//	dateBuffer.calendarCounterAddress = 0x30;
 	uint8_t i = 0;
 
 	uint8_t * dateBuffer_p;
 
 	i2cAcquireBus(&I2CD1);
-
+	rc = i2cMasterReceiveTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
+			                      &dateBuffer, 8, TIME_INFINITE);
+/*
 	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)RTC_ADDRESS,
 								   &(dateBuffer.calendarCounterAddress), 1,
 								   &(dateBuffer.dayOfWeek), 4, TIME_INFINITE );
+*/
 /* Lehet, hogy ez a megoldás kell...
 	if ( rc == RDY_OK )
 	{

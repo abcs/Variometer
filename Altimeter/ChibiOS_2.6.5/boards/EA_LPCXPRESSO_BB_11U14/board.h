@@ -89,8 +89,8 @@
 #define GPIO0_USB_DPCTL          6
 #define GPIO0_LCD_CD            20
 
-#define GPIO1_SW1               13
-#define GPIO1_SW2               14
+#define GPIO1_SW1               14
+#define GPIO1_SW2               13
 #define GPIO1_SW3               15
 #define GPIO1_BACKLIGHT			19
 #define GPIO1_SPEAKER			24

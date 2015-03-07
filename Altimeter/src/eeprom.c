@@ -102,6 +102,10 @@ uint16_t ee_read_log_rec(log_rec_t * record, uint16_t from_addr, uint16_t num_of
 //	uint16_t control_block_address = 0x0080;	//0x8000 swapped
 	msg_t rc = RDY_OK;
 
+	if (0xFFFF == from_addr) {
+		return 0xFFFF;
+	}
+
 	/* swap bytes of Data */
     hibyte = ( from_addr & 0xff00) >> 8;
     from_addr <<= 8;

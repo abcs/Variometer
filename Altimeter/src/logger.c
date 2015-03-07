@@ -10,7 +10,7 @@
 
 static log_buffer_t log_buffer;
 static uint16_t first_free;
-static uint16_t first_rec_to_read;
+static uint16_t first_addr_to_read;
 
 /*!
 * A naplózó alrendszer inicializálása.
@@ -25,7 +25,7 @@ void logger_init()
 	if( 0xFFFF == first_free )
 		first_free = 0;
 
-	first_rec_to_read = 0;
+	first_addr_to_read = first_free; //0;
 }
 
 /*!
@@ -73,6 +73,7 @@ int logger_writeToEE()
 
 	if (log_buffer.active)
 	{
+		chMtxLock( &(log_buffer.mtx) );
 		log_rec_p = log_buffer.record[log_buffer.start_to_read];
 
 		rc = ee_write_log_rec(log_rec_p, &first_free);
@@ -82,6 +83,7 @@ int logger_writeToEE()
 			log_buffer.active--;
 			chHeapFree(log_rec_p);
 		}
+		chMtxUnlock();
 	}
 
 	return (int)log_buffer.active;
@@ -95,8 +97,8 @@ int logger_writeToEE()
 */
 uint16_t logger_readFromEE(log_rec_t * buffer, uint16_t size_in_rec)
 {
-	first_rec_to_read = ee_read_log_rec(buffer, first_rec_to_read * sizeof(log_rec_t), size_in_rec);
-	return first_rec_to_read;
+	first_addr_to_read = ee_read_log_rec(buffer, first_addr_to_read * sizeof(log_rec_t), size_in_rec);
+	return first_addr_to_read;
 }
 
 /*!

@@ -17,7 +17,8 @@
 extern volatile RTC_time_t actualTime;
 extern volatile RTC_date_t actualDate;
 extern volatile float calculatedSeaLevelPressure;
-
+extern BinarySemaphore binSem_T5;
+extern bool_t canT5Run;
 
 /*!
  * "HeartBeat" LED villogtató szál.
@@ -66,6 +67,9 @@ msg_t Thread2(void *arg)
 
  	    measuredAltitude = HP03_pressureToAltitude(calculatedSeaLevelPressure, temp_press);
 
+	    LCD_writePress(temp_press);
+	    LCD_writeAlt(measuredAltitude);
+
  	    if ( (readTemp % 4) == 0 )
  	    {
 			to_log = (log_rec_t *)chHeapAlloc(NULL, sizeof(log_rec_t)); //loggerHeap
@@ -83,9 +87,6 @@ msg_t Thread2(void *arg)
 				(void)logger_logThis(to_log);
 			}
  	    }
-
-	    LCD_writePress(temp_press);
-	    LCD_writeAlt(measuredAltitude);
 
 	    chThdSleepMilliseconds(50);
     }
@@ -151,9 +152,16 @@ msg_t Thread5(void *arg)
 	(void)arg;
     chRegSetThreadName("LOGG_WR_EE");
 
-	for (;; ) {
-		(void)logger_writeToEE();
-	    chThdSleepMilliseconds(800);
+    for (;; ) {
+    	LCD_writeLOG_delete();
+    	if (canT5Run) {
+    		chBSemWait(&binSem_T5);
+    		LCD_writeLOG();
+    		(void)logger_writeToEE();
+    		chBSemSignal(&binSem_T5);
+    	}
+
+        chThdSleepMilliseconds(800);
 	}
 	return 0;
 }

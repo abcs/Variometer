@@ -3,6 +3,8 @@
 #include "logger.h"
 #include <string.h>
 
+extern BinarySemaphore binSem_T5;
+
 /* LPCUSBlib CDC Class driver interface configuration and state information. This structure is
  *  passed to all CDC Class driver functions, so that multiple instances of the same class
  *  within a device can be differentiated from one another.
@@ -149,6 +151,8 @@ void VS_USBdataHandling(void)
 				recv_bytes_count = 0;
 				return;
 			}
+
+			chBSemWait(&binSem_T5);
 			switch ( *(uint32_t*)recv_byte )
 			{
 				case 0x032A5202:					/* STX R * ETX - read log (02522A03:) */
@@ -158,7 +162,7 @@ void VS_USBdataHandling(void)
 					break;
 
 				case 0x032A4402:					/* STX D * ETX - delete log (02442A03:)*/
-					//VS_DeleteAllLogs();
+					VS_DeleteAllLogs();
 					recv_byte[0] = 0;
 					recv_bytes_count = 0;
 					break;
@@ -167,6 +171,7 @@ void VS_USBdataHandling(void)
 					recv_byte[0] = 0;
 					recv_bytes_count = 0;
 			}
+			chBSemSignal(&binSem_T5);
 		}
 	}
 }
@@ -174,11 +179,47 @@ void VS_USBdataHandling(void)
 
 static void VS_SendAllLogs()
 {
-	log_rec_t sendBuffer[5];
+	log_rec_t sendBuffer[4]; //[5];
+	uint16_t n = 0;
+//	uint16_t nextAddr = 0xFFFF;
+//	uint16_t prevAddr = first_addr_to_read;
 
-	(void)logger_readFromEE(sendBuffer, 5);
-	CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)sendBuffer, 5 * sizeof(log_rec_t));
+	for (n = 0; n < 1024; n++) {
+	    if(logger_readFromEE(sendBuffer, 4) == 0xFFFF) {
+	    	break;
+	    }
+		if(USB_DeviceState[0] != DEVICE_STATE_Configured) {
+			CDC_Device_Flush(&VirtualSerial_CDC_Interface);
+			return;
+		}
+		CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)(sendBuffer), 4 * sizeof(log_rec_t)); //5 *
+//		prevAddr = nextAddr;
+		chThdSleepMilliseconds(20);
+	}
+	sendBuffer[0].altitude = 0xFFFF;
+	sendBuffer[0].day = 0xFF;
+	sendBuffer[0].hour = 0xFF;
+	sendBuffer[0].minute = 0xFF;
+	sendBuffer[0].month = 0xFF;
+	sendBuffer[0].second = 0xFF;
+	sendBuffer[0].year = 0xFF;
+	if(USB_DeviceState[0] != DEVICE_STATE_Configured) {
+		CDC_Device_Flush(&VirtualSerial_CDC_Interface);
+		return;
+	}
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)(sendBuffer), sizeof(log_rec_t));
+}
 
 
-	// xTaskResumeAll();
+static void VS_DeleteAllLogs()
+{
+	char USB_frame[4] = {STX, 'R', '*', STX};
+
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, USB_frame, 4);
+	USB_frame[0] = ETX;
+	USB_frame[3] = ETX;
+
+	//TODO: deleting
+
+	CDC_Device_SendData(&VirtualSerial_CDC_Interface, USB_frame, 4);
 }

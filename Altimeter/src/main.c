@@ -16,6 +16,8 @@
 volatile RTC_time_t actualTime;
 volatile RTC_date_t actualDate;
 volatile float calculatedSeaLevelPressure = 0;
+volatile BinarySemaphore binSem_T5;
+volatile bool_t canT5Run = FALSE;
 
 /*!
  * Az alkalmazás belépési pontja.
@@ -31,6 +33,7 @@ int main(void) {
    */
   halInit();
   chSysInit();
+  chBSemInit(&binSem_T5, FALSE);
 
   /*!
    * Az SPI és az I2C aktiválása.
@@ -100,12 +103,20 @@ int main(void) {
    * display on the LPCXpresso main board using the SPI driver.
    */
   while (TRUE) {
-    if ( !palReadPad(GPIO1, GPIO1_SW3) )
-    {
+    if ( !palReadPad(GPIO1, GPIO1_SW3) ) {
     	palTogglePad(GPIO1, GPIO1_BACKLIGHT);
     	while ( !palReadPad(GPIO1, GPIO1_SW3) )
     		chThdSleepMilliseconds(75);
     }
+
+    if ( !palReadPad(GPIO1, GPIO1_SW2) ) {
+
+    	canT5Run = !canT5Run;
+
+    	while ( !palReadPad(GPIO1, GPIO1_SW2) )
+    		chThdSleepMilliseconds(75);
+    }
+
     chThdSleepMilliseconds(125);
     // TestThread(&SD1);
     // spiSelect(&SPID1);

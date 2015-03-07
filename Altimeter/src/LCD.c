@@ -5,6 +5,7 @@
 #include "globals.h"
 
 volatile static bool isUSBWritten = false;
+volatile static bool isLOGWritten = false;
 
 /*!
 * Vezérli a kijelző Reset kivezetését.
@@ -324,4 +325,30 @@ void LCD_writeUSB_delete()
 	char toLCD[4] = "   ";
 	LCD_writeLine(0U, 0U, toLCD, 1U);
 	isUSBWritten = false;
+}
+
+/*!
+* LOG felirat megjelenítése a kijelzőn.
+*/
+void LCD_writeLOG()
+{
+	if(isLOGWritten)
+		return;
+
+	char toLCD[4] = "LOG";
+	LCD_writeLine(0U, 4U, toLCD, 1U);
+	isLOGWritten = true;
+}
+
+/*!
+* LOG felirat törlése a kijelzőről.
+*/
+void LCD_writeLOG_delete()
+{
+	if(!isLOGWritten)
+		return;
+
+	char toLCD[4] = "   ";
+	LCD_writeLine(0U, 4U, toLCD, 1U);
+	isLOGWritten = false;
 }

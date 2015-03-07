@@ -179,20 +179,20 @@ void VS_USBdataHandling(void)
 
 static void VS_SendAllLogs()
 {
-	log_rec_t sendBuffer[4]; //[5];
+	log_rec_t sendBuffer[8]; //[5];
 	uint16_t n = 0;
 //	uint16_t nextAddr = 0xFFFF;
 //	uint16_t prevAddr = first_addr_to_read;
 
-	for (n = 0; n < 1024; n++) {
-	    if(logger_readFromEE(sendBuffer, 4) == 0xFFFF) {
+	for (n = 0; n < 512; n++) {
+	    if(logger_readFromEE(sendBuffer, 8) == 0xFFFF) {
 	    	break;
 	    }
 		if(USB_DeviceState[0] != DEVICE_STATE_Configured) {
 			CDC_Device_Flush(&VirtualSerial_CDC_Interface);
 			return;
 		}
-		CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)(sendBuffer), 4 * sizeof(log_rec_t)); //5 *
+		CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)(sendBuffer), 8 * sizeof(log_rec_t)); //5 *
 //		prevAddr = nextAddr;
 		chThdSleepMilliseconds(20);
 	}

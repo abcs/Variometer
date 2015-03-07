@@ -134,7 +134,7 @@ uint16_t ee_read_log_rec(log_rec_t * record, uint16_t from_addr, uint16_t num_of
     from_addr <<= 8;
     from_addr |= hibyte;
 
-	return (from_addr + num_of_rec * sizeof(log_rec_t)) / sizeof(log_rec_t); /* % 0x8000; */
+	return (from_addr + num_of_rec * sizeof(log_rec_t)) % 0x8000; /* % 0x8000; */ /*  / sizeof(log_rec_t) */
 }
 
 /*!

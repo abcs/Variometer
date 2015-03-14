@@ -113,7 +113,7 @@ void CDC_Device_ProcessControlRequest(USB_ClassInfo_CDC_Device_t* const CDCInter
 
 bool CDC_Device_ConfigureEndpoints(USB_ClassInfo_CDC_Device_t* const CDCInterfaceInfo)
 {
-	memset(&CDCInterfaceInfo->State, 0x00, sizeof(CDCInterfaceInfo->State));
+	//memset(&CDCInterfaceInfo->State, 0x00, sizeof(CDCInterfaceInfo->State));
 
 	uint8_t EndpointNum = 1;
 	for (EndpointNum = 1; EndpointNum < ENDPOINT_TOTAL_ENDPOINTS(CDCInterfaceInfo->Config.PortNumber); EndpointNum++)

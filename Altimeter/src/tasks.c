@@ -19,6 +19,7 @@ extern volatile RTC_date_t actualDate;
 extern volatile float calculatedSeaLevelPressure;
 extern BinarySemaphore binSem_T5;
 extern bool_t canT5Run;
+extern USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface;
 
 /*!
  * "HeartBeat" LED villogtató szál.

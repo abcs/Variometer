@@ -89,7 +89,7 @@ msg_t Thread2(void *arg)
 			}
  	    }
 
-	    chThdSleepMilliseconds(50);
+	    chThdSleepMilliseconds(250);
     }
     return 0;
 }
@@ -129,10 +129,11 @@ msg_t Thread4(void *arg)
 	for (;; ) {
 //		vTaskSuspendAll();
 
-		if(USB_DeviceState[0] == DEVICE_STATE_Configured)
+		if(USB_DeviceState[0] == DEVICE_STATE_Configured) {
 			LCD_writeUSB();
-		else
+		} else {
 			LCD_writeUSB_delete();
+		}
 
 //		VS_echoCharacter();
 		VS_USBdataHandling();
@@ -154,15 +155,15 @@ msg_t Thread5(void *arg)
     chRegSetThreadName("LOGG_WR_EE");
 
     for (;; ) {
-    	LCD_writeLOG_delete();
+    	chBSemWait(&binSem_T5);
     	if (canT5Run) {
-    		chBSemWait(&binSem_T5);
     		LCD_writeLOG();
     		(void)logger_writeToEE();
-    		chBSemSignal(&binSem_T5);
+    	} else {
+    		LCD_writeLOG_delete();
     	}
-
-        chThdSleepMilliseconds(800);
+		chBSemSignal(&binSem_T5);
+        chThdSleepMilliseconds(750);
 	}
 	return 0;
 }

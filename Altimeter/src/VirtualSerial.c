@@ -5,6 +5,9 @@
 
 extern BinarySemaphore binSem_T5;
 
+static void VS_SendAllLogs(void);
+static void VS_DeleteAllLogs(void);
+
 /* LPCUSBlib CDC Class driver interface configuration and state information. This structure is
  *  passed to all CDC Class driver functions, so that multiple instances of the same class
  *  within a device can be differentiated from one another.
@@ -152,7 +155,7 @@ void VS_USBdataHandling(void)
 				return;
 			}
 
-			chBSemWait(&binSem_T5);
+//			chBSemWait(&binSem_T5);
 			switch ( *(uint32_t*)recv_byte )
 			{
 				case 0x032A5202:					/* STX R * ETX - read log (02522A03:) */
@@ -171,7 +174,7 @@ void VS_USBdataHandling(void)
 					recv_byte[0] = 0;
 					recv_bytes_count = 0;
 			}
-			chBSemSignal(&binSem_T5);
+//			chBSemSignal(&binSem_T5);
 		}
 	}
 }
@@ -183,18 +186,20 @@ static void VS_SendAllLogs()
 	uint16_t n = 0;
 //	uint16_t nextAddr = 0xFFFF;
 //	uint16_t prevAddr = first_addr_to_read;
-
+	chBSemWait(&binSem_T5);
+	LCD_writeLOG_delete();
 	for (n = 0; n < 512; n++) {
 	    if(logger_readFromEE(sendBuffer, 8) == 0xFFFF) {
 	    	break;
 	    }
 		if(USB_DeviceState[0] != DEVICE_STATE_Configured) {
 			CDC_Device_Flush(&VirtualSerial_CDC_Interface);
+			chBSemSignal(&binSem_T5);
 			return;
 		}
 		CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)(sendBuffer), 8 * sizeof(log_rec_t)); //5 *
 //		prevAddr = nextAddr;
-		chThdSleepMilliseconds(20);
+//		chThdSleepMilliseconds(20);
 	}
 	sendBuffer[0].altitude = 0xFFFF;
 	sendBuffer[0].day = 0xFF;
@@ -205,9 +210,11 @@ static void VS_SendAllLogs()
 	sendBuffer[0].year = 0xFF;
 	if(USB_DeviceState[0] != DEVICE_STATE_Configured) {
 		CDC_Device_Flush(&VirtualSerial_CDC_Interface);
+		chBSemSignal(&binSem_T5);
 		return;
 	}
 	CDC_Device_SendData(&VirtualSerial_CDC_Interface, (char *)(sendBuffer), sizeof(log_rec_t));
+	chBSemSignal(&binSem_T5);
 }
 
 

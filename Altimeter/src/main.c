@@ -16,7 +16,7 @@
 volatile RTC_time_t actualTime;
 volatile RTC_date_t actualDate;
 volatile float calculatedSeaLevelPressure = 0;
-volatile BinarySemaphore binSem_T5;
+BinarySemaphore binSem_T5;
 volatile bool_t canT5Run = FALSE;
 
 /*!

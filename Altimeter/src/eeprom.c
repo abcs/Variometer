@@ -53,7 +53,7 @@ int ee_write_log_rec(log_rec_t * record, uint16_t * address)
 	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)EE_ADDR_B0,
                                    (uint8_t *)(&to_write), sizeof(log_rec_ext_t),
-                                   0, 0, TIME_INFINITE ); //sizeof(to_write)
+                                   0, 0, TIME_INFINITE ); //sizeof(to_write) TIME_INFINITE
 
 	if ( rc != RDY_OK )
 	{
@@ -79,7 +79,7 @@ int ee_write_log_rec(log_rec_t * record, uint16_t * address)
 
 	rc = i2cMasterTransmitTimeout( &I2CD1, (i2caddr_t)EE_ADDR_B1,
                                    (uint8_t *)(&desc_to_write), sizeof(desc_to_write),
-                                   0, 0, TIME_INFINITE );
+                                   0, 0, TIME_INFINITE ); //TIME_INFINITE
 
 	i2cReleaseBus(&I2CD1);
 

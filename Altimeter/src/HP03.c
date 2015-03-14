@@ -166,11 +166,11 @@ int HP03_getPressure(HP03_meas_t * constsIn_pressureOut, bool withKalman)
 
 	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout(&I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, HP03_cmd_1, 2, 0, 0, TIME_INFINITE);
-	i2cReleaseBus(&I2CD1);
+//	i2cReleaseBus(&I2CD1);
 
 	chThdSleepMilliseconds(40);
 
-	i2cAcquireBus(&I2CD1);
+//	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout(&I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, &HP03_cmd_2, 1, (uint8_t *)(&D), 2, TIME_INFINITE);
 	i2cReleaseBus(&I2CD1);
 
@@ -232,11 +232,11 @@ int HP03_getTemperature(HP03_meas_t * result)
 
 	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout(&I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, HP03_cmd_1, 2, 0, 0, TIME_INFINITE);
-	i2cReleaseBus(&I2CD1);
+//	i2cReleaseBus(&I2CD1);
 
 	chThdSleepMilliseconds(40);
 
-	i2cAcquireBus(&I2CD1);
+//	i2cAcquireBus(&I2CD1);
 	rc = i2cMasterTransmitTimeout(&I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, &HP03_cmd_2, 1, (uint8_t *)(&D), 2, TIME_INFINITE);
 	i2cReleaseBus(&I2CD1);
 

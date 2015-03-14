@@ -248,8 +248,6 @@ void VS_setupHardware(void);
 #endif
 
 void VS_USBdataHandling(void);
-static void VS_SendAllLogs(void);
-static void VS_DeleteAllLogs();
 
 
 /*

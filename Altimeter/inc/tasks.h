@@ -11,7 +11,7 @@
 WORKING_AREA(waThread1, 48);
 msg_t Thread1(void *arg);
 
-WORKING_AREA(waThread2, 216);
+WORKING_AREA(waThread2, 224); //216
 msg_t Thread2(void *arg);
 
 WORKING_AREA(waThread3, 152);

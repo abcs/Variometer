@@ -46,8 +46,9 @@ msg_t Thread2(void *arg)
 {
 	log_rec_t * to_log;
 
-    HP03_meas_t temp_press; // = { -3333, 0};
+	HP03_meas_t temp_press; // = { -3333, 0};
     int measuredAltitude = 0;
+    int prevAlt = 0;
 
     (void)arg;
     chRegSetThreadName("temp_press");
@@ -68,10 +69,22 @@ msg_t Thread2(void *arg)
 
  	    measuredAltitude = HP03_pressureToAltitude(calculatedSeaLevelPressure, temp_press);
 
+ 	    if ((prevAlt - measuredAltitude) != 0)
+ 	    {
+ 	    	pwmEnableChannel(&PWMD3, 0, 50);
+ 	    }
+ 	    else
+ 	    {
+ 	    	pwmDisableChannel(&PWMD3, 0);
+ 	    }
+
+ 	    LCD_WriteSpeed(prevAlt, measuredAltitude, 3);
 	    LCD_writePress(temp_press);
 	    LCD_writeAlt(measuredAltitude);
 
- 	    if ( (readTemp % 4) == 0 )
+	    prevAlt = measuredAltitude;
+
+ 	    if ( (readTemp % 3) == 0 )
  	    {
 			to_log = (log_rec_t *)chHeapAlloc(NULL, sizeof(log_rec_t)); //loggerHeap
 
@@ -89,7 +102,7 @@ msg_t Thread2(void *arg)
 			}
  	    }
 
-	    chThdSleepMilliseconds(250);
+	    chThdSleepMilliseconds(325);
     }
     return 0;
 }

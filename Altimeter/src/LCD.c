@@ -206,12 +206,16 @@ void LCD_init() //PCF8813
 */
 void LCD_writeTemp(HP03_meas_t measuredByHP03)
 {
-	char * prefix = ")";
-	char * suffix = "$";
-	char toLCD[10] = {0};
+	if(isUSBWritten)
+			return;
+//	char * prefix = ")";
+//	char * suffix = "$";
+//	char toLCD[10] = {0};
+	char toLCD[5] = {0};
 
-    itoa(measuredByHP03.temper, toLCD, 10, 1, 9, ' ', prefix, suffix);
-    LCD_writeLine(1U, 0U, toLCD, 2U);
+//    itoa(measuredByHP03.temper, toLCD, 10, 1, 9, ' ', prefix, suffix);
+	itoa(measuredByHP03.temper, toLCD, 10, 1, 4, ' ', 0, 0);
+    LCD_writeLine(0U, 0U, toLCD, 1U);
 }
 
 /*!
@@ -225,7 +229,7 @@ void LCD_writePress(HP03_meas_t measuredByHP03)
 	char toLCD[10] = {0};
 
 	itoa(measuredByHP03.press, toLCD, 10, 1, 9, ' ', prefix, suffix);
-    LCD_writeLine(3U, 0U, toLCD, 2U);
+    LCD_writeLine(1U, 0U, toLCD, 2U);
 /*
 	*toLCD = ')';
 	*(toLCD+1) = '\0';
@@ -250,20 +254,11 @@ void LCD_writeAlt(int altToWrite)
 	char toLCD[10] = {0};
 
 	itoa(altToWrite, toLCD, 10, 1, 9, ' ', prefix, suffix);
-    LCD_writeLine(5U, 0U, toLCD, 2U);
+    LCD_writeLine(3U, 0U, toLCD, 2U);
 
     return;
 }
 
-
-/*!
-* Függőleges sebesség megjelenítése a kijelzőn.
-* @param[in] speedToWrite	Sebesség érték.
-*/
-void LCD_writeSpeed(int speedToWrite)
-{
-	return;
-}
 
 /*!
 * Dátum megjelenítése a kijelzőn.
@@ -309,7 +304,12 @@ void LCD_writeUSB()
 	if(isUSBWritten)
 		return;
 
-	char toLCD[4] = "USB";
+	char toLCD[6] = "     ";
+	LCD_writeLine(0U, 0U, toLCD, 1U);
+	toLCD[0] = 'U';
+	toLCD[1] = 'S';
+	toLCD[2] = 'B';
+	toLCD[3] = '\0';
 	LCD_writeLine(0U, 0U, toLCD, 1U);
 	isUSBWritten = true;
 }
@@ -322,7 +322,7 @@ void LCD_writeUSB_delete()
 	if(!isUSBWritten)
 		return;
 
-	char toLCD[4] = "   ";
+	char toLCD[6] = "     ";
 	LCD_writeLine(0U, 0U, toLCD, 1U);
 	isUSBWritten = false;
 }
@@ -336,7 +336,7 @@ void LCD_writeLOG()
 		return;
 
 	char toLCD[4] = "LOG";
-	LCD_writeLine(0U, 4U, toLCD, 1U);
+	LCD_writeLine(0U, 7U, toLCD, 1U);
 	isLOGWritten = true;
 }
 
@@ -349,6 +349,26 @@ void LCD_writeLOG_delete()
 		return;
 
 	char toLCD[4] = "   ";
-	LCD_writeLine(0U, 4U, toLCD, 1U);
+	LCD_writeLine(0U, 7U, toLCD, 1U);
 	isLOGWritten = false;
+}
+
+/*!
+* A függőleges sebesség megjelenítése a kijelzőn.
+* @param[in] prevAlt	Az előző magasság értéke.
+* @param[in] actAlt		Az aktuális magasság értéke.
+* @param[in] deltaTime	A két mérés közt eltelt idő.
+*/
+void LCD_WriteSpeed(int prevAlt, int actAlt, int deltaTime)
+{
+	char * prefix = "(";
+	char * suffix = "&";
+	char toLCD[10] = {0};
+
+	int speedToWrite = (actAlt - prevAlt) / deltaTime;
+
+	itoa(speedToWrite, toLCD, 10, 1, 9, ' ', prefix, suffix);
+    LCD_writeLine(5U, 0U, toLCD, 2U);
+
+    return;
 }

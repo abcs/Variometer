@@ -1,13 +1,9 @@
-/*******************************************************************************
- * File name: 		itoa.c
- * Description:		implementation of the missing itoa newlib function
- * Project: 		_Wzorzec
- * Target: 			LPC2478
- * Compiler: 		arm-none-eabi-gcc
- * Date: 			15-01-2011
- * Author: 			Freddie Chopin
- * Based on: 		---
- *******************************************************************************/
+/*
+ * itoa.c
+ *
+ *  Created on: 2014.10.13.
+ *      Author: csabi
+ */
 
 # include "itoa.h"
 
@@ -59,6 +55,11 @@ char* itoa (int value, char* buffer, int base, int decimals,
 			}
 			dec ++;
 		} while ( (value = quot) );
+
+		if( (sign < base) && (base == 10) && (decimals == 1) )
+		{
+			*buffer ++ = '0';
+		}
 
 		if ( sign < 0 )							/* if negative value add a sign */
 		{

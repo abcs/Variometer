@@ -9,8 +9,8 @@
 #include "hal.h"
 #include "periph.h"
 
-/*
- * SPI configuration (1MHz, CPHA=0, CPOL=0).
+/*!
+ * SPI konfiguráció (1MHz, CPHA=0, CPOL=0).
  */
 SPIConfig spicfg = {
   NULL,
@@ -20,26 +20,29 @@ SPIConfig spicfg = {
   48
 };
 
-/*
- * I2C configuration (400kHz).
+/*!
+ * I2C konfiguráció (400kHz).
  */
 I2CConfig i2ccfg = {
-    I2C_FAST_MODE_PLUS,                 /**< @brief Specifies the I2C mode.        */
-	48                             /**< @brief Specifies the clock timing     */
+    I2C_FAST_MODE_PLUS,            /*!< @brief Az I2C mód beállítása. */
+	48                             /*!< @brief Órajel beállítása.     */
 };
 
+/*!
+ * PWM konfiguráció.
+ */
 PWMConfig pwmcfg = {
-	100000,                          /**< @brief frequency                      */
-	   100,                          /**< @brief period                         */
-	pwm3pcb,                         /**< @brief callback                       */
+	100000,                          /*!< @brief Frekvencia. */
+	   100,                          /**< @brief Periódus.   */
+	pwm3pcb,                         /**< @brief Callback.   */
     {
 	    {PWM_OUTPUT_ACTIVE_LOW, pwm3c0cb},
 	    {PWM_OUTPUT_ACTIVE_LOW, NULL}
     }
 };
 
-/*
- * PWM configuration
+/*!
+ * Callback függvény.
  */
 void pwm3pcb(PWMDriver *pwmp)
 {

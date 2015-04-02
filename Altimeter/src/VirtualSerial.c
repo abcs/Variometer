@@ -8,9 +8,8 @@ extern BinarySemaphore binSem_T5;
 static void VS_SendAllLogs(void);
 static void VS_DeleteAllLogs(void);
 
-/* LPCUSBlib CDC Class driver interface configuration and state information. This structure is
- *  passed to all CDC Class driver functions, so that multiple instances of the same class
- *  within a device can be differentiated from one another.
+/*! LPCUSBlib CDC Class driver interfész konfiguráció és állapot-információ.
+ * Ez a struktúra adódik át minden CDC Class driver függvénynek.
  */
 USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface = {
 	.Config = {
@@ -47,7 +46,7 @@ USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface = {
 // static FILE USBSerialStream;
 
 
-/* Configures the board hardware and chip peripherals for the functionality. */
+/*! A hardver és a chip perifériáinak beállítása. */
 void VS_setupHardware(void)
 {
 	USB_Init(VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device); //VirtualSerial_CDC_Interface.Config.PortNumber, USB_MODE_Device
@@ -104,7 +103,7 @@ void CDC_Bridge_Task(void)
 #endif
 
 
-/* Event handler for the library USB Configuration Changed event. */
+/*! Eseménykezelő az USB könyvtár "Configuration Changed" eseményéhez. */
 void EVENT_USB_Device_ConfigurationChanged(void)
 {
 	bool ConfigSuccess = true;
@@ -115,13 +114,14 @@ void EVENT_USB_Device_ConfigurationChanged(void)
 }
 
 
-/* Event handler for the library USB Control Request reception event. */
+/*! Eseménykezelő az USB könyvtár "Control Request reception" eseményéhez. */
 void EVENT_USB_Device_ControlRequest(void)
 {
 	CDC_Device_ProcessControlRequest(&VirtualSerial_CDC_Interface);
 }
 
 
+/*! Az USB-n keresztül érkező adatokat kezeli le. */
 void VS_USBdataHandling(void)
 {
 	static uint8_t recv_byte[CDC_TXRX_EPSIZE];
@@ -180,6 +180,9 @@ void VS_USBdataHandling(void)
 }
 
 
+/*!
+ * USB-n keresztül elküldi az EEPROM tartalmát.
+ */
 static void VS_SendAllLogs()
 {
 	log_rec_t sendBuffer[8]; //[5];
@@ -218,6 +221,9 @@ static void VS_SendAllLogs()
 }
 
 
+/*!
+ * A teljes naplóállományt törli.
+ */
 static void VS_DeleteAllLogs()
 {
 	char USB_frame[4] = {STX, 'R', '*', STX};
@@ -226,7 +232,7 @@ static void VS_DeleteAllLogs()
 	USB_frame[0] = ETX;
 	USB_frame[3] = ETX;
 
-	//TODO: deleting
+	logger_deleteLog();
 
 	CDC_Device_SendData(&VirtualSerial_CDC_Interface, USB_frame, 4);
 }

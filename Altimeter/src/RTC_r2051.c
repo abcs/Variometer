@@ -28,14 +28,14 @@ void RTC_init()
 			                       0, 0, TIME_INFINITE );
 	i2cReleaseBus(&I2CD1);
 /*
-	timeToSet.hour = 18;
-	timeToSet.minute = 31;
+	timeToSet.hour = 1;
+	timeToSet.minute = 30;
 	timeToSet.second = 00;
 	RTC_setTime(timeToSet);
 
-	dateToSet.day = 24;
-	dateToSet.dayOfWeek = 5;
-	dateToSet.month = 1;
+	dateToSet.day = 29;
+	dateToSet.dayOfWeek = 7;
+	dateToSet.month = 3;
 	dateToSet.year = 15;
 	RTC_setDate(dateToSet);
 */

@@ -23,7 +23,6 @@ extern USB_ClassInfo_CDC_Device_t VirtualSerial_CDC_Interface;
 
 /*!
  * "HeartBeat" LED villogtató szál.
- * (Az idő msec)
  */
 msg_t Thread1(void *arg)
 {
@@ -160,7 +159,7 @@ msg_t Thread4(void *arg)
 }
 
 /*!
- * EEPROM író szál (ringbuffer -> EEPROM)
+ * EEPROM író szál (ringbuffer -> EEPROM).
  */
 msg_t Thread5(void *arg)
 {

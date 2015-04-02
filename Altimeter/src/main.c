@@ -20,7 +20,7 @@ BinarySemaphore binSem_T5;
 volatile bool_t canT5Run = FALSE;
 
 /*!
- * Az alkalmazás belépési pontja.
+ * A szoftver belépési pontja.
  */
 int main(void) {
 
@@ -98,10 +98,6 @@ int main(void) {
   chThdCreateStatic(waThread4, sizeof(waThread4), NORMALPRIO, Thread4, NULL);
   chThdCreateStatic(waThread5, sizeof(waThread5), LOWPRIO, Thread5, NULL);
 
-  /*
-   * Normal main() thread activity, in this demo it updates the 7-segments
-   * display on the LPCXpresso main board using the SPI driver.
-   */
   while (TRUE) {
     if ( !palReadPad(GPIO1, GPIO1_SW3) ) {
     	palTogglePad(GPIO1, GPIO1_BACKLIGHT);

@@ -103,9 +103,8 @@ uint16_t logger_readFromEE(log_rec_t * buffer, uint16_t size_in_rec)
 
 /*!
 * Kitörli a naplóállományt az EEPROM-ból.
-* (Még nincs implementálva.)
-* @return 0.
 */
 int logger_deleteLog()
 {
+	return 0;
 }

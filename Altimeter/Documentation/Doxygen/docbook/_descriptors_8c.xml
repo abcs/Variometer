@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_descriptors_8c">
+    <title>Descriptors.c File Reference</title>
+    <programlisting>#include Descriptors.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>USB_Descriptor_Device_t <link linkend="_descriptors_8c_1a6a373a28a14fd420dd82bdd0f6978544">DeviceDescriptor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>USB_Descriptor_Configuration_t <link linkend="_descriptors_8c_1a2d091eefbfaf5bd43f4cf77d140e2d9f">ConfigurationDescriptor</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="_descriptors_8c_1a156d44ced236ce8b684a10b2ebb9cd70">LanguageString</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>USB_Descriptor_String_t * <link linkend="_descriptors_8c_1a9f3f62928cb9d5d2ca9fbf5eede1cc52">LanguageStringPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="_descriptors_8c_1af43938f971837cb37b3191312503a7a3">ManufacturerString</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>USB_Descriptor_String_t * <link linkend="_descriptors_8c_1a48338794dea700974f8b0b043d0a4d60">ManufacturerStringPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint8_t <link linkend="_descriptors_8c_1afb016d49474419471ed53243c36007f6">ProductString</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>USB_Descriptor_String_t * <link linkend="_descriptors_8c_1aa7a5f39bd07b0c4ded3f6f7f797b1d92">ProductStringPtr</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="_descriptors_8c_1a25529e40317cd4470fae630438b53eff">CALLBACK_USB_GetDescriptor</link> (
+uint8_t corenum, const uint16_t wValue, const uint8_t wIndex, const void **const DescriptorAddress)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/Descriptors.c</para>
+    </simplesect>
+</section>

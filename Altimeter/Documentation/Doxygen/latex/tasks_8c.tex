@@ -1,5 +1,5 @@
-\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/tasks.c fájlreferencia}
-\label{tasks_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/tasks.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/tasks.\-c}}
+\section{src/tasks.c fájlreferencia}
+\label{tasks_8c}\index{src/tasks.\-c@{src/tasks.\-c}}
 {\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}L\-C\-D.\-h\char`\"{}}\\*
@@ -28,7 +28,7 @@ msg\-\_\-t {\bf Thread3} (void $\ast$arg)
 msg\-\_\-t {\bf Thread4} (void $\ast$arg)
 \begin{DoxyCompactList}\small\item\em U\-S\-B kezelő szál. \end{DoxyCompactList}\item 
 msg\-\_\-t {\bf Thread5} (void $\ast$arg)
-\begin{DoxyCompactList}\small\item\em E\-E\-P\-R\-O\-M író szál (ringbuffer -\/$>$ E\-E\-P\-R\-O\-M) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em E\-E\-P\-R\-O\-M író szál (ringbuffer -\/$>$ E\-E\-P\-R\-O\-M). \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Változók}
 \begin{DoxyCompactItemize}
 \item 
@@ -37,7 +37,13 @@ volatile R\-T\-C\-\_\-time\-\_\-t {\bf actual\-Time}
 volatile R\-T\-C\-\_\-date\-\_\-t {\bf actual\-Date}
 \item 
 volatile float {\bf calculated\-Sea\-Level\-Pressure}
-\end{DoxyCompactItemize}
+\item 
+Binary\-Semaphore {\bf bin\-Sem\-\_\-\-T5}
+\item 
+bool\-\_\-t {\bf can\-T5\-Run}
+\item 
+U\-S\-B\-\_\-\-Class\-Info\-\_\-\-C\-D\-C\-\_\-\-Device\-\_\-t {\bf Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}
+\begin{DoxyCompactList}\small\item\em L\-P\-C\-U\-S\-Blib C\-D\-C Class driver interfész konfiguráció és állapot-\/információ. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Függvények dokumentációja}
@@ -52,9 +58,9 @@ volatile float {\bf calculated\-Sea\-Level\-Pressure}
 
 \char`\"{}\-Heart\-Beat\char`\"{} L\-E\-D villogtató szál. 
 
-(Az idő msec) 
 
-Definíció a(z) tasks.\-c fájl 26. sorában.
+
+Definíció a(z) tasks.\-c fájl 27. sorában.
 
 
 
@@ -81,7 +87,7 @@ Nyomás és hőmérséklet kiolvasó szál.
 
 
 
-Definíció a(z) tasks.\-c fájl 43. sorában.
+Definíció a(z) tasks.\-c fájl 44. sorában.
 
 
 
@@ -120,12 +126,11 @@ Dátum és idő kezelő szál.
 
 
 
-Definíció a(z) tasks.\-c fájl 99. sorában.
+Definíció a(z) tasks.\-c fájl 113. sorában.
 
 
 
-A függvény hívási gráfja\-:
-\nopagebreak
+A függvény hívási gráfja\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -159,7 +164,7 @@ U\-S\-B kezelő szál.
 
 
 
-Definíció a(z) tasks.\-c fájl 122. sorában.
+Definíció a(z) tasks.\-c fájl 136. sorában.
 
 
 
@@ -194,11 +199,11 @@ Here is the caller graph for this function\-:
 )}\label{tasks_8c_aad01c280ed05ea63627f5518167c5003}
 
 
-E\-E\-P\-R\-O\-M író szál (ringbuffer -\/$>$ E\-E\-P\-R\-O\-M) 
+E\-E\-P\-R\-O\-M író szál (ringbuffer -\/$>$ E\-E\-P\-R\-O\-M). 
 
 
 
-Definíció a(z) tasks.\-c fájl 149. sorában.
+Definíció a(z) tasks.\-c fájl 164. sorában.
 
 
 
@@ -241,10 +246,35 @@ Definíció a(z) main.\-c fájl 17. sorában.
 
 Definíció a(z) main.\-c fájl 16. sorában.
 
+\index{tasks.\-c@{tasks.\-c}!bin\-Sem\-\_\-\-T5@{bin\-Sem\-\_\-\-T5}}
+\index{bin\-Sem\-\_\-\-T5@{bin\-Sem\-\_\-\-T5}!tasks.c@{tasks.\-c}}
+\subsubsection[{bin\-Sem\-\_\-\-T5}]{\setlength{\rightskip}{0pt plus 5cm}Binary\-Semaphore bin\-Sem\-\_\-\-T5}\label{tasks_8c_ae8441706b2e2119d6ab6c6ba48dfe7c3}
+
+
+Definíció a(z) main.\-c fájl 19. sorában.
+
 \index{tasks.\-c@{tasks.\-c}!calculated\-Sea\-Level\-Pressure@{calculated\-Sea\-Level\-Pressure}}
 \index{calculated\-Sea\-Level\-Pressure@{calculated\-Sea\-Level\-Pressure}!tasks.c@{tasks.\-c}}
 \subsubsection[{calculated\-Sea\-Level\-Pressure}]{\setlength{\rightskip}{0pt plus 5cm}volatile float calculated\-Sea\-Level\-Pressure}\label{tasks_8c_ae33a247a27845609a2f5d2893060d2bb}
 
 
 Definíció a(z) main.\-c fájl 18. sorában.
+
+\index{tasks.\-c@{tasks.\-c}!can\-T5\-Run@{can\-T5\-Run}}
+\index{can\-T5\-Run@{can\-T5\-Run}!tasks.c@{tasks.\-c}}
+\subsubsection[{can\-T5\-Run}]{\setlength{\rightskip}{0pt plus 5cm}bool\-\_\-t can\-T5\-Run}\label{tasks_8c_a128bc2ef2b7821fb43dc85d860ce6289}
+
+
+Definíció a(z) main.\-c fájl 20. sorában.
+
+\index{tasks.\-c@{tasks.\-c}!Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface@{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}}
+\index{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface@{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}!tasks.c@{tasks.\-c}}
+\subsubsection[{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}U\-S\-B\-\_\-\-Class\-Info\-\_\-\-C\-D\-C\-\_\-\-Device\-\_\-t Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}\label{tasks_8c_a6abff48bf476b7a0b5d81012d90058a6}
+
+
+L\-P\-C\-U\-S\-Blib C\-D\-C Class driver interfész konfiguráció és állapot-\/információ. 
+
+Ez a struktúra adódik át minden C\-D\-C Class driver függvénynek. 
+
+Definíció a(z) Virtual\-Serial.\-c fájl 14. sorában.
 

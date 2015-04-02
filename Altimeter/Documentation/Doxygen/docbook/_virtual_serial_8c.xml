@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_virtual_serial_8c">
+    <title>VirtualSerial.c File Reference</title>
+    <programlisting>#include VirtualSerial.h</programlisting>
+    <programlisting>#include ch.h</programlisting>
+    <programlisting>#include logger.h</programlisting>
+    <programlisting>#include string.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>USB_ClassInfo_CDC_Device_t <link linkend="_virtual_serial_8c_1a6abff48bf476b7a0b5d81012d90058a6">VirtualSerial_CDC_Interface</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_virtual_serial_8c_1a5703403c88d1771df8424477dec18318">VS_setupHardware</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_virtual_serial_8c_1a1950bd0e70ab881949fec19b89876617">VS_echoCharacter</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_virtual_serial_8c_1a953a275884b9e33629ff6323fca05252">EVENT_USB_Device_ConfigurationChanged</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_virtual_serial_8c_1a3f4ce439a74a152e3c8ffda5c7dd201a">EVENT_USB_Device_ControlRequest</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_virtual_serial_8c_1a0cc248961962a9961503bd1fc4b0ef11">VS_USBdataHandling</link> (
+void )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="_virtual_serial_8c_1a82348db9012020cc54b5e6099d9e90e7">VS_SendAllLogs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/VirtualSerial.c</para>
+    </simplesect>
+</section>

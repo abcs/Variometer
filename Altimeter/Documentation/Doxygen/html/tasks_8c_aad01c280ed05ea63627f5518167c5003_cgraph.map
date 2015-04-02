@@ -1,4 +1,6 @@
 <map id="Thread5" name="Thread5">
-<area shape="rect" id="node3" href="$logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="123,5,248,35"/>
-<area shape="rect" id="node5" href="$eeprom_8c.html#a601d64b049e61217914cbf9e3c84180a" title="Beír egy rekordot az EEPROM&#45;ba az adott címtől kezdődően. " alt="" coords="296,5,416,35"/>
+<area shape="rect" id="node2" href="$_l_c_d_8c.html#a86cd2b845f3f477af8997fd140746759" title="LOG felirat megjelenítése a kijelzőn. " alt="" coords="145,5,255,32"/>
+<area shape="rect" id="node3" href="$logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="137,56,263,83"/>
+<area shape="rect" id="node5" href="$_l_c_d_8c.html#a7f475dedd89b9b5b3b961dbc096d052a" title="LOG felirat törlése a kijelzőről. " alt="" coords="123,107,277,133"/>
+<area shape="rect" id="node4" href="$eeprom_8c.html#a601d64b049e61217914cbf9e3c84180a" title="Beír egy rekordot az EEPROM&#45;ba az adott címtől kezdődően. " alt="" coords="325,56,445,83"/>
 </map>

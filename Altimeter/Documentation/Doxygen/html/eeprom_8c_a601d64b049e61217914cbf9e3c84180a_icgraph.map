@@ -1,5 +1,5 @@
 <map id="ee_write_log_rec" name="ee_write_log_rec">
-<area shape="rect" id="node3" href="$logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="173,5,299,35"/>
-<area shape="rect" id="node5" href="$tasks_8c.html#aad01c280ed05ea63627f5518167c5003" title="EEPROM író szál (ringbuffer &#45;&gt; EEPROM) " alt="" coords="347,5,416,35"/>
-<area shape="rect" id="node7" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="464,5,515,35"/>
+<area shape="rect" id="node2" href="$logger_8c.html#a8f9e5decfda36c73889dcb1ebd212022" title="A ringbufferből kiír egy rekordot az EEPROM&#45;ba. " alt="" coords="173,5,299,32"/>
+<area shape="rect" id="node3" href="$tasks_8c.html#aad01c280ed05ea63627f5518167c5003" title="EEPROM író szál (ringbuffer &#45;&gt; EEPROM). " alt="" coords="347,5,416,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="A szoftver belépési pontja. " alt="" coords="464,5,515,32"/>
 </map>

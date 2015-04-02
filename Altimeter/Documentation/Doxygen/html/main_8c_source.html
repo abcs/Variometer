@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.4"/>
-<title>altimeter: /HDD/GIT/variometer/Altimeter/src/main.c Forrásfájl</title>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>altimeter: src/main.c Forrásfájl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Készítette Doxygen 1.8.4 -->
+<!-- Készítette Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 </script>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -102,87 +102,119 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;periph.h&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;tasks.h&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="tasks_8c.html#adf161c6b74a74517e1683aa5f3cc038a">   16</a></span>&#160;<span class="keyword">volatile</span> RTC_time_t <a class="code" href="main_8c.html#adf161c6b74a74517e1683aa5f3cc038a">actualTime</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="tasks_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">   17</a></span>&#160;<span class="keyword">volatile</span> RTC_date_t <a class="code" href="main_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">actualDate</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="tasks_8c.html#ae33a247a27845609a2f5d2893060d2bb">   18</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">float</span> <a class="code" href="main_8c.html#ae33a247a27845609a2f5d2893060d2bb">calculatedSeaLevelPressure</a> = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   23</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. ">main</a>(<span class="keywordtype">void</span>) {</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  HP03_meas_t temp_press; <span class="comment">// = { -3333, 0};</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="tasks_8c.html#adf161c6b74a74517e1683aa5f3cc038a">   16</a></span>&#160;<span class="keyword">volatile</span> RTC_time_t <a class="code" href="main_8c.html#adf161c6b74a74517e1683aa5f3cc038a">actualTime</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="tasks_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">   17</a></span>&#160;<span class="keyword">volatile</span> RTC_date_t <a class="code" href="main_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">actualDate</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="tasks_8c.html#ae33a247a27845609a2f5d2893060d2bb">   18</a></span>&#160;<span class="keyword">volatile</span> <span class="keywordtype">float</span> <a class="code" href="main_8c.html#ae33a247a27845609a2f5d2893060d2bb">calculatedSeaLevelPressure</a> = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="_virtual_serial_8c.html#ae8441706b2e2119d6ab6c6ba48dfe7c3">   19</a></span>&#160;BinarySemaphore <a class="code" href="main_8c.html#ae8441706b2e2119d6ab6c6ba48dfe7c3">binSem_T5</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="tasks_8c.html#a128bc2ef2b7821fb43dc85d860ce6289">   20</a></span>&#160;<span class="keyword">volatile</span> bool_t <a class="code" href="main_8c.html#a6858a7f7f4872eaa5dcc054641626c55">canT5Run</a> = FALSE;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">   25</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">void</span>) {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  halInit();</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  chSysInit();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//  sdStart(&amp;SD1, NULL);                  /* Default: 38400,8,N,1.            */</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  spiStart(&amp;SPID1, &amp;<a class="code" href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">spicfg</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  i2cStart(&amp;I2CD1, &amp;<a class="code" href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">i2ccfg</a>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <a class="code" href="_l_c_d_8c.html#a0742e25c23ca1096ceba081b98fd58ba" title="A kijelző inicializálását végzi. ">LCD_init</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <a class="code" href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2" title="A Real Time Clock áramkör inicializálása. ">RTC_init</a>();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d" title="Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének alacsony szintre történő álíításával...">HP03_reset</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab" title="Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek érték...">HP03_readCoeffs</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  HP03_meas_t temp_press; <span class="comment">// = { -3333, 0};</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  halInit();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  chSysInit();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  chBSemInit(&amp;<a class="code" href="main_8c.html#ae8441706b2e2119d6ab6c6ba48dfe7c3">binSem_T5</a>, FALSE);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">//  sdStart(&amp;SD1, NULL);                  /* Default: 38400,8,N,1.            */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  spiStart(&amp;SPID1, &amp;<a class="code" href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">spicfg</a>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  i2cStart(&amp;I2CD1, &amp;<a class="code" href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">i2ccfg</a>);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="_l_c_d_8c.html#a0742e25c23ca1096ceba081b98fd58ba">LCD_init</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2">RTC_init</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="_virtual_serial_8c.html#a5703403c88d1771df8424477dec18318">VS_setupHardware</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <a class="code" href="logger_8c.html#acca02da5a5a8b842893ecc30ea12fda7" title="A naplózó alrendszer inicializálása. ">logger_init</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486" title="Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont...">HP03_getTemperature</a>(&amp;temp_press);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  chThdSleepMilliseconds(25);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486" title="Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont...">HP03_getTemperature</a>(&amp;temp_press);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  chThdSleepMilliseconds(25);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont...">HP03_getPressure</a>(&amp;temp_press, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  chThdSleepMilliseconds(25);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont...">HP03_getPressure</a>(&amp;temp_press, <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="_kalman_8c.html#a6ff19aa3f59897d3931e2d728eb37b50" title="A Kálmán szűrő inicializálása. ">init_kalman</a>(temp_press.press);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="main_8c.html#ae33a247a27845609a2f5d2893060d2bb">calculatedSeaLevelPressure</a> = <a class="code" href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794" title="Kiszámítja a tengerszintre átszámított légnyomást hPa-ban az aktuális méterben megadott magasság...">HP03_pressureSeaLevelFromAltitude</a>(25.0F, temp_press);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <a class="code" href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d">HP03_reset</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <a class="code" href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab">HP03_readCoeffs</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <a class="code" href="_virtual_serial_8c.html#a5703403c88d1771df8424477dec18318">VS_setupHardware</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <a class="code" href="logger_8c.html#acca02da5a5a8b842893ecc30ea12fda7">logger_init</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">HP03_getTemperature</a>(&amp;temp_press);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  chThdSleepMilliseconds(25);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">HP03_getTemperature</a>(&amp;temp_press);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  chThdSleepMilliseconds(25);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">HP03_getPressure</a>(&amp;temp_press, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  chThdSleepMilliseconds(25);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  (void)<a class="code" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">HP03_getPressure</a>(&amp;temp_press, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <a class="code" href="main_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">actualDate</a> = <a class="code" href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc" title="A dátum kiolvasása az RTC áramkörből. ">RTC_getDate</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  pwmStart(&amp;PWMD3, &amp;<a class="code" href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">pwmcfg</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  pwmEnableChannel(&amp;PWMD3, 0, 50);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  chThdSleepMilliseconds(50);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  pwmDisableChannel(&amp;PWMD3, 0);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  palSetPad(GPIO1, GPIO1_BACKLIGHT);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  chThdCreateStatic(waThread1, <span class="keyword">sizeof</span>(waThread1), LOWPRIO, <a class="code" href="tasks_8c.html#a0af304e6c5bca609f1da9a35a49da5c6" title="&quot;HeartBeat&quot; LED villogtató szál. ">Thread1</a>, NULL);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  chThdCreateStatic(waThread2, <span class="keyword">sizeof</span>(waThread2), HIGHPRIO, <a class="code" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. ">Thread2</a>, NULL);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  chThdCreateStatic(waThread3, <span class="keyword">sizeof</span>(waThread3), LOWPRIO, <a class="code" href="tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38" title="Dátum és idő kezelő szál. ">Thread3</a>, NULL);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  chThdCreateStatic(waThread4, <span class="keyword">sizeof</span>(waThread4), NORMALPRIO, <a class="code" href="tasks_8c.html#ad2036d3514561ba8a748ff170baf1e3a" title="USB kezelő szál. ">Thread4</a>, NULL);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  chThdCreateStatic(waThread5, <span class="keyword">sizeof</span>(waThread5), LOWPRIO, <a class="code" href="tasks_8c.html#aad01c280ed05ea63627f5518167c5003" title="EEPROM író szál (ringbuffer -&gt; EEPROM) ">Thread5</a>, NULL);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">   * Normal main() thread activity, in this demo it updates the 7-segments</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">   * display on the LPCXpresso main board using the SPI driver.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">while</span> (TRUE) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">if</span> ( !palReadPad(GPIO1, GPIO1_SW3) )</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        palTogglePad(GPIO1, GPIO1_BACKLIGHT);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">while</span> ( !palReadPad(GPIO1, GPIO1_SW3) )</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            chThdSleepMilliseconds(75);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    chThdSleepMilliseconds(125);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="comment">// TestThread(&amp;SD1);</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">// spiSelect(&amp;SPID1);</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="comment">// spiSend(&amp;SPID1, 1, &amp;digits[i]);                 /* Non polled method.   */</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// spiUnselect(&amp;SPID1);</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// chThdSleepMilliseconds(500);</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// spiSelect(&amp;SPID1);</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// spiPolledExchange(&amp;SPID1, digits[i | 0x10]);    /* Polled method.       */</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// spiUnselect(&amp;SPID1);</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// chThdSleepMilliseconds(500);</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// i = (i + 1) &amp; 15;</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  }</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  <a class="code" href="_kalman_8c.html#a6ff19aa3f59897d3931e2d728eb37b50">init_kalman</a>(temp_press.press);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="main_8c.html#ae33a247a27845609a2f5d2893060d2bb">calculatedSeaLevelPressure</a> = <a class="code" href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794">HP03_pressureSeaLevelFromAltitude</a>(25.0F, temp_press);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <a class="code" href="main_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">actualDate</a> = <a class="code" href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc">RTC_getDate</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  pwmStart(&amp;PWMD3, &amp;<a class="code" href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">pwmcfg</a>);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  pwmEnableChannel(&amp;PWMD3, 0, 50);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  chThdSleepMilliseconds(50);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  pwmDisableChannel(&amp;PWMD3, 0);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  palSetPad(GPIO1, GPIO1_BACKLIGHT);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  chThdCreateStatic(waThread1, <span class="keyword">sizeof</span>(waThread1), LOWPRIO, <a class="code" href="tasks_8c.html#a0af304e6c5bca609f1da9a35a49da5c6">Thread1</a>, NULL);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  chThdCreateStatic(waThread2, <span class="keyword">sizeof</span>(waThread2), HIGHPRIO, <a class="code" href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa">Thread2</a>, NULL);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  chThdCreateStatic(waThread3, <span class="keyword">sizeof</span>(waThread3), LOWPRIO, <a class="code" href="tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38">Thread3</a>, NULL);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  chThdCreateStatic(waThread4, <span class="keyword">sizeof</span>(waThread4), NORMALPRIO, <a class="code" href="tasks_8c.html#ad2036d3514561ba8a748ff170baf1e3a">Thread4</a>, NULL);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  chThdCreateStatic(waThread5, <span class="keyword">sizeof</span>(waThread5), LOWPRIO, <a class="code" href="tasks_8c.html#aad01c280ed05ea63627f5518167c5003">Thread5</a>, NULL);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">while</span> (TRUE) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> ( !palReadPad(GPIO1, GPIO1_SW3) ) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        palTogglePad(GPIO1, GPIO1_BACKLIGHT);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">while</span> ( !palReadPad(GPIO1, GPIO1_SW3) )</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            chThdSleepMilliseconds(75);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> ( !palReadPad(GPIO1, GPIO1_SW2) ) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="main_8c.html#a6858a7f7f4872eaa5dcc054641626c55">canT5Run</a> = !<a class="code" href="main_8c.html#a6858a7f7f4872eaa5dcc054641626c55">canT5Run</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">while</span> ( !palReadPad(GPIO1, GPIO1_SW2) )</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            chThdSleepMilliseconds(75);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    chThdSleepMilliseconds(125);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// TestThread(&amp;SD1);</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// spiSelect(&amp;SPID1);</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// spiSend(&amp;SPID1, 1, &amp;digits[i]);                 /* Non polled method.   */</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// spiUnselect(&amp;SPID1);</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">// chThdSleepMilliseconds(500);</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// spiSelect(&amp;SPID1);</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// spiPolledExchange(&amp;SPID1, digits[i | 0x10]);    /* Polled method.       */</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// spiUnselect(&amp;SPID1);</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// chThdSleepMilliseconds(500);</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">// i = (i + 1) &amp; 15;</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="ttc" id="tasks_8c_html_afc0a4f34ef3333216c2f7c0de2b1f9aa"><div class="ttname"><a href="tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa">Thread2</a></div><div class="ttdeci">msg_t Thread2(void *arg)</div><div class="ttdoc">Nyomás és hőmérséklet kiolvasó szál. </div><div class="ttdef"><b>Definition:</b> <a href="tasks_8c_source.html#l00044">tasks.c:44</a></div></div>
+<div class="ttc" id="tasks_8c_html_a3287156dd96a38e39fa70850b4c6fa38"><div class="ttname"><a href="tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38">Thread3</a></div><div class="ttdeci">msg_t Thread3(void *arg)</div><div class="ttdoc">Dátum és idő kezelő szál. </div><div class="ttdef"><b>Definition:</b> <a href="tasks_8c_source.html#l00113">tasks.c:113</a></div></div>
+<div class="ttc" id="_l_c_d_8c_html_a0742e25c23ca1096ceba081b98fd58ba"><div class="ttname"><a href="_l_c_d_8c.html#a0742e25c23ca1096ceba081b98fd58ba">LCD_init</a></div><div class="ttdeci">void LCD_init()</div><div class="ttdoc">A kijelző inicializálását végzi. </div><div class="ttdef"><b>Definition:</b> <a href="_l_c_d_8c_source.html#l00169">LCD.c:169</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a514dfc9c4a90f039f562c24d6a372486"><div class="ttname"><a href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">HP03_getTemperature</a></div><div class="ttdeci">int HP03_getTemperature(HP03_meas_t *result)</div><div class="ttdoc">Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00215">HP03.c:215</a></div></div>
+<div class="ttc" id="_kalman_8c_html_a6ff19aa3f59897d3931e2d728eb37b50"><div class="ttname"><a href="_kalman_8c.html#a6ff19aa3f59897d3931e2d728eb37b50">init_kalman</a></div><div class="ttdeci">void init_kalman(int z_measured)</div><div class="ttdoc">A Kálmán szűrő inicializálása. </div><div class="ttdef"><b>Definition:</b> <a href="_kalman_8c_source.html#l00023">Kalman.c:23</a></div></div>
+<div class="ttc" id="main_8c_html_ae33a247a27845609a2f5d2893060d2bb"><div class="ttname"><a href="main_8c.html#ae33a247a27845609a2f5d2893060d2bb">calculatedSeaLevelPressure</a></div><div class="ttdeci">volatile float calculatedSeaLevelPressure</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00018">main.c:18</a></div></div>
+<div class="ttc" id="main_8c_html_a1fcf2a74e06883fb690c0c062bf9408c"><div class="ttname"><a href="main_8c.html#a1fcf2a74e06883fb690c0c062bf9408c">actualDate</a></div><div class="ttdeci">volatile RTC_date_t actualDate</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00017">main.c:17</a></div></div>
+<div class="ttc" id="_virtual_serial_8c_html_a5703403c88d1771df8424477dec18318"><div class="ttname"><a href="_virtual_serial_8c.html#a5703403c88d1771df8424477dec18318">VS_setupHardware</a></div><div class="ttdeci">void VS_setupHardware(void)</div><div class="ttdoc">A hardver és a chip perifériáinak beállítása. </div><div class="ttdef"><b>Definition:</b> <a href="_virtual_serial_8c_source.html#l00050">VirtualSerial.c:50</a></div></div>
+<div class="ttc" id="periph_8c_html_afc4986c4ff59c9cd490bd7fd437f7c1a"><div class="ttname"><a href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">spicfg</a></div><div class="ttdeci">SPIConfig spicfg</div><div class="ttdoc">SPI konfiguráció (1MHz, CPHA=0, CPOL=0). </div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00015">periph.c:15</a></div></div>
+<div class="ttc" id="tasks_8c_html_aad01c280ed05ea63627f5518167c5003"><div class="ttname"><a href="tasks_8c.html#aad01c280ed05ea63627f5518167c5003">Thread5</a></div><div class="ttdeci">msg_t Thread5(void *arg)</div><div class="ttdoc">EEPROM író szál (ringbuffer -&gt; EEPROM). </div><div class="ttdef"><b>Definition:</b> <a href="tasks_8c_source.html#l00164">tasks.c:164</a></div></div>
+<div class="ttc" id="main_8c_html_ae8441706b2e2119d6ab6c6ba48dfe7c3"><div class="ttname"><a href="main_8c.html#ae8441706b2e2119d6ab6c6ba48dfe7c3">binSem_T5</a></div><div class="ttdeci">BinarySemaphore binSem_T5</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00019">main.c:19</a></div></div>
+<div class="ttc" id="periph_8c_html_a902ad52cd507aae1615bd2858a47020d"><div class="ttname"><a href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">pwmcfg</a></div><div class="ttdeci">PWMConfig pwmcfg</div><div class="ttdoc">PWM konfiguráció. </div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00034">periph.c:34</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a1013cdcfcdf48995025d9d2cf1778794"><div class="ttname"><a href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794">HP03_pressureSeaLevelFromAltitude</a></div><div class="ttdeci">float HP03_pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp)</div><div class="ttdoc">Kiszámítja a tengerszintre átszámított légnyomást hPa-ban az aktuális méterben megadott magasság...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00071">HP03.c:71</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a20b369f3261a05f3049139a070607b6d"><div class="ttname"><a href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d">HP03_reset</a></div><div class="ttdeci">void HP03_reset()</div><div class="ttdoc">Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének alacsony szintre történő álíításával...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00101">HP03.c:101</a></div></div>
+<div class="ttc" id="main_8c_html_a6858a7f7f4872eaa5dcc054641626c55"><div class="ttname"><a href="main_8c.html#a6858a7f7f4872eaa5dcc054641626c55">canT5Run</a></div><div class="ttdeci">volatile bool_t canT5Run</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00020">main.c:20</a></div></div>
+<div class="ttc" id="_r_t_c__r2051_8c_html_abbeadb69d76ca80037803e6ecb3c74dc"><div class="ttname"><a href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc">RTC_getDate</a></div><div class="ttdeci">RTC_date_t RTC_getDate()</div><div class="ttdoc">A dátum kiolvasása az RTC áramkörből. </div><div class="ttdef"><b>Definition:</b> <a href="_r_t_c__r2051_8c_source.html#l00141">RTC_r2051.c:141</a></div></div>
+<div class="ttc" id="tasks_8c_html_ad2036d3514561ba8a748ff170baf1e3a"><div class="ttname"><a href="tasks_8c.html#ad2036d3514561ba8a748ff170baf1e3a">Thread4</a></div><div class="ttdeci">msg_t Thread4(void *arg)</div><div class="ttdoc">USB kezelő szál. </div><div class="ttdef"><b>Definition:</b> <a href="tasks_8c_source.html#l00136">tasks.c:136</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a2e206ea1f307f9565982ad14b3582be5"><div class="ttname"><a href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">HP03_getPressure</a></div><div class="ttdeci">int HP03_getPressure(HP03_meas_t *constsIn_pressureOut, bool withKalman)</div><div class="ttdoc">Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00150">HP03.c:150</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a8b6f09ca977f999dfc96f1c355713bab"><div class="ttname"><a href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab">HP03_readCoeffs</a></div><div class="ttdeci">void HP03_readCoeffs()</div><div class="ttdoc">Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek érték...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00116">HP03.c:116</a></div></div>
+<div class="ttc" id="_r_t_c__r2051_8c_html_afd522e1615ce58a62a9e5592d420aed2"><div class="ttname"><a href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2">RTC_init</a></div><div class="ttdeci">void RTC_init()</div><div class="ttdoc">A Real Time Clock áramkör inicializálása. </div><div class="ttdef"><b>Definition:</b> <a href="_r_t_c__r2051_8c_source.html#l00017">RTC_r2051.c:17</a></div></div>
+<div class="ttc" id="tasks_8c_html_a0af304e6c5bca609f1da9a35a49da5c6"><div class="ttname"><a href="tasks_8c.html#a0af304e6c5bca609f1da9a35a49da5c6">Thread1</a></div><div class="ttdeci">msg_t Thread1(void *arg)</div><div class="ttdoc">&quot;HeartBeat&quot; LED villogtató szál. </div><div class="ttdef"><b>Definition:</b> <a href="tasks_8c_source.html#l00027">tasks.c:27</a></div></div>
+<div class="ttc" id="main_8c_html_a840291bc02cba5474a4cb46a9b9566fe"><div class="ttname"><a href="main_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a></div><div class="ttdeci">int main(void)</div><div class="ttdoc">A szoftver belépési pontja. </div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00025">main.c:25</a></div></div>
+<div class="ttc" id="main_8c_html_adf161c6b74a74517e1683aa5f3cc038a"><div class="ttname"><a href="main_8c.html#adf161c6b74a74517e1683aa5f3cc038a">actualTime</a></div><div class="ttdeci">volatile RTC_time_t actualTime</div><div class="ttdef"><b>Definition:</b> <a href="main_8c_source.html#l00016">main.c:16</a></div></div>
+<div class="ttc" id="logger_8c_html_acca02da5a5a8b842893ecc30ea12fda7"><div class="ttname"><a href="logger_8c.html#acca02da5a5a8b842893ecc30ea12fda7">logger_init</a></div><div class="ttdeci">void logger_init()</div><div class="ttdoc">A naplózó alrendszer inicializálása. </div><div class="ttdef"><b>Definition:</b> <a href="logger_8c_source.html#l00018">logger.c:18</a></div></div>
+<div class="ttc" id="periph_8c_html_a5dadd1387ac7b6a9a9bf2416cb1e2894"><div class="ttname"><a href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">i2ccfg</a></div><div class="ttdeci">I2CConfig i2ccfg</div><div class="ttdoc">I2C konfiguráció (400kHz). </div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00026">periph.c:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+Projekt: altimeter Készült: Thu Apr 2 2015 13:01:01 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.4
+</a> 1.8.6
 </small></address>
 </body>
 </html>

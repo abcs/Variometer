@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="logger_8c">
+    <title>logger.c File Reference</title>
+    <programlisting>#include logger.h</programlisting>
+    <programlisting>#include eeprom.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static log_buffer_t <link linkend="logger_8c_1a19c58302a9f14216e82ddef8df3d483a">log_buffer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static uint16_t <link linkend="logger_8c_1a5a88e2e426679ec129caab002bcde424">first_free</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static uint16_t <link linkend="logger_8c_1acb60d702f313ebf6d3b0e0e5766d5f7e">first_rec_to_read</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="logger_8c_1acca02da5a5a8b842893ecc30ea12fda7">logger_init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="logger_8c_1ab32b0e36c611a22cba880cc3aacda3db">logger_logThis</link> (
+log_rec_t * rec_to_log)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="logger_8c_1a8f9e5decfda36c73889dcb1ebd212022">logger_writeToEE</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="logger_8c_1a6d5881c4551c02ba1ca81719d375eeac">logger_readFromEE</link> (
+log_rec_t * buffer, uint16_t size_in_rec)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="logger_8c_1a14c8fca7ded47975eb3ca731a8eacfef">logger_deleteLog</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/logger.c</para>
+    </simplesect>
+</section>

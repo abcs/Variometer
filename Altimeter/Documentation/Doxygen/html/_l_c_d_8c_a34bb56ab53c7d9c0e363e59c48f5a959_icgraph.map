@@ -1,4 +1,4 @@
 <map id="LCD_writeTemp" name="LCD_writeTemp">
-<area shape="rect" id="node3" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="171,5,240,35"/>
-<area shape="rect" id="node5" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="288,5,339,35"/>
+<area shape="rect" id="node2" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="171,5,240,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="A szoftver belépési pontja. " alt="" coords="288,5,339,32"/>
 </map>

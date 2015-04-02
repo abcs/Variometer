@@ -1,110 +1,118 @@
-\select@language {hungarian} \contentsline {chapter}{\numberline {1}Adatszerkezet-\/mutat\IeC {\'o}}{1}
-\select@language {hungarian} \contentsline {section}{\numberline {1.1}Adatszerkezetek}{1}
-\select@language {hungarian} \contentsline {chapter}{\numberline {2}F\IeC {\'a}jlmutat\IeC {\'o}}{3}
-\select@language {hungarian} \contentsline {section}{\numberline {2.1}F\IeC {\'a}jllista}{3}
-\select@language {hungarian} \contentsline {chapter}{\numberline {3}Adatszerkezetek dokument\IeC {\'a}ci\IeC {\'o}ja}{5}
-\select@language {hungarian} \contentsline {section}{\numberline {3.1}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec\discretionary {-}{}{}\_\discretionary {-}{}{}ext\discretionary {-}{}{}\_\discretionary {-}{}{}s strukt\IeC {\'u}rareferencia}{5}
-\select@language {hungarian} \contentsline {subsection}{\numberline {3.1.1}R\IeC {\'e}szletes le\IeC {\'\i }r\IeC {\'a}s}{5}
-\select@language {hungarian} \contentsline {subsection}{\numberline {3.1.2}Adatmez\IeC {\H o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{5}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {3.1.2.1}ff\discretionary {-}{}{}\_\discretionary {-}{}{}addr}{5}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {3.1.2.2}record\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}write}{5}
-\select@language {hungarian} \contentsline {chapter}{\numberline {4}F\IeC {\'a}jlok dokument\IeC {\'a}ci\IeC {\'o}ja}{7}
-\select@language {hungarian} \contentsline {section}{\numberline {4.1}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/\discretionary {-}{}{}Descriptors.c f\IeC {\'a}jlreferencia}{7}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.1.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{8}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.1.1}C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}B\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Get\discretionary {-}{}{}Descriptor}{8}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.1.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{8}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.1}Configuration\discretionary {-}{}{}Descriptor}{8}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.2}Device\discretionary {-}{}{}Descriptor}{8}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.3}Language\discretionary {-}{}{}String}{8}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.4}Language\discretionary {-}{}{}String\discretionary {-}{}{}Ptr}{8}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.5}Manufacturer\discretionary {-}{}{}String}{8}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.6}Manufacturer\discretionary {-}{}{}String\discretionary {-}{}{}Ptr}{9}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.7}Product\discretionary {-}{}{}String}{9}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.1.2.8}Product\discretionary {-}{}{}String\discretionary {-}{}{}Ptr}{9}
-\select@language {hungarian} \contentsline {section}{\numberline {4.2}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/eeprom.c f\IeC {\'a}jlreferencia}{9}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.2.1}T\IeC {\'\i }pusdefin\IeC {\'\i }ci\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{10}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.2.1.1}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec\discretionary {-}{}{}\_\discretionary {-}{}{}ext\discretionary {-}{}{}\_\discretionary {-}{}{}t}{10}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.2.2}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{10}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.2.2.1}ee\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}first\discretionary {-}{}{}\_\discretionary {-}{}{}free\discretionary {-}{}{}\_\discretionary {-}{}{}address}{10}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.2.2.2}ee\discretionary {-}{}{}\_\discretionary {-}{}{}read\discretionary {-}{}{}\_\discretionary {-}{}{}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec}{11}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.2.2.3}ee\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}\_\discretionary {-}{}{}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec}{11}
-\select@language {hungarian} \contentsline {section}{\numberline {4.3}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/\discretionary {-}{}{}H\discretionary {-}{}{}P03.c f\IeC {\'a}jlreferencia}{12}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.3.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{12}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.3.1.1}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Pressure}{13}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.3.1.2}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Temperature}{14}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.3.1.3}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}pressure\discretionary {-}{}{}Sea\discretionary {-}{}{}Level\discretionary {-}{}{}From\discretionary {-}{}{}Altitude}{15}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.3.1.4}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}pressure\discretionary {-}{}{}To\discretionary {-}{}{}Altitude}{16}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.3.1.5}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}read\discretionary {-}{}{}Coeffs}{17}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.3.1.6}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}reset}{17}
-\select@language {hungarian} \contentsline {section}{\numberline {4.4}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/itoa.c f\IeC {\'a}jlreferencia}{17}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.4.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{18}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.4.1.1}itoa}{18}
-\select@language {hungarian} \contentsline {section}{\numberline {4.5}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/\discretionary {-}{}{}Kalman.c f\IeC {\'a}jlreferencia}{19}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.5.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{20}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.5.1.1}init\discretionary {-}{}{}\_\discretionary {-}{}{}kalman}{20}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.5.1.2}kalman}{21}
-\select@language {hungarian} \contentsline {section}{\numberline {4.6}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D.c f\IeC {\'a}jlreferencia}{21}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.6.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{22}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.1}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}clear}{22}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.2}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}init}{23}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.3}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Alt}{24}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.4}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Date}{25}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.5}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Press}{25}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.6}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Speed}{26}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.7}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Temp}{26}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.8}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Time}{27}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.9}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B}{27}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.6.1.10}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}delete}{28}
-\select@language {hungarian} \contentsline {section}{\numberline {4.7}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/logger.c f\IeC {\'a}jlreferencia}{28}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.7.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{29}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.7.1.1}logger\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}Log}{29}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.7.1.2}logger\discretionary {-}{}{}\_\discretionary {-}{}{}init}{29}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.7.1.3}logger\discretionary {-}{}{}\_\discretionary {-}{}{}log\discretionary {-}{}{}This}{30}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.7.1.4}logger\discretionary {-}{}{}\_\discretionary {-}{}{}read\discretionary {-}{}{}From\discretionary {-}{}{}E\discretionary {-}{}{}E}{30}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.7.1.5}logger\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}To\discretionary {-}{}{}E\discretionary {-}{}{}E}{30}
-\select@language {hungarian} \contentsline {section}{\numberline {4.8}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/main.c f\IeC {\'a}jlreferencia}{31}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.8.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{32}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.8.1.1}main}{32}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.8.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{33}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.8.2.1}actual\discretionary {-}{}{}Date}{33}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.8.2.2}actual\discretionary {-}{}{}Time}{33}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.8.2.3}calculated\discretionary {-}{}{}Sea\discretionary {-}{}{}Level\discretionary {-}{}{}Pressure}{33}
-\select@language {hungarian} \contentsline {section}{\numberline {4.9}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/mymath.c f\IeC {\'a}jlreferencia}{34}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.9.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{34}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.9.1.1}my\discretionary {-}{}{}Pow}{34}
-\select@language {hungarian} \contentsline {section}{\numberline {4.10}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/periph.c f\IeC {\'a}jlreferencia}{34}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.10.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{35}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.10.1.1}pwm3c0cb}{35}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.10.1.2}pwm3pcb}{35}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.10.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{35}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.10.2.1}i2ccfg}{35}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.10.2.2}pwmcfg}{36}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.10.2.3}spicfg}{36}
-\select@language {hungarian} \contentsline {section}{\numberline {4.11}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}r2051.c f\IeC {\'a}jlreferencia}{36}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.11.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{37}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.11.1.1}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Date}{37}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.11.1.2}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Time}{37}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.11.1.3}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}init}{38}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.11.1.4}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}Date}{38}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.11.1.5}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}Time}{38}
-\select@language {hungarian} \contentsline {section}{\numberline {4.12}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/tasks.c f\IeC {\'a}jlreferencia}{38}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.12.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{39}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.1.1}Thread1}{39}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.1.2}Thread2}{40}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.1.3}Thread3}{40}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.1.4}Thread4}{41}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.1.5}Thread5}{42}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.12.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{42}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.2.1}actual\discretionary {-}{}{}Date}{42}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.2.2}actual\discretionary {-}{}{}Time}{42}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.12.2.3}calculated\discretionary {-}{}{}Sea\discretionary {-}{}{}Level\discretionary {-}{}{}Pressure}{42}
-\select@language {hungarian} \contentsline {section}{\numberline {4.13}/\discretionary {-}{}{}H\discretionary {-}{}{}D\discretionary {-}{}{}D/\discretionary {-}{}{}G\discretionary {-}{}{}I\discretionary {-}{}{}T/variometer/\discretionary {-}{}{}Altimeter/src/\discretionary {-}{}{}Virtual\discretionary {-}{}{}Serial.c f\IeC {\'a}jlreferencia}{43}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.13.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{43}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.13.1.1}E\discretionary {-}{}{}V\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Device\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Configuration\discretionary {-}{}{}Changed}{43}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.13.1.2}E\discretionary {-}{}{}V\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Device\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Control\discretionary {-}{}{}Request}{43}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.13.1.3}V\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}echo\discretionary {-}{}{}Character}{43}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.13.1.4}V\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}setup\discretionary {-}{}{}Hardware}{44}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.13.1.5}V\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}Bdata\discretionary {-}{}{}Handling}{44}
-\select@language {hungarian} \contentsline {subsection}{\numberline {4.13.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{44}
-\select@language {hungarian} \contentsline {subsubsection}{\numberline {4.13.2.1}Virtual\discretionary {-}{}{}Serial\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}{44}
-\select@language {hungarian} \contentsline {part}{T\IeC {\'a}rgymutat\IeC {\'o}}{46}
+\select@language {magyar} \contentsline {chapter}{\numberline {1}Adatszerkezet-\/mutat\IeC {\'o}}{1}
+\select@language {magyar} \contentsline {section}{\numberline {1.1}Adatszerkezetek}{1}
+\select@language {magyar} \contentsline {chapter}{\numberline {2}F\IeC {\'a}jlmutat\IeC {\'o}}{3}
+\select@language {magyar} \contentsline {section}{\numberline {2.1}F\IeC {\'a}jllista}{3}
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Adatszerkezetek dokument\IeC {\'a}ci\IeC {\'o}ja}{5}
+\select@language {magyar} \contentsline {section}{\numberline {3.1}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec\discretionary {-}{}{}\_\discretionary {-}{}{}ext\discretionary {-}{}{}\_\discretionary {-}{}{}s strukt\IeC {\'u}rareferencia}{5}
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.1}R\IeC {\'e}szletes le\IeC {\'\i }r\IeC {\'a}s}{5}
+\select@language {magyar} \contentsline {subsection}{\numberline {3.1.2}Adatmez\IeC {\H o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{5}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.2.1}ff\discretionary {-}{}{}\_\discretionary {-}{}{}addr}{5}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {3.1.2.2}record\discretionary {-}{}{}\_\discretionary {-}{}{}to\discretionary {-}{}{}\_\discretionary {-}{}{}write}{5}
+\select@language {magyar} \contentsline {chapter}{\numberline {4}F\IeC {\'a}jlok dokument\IeC {\'a}ci\IeC {\'o}ja}{7}
+\select@language {magyar} \contentsline {section}{\numberline {4.1}src/\discretionary {-}{}{}Descriptors.c f\IeC {\'a}jlreferencia}{7}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{7}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.1.1}C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}L\discretionary {-}{}{}B\discretionary {-}{}{}A\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Get\discretionary {-}{}{}Descriptor}{8}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.1.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{8}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.1}Configuration\discretionary {-}{}{}Descriptor}{8}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.2}Device\discretionary {-}{}{}Descriptor}{8}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.3}Language\discretionary {-}{}{}String}{8}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.4}Language\discretionary {-}{}{}String\discretionary {-}{}{}Ptr}{8}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.5}Manufacturer\discretionary {-}{}{}String}{8}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.6}Manufacturer\discretionary {-}{}{}String\discretionary {-}{}{}Ptr}{9}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.7}Product\discretionary {-}{}{}String}{9}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.1.2.8}Product\discretionary {-}{}{}String\discretionary {-}{}{}Ptr}{9}
+\select@language {magyar} \contentsline {section}{\numberline {4.2}src/eeprom.c f\IeC {\'a}jlreferencia}{9}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.2.1}T\IeC {\'\i }pusdefin\IeC {\'\i }ci\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{10}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.2.1.1}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec\discretionary {-}{}{}\_\discretionary {-}{}{}ext\discretionary {-}{}{}\_\discretionary {-}{}{}t}{10}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.2.2}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{10}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.2.2.1}ee\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}\_\discretionary {-}{}{}first\discretionary {-}{}{}\_\discretionary {-}{}{}free\discretionary {-}{}{}\_\discretionary {-}{}{}address}{10}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.2.2.2}ee\discretionary {-}{}{}\_\discretionary {-}{}{}read\discretionary {-}{}{}\_\discretionary {-}{}{}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec}{10}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.2.2.3}ee\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}\_\discretionary {-}{}{}log\discretionary {-}{}{}\_\discretionary {-}{}{}rec}{11}
+\select@language {magyar} \contentsline {section}{\numberline {4.3}src/\discretionary {-}{}{}H\discretionary {-}{}{}P03.c f\IeC {\'a}jlreferencia}{11}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.3.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{12}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.3.1.1}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Pressure}{12}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.3.1.2}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Temperature}{13}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.3.1.3}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}pressure\discretionary {-}{}{}Sea\discretionary {-}{}{}Level\discretionary {-}{}{}From\discretionary {-}{}{}Altitude}{14}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.3.1.4}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}pressure\discretionary {-}{}{}To\discretionary {-}{}{}Altitude}{14}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.3.1.5}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}read\discretionary {-}{}{}Coeffs}{15}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.3.1.6}H\discretionary {-}{}{}P03\discretionary {-}{}{}\_\discretionary {-}{}{}reset}{15}
+\select@language {magyar} \contentsline {section}{\numberline {4.4}src/itoa.c f\IeC {\'a}jlreferencia}{16}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.4.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{16}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.4.1.1}itoa}{16}
+\select@language {magyar} \contentsline {section}{\numberline {4.5}src/\discretionary {-}{}{}Kalman.c f\IeC {\'a}jlreferencia}{17}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.5.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{18}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.5.1.1}init\discretionary {-}{}{}\_\discretionary {-}{}{}kalman}{18}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.5.1.2}kalman}{18}
+\select@language {magyar} \contentsline {section}{\numberline {4.6}src/\discretionary {-}{}{}L\discretionary {-}{}{}C\discretionary {-}{}{}D.c f\IeC {\'a}jlreferencia}{19}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.6.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{20}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.1}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}clear}{20}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.2}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}init}{20}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.3}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Alt}{21}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.4}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Date}{21}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.5}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}G}{22}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.6}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}L\discretionary {-}{}{}O\discretionary {-}{}{}G\discretionary {-}{}{}\_\discretionary {-}{}{}delete}{22}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.7}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Press}{22}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.8}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Write\discretionary {-}{}{}Speed}{23}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.9}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Temp}{24}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.10}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}Time}{24}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.11}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B}{25}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.6.1.12}L\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}delete}{25}
+\select@language {magyar} \contentsline {section}{\numberline {4.7}src/logger.c f\IeC {\'a}jlreferencia}{26}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.7.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{26}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.7.1.1}logger\discretionary {-}{}{}\_\discretionary {-}{}{}delete\discretionary {-}{}{}Log}{26}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.7.1.2}logger\discretionary {-}{}{}\_\discretionary {-}{}{}init}{27}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.7.1.3}logger\discretionary {-}{}{}\_\discretionary {-}{}{}log\discretionary {-}{}{}This}{27}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.7.1.4}logger\discretionary {-}{}{}\_\discretionary {-}{}{}read\discretionary {-}{}{}From\discretionary {-}{}{}E\discretionary {-}{}{}E}{28}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.7.1.5}logger\discretionary {-}{}{}\_\discretionary {-}{}{}write\discretionary {-}{}{}To\discretionary {-}{}{}E\discretionary {-}{}{}E}{29}
+\select@language {magyar} \contentsline {section}{\numberline {4.8}src/main.c f\IeC {\'a}jlreferencia}{30}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.8.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{30}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.8.1.1}main}{30}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.8.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{31}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.8.2.1}actual\discretionary {-}{}{}Date}{31}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.8.2.2}actual\discretionary {-}{}{}Time}{32}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.8.2.3}bin\discretionary {-}{}{}Sem\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T5}{32}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.8.2.4}calculated\discretionary {-}{}{}Sea\discretionary {-}{}{}Level\discretionary {-}{}{}Pressure}{32}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.8.2.5}can\discretionary {-}{}{}T5\discretionary {-}{}{}Run}{32}
+\select@language {magyar} \contentsline {section}{\numberline {4.9}src/mymath.c f\IeC {\'a}jlreferencia}{32}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.9.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{32}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.9.1.1}my\discretionary {-}{}{}Pow}{32}
+\select@language {magyar} \contentsline {section}{\numberline {4.10}src/periph.c f\IeC {\'a}jlreferencia}{33}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.10.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{33}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.10.1.1}pwm3c0cb}{33}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.10.1.2}pwm3pcb}{34}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.10.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{34}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.10.2.1}i2ccfg}{34}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.10.2.2}pwmcfg}{34}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.10.2.3}spicfg}{34}
+\select@language {magyar} \contentsline {section}{\numberline {4.11}src/\discretionary {-}{}{}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}r2051.c f\IeC {\'a}jlreferencia}{34}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.11.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{35}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.11.1.1}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Date}{35}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.11.1.2}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}get\discretionary {-}{}{}Time}{36}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.11.1.3}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}init}{36}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.11.1.4}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}Date}{36}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.11.1.5}R\discretionary {-}{}{}T\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}set\discretionary {-}{}{}Time}{36}
+\select@language {magyar} \contentsline {section}{\numberline {4.12}src/tasks.c f\IeC {\'a}jlreferencia}{37}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.12.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{38}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.1.1}Thread1}{38}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.1.2}Thread2}{38}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.1.3}Thread3}{39}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.1.4}Thread4}{39}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.1.5}Thread5}{40}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.12.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{41}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.2.1}actual\discretionary {-}{}{}Date}{41}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.2.2}actual\discretionary {-}{}{}Time}{41}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.2.3}bin\discretionary {-}{}{}Sem\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T5}{41}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.2.4}calculated\discretionary {-}{}{}Sea\discretionary {-}{}{}Level\discretionary {-}{}{}Pressure}{41}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.2.5}can\discretionary {-}{}{}T5\discretionary {-}{}{}Run}{41}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.12.2.6}Virtual\discretionary {-}{}{}Serial\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}{41}
+\select@language {magyar} \contentsline {section}{\numberline {4.13}src/\discretionary {-}{}{}Virtual\discretionary {-}{}{}Serial.c f\IeC {\'a}jlreferencia}{41}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.13.1}F\IeC {\"u}ggv\IeC {\'e}nyek dokument\IeC {\'a}ci\IeC {\'o}ja}{42}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.13.1.1}E\discretionary {-}{}{}V\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Device\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Configuration\discretionary {-}{}{}Changed}{42}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.13.1.2}E\discretionary {-}{}{}V\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}B\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Device\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Control\discretionary {-}{}{}Request}{42}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.13.1.3}V\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}echo\discretionary {-}{}{}Character}{42}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.13.1.4}V\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}setup\discretionary {-}{}{}Hardware}{43}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.13.1.5}V\discretionary {-}{}{}S\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}U\discretionary {-}{}{}S\discretionary {-}{}{}Bdata\discretionary {-}{}{}Handling}{43}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.13.2}V\IeC {\'a}ltoz\IeC {\'o}k dokument\IeC {\'a}ci\IeC {\'o}ja}{43}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.13.2.1}bin\discretionary {-}{}{}Sem\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T5}{43}
+\select@language {magyar} \contentsline {subsubsection}{\numberline {4.13.2.2}Virtual\discretionary {-}{}{}Serial\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}D\discretionary {-}{}{}C\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Interface}{43}
+\select@language {magyar} \contentsline {chapter}{T\IeC {\'a}rgymutat\IeC {\'o}}{45}

@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.4"/>
-<title>altimeter: /HDD/GIT/variometer/Altimeter/src/periph.c Forrásfájl</title>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>altimeter: src/periph.c Forrásfájl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Készítette Doxygen 1.8.4 -->
+<!-- Készítette Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 </script>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -98,10 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;hal.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;periph.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * SPI configuration (1MHz, CPHA=0, CPOL=0).</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">   15</a></span>&#160;SPIConfig <a class="code" href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">spicfg</a> = {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">   15</a></span>&#160;SPIConfig <a class="code" href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">spicfg</a> = {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  NULL,</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  GPIO0,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  GPIO0_LCD_SEL, <span class="comment">//GPIO0_SPI0SEL,</span></div>
@@ -109,44 +106,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  48</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;};</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * I2C configuration (400kHz).</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">   26</a></span>&#160;I2CConfig <a class="code" href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">i2ccfg</a> = {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    I2C_STANDARD_MODE,             </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">   26</a></span>&#160;I2CConfig <a class="code" href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">i2ccfg</a> = {</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    I2C_FAST_MODE_PLUS,            </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    48                             </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">   31</a></span>&#160;PWMConfig <a class="code" href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">pwmcfg</a> = {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    100000,                          </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;       100,                          </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="periph_8c.html#ad3406d6a8fd6f21ccb106ecce466ec52">pwm3pcb</a>,                         </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {PWM_OUTPUT_ACTIVE_LOW, <a class="code" href="periph_8c.html#af6f3a2503083af2614563d0cc1f0c96c">pwm3c0cb</a>},</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        {PWM_OUTPUT_ACTIVE_LOW, NULL}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * PWM configuration</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="periph_8c.html#ad3406d6a8fd6f21ccb106ecce466ec52">   44</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="periph_8c.html#ad3406d6a8fd6f21ccb106ecce466ec52">pwm3pcb</a>(PWMDriver *pwmp)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  (void)pwmp;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  palClearPad(GPIO1, GPIO1_SPEAKER);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="periph_8c.html#af6f3a2503083af2614563d0cc1f0c96c">   50</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="periph_8c.html#af6f3a2503083af2614563d0cc1f0c96c">pwm3c0cb</a>(PWMDriver *pwmp)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  (void)pwmp;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  palSetPad(GPIO1, GPIO1_SPEAKER);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">   34</a></span>&#160;PWMConfig <a class="code" href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">pwmcfg</a> = {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    100000,                          </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;       100,                          </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="periph_8c.html#ad3406d6a8fd6f21ccb106ecce466ec52">pwm3pcb</a>,                         </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {PWM_OUTPUT_ACTIVE_LOW, <a class="code" href="periph_8c.html#af6f3a2503083af2614563d0cc1f0c96c">pwm3c0cb</a>},</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        {PWM_OUTPUT_ACTIVE_LOW, NULL}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    }</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="periph_8c.html#ad3406d6a8fd6f21ccb106ecce466ec52">   47</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="periph_8c.html#ad3406d6a8fd6f21ccb106ecce466ec52">pwm3pcb</a>(PWMDriver *pwmp)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  (void)pwmp;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  palClearPad(GPIO1, GPIO1_SPEAKER);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="periph_8c.html#af6f3a2503083af2614563d0cc1f0c96c">   53</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="periph_8c.html#af6f3a2503083af2614563d0cc1f0c96c">pwm3c0cb</a>(PWMDriver *pwmp)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  (void)pwmp;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  palSetPad(GPIO1, GPIO1_SPEAKER);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="ttc" id="periph_8c_html_afc4986c4ff59c9cd490bd7fd437f7c1a"><div class="ttname"><a href="periph_8c.html#afc4986c4ff59c9cd490bd7fd437f7c1a">spicfg</a></div><div class="ttdeci">SPIConfig spicfg</div><div class="ttdoc">SPI konfiguráció (1MHz, CPHA=0, CPOL=0). </div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00015">periph.c:15</a></div></div>
+<div class="ttc" id="periph_8c_html_a902ad52cd507aae1615bd2858a47020d"><div class="ttname"><a href="periph_8c.html#a902ad52cd507aae1615bd2858a47020d">pwmcfg</a></div><div class="ttdeci">PWMConfig pwmcfg</div><div class="ttdoc">PWM konfiguráció. </div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00034">periph.c:34</a></div></div>
+<div class="ttc" id="periph_8c_html_af6f3a2503083af2614563d0cc1f0c96c"><div class="ttname"><a href="periph_8c.html#af6f3a2503083af2614563d0cc1f0c96c">pwm3c0cb</a></div><div class="ttdeci">void pwm3c0cb(PWMDriver *pwmp)</div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00053">periph.c:53</a></div></div>
+<div class="ttc" id="periph_8c_html_ad3406d6a8fd6f21ccb106ecce466ec52"><div class="ttname"><a href="periph_8c.html#ad3406d6a8fd6f21ccb106ecce466ec52">pwm3pcb</a></div><div class="ttdeci">void pwm3pcb(PWMDriver *pwmp)</div><div class="ttdoc">Callback függvény. </div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00047">periph.c:47</a></div></div>
+<div class="ttc" id="periph_8c_html_a5dadd1387ac7b6a9a9bf2416cb1e2894"><div class="ttname"><a href="periph_8c.html#a5dadd1387ac7b6a9a9bf2416cb1e2894">i2ccfg</a></div><div class="ttdeci">I2CConfig i2ccfg</div><div class="ttdoc">I2C konfiguráció (400kHz). </div><div class="ttdef"><b>Definition:</b> <a href="periph_8c_source.html#l00026">periph.c:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+Projekt: altimeter Készült: Thu Apr 2 2015 13:01:01 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.4
+</a> 1.8.6
 </small></address>
 </body>
 </html>

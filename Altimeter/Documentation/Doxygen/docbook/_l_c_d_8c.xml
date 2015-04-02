@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_l_c_d_8c">
+    <title>LCD.c File Reference</title>
+    <programlisting>#include ch.h</programlisting>
+    <programlisting>#include hal.h</programlisting>
+    <programlisting>#include LCD.h</programlisting>
+    <programlisting>#include LCD_fonts.h</programlisting>
+    <programlisting>#include globals.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static volatile bool <link linkend="_l_c_d_8c_1a6c95ffdf9cf64167a355f9df0f1f1d8f">isUSBWritten</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="_l_c_d_8c_1a77a46e380268b7e7c99419e5cddfc42f">LCD_reset</link> (
+bool_t active)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="_l_c_d_8c_1a3527b05c7da73d07cf4cfc45fbf4ce27">LCD_CD</link> (
+unsigned char CD)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="_l_c_d_8c_1ab8a1ddb3870ca01ed94424185e4061cc">reorderBytes</link> (
+const unsigned char * from, unsigned char * to, int n)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="_l_c_d_8c_1ae51efe543b15d48304dede462dacf65f">LCD_writeLine</link> (
+unsigned char row, unsigned char col, char * text, unsigned char fontSize)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1abe38d05e225c701bebf5a61201331a85">LCD_clear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1a0742e25c23ca1096ceba081b98fd58ba">LCD_init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1a34bb56ab53c7d9c0e363e59c48f5a959">LCD_writeTemp</link> (
+HP03_meas_t measuredByHP03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1a66c85acb573ef9bcfa2ae5f95feb596f">LCD_writePress</link> (
+HP03_meas_t measuredByHP03)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1a4f21373ce23ee38fa023546e0b262fdf">LCD_writeAlt</link> (
+int altToWrite)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1a9ed928ccaaf404b142910bbda63b2314">LCD_writeSpeed</link> (
+int speedToWrite)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1adfcdedfb3a022310629af2dc94a1f658">LCD_writeDate</link> (
+RTC_date_t dateToWrite)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1a86e9fbcb9579b78118f6add9d1e78ba8">LCD_writeTime</link> (
+RTC_time_t timeToWrite)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1ab128f02215b4c1e80793338995eada18">LCD_writeUSB</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_l_c_d_8c_1ad738a14f7ceaf0da125b1337a4e9e10b">LCD_writeUSB_delete</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/LCD.c</para>
+    </simplesect>
+</section>

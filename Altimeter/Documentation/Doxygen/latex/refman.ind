@@ -1,44 +1,29 @@
 \begin{theindex}
 
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Descriptors.\-c}, 
-		7
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-H\-P03.\-c}, 
-		12
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Kalman.\-c}, 
-		19
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-L\-C\-D.\-c}, 
-		21
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-R\-T\-C\-\_\-r2051.\-c}, 
-		36
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Virtual\-Serial.\-c}, 
-		43
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/eeprom.\-c}, 9
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/itoa.\-c}, 17
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/logger.\-c}, 
-		28
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/main.\-c}, 31
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/mymath.\-c}, 
-		34
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/periph.\-c}, 
-		34
-  \item {/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/tasks.\-c}, 38
+  \item {actual\-Date}
+    \subitem {main.\-c}, 31
+    \subitem {tasks.\-c}, 41
+  \item {actual\-Time}
+    \subitem {main.\-c}, 31
+    \subitem {tasks.\-c}, 41
 
   \indexspace
 
-  \item {actual\-Date}
-    \subitem {main.\-c}, 33
-    \subitem {tasks.\-c}, 42
-  \item {actual\-Time}
-    \subitem {main.\-c}, 33
-    \subitem {tasks.\-c}, 42
+  \item {bin\-Sem\-\_\-\-T5}
+    \subitem {main.\-c}, 32
+    \subitem {tasks.\-c}, 41
+    \subitem {Virtual\-Serial.\-c}, 43
 
   \indexspace
 
   \item {C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor}
-    \subitem {Descriptors.\-c}, 8
+    \subitem {Descriptors.\-c}, 7
   \item {calculated\-Sea\-Level\-Pressure}
-    \subitem {main.\-c}, 33
-    \subitem {tasks.\-c}, 42
+    \subitem {main.\-c}, 32
+    \subitem {tasks.\-c}, 41
+  \item {can\-T5\-Run}
+    \subitem {main.\-c}, 32
+    \subitem {tasks.\-c}, 41
   \item {Configuration\-Descriptor}
     \subitem {Descriptors.\-c}, 8
 
@@ -46,7 +31,7 @@
 
   \item {Descriptors.\-c}
     \subitem {C\-A\-L\-L\-B\-A\-C\-K\-\_\-\-U\-S\-B\-\_\-\-Get\-Descriptor}, 
-		8
+		7
     \subitem {Configuration\-Descriptor}, 8
     \subitem {Device\-Descriptor}, 8
     \subitem {Language\-String}, 8
@@ -61,18 +46,18 @@
   \indexspace
 
   \item {E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Configuration\-Changed}
-    \subitem {Virtual\-Serial.\-c}, 43
+    \subitem {Virtual\-Serial.\-c}, 42
   \item {E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Control\-Request}
-    \subitem {Virtual\-Serial.\-c}, 43
+    \subitem {Virtual\-Serial.\-c}, 42
   \item {ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address}
     \subitem {eeprom.\-c}, 10
   \item {ee\-\_\-read\-\_\-log\-\_\-rec}
-    \subitem {eeprom.\-c}, 11
+    \subitem {eeprom.\-c}, 10
   \item {ee\-\_\-write\-\_\-log\-\_\-rec}
     \subitem {eeprom.\-c}, 11
   \item {eeprom.\-c}
     \subitem {ee\-\_\-get\-\_\-first\-\_\-free\-\_\-address}, 10
-    \subitem {ee\-\_\-read\-\_\-log\-\_\-rec}, 11
+    \subitem {ee\-\_\-read\-\_\-log\-\_\-rec}, 10
     \subitem {ee\-\_\-write\-\_\-log\-\_\-rec}, 11
     \subitem {log\-\_\-rec\-\_\-ext\-\_\-t}, 10
 
@@ -85,76 +70,82 @@
 
   \item {H\-P03.\-c}
     \subitem {H\-P03\-\_\-get\-Pressure}, 12
-    \subitem {H\-P03\-\_\-get\-Temperature}, 14
-    \subitem {H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude}, 15
-    \subitem {H\-P03\-\_\-pressure\-To\-Altitude}, 16
-    \subitem {H\-P03\-\_\-read\-Coeffs}, 16
-    \subitem {H\-P03\-\_\-reset}, 17
+    \subitem {H\-P03\-\_\-get\-Temperature}, 13
+    \subitem {H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude}, 13
+    \subitem {H\-P03\-\_\-pressure\-To\-Altitude}, 14
+    \subitem {H\-P03\-\_\-read\-Coeffs}, 15
+    \subitem {H\-P03\-\_\-reset}, 15
   \item {H\-P03\-\_\-get\-Pressure}
     \subitem {H\-P03.\-c}, 12
   \item {H\-P03\-\_\-get\-Temperature}
-    \subitem {H\-P03.\-c}, 14
+    \subitem {H\-P03.\-c}, 13
   \item {H\-P03\-\_\-pressure\-Sea\-Level\-From\-Altitude}
-    \subitem {H\-P03.\-c}, 15
+    \subitem {H\-P03.\-c}, 13
   \item {H\-P03\-\_\-pressure\-To\-Altitude}
-    \subitem {H\-P03.\-c}, 16
+    \subitem {H\-P03.\-c}, 14
   \item {H\-P03\-\_\-read\-Coeffs}
-    \subitem {H\-P03.\-c}, 16
+    \subitem {H\-P03.\-c}, 15
   \item {H\-P03\-\_\-reset}
-    \subitem {H\-P03.\-c}, 17
+    \subitem {H\-P03.\-c}, 15
 
   \indexspace
 
   \item {i2ccfg}
-    \subitem {periph.\-c}, 35
+    \subitem {periph.\-c}, 34
   \item {init\-\_\-kalman}
-    \subitem {Kalman.\-c}, 20
+    \subitem {Kalman.\-c}, 18
   \item {itoa}
-    \subitem {itoa.\-c}, 18
+    \subitem {itoa.\-c}, 16
   \item {itoa.\-c}
-    \subitem {itoa}, 18
+    \subitem {itoa}, 16
 
   \indexspace
 
   \item {kalman}
-    \subitem {Kalman.\-c}, 21
+    \subitem {Kalman.\-c}, 18
   \item {Kalman.\-c}
-    \subitem {init\-\_\-kalman}, 20
-    \subitem {kalman}, 21
+    \subitem {init\-\_\-kalman}, 18
+    \subitem {kalman}, 18
 
   \indexspace
 
   \item {L\-C\-D.\-c}
-    \subitem {L\-C\-D\-\_\-clear}, 22
-    \subitem {L\-C\-D\-\_\-init}, 23
-    \subitem {L\-C\-D\-\_\-write\-Alt}, 23
-    \subitem {L\-C\-D\-\_\-write\-Date}, 25
-    \subitem {L\-C\-D\-\_\-write\-Press}, 25
-    \subitem {L\-C\-D\-\_\-write\-Speed}, 26
-    \subitem {L\-C\-D\-\_\-write\-Temp}, 26
-    \subitem {L\-C\-D\-\_\-write\-Time}, 27
-    \subitem {L\-C\-D\-\_\-write\-U\-S\-B}, 27
-    \subitem {L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete}, 28
+    \subitem {L\-C\-D\-\_\-\-Write\-Speed}, 23
+    \subitem {L\-C\-D\-\_\-clear}, 20
+    \subitem {L\-C\-D\-\_\-init}, 20
+    \subitem {L\-C\-D\-\_\-write\-Alt}, 21
+    \subitem {L\-C\-D\-\_\-write\-Date}, 21
+    \subitem {L\-C\-D\-\_\-write\-L\-O\-G}, 22
+    \subitem {L\-C\-D\-\_\-write\-L\-O\-G\-\_\-delete}, 22
+    \subitem {L\-C\-D\-\_\-write\-Press}, 22
+    \subitem {L\-C\-D\-\_\-write\-Temp}, 24
+    \subitem {L\-C\-D\-\_\-write\-Time}, 24
+    \subitem {L\-C\-D\-\_\-write\-U\-S\-B}, 25
+    \subitem {L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete}, 25
+  \item {L\-C\-D\-\_\-\-Write\-Speed}
+    \subitem {L\-C\-D.\-c}, 23
   \item {L\-C\-D\-\_\-clear}
-    \subitem {L\-C\-D.\-c}, 22
+    \subitem {L\-C\-D.\-c}, 20
   \item {L\-C\-D\-\_\-init}
-    \subitem {L\-C\-D.\-c}, 23
+    \subitem {L\-C\-D.\-c}, 20
   \item {L\-C\-D\-\_\-write\-Alt}
-    \subitem {L\-C\-D.\-c}, 23
+    \subitem {L\-C\-D.\-c}, 21
   \item {L\-C\-D\-\_\-write\-Date}
-    \subitem {L\-C\-D.\-c}, 25
+    \subitem {L\-C\-D.\-c}, 21
+  \item {L\-C\-D\-\_\-write\-L\-O\-G}
+    \subitem {L\-C\-D.\-c}, 22
+  \item {L\-C\-D\-\_\-write\-L\-O\-G\-\_\-delete}
+    \subitem {L\-C\-D.\-c}, 22
   \item {L\-C\-D\-\_\-write\-Press}
-    \subitem {L\-C\-D.\-c}, 25
-  \item {L\-C\-D\-\_\-write\-Speed}
-    \subitem {L\-C\-D.\-c}, 26
+    \subitem {L\-C\-D.\-c}, 22
   \item {L\-C\-D\-\_\-write\-Temp}
-    \subitem {L\-C\-D.\-c}, 26
+    \subitem {L\-C\-D.\-c}, 24
   \item {L\-C\-D\-\_\-write\-Time}
-    \subitem {L\-C\-D.\-c}, 27
+    \subitem {L\-C\-D.\-c}, 24
   \item {L\-C\-D\-\_\-write\-U\-S\-B}
-    \subitem {L\-C\-D.\-c}, 27
+    \subitem {L\-C\-D.\-c}, 25
   \item {L\-C\-D\-\_\-write\-U\-S\-B\-\_\-delete}
-    \subitem {L\-C\-D.\-c}, 28
+    \subitem {L\-C\-D.\-c}, 25
   \item {Language\-String}
     \subitem {Descriptors.\-c}, 8
   \item {Language\-String\-Ptr}
@@ -165,125 +156,145 @@
   \item {log\-\_\-rec\-\_\-ext\-\_\-t}
     \subitem {eeprom.\-c}, 10
   \item {logger.\-c}
-    \subitem {logger\-\_\-delete\-Log}, 29
-    \subitem {logger\-\_\-init}, 29
-    \subitem {logger\-\_\-log\-This}, 29
-    \subitem {logger\-\_\-read\-From\-E\-E}, 30
-    \subitem {logger\-\_\-write\-To\-E\-E}, 30
+    \subitem {logger\-\_\-delete\-Log}, 26
+    \subitem {logger\-\_\-init}, 26
+    \subitem {logger\-\_\-log\-This}, 27
+    \subitem {logger\-\_\-read\-From\-E\-E}, 27
+    \subitem {logger\-\_\-write\-To\-E\-E}, 29
   \item {logger\-\_\-delete\-Log}
-    \subitem {logger.\-c}, 29
+    \subitem {logger.\-c}, 26
   \item {logger\-\_\-init}
-    \subitem {logger.\-c}, 29
+    \subitem {logger.\-c}, 26
   \item {logger\-\_\-log\-This}
-    \subitem {logger.\-c}, 29
+    \subitem {logger.\-c}, 27
   \item {logger\-\_\-read\-From\-E\-E}
-    \subitem {logger.\-c}, 30
+    \subitem {logger.\-c}, 27
   \item {logger\-\_\-write\-To\-E\-E}
-    \subitem {logger.\-c}, 30
+    \subitem {logger.\-c}, 29
 
   \indexspace
 
   \item {main}
-    \subitem {main.\-c}, 32
+    \subitem {main.\-c}, 30
   \item {main.\-c}
-    \subitem {actual\-Date}, 33
-    \subitem {actual\-Time}, 33
-    \subitem {calculated\-Sea\-Level\-Pressure}, 33
-    \subitem {main}, 32
+    \subitem {actual\-Date}, 31
+    \subitem {actual\-Time}, 31
+    \subitem {bin\-Sem\-\_\-\-T5}, 32
+    \subitem {calculated\-Sea\-Level\-Pressure}, 32
+    \subitem {can\-T5\-Run}, 32
+    \subitem {main}, 30
   \item {Manufacturer\-String}
     \subitem {Descriptors.\-c}, 8
   \item {Manufacturer\-String\-Ptr}
     \subitem {Descriptors.\-c}, 9
   \item {my\-Pow}
-    \subitem {mymath.\-c}, 34
+    \subitem {mymath.\-c}, 32
   \item {mymath.\-c}
-    \subitem {my\-Pow}, 34
+    \subitem {my\-Pow}, 32
 
   \indexspace
 
   \item {periph.\-c}
-    \subitem {i2ccfg}, 35
-    \subitem {pwm3c0cb}, 35
-    \subitem {pwm3pcb}, 35
-    \subitem {pwmcfg}, 35
-    \subitem {spicfg}, 36
+    \subitem {i2ccfg}, 34
+    \subitem {pwm3c0cb}, 33
+    \subitem {pwm3pcb}, 33
+    \subitem {pwmcfg}, 34
+    \subitem {spicfg}, 34
   \item {Product\-String}
     \subitem {Descriptors.\-c}, 9
   \item {Product\-String\-Ptr}
     \subitem {Descriptors.\-c}, 9
   \item {pwm3c0cb}
-    \subitem {periph.\-c}, 35
+    \subitem {periph.\-c}, 33
   \item {pwm3pcb}
-    \subitem {periph.\-c}, 35
+    \subitem {periph.\-c}, 33
   \item {pwmcfg}
-    \subitem {periph.\-c}, 35
+    \subitem {periph.\-c}, 34
 
   \indexspace
 
   \item {R\-T\-C\-\_\-get\-Date}
-    \subitem {R\-T\-C\-\_\-r2051.\-c}, 37
+    \subitem {R\-T\-C\-\_\-r2051.\-c}, 35
   \item {R\-T\-C\-\_\-get\-Time}
-    \subitem {R\-T\-C\-\_\-r2051.\-c}, 37
+    \subitem {R\-T\-C\-\_\-r2051.\-c}, 35
   \item {R\-T\-C\-\_\-init}
-    \subitem {R\-T\-C\-\_\-r2051.\-c}, 37
+    \subitem {R\-T\-C\-\_\-r2051.\-c}, 36
   \item {R\-T\-C\-\_\-r2051.\-c}
-    \subitem {R\-T\-C\-\_\-get\-Date}, 37
-    \subitem {R\-T\-C\-\_\-get\-Time}, 37
-    \subitem {R\-T\-C\-\_\-init}, 37
-    \subitem {R\-T\-C\-\_\-set\-Date}, 38
-    \subitem {R\-T\-C\-\_\-set\-Time}, 38
+    \subitem {R\-T\-C\-\_\-get\-Date}, 35
+    \subitem {R\-T\-C\-\_\-get\-Time}, 35
+    \subitem {R\-T\-C\-\_\-init}, 36
+    \subitem {R\-T\-C\-\_\-set\-Date}, 36
+    \subitem {R\-T\-C\-\_\-set\-Time}, 36
   \item {R\-T\-C\-\_\-set\-Date}
-    \subitem {R\-T\-C\-\_\-r2051.\-c}, 38
+    \subitem {R\-T\-C\-\_\-r2051.\-c}, 36
   \item {R\-T\-C\-\_\-set\-Time}
-    \subitem {R\-T\-C\-\_\-r2051.\-c}, 38
+    \subitem {R\-T\-C\-\_\-r2051.\-c}, 36
   \item {record\-\_\-to\-\_\-write}
     \subitem {log\-\_\-rec\-\_\-ext\-\_\-s}, 5
 
   \indexspace
 
   \item {spicfg}
-    \subitem {periph.\-c}, 36
+    \subitem {periph.\-c}, 34
+  \item {src/\-Descriptors.\-c}, 7
+  \item {src/\-H\-P03.\-c}, 11
+  \item {src/\-Kalman.\-c}, 17
+  \item {src/\-L\-C\-D.\-c}, 19
+  \item {src/\-R\-T\-C\-\_\-r2051.\-c}, 34
+  \item {src/\-Virtual\-Serial.\-c}, 41
+  \item {src/eeprom.\-c}, 9
+  \item {src/itoa.\-c}, 16
+  \item {src/logger.\-c}, 26
+  \item {src/main.\-c}, 30
+  \item {src/mymath.\-c}, 32
+  \item {src/periph.\-c}, 33
+  \item {src/tasks.\-c}, 37
 
   \indexspace
 
   \item {tasks.\-c}
-    \subitem {actual\-Date}, 42
-    \subitem {actual\-Time}, 42
-    \subitem {calculated\-Sea\-Level\-Pressure}, 42
-    \subitem {Thread1}, 39
-    \subitem {Thread2}, 39
-    \subitem {Thread3}, 40
-    \subitem {Thread4}, 41
-    \subitem {Thread5}, 42
+    \subitem {actual\-Date}, 41
+    \subitem {actual\-Time}, 41
+    \subitem {bin\-Sem\-\_\-\-T5}, 41
+    \subitem {calculated\-Sea\-Level\-Pressure}, 41
+    \subitem {can\-T5\-Run}, 41
+    \subitem {Thread1}, 38
+    \subitem {Thread2}, 38
+    \subitem {Thread3}, 39
+    \subitem {Thread4}, 39
+    \subitem {Thread5}, 40
+    \subitem {Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}, 41
   \item {Thread1}
-    \subitem {tasks.\-c}, 39
+    \subitem {tasks.\-c}, 38
   \item {Thread2}
-    \subitem {tasks.\-c}, 39
+    \subitem {tasks.\-c}, 38
   \item {Thread3}
-    \subitem {tasks.\-c}, 40
+    \subitem {tasks.\-c}, 39
   \item {Thread4}
-    \subitem {tasks.\-c}, 41
+    \subitem {tasks.\-c}, 39
   \item {Thread5}
-    \subitem {tasks.\-c}, 42
+    \subitem {tasks.\-c}, 40
 
   \indexspace
 
   \item {V\-S\-\_\-\-U\-S\-Bdata\-Handling}
-    \subitem {Virtual\-Serial.\-c}, 44
+    \subitem {Virtual\-Serial.\-c}, 43
   \item {V\-S\-\_\-echo\-Character}
-    \subitem {Virtual\-Serial.\-c}, 43
+    \subitem {Virtual\-Serial.\-c}, 42
   \item {V\-S\-\_\-setup\-Hardware}
-    \subitem {Virtual\-Serial.\-c}, 43
+    \subitem {Virtual\-Serial.\-c}, 42
   \item {Virtual\-Serial.\-c}
+    \subitem {bin\-Sem\-\_\-\-T5}, 43
     \subitem {E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Configuration\-Changed}, 
-		43
+		42
     \subitem {E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Control\-Request}, 
-		43
-    \subitem {V\-S\-\_\-\-U\-S\-Bdata\-Handling}, 44
-    \subitem {V\-S\-\_\-echo\-Character}, 43
-    \subitem {V\-S\-\_\-setup\-Hardware}, 43
-    \subitem {Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}, 44
+		42
+    \subitem {V\-S\-\_\-\-U\-S\-Bdata\-Handling}, 43
+    \subitem {V\-S\-\_\-echo\-Character}, 42
+    \subitem {V\-S\-\_\-setup\-Hardware}, 42
+    \subitem {Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}, 43
   \item {Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}
-    \subitem {Virtual\-Serial.\-c}, 44
+    \subitem {tasks.\-c}, 41
+    \subitem {Virtual\-Serial.\-c}, 43
 
 \end{theindex}

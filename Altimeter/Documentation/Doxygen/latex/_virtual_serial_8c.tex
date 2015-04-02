@@ -1,5 +1,5 @@
-\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Virtual\-Serial.c fájlreferencia}
-\label{_virtual_serial_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Virtual\-Serial.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/\-Virtual\-Serial.\-c}}
+\section{src/\-Virtual\-Serial.c fájlreferencia}
+\label{_virtual_serial_8c}\index{src/\-Virtual\-Serial.\-c@{src/\-Virtual\-Serial.\-c}}
 {\ttfamily \#include \char`\"{}Virtual\-Serial.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}logger.\-h\char`\"{}}\\*
@@ -9,27 +9,29 @@ A Virtual\-Serial.\-c definíciós fájl függési gráfja\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=342pt]{_virtual_serial_8c__incl}
+\includegraphics[width=345pt]{_virtual_serial_8c__incl}
 \end{center}
 \end{figure}
 \subsection*{Függvények}
 \begin{DoxyCompactItemize}
 \item 
 void {\bf V\-S\-\_\-setup\-Hardware} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em A hardver és a chip perifériáinak beállítása. \end{DoxyCompactList}\item 
 void {\bf V\-S\-\_\-echo\-Character} (void)
 \item 
 void {\bf E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Configuration\-Changed} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Eseménykezelő az U\-S\-B könyvtár \char`\"{}\-Configuration Changed\char`\"{} eseményéhez. \end{DoxyCompactList}\item 
 void {\bf E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Control\-Request} (void)
-\item 
+\begin{DoxyCompactList}\small\item\em Eseménykezelő az U\-S\-B könyvtár \char`\"{}\-Control Request reception\char`\"{} eseményéhez. \end{DoxyCompactList}\item 
 void {\bf V\-S\-\_\-\-U\-S\-Bdata\-Handling} (void)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Az U\-S\-B-\/n keresztül érkező adatokat kezeli le. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Változók}
 \begin{DoxyCompactItemize}
 \item 
+Binary\-Semaphore {\bf bin\-Sem\-\_\-\-T5}
+\item 
 U\-S\-B\-\_\-\-Class\-Info\-\_\-\-C\-D\-C\-\_\-\-Device\-\_\-t {\bf Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em L\-P\-C\-U\-S\-Blib C\-D\-C Class driver interfész konfiguráció és állapot-\/információ. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Függvények dokumentációja}
@@ -42,7 +44,11 @@ U\-S\-B\-\_\-\-Class\-Info\-\_\-\-C\-D\-C\-\_\-\-Device\-\_\-t {\bf Virtual\-Ser
 )}\label{_virtual_serial_8c_a953a275884b9e33629ff6323fca05252}
 
 
-Definíció a(z) Virtual\-Serial.\-c fájl 103. sorában.
+Eseménykezelő az U\-S\-B könyvtár \char`\"{}\-Configuration Changed\char`\"{} eseményéhez. 
+
+
+
+Definíció a(z) Virtual\-Serial.\-c fájl 107. sorában.
 
 \index{Virtual\-Serial.\-c@{Virtual\-Serial.\-c}!E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Control\-Request@{E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Control\-Request}}
 \index{E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Control\-Request@{E\-V\-E\-N\-T\-\_\-\-U\-S\-B\-\_\-\-Device\-\_\-\-Control\-Request}!VirtualSerial.c@{Virtual\-Serial.\-c}}
@@ -53,7 +59,11 @@ Definíció a(z) Virtual\-Serial.\-c fájl 103. sorában.
 )}\label{_virtual_serial_8c_a3f4ce439a74a152e3c8ffda5c7dd201a}
 
 
-Definíció a(z) Virtual\-Serial.\-c fájl 114. sorában.
+Eseménykezelő az U\-S\-B könyvtár \char`\"{}\-Control Request reception\char`\"{} eseményéhez. 
+
+
+
+Definíció a(z) Virtual\-Serial.\-c fájl 118. sorában.
 
 \index{Virtual\-Serial.\-c@{Virtual\-Serial.\-c}!V\-S\-\_\-echo\-Character@{V\-S\-\_\-echo\-Character}}
 \index{V\-S\-\_\-echo\-Character@{V\-S\-\_\-echo\-Character}!VirtualSerial.c@{Virtual\-Serial.\-c}}
@@ -64,7 +74,7 @@ Definíció a(z) Virtual\-Serial.\-c fájl 114. sorában.
 )}\label{_virtual_serial_8c_a1950bd0e70ab881949fec19b89876617}
 
 
-Definíció a(z) Virtual\-Serial.\-c fájl 57. sorában.
+Definíció a(z) Virtual\-Serial.\-c fájl 61. sorában.
 
 \index{Virtual\-Serial.\-c@{Virtual\-Serial.\-c}!V\-S\-\_\-setup\-Hardware@{V\-S\-\_\-setup\-Hardware}}
 \index{V\-S\-\_\-setup\-Hardware@{V\-S\-\_\-setup\-Hardware}!VirtualSerial.c@{Virtual\-Serial.\-c}}
@@ -75,7 +85,11 @@ Definíció a(z) Virtual\-Serial.\-c fájl 57. sorában.
 )}\label{_virtual_serial_8c_a5703403c88d1771df8424477dec18318}
 
 
-Definíció a(z) Virtual\-Serial.\-c fájl 46. sorában.
+A hardver és a chip perifériáinak beállítása. 
+
+
+
+Definíció a(z) Virtual\-Serial.\-c fájl 50. sorában.
 
 
 
@@ -98,7 +112,11 @@ Here is the caller graph for this function\-:
 )}\label{_virtual_serial_8c_a0cc248961962a9961503bd1fc4b0ef11}
 
 
-Definíció a(z) Virtual\-Serial.\-c fájl 120. sorában.
+Az U\-S\-B-\/n keresztül érkező adatokat kezeli le. 
+
+
+
+Definíció a(z) Virtual\-Serial.\-c fájl 125. sorában.
 
 
 
@@ -115,6 +133,13 @@ Here is the caller graph for this function\-:
 
 
 \subsection{Változók dokumentációja}
+\index{Virtual\-Serial.\-c@{Virtual\-Serial.\-c}!bin\-Sem\-\_\-\-T5@{bin\-Sem\-\_\-\-T5}}
+\index{bin\-Sem\-\_\-\-T5@{bin\-Sem\-\_\-\-T5}!VirtualSerial.c@{Virtual\-Serial.\-c}}
+\subsubsection[{bin\-Sem\-\_\-\-T5}]{\setlength{\rightskip}{0pt plus 5cm}Binary\-Semaphore bin\-Sem\-\_\-\-T5}\label{_virtual_serial_8c_ae8441706b2e2119d6ab6c6ba48dfe7c3}
+
+
+Definíció a(z) main.\-c fájl 19. sorában.
+
 \index{Virtual\-Serial.\-c@{Virtual\-Serial.\-c}!Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface@{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}}
 \index{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface@{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}!VirtualSerial.c@{Virtual\-Serial.\-c}}
 \subsubsection[{Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}]{\setlength{\rightskip}{0pt plus 5cm}U\-S\-B\-\_\-\-Class\-Info\-\_\-\-C\-D\-C\-\_\-\-Device\-\_\-t Virtual\-Serial\-\_\-\-C\-D\-C\-\_\-\-Interface}\label{_virtual_serial_8c_a6abff48bf476b7a0b5d81012d90058a6}
@@ -150,5 +175,9 @@ Here is the caller graph for this function\-:
 \end{DoxyCode}
 
 
-Definíció a(z) Virtual\-Serial.\-c fájl 10. sorában.
+L\-P\-C\-U\-S\-Blib C\-D\-C Class driver interfész konfiguráció és állapot-\/információ. 
+
+Ez a struktúra adódik át minden C\-D\-C Class driver függvénynek. 
+
+Definíció a(z) Virtual\-Serial.\-c fájl 14. sorában.
 

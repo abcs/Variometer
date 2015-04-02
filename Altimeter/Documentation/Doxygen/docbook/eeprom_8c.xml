@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="eeprom_8c">
+    <title>eeprom.c File Reference</title>
+    <programlisting>#include ch.h</programlisting>
+    <programlisting>#include hal.h</programlisting>
+    <programlisting>#include eeprom.h</programlisting>
+        <simplesect>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structlog__rec__ext__s">log_rec_ext_s</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structlog__rec__ext__s">log_rec_ext_s</link>  <link linkend="eeprom_8c_1a87e61d040028e5a92f9169b2dc301095">log_rec_ext_t</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="eeprom_8c_1aec8cdad76f330fa2cb4fd23574656da4">ee_write_descriptors</link> (
+ee_descriptor_t * to_write)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="eeprom_8c_1a601d64b049e61217914cbf9e3c84180a">ee_write_log_rec</link> (
+log_rec_t * record, uint16_t * address)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="eeprom_8c_1a801cca373370aacce8631bd6dfff1373">ee_read_log_rec</link> (
+log_rec_t * record, uint16_t from_addr, uint16_t num_of_rec)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>uint16_t <link linkend="eeprom_8c_1aa61d5bd2a11169dbd512934b1fb384b7">ee_get_first_free_address</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/eeprom.c</para>
+    </simplesect>
+</section>

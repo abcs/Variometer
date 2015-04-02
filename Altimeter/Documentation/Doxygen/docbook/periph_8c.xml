@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="periph_8c">
+    <title>periph.c File Reference</title>
+    <programlisting>#include ch.h</programlisting>
+    <programlisting>#include hal.h</programlisting>
+    <programlisting>#include periph.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SPIConfig <link linkend="periph_8c_1afc4986c4ff59c9cd490bd7fd437f7c1a">spicfg</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>I2CConfig <link linkend="periph_8c_1a5dadd1387ac7b6a9a9bf2416cb1e2894">i2ccfg</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>PWMConfig <link linkend="periph_8c_1a902ad52cd507aae1615bd2858a47020d">pwmcfg</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="periph_8c_1ad3406d6a8fd6f21ccb106ecce466ec52">pwm3pcb</link> (
+PWMDriver * pwmp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="periph_8c_1af6f3a2503083af2614563d0cc1f0c96c">pwm3c0cb</link> (
+PWMDriver * pwmp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/periph.c</para>
+    </simplesect>
+</section>

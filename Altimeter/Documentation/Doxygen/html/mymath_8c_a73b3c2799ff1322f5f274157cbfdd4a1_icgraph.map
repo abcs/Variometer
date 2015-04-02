@@ -1,6 +1,6 @@
 <map id="myPow" name="myPow">
-<area shape="rect" id="node3" href="$_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106" title="Kiszámítja a magasságot (méterben) a hPa&#45;ban megadott légnyomás, tengerszintre átszámított légnyomás ..." alt="" coords="120,8,291,37"/>
-<area shape="rect" id="node9" href="$_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794" title="Kiszámítja a tengerszintre átszámított légnyomást hPa&#45;ban az aktuális méterben megadott magasság..." alt="" coords="340,58,535,105"/>
-<area shape="rect" id="node5" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="403,5,472,35"/>
-<area shape="rect" id="node7" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="584,36,635,65"/>
+<area shape="rect" id="node2" href="$_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106" title="Kiszámítja a magasságot (méterben) a hPa&#45;ban megadott légnyomás, tengerszintre átszámított légnyomás ..." alt="" coords="120,8,291,35"/>
+<area shape="rect" id="node5" href="$_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794" title="Kiszámítja a tengerszintre átszámított légnyomást hPa&#45;ban az aktuális méterben megadott magasság..." alt="" coords="339,57,535,98"/>
+<area shape="rect" id="node3" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="403,5,472,32"/>
+<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="A szoftver belépési pontja. " alt="" coords="584,35,635,61"/>
 </map>

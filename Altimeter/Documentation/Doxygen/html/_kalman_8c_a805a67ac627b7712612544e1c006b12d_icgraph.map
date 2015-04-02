@@ -1,5 +1,5 @@
 <map id="kalman" name="kalman">
-<area shape="rect" id="node3" href="$_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="119,5,249,35"/>
-<area shape="rect" id="node5" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="416,5,467,35"/>
-<area shape="rect" id="node7" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="299,31,368,60"/>
+<area shape="rect" id="node2" href="$_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="118,5,250,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="A szoftver belépési pontja. " alt="" coords="416,5,467,32"/>
+<area shape="rect" id="node4" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="299,31,368,57"/>
 </map>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_h_p03_8c">
+    <title>HP03.c File Reference</title>
+    <programlisting>#include ch.h</programlisting>
+    <programlisting>#include hal.h</programlisting>
+    <programlisting>#include HP03.h</programlisting>
+    <programlisting>#include globals.h</programlisting>
+    <programlisting>#include string.h</programlisting>
+    <programlisting>#include mymath.h</programlisting>
+    <programlisting>#include Kalman.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static HP03_coeff_t <link linkend="_h_p03_8c_1af84c1fe27b72c51a08a790b3480aaff7">HP03_coeff</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="_h_p03_8c_1adad52f63edd436ee3eaf8d077f41759c">power</link> (
+int base, int exp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_h_p03_8c_1a212fee37479d1b104e74f33ccfaab106">HP03_pressureToAltitude</link> (
+float seaLevel, HP03_meas_t measuredPressTemp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="_h_p03_8c_1a1013cdcfcdf48995025d9d2cf1778794">HP03_pressureSeaLevelFromAltitude</link> (
+float altitude, HP03_meas_t measuredPressTemp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_h_p03_8c_1a20b369f3261a05f3049139a070607b6d">HP03_reset</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_h_p03_8c_1a8b6f09ca977f999dfc96f1c355713bab">HP03_readCoeffs</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_h_p03_8c_1a2e206ea1f307f9565982ad14b3582be5">HP03_getPressure</link> (
+HP03_meas_t * constsIn_pressureOut, bool withKalman)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_h_p03_8c_1a514dfc9c4a90f039f562c24d6a372486">HP03_getTemperature</link> (
+HP03_meas_t * result)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/HP03.c</para>
+    </simplesect>
+</section>

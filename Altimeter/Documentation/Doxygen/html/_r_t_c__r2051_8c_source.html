@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.4"/>
-<title>altimeter: /HDD/GIT/variometer/Altimeter/src/RTC_r2051.c Forrásfájl</title>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>altimeter: src/RTC_r2051.c Forrásfájl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Készítette Doxygen 1.8.4 -->
+<!-- Készítette Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 </script>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -100,117 +100,163 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;RTC_r2051.h&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2" title="A Real Time Clock áramkör inicializálása. ">RTC_init</a>()</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2">   17</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2">RTC_init</a>()</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    msg_t rc = RDY_OK;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    uint8_t RTC_control_regs[3]  = { 0xE0, 0b00100000, 0b00000000 }; <span class="comment">// Control regs base addr., 24H mode, 0</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    uint8_t RTC_control_regs[3]  = { 0xE0, 0b00100000, 0b00010000 }; <span class="comment">// Control regs base addr., 24H mode, 0</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    RTC_time_t timeToSet;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                   RTC_control_regs, 2,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                   0, 0, TIME_INFINITE );</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">    timeToSet.hour = 16;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    timeToSet.minute = 30;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    timeToSet.second = 0;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    RTC_setTime(timeToSet);</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="_r_t_c__r2051_8c.html#acfa71727df5a732c5381776accb6eac3">   42</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_r_t_c__r2051_8c.html#acfa71727df5a732c5381776accb6eac3" title="Beállítja az időt az RTC áramkörben. ">RTC_setTime</a>(RTC_time_t timeToBeSet)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    msg_t rc = RDY_OK;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    uint8_t i = 1;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    timeToBeSet.timeCounterAddress = 0x00;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    uint8_t * timeToBeSet_p = &amp;timeToBeSet.timeCounterAddress;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">/* Converting binary to BCD */</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">for</span> ( ; i &lt;= 3; i++ )</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        *(timeToBeSet_p + i) = BIN_TO_BCD(*(timeToBeSet_p + i)); <span class="comment">//((*(timeToBeSet_p + i) / 10) &lt;&lt; 4) | (*(timeToBeSet_p + i) % 10);</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                   timeToBeSet_p, 4,</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                   0, 0, TIME_INFINITE );</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    RTC_date_t dateToSet;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                   RTC_control_regs, 2,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                   0, 0, TIME_INFINITE );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    timeToSet.hour = 1;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">    timeToSet.minute = 30;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">    timeToSet.second = 00;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    RTC_setTime(timeToSet);</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    dateToSet.day = 29;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">    dateToSet.dayOfWeek = 7;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    dateToSet.month = 3;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">    dateToSet.year = 15;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">    RTC_setDate(dateToSet);</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="_r_t_c__r2051_8c.html#acfa71727df5a732c5381776accb6eac3">   49</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_r_t_c__r2051_8c.html#acfa71727df5a732c5381776accb6eac3">RTC_setTime</a>(RTC_time_t timeToBeSet)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    msg_t rc = RDY_OK;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    uint8_t i = 1;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    timeToBeSet.timeCounterAddress = 0x00;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    uint8_t * timeToBeSet_p = &amp;timeToBeSet.timeCounterAddress;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">/* Converting binary to BCD */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">for</span> ( ; i &lt;= 3; i++ )</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        *(timeToBeSet_p + i) = BIN_TO_BCD(*(timeToBeSet_p + i)); <span class="comment">//((*(timeToBeSet_p + i) / 10) &lt;&lt; 4) | (*(timeToBeSet_p + i) % 10);</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="_r_t_c__r2051_8c.html#ac6e5230f6da5333c2aaa3620648b0c22">   68</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_r_t_c__r2051_8c.html#ac6e5230f6da5333c2aaa3620648b0c22" title="Beállítja a dátumot az RTC áramkörben. ">RTC_setDate</a>(RTC_date_t dateToBeSet)</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;{</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    msg_t rc = RDY_OK;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    dateToBeSet.calendarCounterAddress = 0x30;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                  (uint8_t *)(&amp;dateToBeSet), <span class="keyword">sizeof</span>(dateToBeSet),</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                   0, 0, TIME_INFINITE );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                   timeToBeSet_p, 4,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                   0, 0, TIME_INFINITE );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="_r_t_c__r2051_8c.html#ac6e5230f6da5333c2aaa3620648b0c22">   75</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_r_t_c__r2051_8c.html#ac6e5230f6da5333c2aaa3620648b0c22">RTC_setDate</a>(RTC_date_t dateToBeSet)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    msg_t rc = RDY_OK;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    uint8_t i = 2;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    dateToBeSet.calendarCounterAddress = 0x30;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81">   85</a></span>&#160;RTC_time_t <a class="code" href="_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81" title="Az idő kiolvasása az RTC áramkörből. ">RTC_getTime</a>()</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    msg_t rc = RDY_OK;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    RTC_time_t timeBuffer;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    timeBuffer.timeCounterAddress = 0x00;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    uint8_t i = 0;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    uint8_t * timeBuffer_p = &amp;timeBuffer.timeCounterAddress;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    rc = i2cMasterReceiveTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                  timeBuffer_p,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                  4, TIME_INFINITE);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    uint8_t * dateToBeSet_p = &amp;dateToBeSet.calendarCounterAddress;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">/* Converting binary to BCD */</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">for</span> ( ; i &lt;= 4; i++ )</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        *(dateToBeSet_p + i) = BIN_TO_BCD(*(dateToBeSet_p + i));</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    dateToBeSet.month |= 0b10000000;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                   dateToBeSet_p, 5,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                   0, 0, TIME_INFINITE );</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">                                  (uint8_t *)( &amp;timeBuffer ), 1,</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">                                   timeBuffer_p,</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">                                   sizeof(timeBuffer) - 1, TIME_INFINITE);</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">/* Converting BCD to binary */</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    timeBuffer_p = &amp;timeBuffer.second;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">for</span> ( ; i &lt; 3; i++ )</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        *(timeBuffer_p + i) = BCD_TO_BIN(*(timeBuffer_p + i)); <span class="comment">//((*(timeBuffer_p + i) &gt;&gt; 4) * 10) + (*(timeBuffer_p + i) &amp; 0b00001111);</span></div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> timeBuffer;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno"><a class="code" href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc">  123</a></span>&#160;RTC_date_t <a class="code" href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc" title="A dátum kiolvasása az RTC áramkörből. ">RTC_getDate</a>()</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    msg_t rc = RDY_OK;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    RTC_date_t dateBuffer;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    dateBuffer.calendarCounterAddress = 0x30;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                                  (uint8_t *)( &amp;dateBuffer ), 1,</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;                                  (uint8_t *)((&amp;dateBuffer) + 1),</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;                                  <span class="keyword">sizeof</span>(dateBuffer) - 1, TIME_INFINITE);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordflow">return</span> dateBuffer;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81">  103</a></span>&#160;RTC_time_t <a class="code" href="_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81">RTC_getTime</a>()</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    msg_t rc = RDY_OK;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    RTC_time_t timeBuffer;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">//  timeBuffer.timeCounterAddress = 0x00;</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    uint8_t i = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    uint8_t * timeBuffer_p = &amp;(timeBuffer.timeCounterAddress);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    rc = i2cMasterReceiveTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                  timeBuffer_p,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                                  4, TIME_INFINITE);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">                                  (uint8_t *)( &amp;timeBuffer ), 1,</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">                                   timeBuffer_p,</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">                                   sizeof(timeBuffer) - 1, TIME_INFINITE);</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">/* Converting BCD to binary */</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    timeBuffer_p = &amp;(timeBuffer.second);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">for</span> ( ; i &lt; 3; i++ )</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        *(timeBuffer_p + i) = BCD_TO_BIN(*(timeBuffer_p + i)); <span class="comment">//((*(timeBuffer_p + i) &gt;&gt; 4) * 10) + (*(timeBuffer_p + i) &amp; 0b00001111);</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> timeBuffer;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc">  141</a></span>&#160;RTC_date_t <a class="code" href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc">RTC_getDate</a>()</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    msg_t rc = RDY_OK;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    RTC_date_t dateBuffer;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">//  dateBuffer.calendarCounterAddress = 0x30;</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    uint8_t i = 0;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    uint8_t * dateBuffer_p;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    rc = i2cMasterReceiveTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;                                  &amp;dateBuffer, 8, TIME_INFINITE);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment">    rc = i2cMasterTransmitTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">                                   &amp;(dateBuffer.calendarCounterAddress), 1,</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">                                   &amp;(dateBuffer.dayOfWeek), 4, TIME_INFINITE );</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">/* Lehet, hogy ez a megoldás kell...</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">    if ( rc == RDY_OK )</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">    {</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">        rc = i2cMasterReceiveTimeout( &amp;I2CD1, (i2caddr_t)RTC_ADDRESS,</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">                                      &amp;(dateBuffer.dayOfWeek), 4, TIME_INFINITE );</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    dateBuffer.month &amp;= 0b01111111;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="comment">/* Converting BCD to binary */</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    dateBuffer_p = &amp;(dateBuffer.day);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">for</span> ( ; i &lt; 3; i++ )</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        *(dateBuffer_p + i) = BCD_TO_BIN(*(dateBuffer_p + i));</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">return</span> dateBuffer;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;}</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="ttc" id="_r_t_c__r2051_8c_html_ac6e5230f6da5333c2aaa3620648b0c22"><div class="ttname"><a href="_r_t_c__r2051_8c.html#ac6e5230f6da5333c2aaa3620648b0c22">RTC_setDate</a></div><div class="ttdeci">void RTC_setDate(RTC_date_t dateToBeSet)</div><div class="ttdoc">Beállítja a dátumot az RTC áramkörben. </div><div class="ttdef"><b>Definition:</b> <a href="_r_t_c__r2051_8c_source.html#l00075">RTC_r2051.c:75</a></div></div>
+<div class="ttc" id="_r_t_c__r2051_8c_html_acfa71727df5a732c5381776accb6eac3"><div class="ttname"><a href="_r_t_c__r2051_8c.html#acfa71727df5a732c5381776accb6eac3">RTC_setTime</a></div><div class="ttdeci">void RTC_setTime(RTC_time_t timeToBeSet)</div><div class="ttdoc">Beállítja az időt az RTC áramkörben. </div><div class="ttdef"><b>Definition:</b> <a href="_r_t_c__r2051_8c_source.html#l00049">RTC_r2051.c:49</a></div></div>
+<div class="ttc" id="_r_t_c__r2051_8c_html_abbeadb69d76ca80037803e6ecb3c74dc"><div class="ttname"><a href="_r_t_c__r2051_8c.html#abbeadb69d76ca80037803e6ecb3c74dc">RTC_getDate</a></div><div class="ttdeci">RTC_date_t RTC_getDate()</div><div class="ttdoc">A dátum kiolvasása az RTC áramkörből. </div><div class="ttdef"><b>Definition:</b> <a href="_r_t_c__r2051_8c_source.html#l00141">RTC_r2051.c:141</a></div></div>
+<div class="ttc" id="_r_t_c__r2051_8c_html_a6e44f6b1a18d3d5b22189a130c3cdb81"><div class="ttname"><a href="_r_t_c__r2051_8c.html#a6e44f6b1a18d3d5b22189a130c3cdb81">RTC_getTime</a></div><div class="ttdeci">RTC_time_t RTC_getTime()</div><div class="ttdoc">Az idő kiolvasása az RTC áramkörből. </div><div class="ttdef"><b>Definition:</b> <a href="_r_t_c__r2051_8c_source.html#l00103">RTC_r2051.c:103</a></div></div>
+<div class="ttc" id="_r_t_c__r2051_8c_html_afd522e1615ce58a62a9e5592d420aed2"><div class="ttname"><a href="_r_t_c__r2051_8c.html#afd522e1615ce58a62a9e5592d420aed2">RTC_init</a></div><div class="ttdeci">void RTC_init()</div><div class="ttdoc">A Real Time Clock áramkör inicializálása. </div><div class="ttdef"><b>Definition:</b> <a href="_r_t_c__r2051_8c_source.html#l00017">RTC_r2051.c:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+Projekt: altimeter Készült: Thu Apr 2 2015 13:01:01 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.4
+</a> 1.8.6
 </small></address>
 </body>
 </html>

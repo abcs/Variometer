@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="tasks_8c">
+    <title>tasks.c File Reference</title>
+    <programlisting>#include ch.h</programlisting>
+    <programlisting>#include hal.h</programlisting>
+    <programlisting>#include LCD.h</programlisting>
+    <programlisting>#include HP03.h</programlisting>
+    <programlisting>#include RTC_r2051.h</programlisting>
+    <programlisting>#include VirtualSerial.h</programlisting>
+    <programlisting>#include logger.h</programlisting>
+    <programlisting>#include periph.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>volatile RTC_time_t <link linkend="tasks_8c_1adf161c6b74a74517e1683aa5f3cc038a">actualTime</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>volatile RTC_date_t <link linkend="tasks_8c_1a1fcf2a74e06883fb690c0c062bf9408c">actualDate</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>volatile float <link linkend="tasks_8c_1ae33a247a27845609a2f5d2893060d2bb">calculatedSeaLevelPressure</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>msg_t <link linkend="tasks_8c_1a0af304e6c5bca609f1da9a35a49da5c6">Thread1</link> (
+void * arg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>msg_t <link linkend="tasks_8c_1afc0a4f34ef3333216c2f7c0de2b1f9aa">Thread2</link> (
+void * arg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>msg_t <link linkend="tasks_8c_1a3287156dd96a38e39fa70850b4c6fa38">Thread3</link> (
+void * arg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>msg_t <link linkend="tasks_8c_1ad2036d3514561ba8a748ff170baf1e3a">Thread4</link> (
+void * arg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>msg_t <link linkend="tasks_8c_1aad01c280ed05ea63627f5518167c5003">Thread5</link> (
+void * arg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/tasks.c</para>
+    </simplesect>
+</section>

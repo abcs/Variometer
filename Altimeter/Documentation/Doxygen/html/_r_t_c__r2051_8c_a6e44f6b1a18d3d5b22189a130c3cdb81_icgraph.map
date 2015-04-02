@@ -1,4 +1,4 @@
 <map id="RTC_getTime" name="RTC_getTime">
-<area shape="rect" id="node3" href="$tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38" title="Dátum és idő kezelő szál. " alt="" coords="157,5,227,35"/>
-<area shape="rect" id="node5" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="275,5,325,35"/>
+<area shape="rect" id="node2" href="$tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38" title="Dátum és idő kezelő szál. " alt="" coords="157,5,227,32"/>
+<area shape="rect" id="node3" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="A szoftver belépési pontja. " alt="" coords="275,5,325,32"/>
 </map>

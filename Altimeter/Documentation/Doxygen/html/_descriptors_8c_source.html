@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.4"/>
-<title>altimeter: /HDD/GIT/variometer/Altimeter/src/Descriptors.c Forrásfájl</title>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>altimeter: src/Descriptors.c Forrásfájl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Készítette Doxygen 1.8.4 -->
+<!-- Készítette Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 </script>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *  number of device configurations. The descriptor is read out by the USB host when the enumeration</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> *  process begins.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#a6a373a28a14fd420dd82bdd0f6978544">   59</a></span>&#160;USB_Descriptor_Device_t <a class="code" href="_descriptors_8c.html#a6a373a28a14fd420dd82bdd0f6978544">DeviceDescriptor</a> = {</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#a6a373a28a14fd420dd82bdd0f6978544">   59</a></span>&#160;USB_Descriptor_Device_t <a class="code" href="_descriptors_8c.html#a6a373a28a14fd420dd82bdd0f6978544">DeviceDescriptor</a> = {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    .Header                 = {.Size = <span class="keyword">sizeof</span>(USB_Descriptor_Device_t), .Type = DTYPE_Device},</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    .USBSpecification       = VERSION_BCD(01.10),</div>
@@ -171,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> *  and endpoints. The descriptor is read out by the USB host during the enumeration process when selecting</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> *  a configuration so that the host may correctly communicate with the USB device.</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#a2d091eefbfaf5bd43f4cf77d140e2d9f">   85</a></span>&#160;USB_Descriptor_Configuration_t <a class="code" href="_descriptors_8c.html#a2d091eefbfaf5bd43f4cf77d140e2d9f">ConfigurationDescriptor</a> = {</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#a2d091eefbfaf5bd43f4cf77d140e2d9f">   85</a></span>&#160;USB_Descriptor_Configuration_t <a class="code" href="_descriptors_8c.html#a2d091eefbfaf5bd43f4cf77d140e2d9f">ConfigurationDescriptor</a> = {</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    .Config = {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        .Header                 = {.Size = <span class="keyword">sizeof</span>(USB_Descriptor_Configuration_Header_t), .Type = DTYPE_Configuration},</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
@@ -274,31 +274,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> *  the string descriptor with index 0 (the first index). It is actually an array of 16-bit integers, which indicate</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> *  via the language ID table available at USB.org what languages the device supports for its string descriptors.</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#a156d44ced236ce8b684a10b2ebb9cd70">  188</a></span>&#160;uint8_t <a class="code" href="_descriptors_8c.html#a156d44ced236ce8b684a10b2ebb9cd70">LanguageString</a>[] = {</div>
+<div class="line"><a name="l00188"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#a156d44ced236ce8b684a10b2ebb9cd70">  188</a></span>&#160;uint8_t <a class="code" href="_descriptors_8c.html#a156d44ced236ce8b684a10b2ebb9cd70">LanguageString</a>[] = {</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    USB_STRING_LEN(1),</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    DTYPE_String,</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    WBVAL(LANGUAGE_ID_ENG),</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;};</div>
-<div class="line"><a name="l00193"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#a9f3f62928cb9d5d2ca9fbf5eede1cc52">  193</a></span>&#160;USB_Descriptor_String_t *<a class="code" href="_descriptors_8c.html#a9f3f62928cb9d5d2ca9fbf5eede1cc52">LanguageStringPtr</a> = (USB_Descriptor_String_t *) LanguageString;</div>
+<div class="line"><a name="l00193"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#a9f3f62928cb9d5d2ca9fbf5eede1cc52">  193</a></span>&#160;USB_Descriptor_String_t *<a class="code" href="_descriptors_8c.html#a9f3f62928cb9d5d2ca9fbf5eede1cc52">LanguageStringPtr</a> = (USB_Descriptor_String_t *) LanguageString;</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment">/* Manufacturer descriptor string. This is a Unicode string containing the manufacturer&#39;s details in human readable</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"> *  form, and is read out upon request by the host when the appropriate string ID is requested, listed in the Device</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment"> *  Descriptor.</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#af43938f971837cb37b3191312503a7a3">  199</a></span>&#160;uint8_t <a class="code" href="_descriptors_8c.html#af43938f971837cb37b3191312503a7a3">ManufacturerString</a>[] = {</div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#af43938f971837cb37b3191312503a7a3">  199</a></span>&#160;uint8_t <a class="code" href="_descriptors_8c.html#af43938f971837cb37b3191312503a7a3">ManufacturerString</a>[] = {</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    USB_STRING_LEN(3),</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    DTYPE_String,</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    WBVAL(<span class="charliteral">&#39;N&#39;</span>),</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    WBVAL(<span class="charliteral">&#39;X&#39;</span>),</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    WBVAL(<span class="charliteral">&#39;P&#39;</span>),</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;};</div>
-<div class="line"><a name="l00206"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#a48338794dea700974f8b0b043d0a4d60">  206</a></span>&#160;USB_Descriptor_String_t *<a class="code" href="_descriptors_8c.html#a48338794dea700974f8b0b043d0a4d60">ManufacturerStringPtr</a> = (USB_Descriptor_String_t *) ManufacturerString;</div>
+<div class="line"><a name="l00206"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#a48338794dea700974f8b0b043d0a4d60">  206</a></span>&#160;USB_Descriptor_String_t *<a class="code" href="_descriptors_8c.html#a48338794dea700974f8b0b043d0a4d60">ManufacturerStringPtr</a> = (USB_Descriptor_String_t *) ManufacturerString;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment">/* Product descriptor string. This is a Unicode string containing the product&#39;s details in human readable form,</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> *  and is read out upon request by the host when the appropriate string ID is requested, listed in the Device</span></div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> *  Descriptor.</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#afb016d49474419471ed53243c36007f6">  212</a></span>&#160;uint8_t <a class="code" href="_descriptors_8c.html#afb016d49474419471ed53243c36007f6">ProductString</a>[] = {</div>
+<div class="line"><a name="l00212"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#afb016d49474419471ed53243c36007f6">  212</a></span>&#160;uint8_t <a class="code" href="_descriptors_8c.html#afb016d49474419471ed53243c36007f6">ProductString</a>[] = {</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    USB_STRING_LEN(18),</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    DTYPE_String,</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    WBVAL(<span class="charliteral">&#39;A&#39;</span>),</div>
@@ -320,7 +320,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    WBVAL(<span class="charliteral">&#39;n&#39;</span>),</div>
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    WBVAL(<span class="charliteral">&#39;n&#39;</span>),</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;};</div>
-<div class="line"><a name="l00234"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#aa7a5f39bd07b0c4ded3f6f7f797b1d92">  234</a></span>&#160;USB_Descriptor_String_t *<a class="code" href="_descriptors_8c.html#aa7a5f39bd07b0c4ded3f6f7f797b1d92">ProductStringPtr</a> = (USB_Descriptor_String_t *) ProductString;</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#aa7a5f39bd07b0c4ded3f6f7f797b1d92">  234</a></span>&#160;USB_Descriptor_String_t *<a class="code" href="_descriptors_8c.html#aa7a5f39bd07b0c4ded3f6f7f797b1d92">ProductStringPtr</a> = (USB_Descriptor_String_t *) ProductString;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;<span class="comment">/*****************************************************************************</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment"> * Private functions</span></div>
@@ -336,7 +336,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;<span class="comment"> *  is called so that the descriptor details can be passed back and the appropriate descriptor sent back to the</span></div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<span class="comment"> *  USB host.</span></div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno"><a class="code" href="_descriptors_8c.html#a25529e40317cd4470fae630438b53eff">  250</a></span>&#160;uint16_t <a class="code" href="_descriptors_8c.html#a25529e40317cd4470fae630438b53eff">CALLBACK_USB_GetDescriptor</a>(uint8_t corenum,</div>
+<div class="line"><a name="l00250"></a><span class="lineno"><a class="line" href="_descriptors_8c.html#a25529e40317cd4470fae630438b53eff">  250</a></span>&#160;uint16_t <a class="code" href="_descriptors_8c.html#a25529e40317cd4470fae630438b53eff">CALLBACK_USB_GetDescriptor</a>(uint8_t corenum,</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                    <span class="keyword">const</span> uint16_t wValue,</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                    <span class="keyword">const</span> uint8_t wIndex,</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">void</span> * *<span class="keyword">const</span> DescriptorAddress) <span class="comment">//uint8_t corenum,</span></div>
@@ -382,12 +382,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;    *DescriptorAddress = Address;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <span class="keywordflow">return</span> Size;</div>
 <div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;}</div>
+<div class="ttc" id="_descriptors_8c_html_a6a373a28a14fd420dd82bdd0f6978544"><div class="ttname"><a href="_descriptors_8c.html#a6a373a28a14fd420dd82bdd0f6978544">DeviceDescriptor</a></div><div class="ttdeci">USB_Descriptor_Device_t DeviceDescriptor</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00059">Descriptors.c:59</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_afb016d49474419471ed53243c36007f6"><div class="ttname"><a href="_descriptors_8c.html#afb016d49474419471ed53243c36007f6">ProductString</a></div><div class="ttdeci">uint8_t ProductString[]</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00212">Descriptors.c:212</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_a156d44ced236ce8b684a10b2ebb9cd70"><div class="ttname"><a href="_descriptors_8c.html#a156d44ced236ce8b684a10b2ebb9cd70">LanguageString</a></div><div class="ttdeci">uint8_t LanguageString[]</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00188">Descriptors.c:188</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_a9f3f62928cb9d5d2ca9fbf5eede1cc52"><div class="ttname"><a href="_descriptors_8c.html#a9f3f62928cb9d5d2ca9fbf5eede1cc52">LanguageStringPtr</a></div><div class="ttdeci">USB_Descriptor_String_t * LanguageStringPtr</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00193">Descriptors.c:193</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_af43938f971837cb37b3191312503a7a3"><div class="ttname"><a href="_descriptors_8c.html#af43938f971837cb37b3191312503a7a3">ManufacturerString</a></div><div class="ttdeci">uint8_t ManufacturerString[]</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00199">Descriptors.c:199</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_a48338794dea700974f8b0b043d0a4d60"><div class="ttname"><a href="_descriptors_8c.html#a48338794dea700974f8b0b043d0a4d60">ManufacturerStringPtr</a></div><div class="ttdeci">USB_Descriptor_String_t * ManufacturerStringPtr</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00206">Descriptors.c:206</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_a25529e40317cd4470fae630438b53eff"><div class="ttname"><a href="_descriptors_8c.html#a25529e40317cd4470fae630438b53eff">CALLBACK_USB_GetDescriptor</a></div><div class="ttdeci">uint16_t CALLBACK_USB_GetDescriptor(uint8_t corenum, const uint16_t wValue, const uint8_t wIndex, const void **const DescriptorAddress)</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00250">Descriptors.c:250</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_aa7a5f39bd07b0c4ded3f6f7f797b1d92"><div class="ttname"><a href="_descriptors_8c.html#aa7a5f39bd07b0c4ded3f6f7f797b1d92">ProductStringPtr</a></div><div class="ttdeci">USB_Descriptor_String_t * ProductStringPtr</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00234">Descriptors.c:234</a></div></div>
+<div class="ttc" id="_descriptors_8c_html_a2d091eefbfaf5bd43f4cf77d140e2d9f"><div class="ttname"><a href="_descriptors_8c.html#a2d091eefbfaf5bd43f4cf77d140e2d9f">ConfigurationDescriptor</a></div><div class="ttdeci">USB_Descriptor_Configuration_t ConfigurationDescriptor</div><div class="ttdef"><b>Definition:</b> <a href="_descriptors_8c_source.html#l00085">Descriptors.c:85</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+Projekt: altimeter Készült: Thu Apr 2 2015 13:01:01 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.4
+</a> 1.8.6
 </small></address>
 </body>
 </html>

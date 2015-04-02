@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="mymath_8c">
+    <title>mymath.c File Reference</title>
+    <programlisting>#include mymath.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="mymath_8c_1af994e37115ff73eed3d3dcc528a4f786">shift23</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="mymath_8c_1a3d525ee8aa3d55d4366470a9b0aba11d">floorf</link> (
+float x)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="mymath_8c_1ad58388b2575adb733668f0f866f5625e">myLog2</link> (
+float val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="mymath_8c_1a9a33b3c642e6aca367b5c59546fb3a4a">myPow2</link> (
+float i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>float <link linkend="mymath_8c_1a73b3c2799ff1322f5f274157cbfdd4a1">myPow</link> (
+float a, float b)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/mymath.c</para>
+    </simplesect>
+</section>

@@ -1,5 +1,5 @@
-\section{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/periph.c fájlreferencia}
-\label{periph_8c}\index{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/periph.\-c@{/\-H\-D\-D/\-G\-I\-T/variometer/\-Altimeter/src/periph.\-c}}
+\section{src/periph.c fájlreferencia}
+\label{periph_8c}\index{src/periph.\-c@{src/periph.\-c}}
 {\ttfamily \#include \char`\"{}ch.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}hal.\-h\char`\"{}}\\*
 {\ttfamily \#include \char`\"{}periph.\-h\char`\"{}}\\*
@@ -8,25 +8,25 @@ A periph.\-c definíciós fájl függési gráfja\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=238pt]{periph_8c__incl}
+\includegraphics[width=240pt]{periph_8c__incl}
 \end{center}
 \end{figure}
 \subsection*{Függvények}
 \begin{DoxyCompactItemize}
 \item 
 void {\bf pwm3pcb} (P\-W\-M\-Driver $\ast$pwmp)
-\item 
+\begin{DoxyCompactList}\small\item\em Callback függvény. \end{DoxyCompactList}\item 
 void {\bf pwm3c0cb} (P\-W\-M\-Driver $\ast$pwmp)
 \end{DoxyCompactItemize}
 \subsection*{Változók}
 \begin{DoxyCompactItemize}
 \item 
 S\-P\-I\-Config {\bf spicfg}
-\item 
+\begin{DoxyCompactList}\small\item\em S\-P\-I konfiguráció (1\-M\-Hz, C\-P\-H\-A=0, C\-P\-O\-L=0). \end{DoxyCompactList}\item 
 I2\-C\-Config {\bf i2ccfg}
-\item 
+\begin{DoxyCompactList}\small\item\em I2\-C konfiguráció (400k\-Hz). \end{DoxyCompactList}\item 
 P\-W\-M\-Config {\bf pwmcfg}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em P\-W\-M konfiguráció. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Függvények dokumentációja}
@@ -39,7 +39,7 @@ P\-W\-M\-Config {\bf pwmcfg}
 )}\label{periph_8c_af6f3a2503083af2614563d0cc1f0c96c}
 
 
-Definíció a(z) periph.\-c fájl 50. sorában.
+Definíció a(z) periph.\-c fájl 53. sorában.
 
 \index{periph.\-c@{periph.\-c}!pwm3pcb@{pwm3pcb}}
 \index{pwm3pcb@{pwm3pcb}!periph.c@{periph.\-c}}
@@ -50,7 +50,11 @@ Definíció a(z) periph.\-c fájl 50. sorában.
 )}\label{periph_8c_ad3406d6a8fd6f21ccb106ecce466ec52}
 
 
-Definíció a(z) periph.\-c fájl 44. sorában.
+Callback függvény. 
+
+
+
+Definíció a(z) periph.\-c fájl 47. sorában.
 
 
 
@@ -61,10 +65,14 @@ Definíció a(z) periph.\-c fájl 44. sorában.
 {\bfseries Kezdő érték\-:}
 \begin{DoxyCode}
 = \{
-    I2C\_STANDARD\_MODE,             
+    I2C\_FAST\_MODE\_PLUS,            
     48                             
 \}
 \end{DoxyCode}
+
+
+I2\-C konfiguráció (400k\-Hz). 
+
 
 
 Definíció a(z) periph.\-c fájl 26. sorában.
@@ -86,7 +94,11 @@ Definíció a(z) periph.\-c fájl 26. sorában.
 \end{DoxyCode}
 
 
-Definíció a(z) periph.\-c fájl 31. sorában.
+P\-W\-M konfiguráció. 
+
+
+
+Definíció a(z) periph.\-c fájl 34. sorában.
 
 \index{periph.\-c@{periph.\-c}!spicfg@{spicfg}}
 \index{spicfg@{spicfg}!periph.c@{periph.\-c}}
@@ -101,6 +113,10 @@ Definíció a(z) periph.\-c fájl 31. sorában.
   48
 \}
 \end{DoxyCode}
+
+
+S\-P\-I konfiguráció (1\-M\-Hz, C\-P\-H\-A=0, C\-P\-O\-L=0). 
+
 
 
 Definíció a(z) periph.\-c fájl 15. sorában.

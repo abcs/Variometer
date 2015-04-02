@@ -3,8 +3,8 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<meta name="generator" content="Doxygen 1.8.4"/>
-<title>altimeter: /HDD/GIT/variometer/Altimeter/src/HP03.c Forrásfájl</title>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>altimeter: src/HP03.c Forrásfájl</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -30,7 +30,7 @@
 </table>
 </div>
 <!-- end header part -->
-<!-- Készítette Doxygen 1.8.4 -->
+<!-- Készítette Doxygen 1.8.6 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 </script>
@@ -79,7 +79,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_69e7acb218dd06927fc21118cf03793b.html">HDD</a></li><li class="navelem"><a class="el" href="dir_d3cf4ebc5c09cf8dbf362498f8c46d20.html">GIT</a></li><li class="navelem"><a class="el" href="dir_5845edf9e912c9693b688a074bfdd119.html">variometer</a></li><li class="navelem"><a class="el" href="dir_22f52a22359d8e5ed18ab6d4b4518e1f.html">Altimeter</a></li><li class="navelem"><a class="el" href="dir_bcad66b76c283ffdfc1315a968233a3f.html">src</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -119,7 +119,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> result;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106" title="Kiszámítja a magasságot (méterben) a hPa-ban megadott légnyomás, tengerszintre átszámított légnyomás ...">HP03_pressureToAltitude</a>(<span class="keywordtype">float</span> seaLevel, HP03_meas_t measuredPressTemp)</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106">   40</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106">HP03_pressureToAltitude</a>(<span class="keywordtype">float</span> seaLevel, HP03_meas_t measuredPressTemp)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="comment">/* Hyposometric formula:                      */</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="comment">/*                                            */</span></div>
@@ -142,7 +142,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)(result * 10.0F);</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794">   71</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794" title="Kiszámítja a tengerszintre átszámított légnyomást hPa-ban az aktuális méterben megadott magasság...">HP03_pressureSeaLevelFromAltitude</a>(<span class="keywordtype">float</span> altitude, HP03_meas_t measuredPressTemp)</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794">   71</a></span>&#160;<span class="keywordtype">float</span> <a class="code" href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794">HP03_pressureSeaLevelFromAltitude</a>(<span class="keywordtype">float</span> altitude, HP03_meas_t measuredPressTemp)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="comment">/* Sea-level pressure:                        */</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="comment">/*                                            */</span></div>
@@ -168,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d" title="Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének alacsony szintre történő álíításával...">HP03_reset</a>()</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d">  101</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d">HP03_reset</a>()</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    palClearPad(GPIO1, GPIO1_XCLR);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//  chThdSleepMilliseconds(50);</span></div>
@@ -178,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab">  116</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab" title="Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek érték...">HP03_readCoeffs</a>()</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab">  116</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab">HP03_readCoeffs</a>()</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    uint8_t HP03_ee_addr = 16;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    uint8_t hibyte;</div>
@@ -205,7 +205,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno"><a class="code" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">  150</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont...">HP03_getPressure</a>(HP03_meas_t * constsIn_pressureOut, <span class="keywordtype">bool</span> withKalman)</div>
+<div class="line"><a name="l00150"></a><span class="lineno"><a class="line" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">  150</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">HP03_getPressure</a>(HP03_meas_t * constsIn_pressureOut, <span class="keywordtype">bool</span> withKalman)</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    uint16_t D = 0; <span class="comment">//Measured and pressure</span></div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    msg_t rc = RDY_OK;</div>
@@ -224,11 +224,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    rc = i2cMasterTransmitTimeout(&amp;I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, HP03_cmd_1, 2, 0, 0, TIME_INFINITE);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">//  i2cReleaseBus(&amp;I2CD1);</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    chThdSleepMilliseconds(40);</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">//  i2cAcquireBus(&amp;I2CD1);</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    rc = i2cMasterTransmitTimeout(&amp;I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, &amp;HP03_cmd_2, 1, (uint8_t *)(&amp;D), 2, TIME_INFINITE);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
@@ -254,7 +254,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                                   (HP03_coeff.C7 + 150); <span class="comment">// * 10; / 32</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keywordflow">if</span> (withKalman)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        constsIn_pressureOut-&gt;press  = <a class="code" href="_kalman_8c.html#a805a67ac627b7712612544e1c006b12d" title="Elvégzi a szűrést (jóslás, erősítés, korrekció). ">kalman</a>(constsIn_pressureOut-&gt;press);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        constsIn_pressureOut-&gt;press  = <a class="code" href="_kalman_8c.html#a805a67ac627b7712612544e1c006b12d">kalman</a>(constsIn_pressureOut-&gt;press);</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment">    itoa(chTimeNow(), actTime, 10, 0, 9, &#39; &#39;, 0, 0);</span></div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment">    USB_send(actTime);</span></div>
@@ -264,7 +264,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00215"></a><span class="lineno"><a class="code" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">  215</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486" title="Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont...">HP03_getTemperature</a>(HP03_meas_t * result)</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">  215</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">HP03_getTemperature</a>(HP03_meas_t * result)</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;{</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    uint16_t D = 0; <span class="comment">//Measured temperature</span></div>
 <div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    msg_t rc = RDY_OK;</div>
@@ -284,11 +284,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    rc = i2cMasterTransmitTimeout(&amp;I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, HP03_cmd_1, 2, 0, 0, TIME_INFINITE);</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="comment">//  i2cReleaseBus(&amp;I2CD1);</span></div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    chThdSleepMilliseconds(40);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    i2cAcquireBus(&amp;I2CD1);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;<span class="comment">//  i2cAcquireBus(&amp;I2CD1);</span></div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;    rc = i2cMasterTransmitTimeout(&amp;I2CD1, (i2caddr_t)HP03_ADDRESS_ADC, &amp;HP03_cmd_2, 1, (uint8_t *)(&amp;D), 2, TIME_INFINITE);</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    i2cReleaseBus(&amp;I2CD1);</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
@@ -335,12 +335,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">return</span> RDY_OK;</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;}</div>
+<div class="ttc" id="_h_p03_8c_html_a514dfc9c4a90f039f562c24d6a372486"><div class="ttname"><a href="_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486">HP03_getTemperature</a></div><div class="ttdeci">int HP03_getTemperature(HP03_meas_t *result)</div><div class="ttdoc">Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00215">HP03.c:215</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a1013cdcfcdf48995025d9d2cf1778794"><div class="ttname"><a href="_h_p03_8c.html#a1013cdcfcdf48995025d9d2cf1778794">HP03_pressureSeaLevelFromAltitude</a></div><div class="ttdeci">float HP03_pressureSeaLevelFromAltitude(float altitude, HP03_meas_t measuredPressTemp)</div><div class="ttdoc">Kiszámítja a tengerszintre átszámított légnyomást hPa-ban az aktuális méterben megadott magasság...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00071">HP03.c:71</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a20b369f3261a05f3049139a070607b6d"><div class="ttname"><a href="_h_p03_8c.html#a20b369f3261a05f3049139a070607b6d">HP03_reset</a></div><div class="ttdeci">void HP03_reset()</div><div class="ttdoc">Alaphelyzetbe állítja a légnyomás szenzort az XCLR kivezetésének alacsony szintre történő álíításával...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00101">HP03.c:101</a></div></div>
+<div class="ttc" id="_kalman_8c_html_a805a67ac627b7712612544e1c006b12d"><div class="ttname"><a href="_kalman_8c.html#a805a67ac627b7712612544e1c006b12d">kalman</a></div><div class="ttdeci">int kalman(int z_measured)</div><div class="ttdoc">Elvégzi a szűrést (jóslás, erősítés, korrekció). </div><div class="ttdef"><b>Definition:</b> <a href="_kalman_8c_source.html#l00033">Kalman.c:33</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a2e206ea1f307f9565982ad14b3582be5"><div class="ttname"><a href="_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5">HP03_getPressure</a></div><div class="ttdeci">int HP03_getPressure(HP03_meas_t *constsIn_pressureOut, bool withKalman)</div><div class="ttdoc">Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00150">HP03.c:150</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a212fee37479d1b104e74f33ccfaab106"><div class="ttname"><a href="_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106">HP03_pressureToAltitude</a></div><div class="ttdeci">int HP03_pressureToAltitude(float seaLevel, HP03_meas_t measuredPressTemp)</div><div class="ttdoc">Kiszámítja a magasságot (méterben) a hPa-ban megadott légnyomás, tengerszintre átszámított légnyomás ...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00040">HP03.c:40</a></div></div>
+<div class="ttc" id="_h_p03_8c_html_a8b6f09ca977f999dfc96f1c355713bab"><div class="ttname"><a href="_h_p03_8c.html#a8b6f09ca977f999dfc96f1c355713bab">HP03_readCoeffs</a></div><div class="ttdeci">void HP03_readCoeffs()</div><div class="ttdoc">Kiolvassa a szenzorból a pontos hőmérséklet és légnyomás kiszámításához szükséges koefficiensek érték...</div><div class="ttdef"><b>Definition:</b> <a href="_h_p03_8c_source.html#l00116">HP03.c:116</a></div></div>
+<div class="ttc" id="mymath_8c_html_a73b3c2799ff1322f5f274157cbfdd4a1"><div class="ttname"><a href="mymath_8c.html#a73b3c2799ff1322f5f274157cbfdd4a1">myPow</a></div><div class="ttdeci">float myPow(float a, float b)</div><div class="ttdef"><b>Definition:</b> <a href="mymath_8c_source.html#l00070">mymath.c:70</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Projekt: altimeter Készült: Sat Nov 29 2014 15:18:14 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
+Projekt: altimeter Készült: Thu Apr 2 2015 13:01:01 Készítette:  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.4
+</a> 1.8.6
 </small></address>
 </body>
 </html>

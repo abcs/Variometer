@@ -1,9 +1,10 @@
 <map id="itoa" name="itoa">
-<area shape="rect" id="node3" href="$_l_c_d_8c.html#a34bb56ab53c7d9c0e363e59c48f5a959" title="Hőmérséklet megjelenítése a kijelzőn. " alt="" coords="97,5,215,35"/>
-<area shape="rect" id="node9" href="$_l_c_d_8c.html#a66c85acb573ef9bcfa2ae5f95feb596f" title="Légnyomás megjelenítése a kijelzőn. " alt="" coords="97,59,215,88"/>
-<area shape="rect" id="node12" href="$_l_c_d_8c.html#a4f21373ce23ee38fa023546e0b262fdf" title="Magasság megjelenítése a kijelzőn. " alt="" coords="107,112,205,141"/>
-<area shape="rect" id="node15" href="$_l_c_d_8c.html#a86e9fbcb9579b78118f6add9d1e78ba8" title="Idő megjelenítése a kijelzőn. " alt="" coords="100,165,212,195"/>
-<area shape="rect" id="node5" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="264,72,333,101"/>
-<area shape="rect" id="node7" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="Az alkalmazás belépési pontja. " alt="" coords="381,105,432,135"/>
-<area shape="rect" id="node17" href="$tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38" title="Dátum és idő kezelő szál. " alt="" coords="264,139,333,168"/>
+<area shape="rect" id="node2" href="$_l_c_d_8c.html#a34bb56ab53c7d9c0e363e59c48f5a959" title="Hőmérséklet megjelenítése a kijelzőn. " alt="" coords="100,5,217,32"/>
+<area shape="rect" id="node5" href="$_l_c_d_8c.html#a66c85acb573ef9bcfa2ae5f95feb596f" title="Légnyomás megjelenítése a kijelzőn. " alt="" coords="99,56,218,83"/>
+<area shape="rect" id="node6" href="$_l_c_d_8c.html#a4f21373ce23ee38fa023546e0b262fdf" title="Magasság megjelenítése a kijelzőn. " alt="" coords="109,107,209,133"/>
+<area shape="rect" id="node7" href="$_l_c_d_8c.html#a86e9fbcb9579b78118f6add9d1e78ba8" title="Idő megjelenítése a kijelzőn. " alt="" coords="102,208,215,235"/>
+<area shape="rect" id="node9" href="$_l_c_d_8c.html#ab1c412a381f9f4fe0668c795010004d1" title="A függőleges sebesség megjelenítése a kijelzőn. " alt="" coords="97,157,221,184"/>
+<area shape="rect" id="node3" href="$tasks_8c.html#afc0a4f34ef3333216c2f7c0de2b1f9aa" title="Nyomás és hőmérséklet kiolvasó szál. " alt="" coords="269,107,339,133"/>
+<area shape="rect" id="node4" href="$main_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title="A szoftver belépési pontja. " alt="" coords="387,145,437,172"/>
+<area shape="rect" id="node8" href="$tasks_8c.html#a3287156dd96a38e39fa70850b4c6fa38" title="Dátum és idő kezelő szál. " alt="" coords="269,183,339,209"/>
 </map>

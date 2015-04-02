@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <info>
+    <title>Variometer</title>
+    </info>
+    <chapter>
+        <title>Class Documentation</title>
+        <xi:include href="structlog__rec__ext__s.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>File Documentation</title>
+        <xi:include href="_descriptors_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="eeprom_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_h_p03_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="itoa_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_kalman_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_l_c_d_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="logger_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="main_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="mymath_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="periph_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_r_t_c__r2051_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="tasks_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+        <xi:include href="_virtual_serial_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+    <chapter>
+        <title>Directory Documentation</title>
+        <xi:include href="dir_68267d1309a1af8e8297ef4c3efbcdba.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    </chapter>
+</book>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="itoa_8c">
+    <title>itoa.c File Reference</title>
+    <programlisting>#include itoa.h</programlisting>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static void <link linkend="itoa_8c_1ad31846dae8a618aae75e0ec8b18f3064">__reverse</link> (
+char * start, char * end)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>char * <link linkend="itoa_8c_1ad140b3216ed9e7c8a084acc96dbd5678">itoa</link> (
+int value, char * buffer, int base, int decimals, int expectedLength, char padding_char, char * prefix, char * suffix)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/itoa.c</para>
+    </simplesect>
+</section>

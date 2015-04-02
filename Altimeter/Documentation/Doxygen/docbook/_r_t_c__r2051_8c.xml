@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_r_t_c__r2051_8c">
+    <title>RTC_r2051.c File Reference</title>
+    <programlisting>#include ch.h</programlisting>
+    <programlisting>#include hal.h</programlisting>
+    <programlisting>#include globals.h</programlisting>
+    <programlisting>#include RTC_r2051.h</programlisting>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_r_t_c__r2051_8c_1afd522e1615ce58a62a9e5592d420aed2">RTC_init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_r_t_c__r2051_8c_1acfa71727df5a732c5381776accb6eac3">RTC_setTime</link> (
+RTC_time_t timeToBeSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_r_t_c__r2051_8c_1ac6e5230f6da5333c2aaa3620648b0c22">RTC_setDate</link> (
+RTC_date_t dateToBeSet)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RTC_time_t <link linkend="_r_t_c__r2051_8c_1a6e44f6b1a18d3d5b22189a130c3cdb81">RTC_getTime</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>RTC_date_t <link linkend="_r_t_c__r2051_8c_1abbeadb69d76ca80037803e6ecb3c74dc">RTC_getDate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/RTC_r2051.c</para>
+    </simplesect>
+</section>

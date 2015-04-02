@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_kalman_8c">
+    <title>Kalman.c File Reference</title>
+    <programlisting>#include Kalman.h</programlisting>
+        <simplesect>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static volatile int <link linkend="_kalman_8c_1a387d04b0154b6804db36c5e6f34c6322">x_est_last</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static volatile float <link linkend="_kalman_8c_1a11284fa7e22dde0fa89ef06ee9daf57b">P_last</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static volatile const float <link linkend="_kalman_8c_1a008d8f8475a6a9e46a3b5f13e450ae29">Q</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static volatile const float <link linkend="_kalman_8c_1ac0114cf6105c0b1da299b660b0b57458">R</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <simplesect>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>void <link linkend="_kalman_8c_1a6ff19aa3f59897d3931e2d728eb37b50">init_kalman</link> (
+int z_measured)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_kalman_8c_1a805a67ac627b7712612544e1c006b12d">kalman</link> (
+int z_measured)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /HDD/GIT/variometer/Altimeter/src/Kalman.c</para>
+    </simplesect>
+</section>

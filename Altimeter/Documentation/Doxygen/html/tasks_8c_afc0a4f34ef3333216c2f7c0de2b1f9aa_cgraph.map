@@ -1,12 +1,13 @@
 <map id="Thread2" name="Thread2">
-<area shape="rect" id="node3" href="$_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486" title="Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="132,5,284,35"/>
-<area shape="rect" id="node5" href="$_l_c_d_8c.html#a34bb56ab53c7d9c0e363e59c48f5a959" title="Hőmérséklet megjelenítése a kijelzőn. " alt="" coords="149,165,267,195"/>
-<area shape="rect" id="node9" href="$_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="143,59,273,88"/>
-<area shape="rect" id="node13" href="$_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106" title="Kiszámítja a magasságot (méterben) a hPa&#45;ban megadott légnyomás, tengerszintre átszámított légnyomás ..." alt="" coords="123,112,293,141"/>
-<area shape="rect" id="node17" href="$logger_8c.html#ab32b0e36c611a22cba880cc3aacda3db" title="A paraméterként kapott rekordot berakja a ringbufferbe, ahonnan később ki fog íródni az EEPROM&#45;ba..." alt="" coords="155,219,261,248"/>
-<area shape="rect" id="node19" href="$_l_c_d_8c.html#a66c85acb573ef9bcfa2ae5f95feb596f" title="Légnyomás megjelenítése a kijelzőn. " alt="" coords="149,272,267,301"/>
-<area shape="rect" id="node22" href="$_l_c_d_8c.html#a4f21373ce23ee38fa023546e0b262fdf" title="Magasság megjelenítése a kijelzőn. " alt="" coords="159,325,257,355"/>
-<area shape="rect" id="node7" href="$itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="353,272,396,301"/>
-<area shape="rect" id="node11" href="$_kalman_8c.html#a805a67ac627b7712612544e1c006b12d" title="Elvégzi a szűrést (jóslás, erősítés, korrekció). " alt="" coords="343,59,407,88"/>
-<area shape="rect" id="node15" href="$mymath_8c.html#a73b3c2799ff1322f5f274157cbfdd4a1" title="myPow" alt="" coords="341,112,408,141"/>
+<area shape="rect" id="node2" href="$_h_p03_8c.html#a514dfc9c4a90f039f562c24d6a372486" title="Kiolvassa a légnyomás szenzorból a hőmérsékletet, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="131,5,285,32"/>
+<area shape="rect" id="node3" href="$_l_c_d_8c.html#a34bb56ab53c7d9c0e363e59c48f5a959" title="Hőmérséklet megjelenítése a kijelzőn. " alt="" coords="149,56,267,83"/>
+<area shape="rect" id="node5" href="$_h_p03_8c.html#a2e206ea1f307f9565982ad14b3582be5" title="Kiolvassa a légnyomás szenzorból a nyomásértéket, majd a koefficiensek segítségével kiszámítja a pont..." alt="" coords="142,259,274,285"/>
+<area shape="rect" id="node7" href="$_h_p03_8c.html#a212fee37479d1b104e74f33ccfaab106" title="Kiszámítja a magasságot (méterben) a hPa&#45;ban megadott légnyomás, tengerszintre átszámított légnyomás ..." alt="" coords="123,309,293,336"/>
+<area shape="rect" id="node9" href="$_l_c_d_8c.html#ab1c412a381f9f4fe0668c795010004d1" title="A függőleges sebesség megjelenítése a kijelzőn. " alt="" coords="146,107,270,133"/>
+<area shape="rect" id="node10" href="$_l_c_d_8c.html#a66c85acb573ef9bcfa2ae5f95feb596f" title="Légnyomás megjelenítése a kijelzőn. " alt="" coords="149,157,267,184"/>
+<area shape="rect" id="node11" href="$_l_c_d_8c.html#a4f21373ce23ee38fa023546e0b262fdf" title="Magasság megjelenítése a kijelzőn. " alt="" coords="158,208,258,235"/>
+<area shape="rect" id="node12" href="$logger_8c.html#ab32b0e36c611a22cba880cc3aacda3db" title="A paraméterként kapott rekordot berakja a ringbufferbe, ahonnan később ki fog íródni az EEPROM&#45;ba..." alt="" coords="155,360,261,387"/>
+<area shape="rect" id="node4" href="$itoa_8c.html#ad140b3216ed9e7c8a084acc96dbd5678" title="Előjeles egészet karakter tömbbé konvertál. " alt="" coords="353,132,396,159"/>
+<area shape="rect" id="node6" href="$_kalman_8c.html#a805a67ac627b7712612544e1c006b12d" title="Elvégzi a szűrést (jóslás, erősítés, korrekció). " alt="" coords="343,259,407,285"/>
+<area shape="rect" id="node8" href="$mymath_8c.html#a73b3c2799ff1322f5f274157cbfdd4a1" title="myPow" alt="" coords="341,309,408,336"/>
 </map>
